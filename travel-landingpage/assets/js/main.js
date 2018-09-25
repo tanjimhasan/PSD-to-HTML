@@ -145,14 +145,14 @@ jQuery(document).ready(function($){
 	    });
 
 	    //Click event to scroll to top
-	    $('.scrollToTop').click(function(){
-	        $('html, body').animate({scrollTop : 0},800);
+	    $('.scrollToTop,.boxed-layout').click(function(){
+	        $('html, body').animate({scrollTop : 0},100);
 	        return false;
 	    });
 		$("#mopo-menu").slicknav({
 			'prependTo': '#mobile-menu'
 		});
-		
+
 		//layout changer
 		$(".boxed-layout").on('click',function(){
 			$("body").addClass('boxed-layout').removeClass('wide-layout');

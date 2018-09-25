@@ -24,12 +24,11 @@ body.boxed-layout{
 	    background: #fff;
 	    position: relative;
 	    box-shadow:0 0 15px #ddd;
-	    .header-area{
-	    	width:1200px;
-	    }
+	    
 	    .is-sticky{
 	    	.header-area{
-	    		width:1200px!important;
+	    		max-width:1200px!important;
+	    		margin:0 auto;
 	    		@include media-breakpoint-between(sm, md) {
 			       width:100%!important;
 			    }

@@ -2950,10 +2950,9 @@ body.boxed-layout {
     background: #fff;
     position: relative;
     box-shadow: 0 0 15px #ddd; }
-    body.boxed-layout .site .header-area {
-      width: 1200px; }
     body.boxed-layout .site .is-sticky .header-area {
-      width: 1200px !important; }
+      max-width: 1200px !important;
+      margin: 0 auto; }
       @media (min-width: 576px) and (max-width: 991.98px) {
         body.boxed-layout .site .is-sticky .header-area {
           width: 100% !important; } }
