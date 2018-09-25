@@ -1,3 +1,7 @@
+/*--------------------------
+[---layout-changer start---]
+--------------------------*/
+
 .layout-changer{
 	span{
 		display: block;
@@ -15,6 +19,14 @@
 		color: #fff;
 	}
 }
+/*--------------------------
+[---layout-changer end---]
+--------------------------*/
+
+/*--------------------------
+[---boxed-layout start---]
+--------------------------*/
+
 body.boxed-layout{
 	overflow-x:hidden;
 	background:#fff;
@@ -38,3 +50,6 @@ body.boxed-layout{
 	}
 }
  
+/*--------------------------
+[---boxed-layout end---]
+--------------------------*/

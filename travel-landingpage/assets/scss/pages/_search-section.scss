@@ -1,6 +1,4 @@
-/* ================ 
-search section style 
-================== */
+
 
 /*--------------------------
 [---search section start---]
@@ -40,9 +38,15 @@ search section style
 		}
 		input[type=submit]{
 			background-color:$primary-color-one;
+			border:1px solid $primary-color-one;
+			&:hover{
+				background:#fff;
+				border:1px solid $primary-color-one;
+				color:$primary-color-one;
+			}
 		}
 		.boxed-btn{
-			margin-top:40px;
+			margin-top:38px;
 		}
 	}
 	.map-mkr-icn,.cal-icn{

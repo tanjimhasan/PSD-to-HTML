@@ -145,7 +145,12 @@ jQuery(document).ready(function($){
 	    });
 
 	    //Click event to scroll to top
-	    $('.scrollToTop,.boxed-layout').click(function(){
+	    $('.scrollToTop').click(function(){
+	        $('html, body').animate({scrollTop : 0},900);
+	        return false;
+	    });
+	    //Click event to scroll to top
+	    $('.boxed-layout').click(function(){
 	        $('html, body').animate({scrollTop : 0},100);
 	        return false;
 	    });

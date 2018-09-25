@@ -1,11 +1,24 @@
-/* ================ button style ================== */
+/*--------------------------
+[---boxed-btn start---]
+--------------------------*/
 
 .boxed-btn{
 	display:inline-block;
 	background-color:$primary-color-one;
+	border:1px solid $primary-color-one;
 	color:$button-text-color;
 	padding:15px 25px;
 	font-weight:$medium-font;
 	text-transform:capitalize;
 	text-decoration:none;
+
+	&:hover{
+		background:#fff;
+		color:$primary-color-one;
+		border-color:$primary-color-one;
+	}
 }
+
+/*--------------------------
+[---boxed-btn end---]
+--------------------------*/

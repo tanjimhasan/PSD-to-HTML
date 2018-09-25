@@ -26,7 +26,9 @@ a.single-tour .tour-place-bg,
 	background-color: #9b59b6;
 }
 
-.hero-area .owl-dots .owl-dot{
+.hero-area .owl-dots .owl-dot,.search-form .form-element input[type=submit]:hover,.boxed-btn:hover,
+.footer-weidget .subscribe-form input[type=submit]:hover
+{
 	border-color:#9b59b6;
 }
 

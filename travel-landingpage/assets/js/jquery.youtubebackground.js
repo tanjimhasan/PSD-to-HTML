@@ -27,7 +27,7 @@ if (typeof Object.create !== "function") {
       head = document.getElementsByTagName('head')[0];
       
       if(window.location.origin == 'file://') {
-        tag.src = 'http://www.youtube.com/iframe_api';
+        tag.src = 'https://www.youtube.com/iframe_api';
       } else {
         tag.src = '//www.youtube.com/iframe_api';
       }

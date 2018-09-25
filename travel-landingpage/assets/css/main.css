@@ -2679,15 +2679,21 @@ input, textarea {
   margin-top: 100px; }
 
 /* ================ Helper classes ================== */
-/* ================ 
-	header style
- ================== */
+/*--------------------------
+[---sticky-wrapper start---]
+--------------------------*/
 .sticky-wrapper {
   position: absolute;
   width: 100%;
   z-index: 999;
   top: 0; }
 
+/*--------------------------
+[---sticky-wrapper end---]
+--------------------------*/
+/*--------------------------
+[---is-sticky start---]
+--------------------------*/
 .is-sticky .header-area {
   padding: 10px;
   width: 100% !important; }
@@ -2702,8 +2708,17 @@ input, textarea {
     z-index: -1; }
   .is-sticky .header-area .logo img {
     width: 80px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    margin-top: 5px; }
+    .is-sticky .header-area .logo img:hover {
+      opacity: .7; }
 
+/*--------------------------
+[---is-sticky end---]
+--------------------------*/
+/*--------------------------
+[---header-area start---]
+--------------------------*/
 .header-area {
   padding: 20px;
   width: 100%;
@@ -2745,14 +2760,23 @@ input, textarea {
     width: 100px;
     transition: .5s; }
 
+/*--------------------------
+[---header-area end---]
+--------------------------*/
+/*--------------------------
+[---absolute-header start---]
+--------------------------*/
 .absolute-header {
   position: absolute;
   width: 100%;
   z-index: 99; }
 
-/* ================ 
-header-section style
- ================== */
+/*--------------------------
+[---absolute-header end---]
+--------------------------*/
+/*--------------------------
+[---main-menu start---]
+--------------------------*/
 @media (max-width: 575.98px) {
   .main-menu {
     display: none; } }
@@ -2824,6 +2848,9 @@ header-section style
       visibility: hidden;
       transition: 0s; }
 
+/*--------------------------
+[---main-menu end---]
+--------------------------*/
 /*------------------------------
 [---footer-weidget  start---]
 -------------------------------*/
@@ -2865,7 +2892,10 @@ header-section style
 .footer-weidget .subscribe-form input[type=submit] {
   width: 29%;
   padding: 10px;
-  display: inline-block; }
+  display: inline-block;
+  border: 1px solid #2ca3f2; }
+  .footer-weidget .subscribe-form input[type=submit]:hover {
+    border: 1px solid #2ca3f2; }
 
 .footer-weidget .social-links {
   margin-top: 25px; }
@@ -2916,16 +2946,29 @@ header-section style
 /*------------------------------
 [---footer end---]
 -------------------------------*/
-/* ================ button style ================== */
+/*--------------------------
+[---boxed-btn start---]
+--------------------------*/
 .boxed-btn {
   display: inline-block;
   background-color: #2ca3f2;
+  border: 1px solid #2ca3f2;
   color: #fff;
   padding: 15px 25px;
   font-weight: 500;
   text-transform: capitalize;
   text-decoration: none; }
+  .boxed-btn:hover {
+    background: #fff;
+    color: #2ca3f2;
+    border-color: #2ca3f2; }
 
+/*--------------------------
+[---boxed-btn end---]
+--------------------------*/
+/*--------------------------
+[---layout-changer start---]
+--------------------------*/
 .layout-changer span {
   display: block;
   border: 2px solid #23405F;
@@ -2941,6 +2984,12 @@ header-section style
   background: #23405F;
   color: #fff; }
 
+/*--------------------------
+[---layout-changer end---]
+--------------------------*/
+/*--------------------------
+[---boxed-layout start---]
+--------------------------*/
 body.boxed-layout {
   overflow-x: hidden;
   background: #fff; }
@@ -2957,6 +3006,9 @@ body.boxed-layout {
         body.boxed-layout .site .is-sticky .header-area {
           width: 100% !important; } }
 
+/*--------------------------
+[---boxed-layout end---]
+--------------------------*/
 #colors {
   margin: 10px 0; }
 
@@ -2968,6 +3020,9 @@ body.boxed-layout {
   color: #fff;
   padding: 5px 15px; }
 
+/*--------------------------
+[---ticker end---]
+--------------------------*/
 /* ================ homepage style ================== */
 /* ================ 
 Section-title style
@@ -3124,7 +3179,9 @@ hero section style
     .single-hero-item .single-hero-table-cell .boxed-btn {
       background-color: #FEC107;
       color: #23405f;
-      margin-top: 40px; }
+      margin-top: 40px;
+      text-decoration: none;
+      border: 1px solid #FEC107; }
 
 .slide-overlay.single-hero-item {
   height: 100%;
@@ -3161,9 +3218,6 @@ search style
 /*--------------------------
 [---search end---]
 --------------------------*/
-/* ================ 
-search section style 
-================== */
 /*--------------------------
 [---search section start---]
 --------------------------*/
@@ -3195,9 +3249,14 @@ search section style
     padding: 10px 20px;
     border-radius: 5px; }
   .search-form .form-element input[type=submit] {
-    background-color: #2ca3f2; }
+    background-color: #2ca3f2;
+    border: 1px solid #2ca3f2; }
+    .search-form .form-element input[type=submit]:hover {
+      background: #fff;
+      border: 1px solid #2ca3f2;
+      color: #2ca3f2; }
   .search-form .form-element .boxed-btn {
-    margin-top: 40px; }
+    margin-top: 38px; }
 
 .search-form .map-mkr-icn:before, .search-form .cal-icn:before {
   font-family: 'Font Awesome 5 Free';

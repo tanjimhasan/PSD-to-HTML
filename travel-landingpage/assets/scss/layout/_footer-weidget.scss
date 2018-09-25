@@ -45,7 +45,10 @@
 			width:29%;
 			padding:10px;
 			display:inline-block;
-
+			border:1px solid $primary-color-one;
+			&:hover{
+				border:1px solid $primary-color-one;
+			}
 		}
 	}
 	.social-links{
