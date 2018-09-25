@@ -1,0 +1,72 @@
+// Main Sass File
+
+
+@charset 'UTF-8';
+
+//Configuration and helpers
+@import
+'bootstrap/functions',
+'bootstrap/variables',
+'bootstrap/breakpoints',
+
+'fontawesome/fa-brands',
+'fontawesome/fa-regular',
+'fontawesome/fa-solid',
+'fontawesome/fontawesome',
+
+'abstracts/functions',
+'abstracts/variables',
+'abstracts/mixins';
+
+
+//Base stuff
+@import
+'base/general',
+'base/resets',
+'base/typography',
+'base/global',
+'base/fonts',
+'base/helpers';
+
+// Layout-related sections
+@import
+'layout/header',
+'layout/header-section',
+'layout/footer-weidget',
+'layout/footer';
+
+// Components
+@import
+'components/button',
+'components/layout-changer',
+'components/switcher.scss',
+'components/ticker';
+
+// Page-specific styles
+@import
+'pages/home',
+'pages/section-title',
+'pages/hero',
+'pages/hero-section',
+'pages/search',
+'pages/search-section',
+'pages/popular-tour',
+'pages/popular-tour-section',
+'pages/feature',
+'pages/feature-section',
+'pages/destination',
+'pages/destination-section',
+'pages/tour-types',
+'pages/tour-types-section',
+'pages/fact',
+'pages/fact-section',
+'pages/user-review',
+'pages/user-review-section',
+'pages/contact',
+'pages/contact-section',
+'pages/blog',
+'pages/blog-section',
+'pages/scrollToTop';
+
+
+

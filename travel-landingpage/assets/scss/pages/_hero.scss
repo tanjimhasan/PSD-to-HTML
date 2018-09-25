@@ -1,0 +1,107 @@
+/* ================ 
+	hero style 
+================== */
+
+
+/*--------------------------
+[---hero-bg start---]
+--------------------------*/
+
+
+.hero-bg{
+	background-size:cover;
+	background-position:center;
+	background-color:$primary-color-one;
+	height:100%;
+	width:100%;
+	background-image:url('../images/hero-bg-1.jpg');
+}
+.video-background.hero-bg{
+	position: relative;
+ 	background: transparent;
+ 	overflow: hidden;
+}
+.ytplayer-container{
+	 position: absolute;
+	 top: 0;
+	 z-index: -1;
+}
+.hero-area{
+	position:relative;
+		z-index:2;
+		&:after{
+			position:absolute;
+			left:0;
+			top:0;
+			width:100%;
+			height:100%;
+			background:#23405f;
+			content:"";
+			z-index:-1;
+			opacity:.5;
+		}
+	&:hover{
+		.owl-nav{
+			opacity:1;
+			visibility:visible;
+		}
+	}
+	.slide-bg-1{
+		background-image:url('../images/hero-bg-1.jpg');
+	}
+	.slide-bg-2{
+		background-image:url('../images/hero-bg-2.jpg');
+	}
+	.slide-bg-3{
+		background-image:url('../images/hero-bg-3.jpg');
+	}
+	.owl-nav{
+		height:auto !important;
+		opacity:0;
+		visibility:hidden;
+		transition:$transition-time;
+		.owl-prev{
+			position:absolute;
+			left:40px;
+			top:50%;
+			color:#fff !important;
+		}
+		.owl-next{
+			position:absolute;
+			left:auto;
+			right:40px;
+			top:50%;
+			color:#fff !important;
+		}
+	}
+	.owl-dots{
+		position:absolute;
+		left:50%;
+		margin-top:-60px;
+		margin-left:-40px;
+		.owl-dot{
+			width:15px;
+			height:15px;
+			background:#fff;
+			margin-left:4px;
+			border:1px solid $primary-color-one;
+			border-radius:50%;
+		}
+		.owl-dot.active{
+			background:$primary-color-one;
+		}
+	}
+}
+.hero-area, .hero-area div{
+	height:640px;
+
+	.single-hero-item{
+		.single-hero-table-cell div{
+			height:auto !important;
+		}
+	}
+}
+
+/*--------------------------
+[---hero-bg end---]
+--------------------------*/

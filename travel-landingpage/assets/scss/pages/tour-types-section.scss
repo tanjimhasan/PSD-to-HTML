@@ -1,0 +1,34 @@
+/*------------------------------
+[---tour-types section start---]
+-------------------------------*/
+
+.single-tour-type{
+	background-size:cover;
+	background-position:center;
+	background-color:$primary-color-one;
+	height:320px;
+	width:100%;
+	position:relative;
+	h3{	
+		position:absolute;
+		bottom:25px;
+		left:25px;
+		margin:0;
+		color:#fff;
+		font-size:18px;
+	}
+}
+.tour-type-bg-1{
+	background-image:url('../images/type-1.jpg');
+}
+.tour-type-bg-2{
+	background-image:url('../images/type-2.jpg');
+}
+.tour-type-bg-3{
+	background-image:url('../images/type-3.jpg');
+}
+
+
+/*------------------------------
+[---tour-types section end---]
+-------------------------------*/

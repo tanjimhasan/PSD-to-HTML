@@ -1,0 +1,29 @@
+/*------------------------------
+[---contact start---]
+-------------------------------*/
+
+.contact-area{
+	background-image:url('../images/pattern.png');
+	position:relative;
+	z-index:2;
+	&:after{
+		position:absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+		background: -moz-linear-gradient(top, rgba(255,255,255,1) 34%, rgba(255,255,255,0) 100%);
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 34%,rgba(255,255,255,0) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 34%,rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+		content:"";
+		z-index:-1;
+	}
+	.section-title{
+		background:#fff;
+	}
+}
+
+/*------------------------------
+[---contact end---]
+-------------------------------*/

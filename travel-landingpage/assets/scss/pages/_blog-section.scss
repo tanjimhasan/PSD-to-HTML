@@ -1,0 +1,47 @@
+/*------------------------------
+[---blog-section  start---]
+-------------------------------*/
+
+a.single-blog-item{
+	display:block;
+	text-decoration:none;
+	.blog-bg{
+		background-size:cover;
+		background-position:center;
+		background-color:$primary-color-one;
+		height:220px;
+		width:100%;
+	}
+	.blog-content{
+		margin-top:40px;
+		p{
+			color:$text-color;
+		}
+		.blog-meta{
+			span{
+				&:last-child{
+					float:right;
+				}
+			}
+		}
+		h5{
+			font-size:16px;
+			color:$heading-color-two;
+			line-height:1.5;
+		}
+	}
+	.blog-bg-1{
+		background-image:url('../images/blog-1.jpg');
+	}
+	.blog-bg-2{
+		background-image:url('../images/blog-2.jpg');
+	}
+	.blog-bg-3{
+		background-image:url('../images/blog-3.jpg');
+	}
+}
+
+
+/*------------------------------
+[---blog-section  end---]
+-------------------------------*/

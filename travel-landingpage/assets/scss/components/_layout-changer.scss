@@ -1,0 +1,41 @@
+.layout-changer{
+	span{
+		display: block;
+	    border: 2px solid #23405F;
+	    margin-bottom: 15px;
+	    padding: 15px;
+	    text-align: center;
+	    text-transform: uppercase;
+	    color: #23405F;
+	    font-weight: 700;
+	    cursor:pointer;
+	}
+	span.active{
+	    background: #23405F;
+		color: #fff;
+	}
+}
+body.boxed-layout{
+	overflow-x:hidden;
+	background:#fff;
+	.site{
+		max-width: 1200px;
+	    margin: 0 auto;
+	    background: #fff;
+	    position: relative;
+	    box-shadow:0 0 15px #ddd;
+	    .header-area{
+	    	width:1200px;
+	    }
+	    .is-sticky{
+	    	.header-area{
+	    		width:1200px!important;
+	    		@include media-breakpoint-between(sm, md) {
+			       width:100%!important;
+			    }
+	    	}
+	    }
+
+	}
+}
+ 

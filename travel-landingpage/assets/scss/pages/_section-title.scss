@@ -1,0 +1,66 @@
+/* ================ 
+Section-title style
+================== */
+
+/*--------------------------
+[---Section-title start---]
+--------------------------*/
+
+
+.section-title{
+	margin-bottom:70px;
+	h2{
+		font-family: 'Merienda One', cursive;
+		font-size:30px;
+		font-weight:$medium-font;
+		color:$title-color;
+		text-transform:capitalize;
+		
+	}
+}
+
+/*--------------------------
+[---Section-title end---]
+--------------------------*/
+
+/*--------------------------------
+[---Section-title theme-2 start---]
+---------------------------------*/
+
+.section-title.theme-2{
+	margin-bottom:50px;
+}
+
+/*--------------------------------
+[---Section-title theme-2 end---]
+---------------------------------*/
+
+/*--------------------------------
+[---underline start---]
+---------------------------------*/
+
+.mid-underline,.left-underline{
+	position:relative;
+	z-index:2;
+
+	&:after{
+		position:absolute;
+		left:50%;
+		bottom:-15px;
+		width:35px;
+		height:3px;
+		margin-left:-17px;
+		background:$primary-color-one;
+		content:"";
+	}
+}
+.left-underline{
+	&:after{
+		left:0;
+		margin-left:0;
+	}
+}
+
+/*--------------------------
+[---underline end---]
+--------------------------*/

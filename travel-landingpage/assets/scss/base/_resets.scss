@@ -1,0 +1,44 @@
+/* ================= 
+	resets 
+==================== */
+
+ body,html{
+	height:100%;
+	font-family: 'Rubik', sans-serif;
+	font-size:14px;
+    line-height:1.8;
+	color:$text-color;
+}
+
+a:focus, input:focus, textarea:focus, button:focus { outline: 0 solid }
+a{
+	text-decoration:none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0 0 15px;
+   font-weight: 500;
+   font-family: 'Rubik', sans-serif;
+   color:$heading-color;
+   
+}
+p{
+	
+	font-weight:400;
+}
+
+ul, ol, li, form, fieldset, legend
+{
+	margin: 0;
+	padding: 0;
+}
+

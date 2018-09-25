@@ -1,0 +1,11 @@
+/* ================ button style ================== */
+
+.boxed-btn{
+	display:inline-block;
+	background-color:$primary-color-one;
+	color:$button-text-color;
+	padding:15px 25px;
+	font-weight:$medium-font;
+	text-transform:capitalize;
+	text-decoration:none;
+}

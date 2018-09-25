@@ -1,0 +1,32 @@
+/*------------------------------
+[---tour-types start---]
+-------------------------------*/
+
+.tour-type-list{
+	.owl-nav{
+		position:absolute;
+		right:0;
+		top:-55px;
+		@include media-breakpoint-only(md) {
+           top:-35px;
+        }
+		.owl-prev{
+			margin-right:20px;
+		}
+		i{
+			font-size:20px;
+			color:$heading-color-two;
+			color:#2ca3f2;
+			&:hover{
+				opacity:.6;
+			}
+		}
+	}
+}
+
+
+
+
+/*------------------------------
+[---tour-types start---]
+-------------------------------*/

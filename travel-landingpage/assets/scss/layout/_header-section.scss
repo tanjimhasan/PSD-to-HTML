@@ -1,0 +1,93 @@
+/* ================ 
+header-section style
+ ================== */
+
+
+
+
+ .main-menu{
+ 	@include media-breakpoint-only(xs) {
+       display:none;
+    }
+    @include media-breakpoint-only(sm) {
+       text-align:left;
+    }
+ 	ul{
+ 		margin:0;
+ 		padding:0;
+ 		list-style:none;
+
+ 	}
+ 	li{
+ 		display:inline-block;
+ 		position:relative;
+
+ 		&:hover{
+ 			ul{
+ 				opacity:1;
+ 				visibility:visible;
+ 				top:45px;
+ 				z-index:99;
+
+ 				a{
+	 				opacity:1;
+	 				visibility:visible;
+ 				}
+ 			}
+ 		}
+ 		a{
+ 			display:block;
+ 			margin-right:15px;
+ 			padding:10px;
+ 			text-decoration:none;
+ 			color:$hero-text-color;
+ 			transition:$transition-time;
+ 			@include media-breakpoint-only(md) {
+	           margin-right:5px;
+	           padding:5px;
+	           font-size:12px;
+	        }
+ 			@include media-breakpoint-only(sm) {
+	           padding:5px;
+	           font-size:12px;
+	           margin-right:0;
+	        }
+ 			&:hover{
+ 				color:$primary-color-one;
+ 			}
+ 		}
+ 		ul{
+ 			position:absolute;
+ 			left:0;
+ 			top:60px;
+ 			width:220px;
+ 			background:#fff;
+ 			opacity:0;
+ 			visibility:hidden;
+ 			transition:$transition-time;
+ 			z-index:-1;
+ 			li{
+ 				display:block;
+ 				border-bottom: 1px solid #ddd;
+ 				margin:10px;
+ 				&:last-child{
+ 					border:none;
+ 				}
+ 				&:hover{
+ 					background:$primary-color-one;
+ 					a{
+ 						color:#fff;
+ 					}
+ 				}
+ 			}
+ 			a{
+ 				color:#333;
+ 				text-align: left;
+    			padding: 12px 15px;
+    			opacity:0;
+ 				visibility:hidden;
+ 				transition:0s;
+ 			}
+ 		}
+ 	}
+ }

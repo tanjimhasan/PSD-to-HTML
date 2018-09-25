@@ -1,0 +1,50 @@
+
+/*light-color*/
+
+.header-area #mobile-menu .slicknav_menu .slicknav_btn,
+.main-menu li a:hover,.single-feature-item .feature-icon i,
+.tour-type-list .owl-nav i,.blog-slides .owl-nav i,
+.site-testimonial .owl-nav i,
+.search-form .form-element label
+
+{
+	color:#e74c3c;
+}
+
+.header-area #mobile-menu .slicknav_menu .slicknav_nav a:hover,
+.header-area #mobile-menu .slicknav_menu .slicknav_nav .slicknav_row:hover,
+.main-menu li ul li:hover,.footer-bg,.boxed-btn,
+.mid-underline:after, .left-underline:after,.hero-bg,
+.hero-area .owl-dots .owl-dot.active,.slide-overlay.single-hero-item,
+.search-form .form-element input[type=submit],
+a.single-tour .tour-place-bg,
+.section-bg-one,.single-destination,
+.single-tour-type,a.single-blog-item .blog-bg,.search-form .form-element input[type=submit]
+
+
+{
+	background-color: #e74c3c;
+}
+
+.hero-area .owl-dots .owl-dot{
+	border-color:#e74c3c;
+}
+
+
+/*Deep-color*/
+
+h1, h2, h3, h4, h5, h6,.layout-changer span,
+.section-title h2,.single-hero-item .single-hero-table-cell .boxed-btn,.contact-info i,
+.footer-weidget h4
+
+{
+	color: #c0392b;
+}
+.layout-changer span,.layout-changer span.active{
+	border-color: #c0392b;
+}
+.hero-area:after,.slide-overlay.single-hero-item:after,a.scrollToTop,
+.is-sticky .header-area:after,.layout-changer span.active
+{
+	background: #c0392b;
+}

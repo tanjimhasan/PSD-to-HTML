@@ -1,0 +1,40 @@
+/*------------------------------
+[---fact start---]
+-------------------------------*/
+
+.single-fact-list{
+	height:170px;
+	width:170px;
+	background:#fff;
+	margin:40px 0;
+	border-radius:15px;
+	box-shadow:0 0 20px 10px #E3F1FB;
+	.fact-list-item{
+		height:100%;
+		vertical-align:middle;
+		text-align:center;
+		.fact-icon{
+			img{
+				width:35px;
+				margin-bottom:20px;
+			}
+
+		}
+		h4{
+			font-size:20px;
+			color:$heading-color-two;
+			line-height:1.4;
+			span{
+				display:block;
+				font-size:70%;
+				color:#8093a8;
+				font-weight:400;
+			}
+		}
+	}
+}
+
+
+/*------------------------------
+[---fact end---]
+-------------------------------*/

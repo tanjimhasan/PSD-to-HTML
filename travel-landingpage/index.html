@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Travel Landing Page</title>
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/images/fav-icon.png"/>
+	<!-- bootstrap css -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- fontawesome css -->
+	<link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
+	<!-- datepicker css -->
+	<link href="assets/css/datepicker.min.css" rel="stylesheet">
+	<!-- owl-carousel css -->
+	<link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+	<!-- animate css -->
+	<link href="assets/css/animate.css" rel="stylesheet">
+	<!-- magnific-popup css -->
+	<link href="assets/css/magnific-popup-v1.1.0.css" rel="stylesheet">
+	<!-- slicknav css -->
+	<link href="assets/css/slicknav.min.css" rel="stylesheet">
+	<!-- main css -->
+	<link href="assets/css/main.css" rel="stylesheet">
+	<!-- custom css -->
+	<link href="assets/css/custom.css" rel="stylesheet">
+	<!-- responsive css -->
+	<link href="assets/css/responsive.css" rel="stylesheet">
+
+	<!-- colornip css -->
+	<link href="assets/css/colornip.css" rel="stylesheet">
+	<link id="theme" href="assets/css/theme-color/theme-blue.css" rel="stylesheet">
+	
+</head>
+<body>
+
+	<!----------------------
+		layout changer start
+	----------------------->
+
+	<div class="Switcher">
+        <button id="Switcher__control" class="Switcher__control"><i class="fas fa-cog"></i></button>
+        <h5 style="margin-bottom: 5px">Change Color</h5>
+        <ul id="colors" data-dir="assets/css/theme-color/">
+            <li data-scheme="theme-megenta" data-color="#8e44ad"></li>
+            <li data-scheme="theme-blue" data-color="#2980b9"></li>
+            <li data-scheme="theme-green" data-color="#27ae60"></li>
+            <li data-scheme="theme-orange" data-color="#f0932b"></li>
+            <li data-scheme="theme-red" data-color="#EF476F"></li>
+            <li data-scheme="theme-black" data-color="#2f3640"></li>
+        </ul>
+        <h5>Change Layout</h5>
+        <div class="layout-changer">
+        	<span class="boxed-layout">Boxed Layout</span>
+        	<span class="wide-layout active">Wide Layout</span>
+        </div>
+    </div>
+    
+	<!----------------------
+		layout changer end
+	----------------------->
+
+	<!-------------------
+		header-area start
+	-------------------->
+<div class="site">
+	<div id="home"></div>
+	<header class="header-area absolute-header wow fadeInUp">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div class="logo">
+						<img src="assets/images/logo.png" alt="logo">
+					</div>
+				</div> <!-- /.col-lg-2 end -->
+
+				<div class="col-md-10 text-right">
+					<div id="mobile-menu"></div>
+					<div class="main-menu">
+						<ul id="mopo-menu">
+							<li class="smooth-menu"><a href="#home">Home</a>
+								<ul>
+									<li><a href="index.html">Home Image verision</a></li>
+									<li><a href="home-slider-v.html">Home slider verision</a></li>
+									<li><a href="home-video-back-v.html">Home youtube verision</a></li>
+								</ul>
+							</li>
+							<li class="smooth-menu"><a href="#programs">Programs</a></li>
+							<li class="smooth-menu"><a href="#about-us">About us</a></li>
+							<li class="smooth-menu"><a href="#types">Tour Types</a></li>
+							<li class="smooth-menu"><a href="#facts">Facilities</a></li>
+							<li class="smooth-menu"><a href="#testimonial">Testimonial</a></li>
+							<li class="smooth-menu"><a href="#blog">Events</a></li>
+							<li class="smooth-menu"><a href="#contact">Contacts</a></li>
+						</ul>
+					</div> <!-- /.main-menu end -->
+				</div> <!-- /.col-lg-10 end -->
+			</div> <!-- /.row end -->
+		</div> <!-- /.container end -->
+	</header> 
+
+	<!-------------------
+		header-area end
+	-------------------->
+	
+	<!-------------------
+		Hero-area start
+	-------------------->
+
+	<div class="hero-area hero-bg"> <!-- for slider replace bg to /.single-hero-item -->
+		<div class="single-hero-item d-table">
+			<div class="single-hero-table-cell d-table-cell">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-6 text-center">
+							<h1>Discover the World You Never Seen</h1>
+							<a href="" class="boxed-btn yellow-bg">Our Tour Package</a>
+						</div> <!-- /.col-lg-6 end -->
+					</div> <!-- /.row end -->
+				</div>
+			</div>
+		</div> <!-- /.single-hero-item d-table end -->
+	</div>
+
+	<!-------------------
+		Hero-area end
+	-------------------->
+
+	<!-------------------
+		Search-area start
+	-------------------->
+
+	<section class="search-area wow fadeInUp">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-10 text-center">
+					<form action="">
+						<div class="search-form d-flex flex-wrap">
+							<div class="form-element map-mkr-icn">
+								<label for="">Destination</label>
+								<input type="text" placeholder="where are you going">
+								
+							</div>  <!-- /.form-element end -->
+							<div class="form-element cal-icn">
+								<label for="">Destination</label>
+								<input data-toggle="datepicker" placeholder="Select a Date" name="date">
+								
+							</div> <!-- /.form-element end -->
+							<div class="form-element">
+								<label for="">Person</label>
+								<input type="number" value="1">
+							</div> <!-- /.form-element end -->
+							<div class="form-element">
+								<input class="boxed-btn" type="submit" value="search">
+							</div>
+						</div> <!-- /.search-form end -->
+					</form>
+				</div> <!-- /.col-lg-10 end -->
+			</div> <!-- /.row end -->
+		</div>
+	</section>
+
+	<!-------------------
+		Search-area end
+	-------------------->
+
+	<!----------------------
+	popular-tours area start
+	----------------------->
+
+	<section id="programs" class="popular-tours-area section-padding wow fadeInUp">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-4 text-center">
+					<div class="section-title mid-underline">
+						<h2>popular tours</h2>
+					</div> <!-- /.section-title end -->
+				</div>
+			</div> <!-- /.row end -->
+			<div class="row single-tour-box">
+				<div class="col-lg-4 col-md-6">
+					<a href="" class="single-tour">
+						<div class="tour-place-bg bg-1">
+							<span class="ticker">20% off</span>
+						</div>
+						<div class="tour-info">
+							<h4>Hindu Temple in Bali, Indonesia</h4>
+							<div class="tour-info-wrapper d-flex">
+								<div class="tour-info-list">
+									<p><i class="far fa-clock"></i> 7 Days</p>
+									<p><i class="far fa-user"></i> 2 Person</p>
+								</div>
+								<div class="tour-info-list text-right">
+									<p class="price-meta">From <span>$700</span></p>
+								</div>
+							</div>
+						</div>
+					</a> <!-- /.single-tour end -->
+				</div> <!-- /.col-lg-4 end -->
+				<div class="col-lg-4 col-md-6">
+					<a href="" class="single-tour">
+						<div class="tour-place-bg bg-2">
+							<span class="ticker">20% off</span>
+						</div>
+						<div class="tour-info">
+							<h4>Kuala Lumpur, Malaysia</h4>
+							<div class="tour-info-wrapper d-flex">
+								<div class="tour-info-list">
+									<p><i class="far fa-clock"></i> 7 Days</p>
+									<p><i class="far fa-user"></i> 2 Person</p>
+								</div>
+								<div class="tour-info-list text-right">
+									<p class="price-meta">From <span>$700</span></p>
+								</div>
+							</div>
+						</div>
+					</a> <!-- /.single-tour end -->
+				</div> <!-- /.col-lg-4 end -->
+				<div class="col-lg-4 col-md-6">
+					<a href="" class="single-tour">
+						<div class="tour-place-bg bg-3">
+							<span class="ticker">20% off</span>
+						</div>
+						<div class="tour-info">
+							<h4>Extreme North, Vietnam</h4>
+							<div class="tour-info-wrapper d-flex">
+								<div class="tour-info-list">
+									<p><i class="far fa-clock"></i> 7 Days</p>
+									<p><i class="far fa-user"></i> 2 Person</p>
+								</div>
+								<div class="tour-info-list text-right">
+									<p class="price-meta">From <span>$700</span></p>
+								</div>
+							</div>
+						</div>
+					</a> <!-- /.single-tour end -->
+				</div> <!-- /.col-lg-4 end -->
+				<div class="col-lg-4 col-md-6">
+					<a href="" class="single-tour">
+						<div class="tour-place-bg bg-4">
+							<span class="ticker">20% off</span>
+						</div>
+						<div class="tour-info">
+							<h4>Sydney Opera House, Australia</h4>
+							<div class="tour-info-wrapper d-flex">
+								<div class="tour-info-list">
+									<p><i class="far fa-clock"></i> 7 Days</p>
+									<p><i class="far fa-user"></i> 2 Person</p>
+								</div>
+								<div class="tour-info-list text-right">
+									<p class="price-meta">From <span>$700</span></p>
+								</div>
+							</div>
+						</div>
+					</a> <!-- /.single-tour end -->
+				</div> <!-- /.col-lg-4 end -->
+				<div class="col-lg-4 col-md-6">
+					<a href="" class="single-tour">
+						<div class="tour-place-bg bg-5">
+							<span class="ticker">20% off</span>
+						</div>
+						<div class="tour-info">
+							<h4>Phi Phi Islands, Thailand</h4>
+							<div class="tour-info-wrapper d-flex">
+								<div class="tour-info-list">
+									<p><i class="far fa-clock"></i> 7 Days</p>
+									<p><i class="far fa-user"></i> 2 Person</p>
+								</div>
+								<div class="tour-info-list text-right">
+									<p class="price-meta">From <span>$700</span></p>
+								</div>
+							</div>
+						</div>
+					</a> <!-- /.single-tour end -->
+				</div> <!-- /.col-lg-4 end -->
+				<div class="col-lg-4 col-md-6">
+					<a href="" class="single-tour">
+						<div class="tour-place-bg bg-6">
+							<span class="ticker">20% off</span>
+						</div>
+						<div class="tour-info">
+							<h4>Eiffel Tower  in Paris, France</h4>
+							<div class="tour-info-wrapper d-flex">
+								<div class="tour-info-list">
+									<p><i class="far fa-clock"></i> 7 Days</p>
+									<p><i class="far fa-user"></i> 2 Person</p>
+								</div>
+								<div class="tour-info-list text-right">
+									<p class="price-meta">From <span>$700</span></p>
+								</div>
+							</div>
+						</div>
+					</a> <!-- /.single-tour end -->
+				</div> <!-- /.col-lg-4 end -->
+			</div> <!-- /.row end -->
+		</div>
+	</section>
+
+	<!----------------------
+	popular-tours area end
+	----------------------->
+
+	<!----------------------
+	why choose us area start
+	----------------------->
+
+	<section id="about-us" class="section-padding padding-top-0 wow fadeInUp">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-4 text-center">
+					<div class="section-title mid-underline">
+						<h2>why Choose us</h2>
+					</div>
+				</div>
+			</div> <!-- /.row end -->
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="row">
+						<div class="col-md-4 text-center">
+							<div class="single-feature-item">
+								<div class="feature-icon">
+									<i class="fas fa-money-bill-alt"></i>
+								</div>
+								<h4>Best Price Guaranteed</h4>
+								<p>Travel is the movem people between distant geographic locations.</p>
+							</div> <!-- /.single-feature-item end -->
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="single-feature-item">
+								<div class="feature-icon">
+									<i class="fas fa-globe"></i>
+								</div>
+								<h4>Best Price Guaranteed</h4>
+								<p>Travel is the movem people between distant geographic locations.</p>
+							</div> <!-- /.single-feature-item end -->
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="single-feature-item">
+								<div class="feature-icon">
+									<i class="fas fa-briefcase"></i>
+								</div>
+								<h4>Best Price Guaranteed</h4>
+								<p>Travel is the movem people between distant geographic locations.</p>
+							</div> <!-- /.single-feature-item end -->
+						</div>
+					</div> <!-- /.row end -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!----------------------
+	why choose us area end
+	----------------------->
+
+	<!----------------------
+	Popular Destination start
+	----------------------->
+
+	<section class="section-padding section-bg-one padding-top-0 wow fadeInUp">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-4 text-center">
+					<div class="section-title mid-underline">
+						<h2>Popular Destination</h2>
+					</div>
+				</div>
+			</div> <!-- /.row end -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="destination-lists">
+						
+						<div class="single-destination long-bg destination-bg-2">
+							<a href="../assets/images/destination/dubai.jpg">
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="destination-text">
+								<p class="ticker">20 Tours</p>
+								<h3>Dubai</h3>
+							</div>
+						</div> <!-- /.single-destination end -->
+						<div class="single-destination wide-bg destination-bg-1">
+							<a href="../assets/images/destination/tajmahal.jpg">
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="destination-text">
+								<p class="ticker">20 Tours</p>
+								<h3>India</h3>
+							</div>
+						</div> <!-- /.single-destination end -->
+						<div class="single-destination destination-bg-3">
+							<a href="../assets/images/destination/ifel-tower.jpg">
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="destination-text">
+								<p class="ticker">20 Tours</p>
+								<h3>France</h3>
+							</div>
+						</div> <!-- /.single-destination end -->
+						<div class="single-destination destination-bg-4">
+							<a href="../assets/images/destination/singapur.jpg">
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="destination-text">
+								<p class="ticker">20 Tours</p>
+								<h3>Singapore</h3>
+							</div>
+						</div> <!-- /.single-destination end -->
+						<div class="single-destination destination-bg-5">
+							<a href="../assets/images/destination/thailand.jpg">
+								<i class="fas fa-plus"></i>
+							</a>
+							<div class="destination-text">
+								<p class="ticker">20 Tours</p>
+								<h3>Thailand</h3>
+							</div>
+						</div> <!-- /.single-destination end -->
+					</div>
+				</div>
+			</div> <!-- /.row end -->
+		</div>
+	</section>
+
+	<!----------------------
+	Popular Destination end
+	----------------------->
+
+	<!----------------------
+	Tour Types start
+	----------------------->
+
+	<section id="types" class="section-padding wow fadeInUp">
+		<div class="container">
+			<div class="row justify-content-start">
+				<div class="col-lg-4">
+					<div class="section-title theme-2 left-underline">
+						<h2>Tour Types</h2>
+					</div>
+				</div> <!-- /.col-lg-4 end -->
+			</div> <!-- /.row end -->
+			<div class="row">
+				<div class="col-lg-5">
+					<p>Travel dates back to antiquity where wealthy Greeks and Romans would travel for leisure to their summer homes and villas in cities such as Pompeii and Baiae. While early travel tended to be slower, more dangerous.</p>
+				</div> <!-- /.col-lg-5 end -->
+				<div class="col-lg-6 offset-lg-1">
+					<div class="tour-type-list owl-carousel">
+						<div class="single-tour-type tour-type-bg-1">
+							<h3>Adventure Tour</h3>
+						</div>
+						<div class="single-tour-type tour-type-bg-2">
+							<h3>Cultural Tour</h3>
+						</div>
+						<div class="single-tour-type tour-type-bg-3">
+							<h3>Adventure Tour</h3>
+						</div>
+						<div class="single-tour-type tour-type-bg-1">
+							<h3>beaches and islands</h3>
+						</div>
+					</div>
+				</div> <!-- /.col-lg-6 end -->
+			</div> <!-- /.row end -->
+		</div>
+	</section>
+
+	<!----------------------
+	Tour Types end
+	----------------------->
+
+	<!----------------------
+	Fact area start
+	----------------------->
+
+	<section id="facts" class="section-padding fact-area wow fadeInUp">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="fact-list d-flex">
+						<div class="fact-list-wrapper">
+							<div class="single-fact-list d-table">
+								<div class="fact-list-item d-table-cell">
+									<div class="fact-icon">
+										<img src="assets/images/globe.png" alt="fact-icon">
+									</div>
+									<h4>75 <span>Country</span></h4>
+								</div>
+							</div> <!-- /.single-fact-list end -->
+							<div class="single-fact-list d-table">
+								<div class="fact-list-item d-table-cell">
+									<div class="fact-icon">
+										<img src="assets/images/plane-icon.png" alt="fact-icon">
+									</div>
+									<h4>75 <span>Country</span></h4>
+								</div>
+							</div>
+						</div>
+						<div class="fact-list-wrapper mt-50">
+							<div class="single-fact-list d-table">
+								<div class="fact-list-item d-table-cell">
+									<div class="fact-icon">
+										<img src="assets/images/tower-icon.png" alt="fact-icon">
+									</div>
+									<h4>75 <span>Country</span></h4>
+								</div>
+							</div> <!-- /.single-fact-list end -->
+							<div class="single-fact-list d-table">
+								<div class="fact-list-item d-table-cell">
+									<div class="fact-icon">
+										<img src="assets/images/people-icon.png" alt="fact-icon">
+									</div>
+									<h4>75 <span>Country</span></h4>
+								</div>
+							</div> <!-- /.single-fact-list end -->
+						</div>
+					</div>
+				</div> <!-- /.col-lg-6 end -->
+				<div class="col-lg-6 offset-lg-1">
+					<div class="section-title theme-2 left-underline mt-100">
+						<h2>Facts</h2>
+					</div>
+					<p>Travel in the Middle Ages offered hardships and challenges, however, it was important to the economy and to society. The wholesale sector depended (for example) on merchants dealing with/through caravans or sea-voyagers, end-user retailing.</p>
+				</div> <!-- /.col-lg-5 end -->
+			</div> <!-- /.row end -->
+		</div>
+	</section>
+
+	<!----------------------
+	Fact area end
+	----------------------->
+
+	<!----------------------
+	user review start
+	----------------------->
+
+	<section id="testimonial" class="section-padding wow fadeInUp">
+		<div class="container">
+			<div class="row justify-content-start">
+				<div class="col-lg-4">
+					<div class="section-title left-underline">
+						<h2>User Reviews</h2>
+					</div>
+				</div> <!-- /.col-lg-4 end -->
+			</div> <!-- /.row end -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="site-testimonial owl-carousel">
+						<div class="single-testimonial-item">
+							<p>It was important to the economy and society. Sector depended (for example) on the merchants dealing with caravans, end-user retailing.</p>
+							<div class="author-info">
+								<img src="assets/images/users/member-2.jpg" alt="user">
+								<h5>Jhon Carter <span>Data Scientist, SilverCloud</span></h5>
+							</div>
+						</div> <!-- /.single-testimonial-item end -->
+						<div class="single-testimonial-item">
+							<p>It was important to the economy and society. Sector depended (for example) on the merchants dealing with caravans, end-user retailing.</p>
+							<div class="author-info">
+								<img src="assets/images/users/member-2.jpg" alt="user">
+								<h5>Jhon Carter <span>Data Scientist, SilverCloud</span></h5>
+							</div>
+						</div> <!-- /.single-testimonial-item end -->
+						<div class="single-testimonial-item">
+							<p>It was important to the economy and society. Sector depended (for example) on the merchants dealing with caravans, end-user retailing.</p>
+							<div class="author-info">
+								<img src="assets/images/users/member-2.jpg" alt="user">
+								<h5>Jhon Carter <span>Data Scientist, SilverCloud</span></h5>
+							</div>
+						</div> <!-- /.single-testimonial-item end -->
+					</div>
+				</div>
+			</div> <!-- /.row end -->
+		</div>
+	</section>
+
+	<!----------------------
+	user review end
+	----------------------->
+
+	<!----------------------
+	Blog start
+	----------------------->
+
+	<section id="blog" class="section-padding padding-top-0 wow fadeInUp">
+		<div class="container">
+			<div class="row justify-content-start">
+				<div class="col-lg-4">
+					<div class="section-title left-underline">
+						<h2>Blog</h2>
+					</div>
+				</div> <!-- /.col-lg-4 end -->
+			</div> <!-- /.row end -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="blog-slides owl-carousel">
+						<a href="" class="single-blog-item">
+							<div class="blog-bg blog-bg-1"></div>
+							<div class="blog-content">
+								<p class="blog-meta">
+									<span>By by Jack McDonnell</span>
+									<span>June 07, 2018</span>
+								</p>
+								<h5>How to (legally) stay in India for more than 90 days</h5>
+							</div>
+						</a> <!-- /.single-blog-item end -->
+						<a href="" class="single-blog-item">
+							<div class="blog-bg blog-bg-2"></div>
+							<div class="blog-content">
+								<p class="blog-meta">
+									<span>by Amber Boyd</span>
+									<span>June 03, 2018</span>
+								</p>
+								<h5>How you can help create the next genera tion of responsible travelers</h5>
+							</div>
+						</a> <!-- /.single-blog-item end -->
+						<a href="" class="single-blog-item">
+							<div class="blog-bg blog-bg-3"></div>
+							<div class="blog-content">
+								<p class="blog-meta">
+									<span>by Alice Price</span>
+									<span>June 11, 2018</span>
+								</p>
+								<h5>How our contest winner heather is traveling America on a budget</h5>
+							</div>
+						</a> <!-- /.single-blog-item end -->
+						<a href="" class="single-blog-item">
+							<div class="blog-bg blog-bg-3"></div>
+							<div class="blog-content">
+								<p class="blog-meta">
+									<span>by Alice Price</span>
+									<span>June 11, 2018</span>
+								</p>
+								<h5>How our contest winner heather is traveling America on a budget</h5>
+							</div>
+						</a> <!-- /.single-blog-item end -->
+					</div>
+				</div> <!-- /.col-lg-12 end -->
+			</div> <!-- /.row end -->
+		</div>
+	</section>
+	
+	<!----------------------
+	Blog area end
+	----------------------->
+
+	<!----------------------
+	contact start
+	----------------------->
+
+	<section id="contact" class="section-padding padding-top-0 contact-area wow fadeInUp">
+		<div class="container">
+			<div class="row justify-content-start">
+				<div class="col-lg-4">
+					<div class="section-title theme-2 left-underline">
+						<h2>Contact us</h2>
+					</div>
+				</div> <!-- /.col-lg-4 end -->
+			</div> <!-- /.row end -->
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="contact-info mt-50">
+						<p><i class="fas fa-map-marker-alt"></i> 658 Parker Hill,<br/>
+							East Pamela, MS 645</p>
+						<p><i class="fas fa-phone-volume"></i> +088023-857-348-000<br/>+088083-334-098</p>
+						<p><i class="far fa-envelope"></i> contact@mopo.com<br/>info@mopo.com</p>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="contact-form">
+						<form action="">
+							<div class="row">
+								<div class="col-lg-6">
+									<p><input type="text" placeholder="Your name"></p>
+								</div>
+								<div class="col-lg-6">
+									<p><input type="email" placeholder="Your email"></p>
+								</div>
+							</div>
+							<p><input type="text" placeholder="Subject"></p>
+							<p><textarea name="" id="" cols="30" rows="10"></textarea></p>
+							<p><input class="boxed-btn" type="submit" value="Submit"></p>
+						</form>
+					</div>
+				</div>
+			</div> <!-- /.row end -->
+		</div>
+	</section>
+	
+	<!----------------------
+	contact area end
+	----------------------->
+
+	<!----------------------
+	Footer area Start
+	----------------------->
+	
+	<footer class="footer-area footer-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2">
+					<div class="footer-weidget">
+						<div class="logo">
+							<img src="assets/images/blue-logo.png" alt="logo">
+						</div>
+					</div>
+				</div> <!-- /.col-lg-12 end -->
+				<div class="col-lg-3">
+					<div class="footer-weidget">
+						<h4>Popular Destination</h4>
+						<ul>
+							<li><a href="">India</a></li>
+							<li><a href="">Australia</a></li>
+							<li><a href="">Switzerland</a></li>
+							<li><a href="">England</a></li>
+						</ul>
+					</div> <!-- /.footer-weidget end -->
+				</div> <!-- /.col-lg-3 end -->
+				<div class="col-lg-3">
+					<div class="footer-weidget">
+						<h4>Contact</h4>
+						<ul>
+							<li><p><i class="fas fa-phone"></i> (099) 2030 403</p></li>
+							<li><p><i class="far fa-envelope"></i> contact@mopo.com</p></li>
+							<li><p><i class="fas fa-map-marker-alt"></i>658 Parker Hill,<br/>
+							East Pamela, MS 645</p></li>
+						</ul>
+					</div> <!-- /.footer-weidget end -->
+				</div> <!-- /.col-lg-3 end -->
+				<div class="col-lg-4">
+					<div class="footer-weidget">
+						<h4>Subscribe Our Newsletter</h4>
+						<div class="subscribe-form">
+							<form action="">
+								<input type="text" placeholder="Your Email Address">
+								<input class="boxed-btn" type="submit" value="submit">
+							</form>
+						</div>
+						<div class="social-links">
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+							<a href=""><i class="fab fa-twitter"></i></a>
+							<a href=""><i class="fab fa-youtube"></i></a>
+							<a href=""><i class="fab fa-instagram"></i></a>
+						</div>
+					</div> <!-- /.footer-weidget end -->
+				</div> <!-- /.col-lg-4 end -->
+			</div> <!-- /.row end -->
+		</div>
+	</footer>
+
+	<!----------------------
+	Footer area End
+	----------------------->
+	
+	<a class="scrollToTop" href=""><i class="fas fa-angle-up"></i></a>
+</div>
+	<!-- jquery js -->
+	<script src="assets/js/jquery.min.js"></script>
+	<!-- popper js -->
+	<script src="assets/js/popper.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- datepicker js -->
+	<script src="assets/js/datepicker.min.js"></script>
+	<!-- owl-carousel js -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- magnific-popup js -->
+	<script src="assets/js/magnific-popup-v1.1.0.js"></script>
+	<!-- slicknav js -->
+	<script src="assets/js/jquery.slicknav.min.js"></script>
+	<!-- wow  js -->
+	<script src="assets/js/wow.min.js"></script>
+	<!-- masonry  js -->
+	<script src="assets/js/masonry.js"></script>
+	<!-- wow  js -->
+	<script src="assets/js/sticky-v1.0.4.js"></script>
+	<!-- wow  js -->
+	<script src="assets/js/jquery.easing.min.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+	<!-- colornip  js -->
+	<script src="assets/js/colornip.min.js"></script>
+</body>
+</html>

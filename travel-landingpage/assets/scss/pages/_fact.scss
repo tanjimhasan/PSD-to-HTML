@@ -1,0 +1,25 @@
+/*------------------------------
+[---fact-section start---]
+-------------------------------*/
+.fact-area{
+	background-color:#f5f9fc;
+	.fact-list{
+		margin:-40px 0;
+		.fact-list-wrapper{
+			flex-basis:48%;
+			margin-right:2%;
+			@include media-breakpoint-only(md) {
+	           flex-basis: 30%;
+   				margin-left: 16%;
+	        }
+		}
+	}
+}
+
+
+
+/*------------------------------
+[---fact-section end---]
+-------------------------------*/
+
+

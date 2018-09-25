@@ -1,0 +1,35 @@
+/*------------------------------
+[---footer start---]
+-------------------------------*/
+
+.footer-area{
+	padding-top:60px;
+	padding-bottom:100px;
+}
+.footer-bg{
+	background-image:url('../images/footer-bg.jpg');
+	background-size:cover;
+	background-position:center;
+	background-color:$primary-color-one;
+	position:relative;
+	z-index:2;
+	&:after{
+		position:absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+		background: -moz-linear-gradient(top, rgba(255,255,255,1) 34%, rgba(255,255,255,0) 100%);
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 34%,rgba(255,255,255,0) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 34%,rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+		content:"";
+		z-index:-1;
+	}
+}
+
+
+
+/*------------------------------
+[---footer end---]
+-------------------------------*/

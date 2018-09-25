@@ -1,0 +1,42 @@
+/*------------------------------
+[---contact section start---]
+-------------------------------*/
+
+.contact-info{
+	background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 20px #ddd;
+    @include media-breakpoint-between(xs, sm) {
+       	margin-bottom:40px;
+       	margin-top:25px;
+       	
+    }
+	p{
+		position:relative;
+		padding-left:35px;
+		margin-bottom: 25px;
+	}
+	i{
+		position:absolute;
+		left:0;
+		top:6px;
+		font-size:18px;
+		color:$title-color;
+	}
+}
+.contact-form {
+	input[type=text], input[type=email],textarea{
+	    border: 1px solid #ddd;
+	}
+	textarea{
+		max-height:200px;
+	}
+	input[type=submit]{
+		width:auto;
+		border-radius:4px;
+	}
+}
+
+/*------------------------------
+[---contact section end---]
+-------------------------------*/

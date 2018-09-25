@@ -1,0 +1,29 @@
+/*--------------------------
+[---feature section start---]
+--------------------------*/
+
+.single-feature-item{
+	padding:0 20px;
+
+	.feature-icon{
+		margin-bottom:25px;
+		i{
+			height:70px;
+			width:70px;
+			background:#fff;
+			font-size:30px;
+			line-height:70px;
+			border-radius:50%;
+			color:$primary-color-one;
+			box-shadow:0 0 30px 5px #EAF6FE;
+		}
+	}
+	h4{
+		font-size:16px;
+		color:$heading-color-two;
+	}
+}
+
+/*--------------------------
+[---feature section end---]
+--------------------------*/

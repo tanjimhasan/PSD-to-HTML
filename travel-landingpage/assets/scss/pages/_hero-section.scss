@@ -1,0 +1,53 @@
+/* ================ 
+hero section style 
+================== */
+
+/*--------------------------
+[---single-hero-item start---]
+--------------------------*/
+
+.single-hero-item{
+	height:100%;
+	width:100%;
+	.single-hero-table-cell{
+		height:100%;
+		vertical-align:middle;
+		
+		h1{
+			font-size:$hero-heading-size;
+			font-family: 'Merienda One', cursive;
+			font-weight:$regular-font;
+			color:$hero-text-color;
+		}
+		.boxed-btn{
+			background-color:$yellow-color;
+			color:$title-color;
+			margin-top:40px;
+
+		}
+	}
+}
+.slide-overlay.single-hero-item{
+	height:100%;
+	width:100%;
+	background-size:cover;
+	background-position:center;
+	background-color:$primary-color-one;
+	position:relative;
+	z-index:2;
+	&:after{
+		position:absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+		background:#23405f;
+		content:"";
+		opacity:.5;
+		z-index:-1;
+	}
+}
+
+/*--------------------------
+[---single-hero-item end---]
+--------------------------*/

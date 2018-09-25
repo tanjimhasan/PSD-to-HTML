@@ -1,0 +1,94 @@
+/* =====================
+popular tour section style 
+====================== */
+
+
+/*--------------------------
+[---popular tour start---]
+--------------------------*/
+
+
+a.single-tour{
+	margin:15px 0;
+	display:block;
+	text-decoration:none;
+	color:$text-color;
+
+	&:hover{
+		.tour-info{
+			box-shadow:0 15px 20px #EBF6FE;
+		}
+	}
+	.tour-place-bg{
+		background-size:cover;
+		background-position:center;
+		background-color:$primary-color-one;
+		height:220px;
+		width:100%;
+		position:relative;
+		z-index:2;
+		.ticker{
+			position:absolute;
+			left:0;
+			top:20px;
+		}
+	}
+	.bg-1{
+		background-image:url('../images/popular-1.jpg');
+	}
+	.bg-2{
+		background-image:url('../images/popular-2.jpg');
+	}
+	.bg-3{
+		background-image:url('../images/popular-3.jpg');
+	}
+	.bg-4{
+		background-image:url('../images/popular-4.jpg');
+	}
+	.bg-5{
+		background-image:url('../images/popular-5.jpg');
+	}
+	.bg-6{
+		background-image:url('../images/popular-6.jpg');
+	}
+	.tour-info{
+		padding:20px;
+		box-shadow:0 0 25px #EBF6FE;
+		transition:$transition-time;
+		h4{
+			font-size:16px;
+			margin-bottom:20px;
+		}
+		.tour-info-wrapper{
+			.tour-info-list{
+				flex-basis:50%;
+				p{
+					margin-bottom:5px;
+					position:relative;
+					padding-left:22px;
+					i{
+						position:absolute;
+						left:0;
+						top:3px;
+					}
+				}
+				.price-meta{
+					font-size:16px;
+					margin:0;
+					line-height:25px;
+					span{
+						display:block;
+						font-size:20px;
+						color:#fec107;
+						font-weight:500;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/*--------------------------
+[---popular tour section---]
+--------------------------*/
