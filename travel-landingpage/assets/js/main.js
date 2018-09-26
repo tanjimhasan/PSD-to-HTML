@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
 
-	// $('.slicknav_nav a').click(function(){
-	// 	$('.slicknav_nav').parent().css('display','none');
+	// $(".slicknav_nav li a").click(function(){
+	// 	$(".slicknav_nav").css("background-color", "yellow");	
 	// });
 	$(".destination-lists").masonry();
 	$(".site-testimonial").owlCarousel({
@@ -50,7 +50,8 @@ jQuery(document).ready(function($){
 				autoplay: true,
 				autoplayTimeout: 5000,
 				mouseDrag: true,
-				dots: false
+				dots: false,
+				nav: false,
 			},
 
 			540: {
@@ -124,13 +125,19 @@ jQuery(document).ready(function($){
 
 
 	    //smooth scroll
-        $('li.smooth-menu a').bind('click',function(event){
-            var $anchor = $(this);
-            var headerH = '66';
-            $('html,body').stop().animate({
-                scrollTop : $($anchor.attr('href')).offset().top - headerH+"px"
-            },1280,'easeInOutExpo');
-            event.preventDefault();
+        // $('li.smooth-menu a').bind('click',function(event){
+        //     var $anchor = $(this);
+        //     var headerH = '66';
+        //     $('html,body').stop().animate({
+        //         scrollTop : $($anchor.attr('href')).offset().top - headerH+"px"
+        //     },1200,'easeInOutQuad');
+        //     event.preventDefault();
+        // });
+        $('li.smooth-menu a').smoothScroll({
+        	offset: -66,
+        	speed: 1200,
+        	easing: 'easeInOutQuad'
+        	
         });
        //sticky menu active
    		 $('.header-area').sticky({topSpacing: 0});
@@ -155,7 +162,8 @@ jQuery(document).ready(function($){
 	        return false;
 	    });
 		$("#mopo-menu").slicknav({
-			'prependTo': '#mobile-menu'
+			'prependTo': '#mobile-menu',
+			'closeOnClick': true,
 		});
 
 		//layout changer
