@@ -1,8 +1,6 @@
 jQuery(document).ready(function($){
 
-	// $(".slicknav_nav li a").click(function(){
-	// 	$(".slicknav_nav").css("background-color", "yellow");	
-	// });
+	
 	$(".destination-lists").masonry();
 	$(".site-testimonial").owlCarousel({
 		items : 2,
@@ -123,16 +121,7 @@ jQuery(document).ready(function($){
 	    );
 	    wow.init();
 
-
-	    //smooth scroll
-        // $('li.smooth-menu a').bind('click',function(event){
-        //     var $anchor = $(this);
-        //     var headerH = '66';
-        //     $('html,body').stop().animate({
-        //         scrollTop : $($anchor.attr('href')).offset().top - headerH+"px"
-        //     },1200,'easeInOutQuad');
-        //     event.preventDefault();
-        // });
+	    // smooth scroll
         $('li.smooth-menu a').smoothScroll({
         	offset: -66,
         	speed: 1200,
@@ -179,4 +168,8 @@ jQuery(document).ready(function($){
 			$(this).addClass('active');
 		});
 
+		// timeout for loader
+		setTimeout(function(){
+	        $('body').addClass('loaded');
+	    }, 2000);
 });
