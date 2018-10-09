@@ -154,10 +154,14 @@
 	<script src="assets/js/colornip.min.js"></script>
 	<!-- bootstrap js -->
 	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- wow section js -->
+	<script src="assets/js/wow.min.js"></script>
 
 	<script>
 		jQuery(document).ready(function($){
-			
+			$(window).on("load",function(){
+				$("#preloader_1").fadeOut(3000);
+			});
 			//section active
 			$(".login-btn").on('click',function(){
 				
@@ -170,9 +174,7 @@
 
 				return false;
 			});
-			$(window).on("load",function(){
-				$("#preloader_1").fadeOut(3000);
-			});
+			
 
 		});
 	</script>
