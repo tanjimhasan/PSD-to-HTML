@@ -1,0 +1,58 @@
+/*------------------------------
+    [---sticky  start---]
+-------------------------------*/
+.sticky{
+    position: fixed;
+    transform: translateY(-300px);
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 10px #888;
+    transition: 0.5s ease 0s;
+    z-index: 999;
+    background:#fff;
+    @include media-breakpoint-between(xs, sm) {
+       display:none;
+    }
+    .boxed-btn{
+		@include media-breakpoint-between(xs, md) {
+	       display:none;
+	    }
+	}
+    .logo{
+        h1{
+            color:#333;
+            margin-top:14px;
+            @include media-breakpoint-only(lg) {
+               margin-top:11px;
+            }
+        }
+    }
+    .main-menu{
+        margin-top:10px;
+    }
+    .main-menu.kid-menu{
+        margin-top:5px;
+    }
+}
+
+
+.sticky.is-sticky {
+    transform: translateY(0);
+    .cart-wrapper {
+        padding-left: 1rem;
+    }
+    ul.navigation-menu{
+       @include media-breakpoint-only(md) {
+            text-align:center;
+        } 
+    }
+    
+    @include media-breakpoint-only(xs) {
+        display:none;
+    }
+}
+
+/*------------------------------
+    [---sticky  end---]
+-------------------------------*/

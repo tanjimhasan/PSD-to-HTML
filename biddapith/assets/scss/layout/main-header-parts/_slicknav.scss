@@ -1,0 +1,63 @@
+/*------------------------------
+	[---slicknav  start---]
+-------------------------------*/
+
+	.slicknav_menu{
+		background:transparent;
+		display:block;
+		@include media-breakpoint-between(md, xl) {
+	       display:none;
+	    }
+	.slicknav_btn{
+		float:none;
+		display:inline-block;
+		background-color:transparent;
+		.slicknav_menutxt{
+			display:none;
+		}
+	}
+	.slicknav_icon-bar{
+		box-shadow:none;
+		background-color:$primary-color;
+		height: .175em;
+	}
+	.slicknav_nav{
+		box-shadow:0 0 15px #ddd;
+		a{
+			color:$primary-color;
+			text-align:left;
+			padding: 8px;
+    		margin: 12px;
+    		border-radius:0 0 15px;
+			&:hover{
+				border-radius:0;
+				background:$primary-color;
+				color:#fff;
+				border-radius:0 0 15px;
+			}
+		}
+		.slicknav_row{
+			.mega-menu-cta{
+				img{
+					width:180px;
+					height:70px;
+				}
+				.mega-menu-img-bottom{
+					margin-top:10px;
+				}
+			}
+			&:hover{
+				a{
+					color:#fff;
+				}
+			}
+			.slicknav_arrow{
+				display:none;
+			}
+		}
+	}
+}
+
+/*------------------------------
+	[---slicknav  end---]
+-------------------------------*/

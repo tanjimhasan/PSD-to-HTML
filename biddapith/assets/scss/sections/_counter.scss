@@ -1,0 +1,61 @@
+/*------------------------------
+	[---counter  start---]
+-------------------------------*/
+
+
+
+/*=========================================
+<---counter section import start--->
+==========================================*/
+
+
+
+@import
+
+'sections/counter-section';
+
+
+
+/*=========================================
+<---counter section import end--->
+==========================================*/
+
+.counter-box-wrapper{
+	width:700px;
+	position:relative;
+	z-index:2;
+}
+.counter-box-wrapper.mt-50{
+	@include media-breakpoint-only(lg) {
+        margin-top:25px;
+    }
+    @include media-breakpoint-between(xs, md) {
+       width:100%;
+       margin-bottom: 50px;
+    }
+}
+
+.counter-area{
+	background-size:cover;
+	background-position:cover;
+	background-color:$primary-color;
+	position:relative;
+	z-index:2;
+}
+.counter-area.section-overlay{
+	&:after{
+		opacity:.8;
+		background:$primary-color;
+	}
+}
+.counter-area.section-padding{
+	padding:60px 0;
+}
+.counter-bg-1 {
+	background-image:url('../images/counter-bg-1.jpg');
+}
+
+
+/*------------------------------
+	[---counter  end---]
+-------------------------------*/

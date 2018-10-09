@@ -1,0 +1,30 @@
+/*------------------------------
+	[---owl-navs  start---]
+-------------------------------*/
+
+.owl-nav{
+	.owl-prev,.owl-next{
+		position:absolute;
+		left:15px;
+		top:50%;
+		i{
+			font-size:20px;
+			background:#fff!important;
+			color:$primary-color;
+			height:30px;
+			width:30px;
+			text-align:center;
+			line-height:30px;
+		}
+
+	}
+	.owl-next{
+		left:auto;
+		right:15px;
+	}
+}
+
+
+/*------------------------------
+	[---owl-navs  end---]
+-------------------------------*/

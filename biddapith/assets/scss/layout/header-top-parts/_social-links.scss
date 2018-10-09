@@ -1,0 +1,28 @@
+/*------------------------------
+[---social-links  start---]
+-------------------------------*/
+
+.social-links{
+	a{
+		display:inline-block;
+		height:28px;
+		width:28px;
+		text-align:center;
+		line-height:30px;
+		border-radius: 0 0 15px;
+		background:#fff;
+		border:1px solid #fff;
+		margin-left:10px;
+		color:$text-color;
+		transition:$transition-time;
+		&:hover{
+			background:$primary-color;
+			border:1px solid #fff;
+			color:#fff;
+		}
+
+	}
+}
+/*------------------------------
+[---social-links end---]
+-------------------------------*/

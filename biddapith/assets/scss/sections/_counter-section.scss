@@ -1,0 +1,81 @@
+/*------------------------------
+	[---counter-section  start---]
+-------------------------------*/
+
+.single-count-item{
+	i{
+		color:#fff;
+		
+	}
+	.flaticon{
+		&:before{
+			font-size:34px;
+			margin-left:0;
+		}
+	}
+	h3{
+		color:#fff;
+		font-size:30px;
+		line-height:40px;
+		span{
+			display:block;
+			font-size:90%;
+
+		}
+	}
+
+}
+
+/*------------------------------
+	[---counter-section  end---]
+-------------------------------*/
+
+
+
+/*------------------------------------
+[---counter-section theme-2  start---]
+------------------------------------*/
+
+.single-count-item.theme-2{
+	background:#fff;
+	padding:10px 25px;
+	border:1px solid #fff;
+	transition:$transition-time;
+	&:hover{
+		border-color:$primary-color;
+	}
+	i{
+		color:#fff;
+		
+	}
+	h3{
+		color:$heading-color;
+		font-size:14px;
+		line-height:40px;
+		font-weight:500;
+		span{
+			display:block;
+			font-size:180%;
+			font-weight:800;
+		}
+	}
+
+}
+
+/*------------------------------------
+[---counter-section theme-2  end---]
+------------------------------------*/
+
+/*------------------------------------------
+[---counter-section theme-2 extend  start---]
+------------------------------------------*/
+
+.single-count-item.theme-2.theme-2-extend{
+	box-shadow:0 0 6px #0fb6a6;
+	border:none;
+}
+
+
+/*------------------------------------------
+[---counter-section theme-2 extend  start---]
+------------------------------------------*/

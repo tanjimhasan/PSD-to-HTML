@@ -1,0 +1,24 @@
+/*=========================================
+<---faq section import start--->
+==========================================*/
+
+
+@import
+'sections/faq-section';
+
+
+
+/*=========================================
+<---faq section import end--->
+==========================================*/
+
+.faq-section{
+	h3{
+		font-size:18px;
+		color:$text-color;
+		margin-bottom:30px;
+		@include media-breakpoint-only(xs) {
+            margin-bottom: 15px;
+        }
+	}
+}

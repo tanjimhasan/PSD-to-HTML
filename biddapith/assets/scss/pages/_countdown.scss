@@ -1,0 +1,36 @@
+/*=========================================
+<---countdown section import start--->
+==========================================*/
+
+
+@import
+'sections/countdown-section';
+
+
+
+/*=========================================
+<---countdown section import end--->
+==========================================*/
+
+.comming-soon-bg{
+	background-image:url('../images/comming-soon-bg.jpg');
+}
+
+.comming-soon{
+	position:relative;
+	z-index:2;
+
+	&:after{
+		position:absolute;
+		left:41%;
+		top:20%;
+		background:#fff;
+		width:3px;
+		height:65%;
+		content:"";
+		transform:rotate(10deg);
+		@include media-breakpoint-between(xs, sm) {
+	       display:none;
+	    }
+	}
+}

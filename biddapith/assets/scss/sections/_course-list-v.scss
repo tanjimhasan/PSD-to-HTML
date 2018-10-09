@@ -1,0 +1,52 @@
+/*------------------------------
+[---single-course list-v  start---]
+-------------------------------*/
+
+.single-course-item.list-v{
+	&:hover{
+		.course-bg{
+			transform:scale(1);
+		}
+	}
+	.course-bg{
+		height:200px;
+		transform:scale(.8);
+		@include media-breakpoint-only(xs) {
+          height:110px;
+          margin-top:45px;
+        }
+	}
+	.l-item-1{
+		flex-basis:40%;
+	}
+	.l-item-2{
+		flex-basis:60%;
+		height:200px;
+
+		.course-info{
+			height:100%;
+			vertical-align:middle;
+
+			h4{
+				@include media-breakpoint-only(xs) {
+		           font-size:16px;
+		        }
+			}
+			p{
+				@include media-breakpoint-only(xs) {
+		           font-size:12px;
+		        }
+			}
+			a.appy-btn{
+				@include media-breakpoint-only(xs) {
+		           font-size:12px;
+		        }
+			}
+		}
+	}
+}
+
+
+/*------------------------------
+[---single-course list-v  end---]
+-------------------------------*/

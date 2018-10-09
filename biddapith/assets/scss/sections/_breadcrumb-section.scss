@@ -1,0 +1,38 @@
+/*----------------------------------
+[---breadcrumb section start---]
+-----------------------------------*/
+
+.breadcrumb-area{
+	background-size:cover;
+	background-position:center;
+	background-color:$primary-color;
+	padding-top:150px;
+	padding-bottom:60px;
+	color:#fff;
+	h2{
+		color:#fff;
+		font-size:26px;
+		font-weight:600;
+	}
+	a{
+		color:#fff;
+		text-decoration:none;
+	}
+}
+.breadcrumb-bg-1{
+	background-image:url('../images/brdcm-bg-1.jpg');
+}
+.breadcrumb-bg-2{
+	background-image:url('../images/brdcm-bg-2.jpg');
+}
+.breadcrumb-bg-3{
+	background-image:url('../images/brdcm-bg-3.jpg');
+}
+.breadcrumb-bg-5{
+	background-image:url('../images/brdcm-bg-5.jpg');
+}
+
+
+/*----------------------------------
+[---breadcrumb section end---]
+-----------------------------------*/

@@ -1,0 +1,29 @@
+/*------------------------------
+	[---searchbox  start---]
+-------------------------------*/
+
+.search-box{
+	opacity:0;
+	visibility:visible;
+	transition:$transition-time;
+	input[type=email]{
+		position:fixed;
+		width:50%;
+		z-index:999;
+		left:25%;
+		top:100px;
+		padding:15px;
+		border-radius:0 0 15px;
+		border:none;
+	}
+}
+
+.search-box.active{
+	visible:visible;
+	opacity:1;
+}
+
+
+/*------------------------------
+	[---searchbox  end---]
+-------------------------------*/

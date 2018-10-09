@@ -1,0 +1,42 @@
+/*------------------------------
+[---header-area  start---]
+-------------------------------*/
+
+
+@import
+'layout/main-header-parts/logo',
+'layout/main-header-parts/slicknav',
+'layout/main-header-parts/sticky-menu',
+'layout/main-header-parts/absolute-header',
+'layout/main-header-parts/main-menu';
+
+
+.header-area,.sticky{
+	padding: 10px 0;
+
+	.boxed-btn{
+		margin-top:6px;
+		@include media-breakpoint-only(lg) {
+	        padding:10px 12px;
+	    }
+	    @include media-breakpoint-between(xs, md) {
+	       display:none;
+	    }
+	   }
+	   .boxed-btn.theme-kid{
+	   		&:after{
+	   			border-color:#333;
+	   		}
+	   }
+	   @include media-breakpoint-between(xs, md) {
+	        .text-right{
+		   		text-align:center !important;
+		   }
+	    }
+}
+
+
+
+/*------------------------------
+[---header-area  end---]
+-------------------------------*/

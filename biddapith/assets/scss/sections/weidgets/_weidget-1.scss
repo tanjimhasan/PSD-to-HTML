@@ -1,0 +1,91 @@
+/*------------------------------
+	[---weidget theme start---]
+-------------------------------*/
+
+
+.weidget{
+	border-radius:0 0 10px;
+	background:$primary-color;
+	@include media-breakpoint-between(xs, md) {
+       margin-top:20px;
+    }
+	.marquee {
+	  overflow: hidden;
+	}
+	position:relative;
+	z-index:2;
+	padding:20px 30px;
+	max-height:400px;
+	box-shadow:0 0 5px 3px #ddd;
+	
+	h3{
+		color:#fff;
+		margin-bottom:20px;
+		i{
+			font-size:18px;
+			margin-right:10px;
+		}
+	}
+	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+		
+		
+	}
+	li{
+		margin-bottom:15px;
+		border-bottom:1px dashed #fff;
+		&:last-child{
+			border-bottom:none;
+		}
+	}
+	a{
+		text-decoration:none;
+		color:#fff;
+		i{
+			padding-right:10px;
+		}
+	}
+	.post-date{
+		font-family: 'Playfair Display', serif;
+	}
+
+}
+
+/*------------------------------
+	[---weidget theme end---]
+-------------------------------*/
+
+
+/*------------------------------
+	[---weidget theme 2 start---]
+-------------------------------*/
+
+.weidget.theme-2{
+	@include media-breakpoint-between(xs, md) {
+       margin-bottom:60px;
+    }
+	&:after{
+		position:absolute;
+		width:100%;
+		height:100%;
+		border:8px double $primary-color;
+		right:-20px;
+		bottom:-20px;
+		content:"";
+		z-index:-1;
+		opacity:.6;
+		border-radius:0 0 10px;
+		@include media-breakpoint-only(xs) {
+			 right:-10px;
+			bottom:-10px;	   
+		}
+	}
+}
+
+/*------------------------------
+	[---weidget theme 2 end---]
+-------------------------------*/
+
+

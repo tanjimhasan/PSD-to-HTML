@@ -1,0 +1,35 @@
+/*------------------------------
+[---header-top  start---]
+-------------------------------*/
+
+
+@import
+'layout/header-top-parts/contact-info',
+'layout/header-top-parts/social-links';
+
+
+.header-top{
+	background:$primary-color;
+	padding: 8px 0px;
+	@include media-breakpoint-between(xs, md){
+		padding:4px 0px;
+	}
+	.text-right{
+		@include media-breakpoint-between(xs, md){
+			text-align:center !important;
+		}
+	}
+	.social-links{
+		@include media-breakpoint-between(xs, md){
+			margin-top:8px;
+			margin-bottom:5px;
+		}
+		
+	}
+	
+}
+
+
+/*------------------------------
+[---header-top  end---]
+-------------------------------*/

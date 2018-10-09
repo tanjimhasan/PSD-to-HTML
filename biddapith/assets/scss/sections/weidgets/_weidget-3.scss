@@ -1,0 +1,44 @@
+/*----------------------------------
+[---weidget-3 section start---]
+-----------------------------------*/
+
+.weidget-3{
+	background:#fff;
+	border:1px solid #efefef;
+	h5{
+		font-size:18px;
+		padding:30px 20px;
+		margin-bottom:0;
+	}
+	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	li{
+		border-bottom:1px solid #ECFAFF;
+
+		&:first-child{
+			border-top:1px solid #ECFAFF;
+		}
+		&:last-child{
+			border-bottom:0;
+		}
+	}
+	a{
+		display:block;
+		padding:15px 20px;
+		color:$heading-color;
+		text-decoration:none;
+		&:hover{
+			color:$primary-color;
+		}
+	}
+}
+
+
+
+
+/*----------------------------------
+[---weidget-3 section end---]
+-----------------------------------*/

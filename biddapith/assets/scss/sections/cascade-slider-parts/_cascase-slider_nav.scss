@@ -1,0 +1,38 @@
+
+/*----------------------------------
+  [---cascade-slider_nav start---]
+-----------------------------------*/
+
+
+.cascade-slider_nav {
+  position: absolute;
+  bottom: -15%;
+  left:-4%;
+  width: 100%;
+  text-align: center;
+  z-index: 5;
+  
+  @include media-breakpoint-only(sm) {
+	   left:-25%;
+	}
+  @include media-breakpoint-only(xs) {
+	   left:-33%;
+	}
+  .cascade-slider_dot {
+	  display: inline-block;
+	  width: 1em;
+	  height: 1em;
+	  margin: 1em;
+	  background: #fff;
+	  list-style: none;
+	  cursor: pointer;
+	}
+	.cascade-slider_dot.cur{
+		background:$primary-color;
+	}
+}
+
+
+/*----------------------------------
+   [---cascade-slider_nav end---]
+-----------------------------------*/

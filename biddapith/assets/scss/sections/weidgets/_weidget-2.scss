@@ -1,0 +1,72 @@
+/*------------------------------
+	[---weidget-2 start---]
+-------------------------------*/
+
+.weidget-2{
+	background:#fff;
+	box-shadow:0 0 10px #ddd;
+	padding:20px 0;
+	border-radius:0 0 10px;
+	@include media-breakpoint-between(xs, md) {
+       margin-bottom:20px;
+    }
+	h3{
+		margin-left: 20px;
+	}
+	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	li{
+		border-bottom:1px solid #ddd;
+		padding-left::75px;
+		position:relative;
+		padding-top: 15px;
+    	padding-bottom: 15px;
+    	&:last-child{
+    		border-bottom:none;
+    	}
+	}
+	a{
+
+		color:$text-color;
+		text-decoration:none;
+		transition:$transition-time;
+		&:hover{
+			color:$primary-color;
+		}
+		.event-date{
+			display:inline-block;
+			background:$primary-color;
+			height:45px;
+			width:45px;
+			line-height:23px;
+			font-size:12px;
+			text-align:center;
+			color:#fff;
+			position:absolute;
+			left:20px;
+			top:20px;
+			border-radius:0 0 15px;
+		}
+		.post-date{
+			margin-top:8px;
+			display:inline-block;
+		}
+	}
+	.view-details{
+		margin-left:20px;
+	}
+}
+
+/*------------------------------
+	[---weidget-2 start---]
+-------------------------------*/
+
+
+.weidget-2.theme-2{
+	max-height:500px;
+	overflow:hidden !important;
+	position:relative;
+}

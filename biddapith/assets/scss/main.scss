@@ -1,0 +1,76 @@
+// Main Sass File
+
+
+@charset 'UTF-8';
+
+//Configuration and helpers
+@import
+'bootstrap/functions',
+'bootstrap/variables',
+'bootstrap/breakpoints',
+
+'fontawesome/fa-brands',
+'fontawesome/fa-regular',
+'fontawesome/fa-solid',
+'fontawesome/fontawesome',
+
+'abstracts/functions',
+'abstracts/variables',
+'abstracts/mixins';
+
+
+//Base stuff
+@import
+'base/general',
+'base/resets',
+'base/typography',
+'base/global',
+'base/fonts',
+'base/helpers';
+
+// Layout-related sections
+@import
+'layout/header',
+'layout/section-title',
+'layout/footer';
+
+// Components
+@import
+'components/search-trigger',
+'components/hambarger-menu-trigger',
+'components/owl-dots',
+'components/owl-navs',
+'components/layout-changer',
+'components/preloader',
+'components/scroll_to_top',
+'components/button';
+
+// Page-specific styles
+@import
+'pages/home',
+'pages/home-v2',
+'pages/home-v3',
+'pages/home-v4',
+'pages/home-v5',
+'pages/home-v6',
+'pages/home-v7',
+'pages/department-list-view',
+'pages/course-list-view',
+'pages/course-grid-view',
+'pages/blog-right-bar',
+'pages/blog-left-bar',
+'pages/blog-details',
+'pages/event-left-bar',
+'pages/event-details',
+'pages/course-details',
+'pages/about-us',
+'pages/faq',
+'pages/club-activities',
+'pages/error',
+'pages/countdown',
+'pages/login-registration',
+'pages/contact-us';
+
+
+
+

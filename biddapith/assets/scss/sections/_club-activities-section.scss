@@ -1,0 +1,78 @@
+/*------------------------------
+[---club & activities section  start---]
+-------------------------------*/
+
+.activity-bg{
+	background-size:cover;
+	background-position:center;
+	background-color:$primary-color;
+	height:100%;
+	width:100%;
+}
+
+.activity-bg-1{
+	background-image:url('../images/club-1.jpg');
+}
+.activity-bg-2{
+	background-image:url('../images/club-2.jpg');
+}
+.activity-bg-3{
+	background-image:url('../images/club-3.jpg');
+}
+.activity-bg-4{
+	background-image:url('../images/club-4.jpg');
+}
+.club-area{
+	.weidget-3.mb-30{
+		@include media-breakpoint-between(xs, md) {
+	       margin-bottom:0;
+	       margin-top:30px;
+	    }
+	}
+}
+.single-activities-item{
+	height:180px;
+	margin:25px 0;
+	@include media-breakpoint-only(xs) {
+        height:200px;
+    }
+	h4{
+		font-size:16px;
+		margin-bottom:12px;
+		@include media-breakpoint-between(xs, sm) {
+	       font-size:14px;
+	       margin-bottom:6px;
+	    }
+	}
+	p{
+		margin-bottom:10px;
+		@include media-breakpoint-between(xs, sm) {
+	       font-size:12px;
+	        margin-bottom:0px;
+	    }
+	}
+	.view-details{
+		@include media-breakpoint-between(xs, sm) {
+	       font-size:12px;
+	    }
+	}
+	.item-l-1{
+		flex-basis:20%;
+	}
+	.item-l-2{
+		height:100%;
+		flex-basis:80%;
+		padding:20px;
+		background:#fff;
+		border:1px solid #f3f3f3;
+		.view-details{
+			color:$primary-color;
+		}
+	}
+}
+
+
+
+/*------------------------------
+[---club & activities section  end---]
+-------------------------------*/

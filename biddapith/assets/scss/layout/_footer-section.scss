@@ -1,0 +1,139 @@
+/*------------------------------
+	[---footer-section  start---]
+-------------------------------*/
+.footer-top{
+	padding:40px 0;
+}
+.footer-weidget{
+	.contact-details{
+		position:relative;
+		padding-left:25px;
+		i{
+			position:absolute;
+			left:0;
+			top:6px;
+			color:$primary-color;
+		}
+	}
+	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+
+		a{
+			display:block;
+			color:$text-color;
+			margin-bottom:8px;
+			text-decoration:none;
+			&:hover{
+				color:$primary-color;
+			}
+		}
+	}
+	h3{
+		font-size:20px;
+		margin-bottom:20px;
+	}
+	.social-links{
+		@include media-breakpoint-between(xs, md) {
+	       margin-bottom:20px;
+	    }
+		a{
+			background:$primary-color;
+			color:#fff;
+			&:hover{
+				background:#fff;
+				border:1px solid $primary-color;
+				color:$primary-color;
+			}
+			&:first-child{
+				margin-left:0;
+			}
+		}
+	}
+}
+.footer-weidget.theme-2{
+	h3{
+		color:#fff;
+	}
+	p{
+		color:#fff;
+	}
+	.contact-details{
+		i{
+			color:#fff;
+		}
+	}
+	ul{
+
+		a{
+			color:#fff;
+			&:hover{
+				color:#fff;
+			}
+		}
+	}
+	.social-links{
+		a{
+			background:$primary-color;
+			color:#fff;
+			&:hover{
+				background:#fff;
+				color:$primary-color;
+			}
+		}
+	}
+}
+
+
+/*------------------------------
+	[---footer-section  end---]
+-------------------------------*/
+
+.footer-weidget.theme-kid{
+	@include media-breakpoint-between(xs, sm) {
+	    margin-bottom:20px;
+	}
+	color:#fff;
+	h3{
+		color:#fff;
+		font-size:18px;
+		margin-bottom:40px;
+		@include media-breakpoint-between(xs, sm) {
+		    margin-bottom:15px;
+		}
+	}
+	a{
+		color:#fff;
+		font-size:13px;
+		&:hover{
+			color:#fff;
+		}
+	}
+	input{
+		border:none;
+		border-radius:35px 0 35px 0;
+	}
+	.news-letter-form{
+		margin-top:30px;
+		input[type=email]{
+			width:55%;
+			padding:10px 20px;
+			margin-right:5px;
+			@include media-breakpoint-only(lg) {
+				width:53%;
+               margin-right:0;
+            }
+		}
+		input[type=submit]{
+			width:40%;
+			@include media-breakpoint-only(lg) {
+               width:44%;
+            }
+			&:hover{
+				color:#fff;
+			}
+		}
+	}
+	
+}

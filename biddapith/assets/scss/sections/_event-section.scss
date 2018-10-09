@@ -1,0 +1,52 @@
+
+/*----------------------------------
+[---event section start---]
+-----------------------------------*/
+
+
+a.single-event{
+	text-decoration:none;
+	display:block;
+	margin:15px 0;
+	.event-bg{
+		background-size:cover;
+		background-color:$primary-color;
+		background-position:center;
+		height:300px;
+		position:relative;
+
+		.event-ticker{
+			position:absolute;
+			right:20px;
+			top:20px;
+
+			background:$primary-color;
+			color:#fff;
+			height:50px;
+			width:45px;
+			text-align:center;
+			padding-top:8px;
+			line-height:18px;
+			border-radius:0 0 15px;
+		}
+	}
+	.event-bg-1{
+		background-image:url('../images/blog/blog-2.jpg');
+	}
+	.event-details{
+		padding:20px;
+		border:1px solid #efefef;
+		p{
+			color:$text-color;
+		}
+		h6{
+			font-weight:600;
+		}
+	}
+}
+
+
+
+/*----------------------------------
+[---event section end---]
+-----------------------------------*/

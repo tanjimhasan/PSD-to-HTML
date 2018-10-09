@@ -1,0 +1,80 @@
+
+/*=========================================
+<---signle-blog section import start--->
+==========================================*/
+
+
+
+@import
+
+'sections/blog-section';
+
+
+
+/*=========================================
+<---signle-blog section import end--->
+==========================================*/
+
+
+
+/*------------------------------
+	[---event  start---]
+-------------------------------*/
+
+.blog-area{
+	background:#f9fdff;
+}
+.blog-area.left-bar{
+	.weidget-3{
+		@include media-breakpoint-between(xs, sm) {
+		   	margin-bottom:30px;
+	    }
+	}
+}
+.blog-area.right-bar{
+	.weidget-3{
+		@include media-breakpoint-between(xs, sm) {
+		   	margin-top:30px;
+	    }
+	}
+}
+
+.boxed-single-blog{
+	margin:-15px 0;
+}
+
+/*------------------------------
+	[---event  end---]
+-------------------------------*/
+
+/*------------------------------
+	[---kid-event-bg  start---]
+-------------------------------*/
+
+.kid-event-bg{
+	background-size:cover;
+	background-position:center;
+	background-color:$primary-color;
+	height:260px;
+	border-radius:35px 0 35px 0;
+}
+
+
+
+.kid-event-bg-1{
+	background-image:url('../images/blog/kid-1.jpg');
+}
+.kid-event-bg-2{
+	background-image:url('../images/blog/kid-2.jpg');
+}
+.kid-event-bg-3{
+	background-image:url('../images/blog/kid-3.jpg');
+}
+.kid-event-bg-4{
+	background-image:url('../images/blog/kid-4.jpg');
+}
+
+
+/*------------------------------
+	[---kid-event-bg end---]
+-------------------------------*/

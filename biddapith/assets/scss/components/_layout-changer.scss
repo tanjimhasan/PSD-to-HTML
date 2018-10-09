@@ -1,0 +1,41 @@
+/*------------------------------
+	[---layout changer  start---]
+-------------------------------*/
+
+.layout-changer{
+	span{
+		display: block;
+		padding:12px 20px;
+		border:2px solid $primary-color;
+		margin-bottom:20px;
+		cursor:pointer;
+		text-align:center;
+		text-transform:uppercase;
+		color:$heading-color;
+	}
+	span.active{
+		border:2px solid $primary-color;
+		background:$primary-color;
+		color:#fff;
+	}
+}
+.site{
+	overflow-x:hidden;
+}
+body.boxed-layout{
+	background:#ddd;
+	.site{
+		max-width:1200px;
+		margin:auto;
+		background:#fff;
+		position:relative;
+		box-shadow:0 0 15px #999;
+		.single-hero-item{
+			width:1200px;
+		}
+	}
+}
+
+/*------------------------------
+	[---layout changer  end---]
+-------------------------------*/

@@ -1,0 +1,57 @@
+/*=========================================
+<---signle-event section import start--->
+==========================================*/
+
+
+
+@import
+
+'sections/event-section';
+
+
+
+/*=========================================
+<---signle-event section import end--->
+==========================================*/
+
+
+
+/*----------------------------------
+[---event start---]
+-----------------------------------*/
+
+
+
+.evemt-area{
+	background:#f9fdff;
+}
+.event-area.right-bar{
+	 .weidget-2{
+		@include media-breakpoint-between(xs, sm) {
+		   	margin-top:30px;
+	    }
+	}
+}
+.event-area.right-bar{
+	 .weidget-3{
+		@include media-breakpoint-between(xs, sm) {
+		   	margin-top:30px;
+	    }
+	}
+}
+.event-area.left-bar{
+	 .weidget-2{
+		@include media-breakpoint-between(xs, sm) {
+		   	margin-bottom:30px;
+	    }
+	}
+}
+
+.boxed-single-event{
+	margin:-15px 0;
+}
+
+
+/*----------------------------------
+[---event end---]
+-----------------------------------*/

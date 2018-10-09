@@ -1,0 +1,63 @@
+/*------------------------------
+[---absolute-header  end---]
+-------------------------------*/
+
+.absolute-header{
+	position:absolute;
+	width:100%;
+	z-index:99;
+
+	.logo{
+		margin:0;
+		margin-top:5px;
+		h1{
+			color:#fff;
+		}
+	}
+	.logo.theme-2{
+		h4{
+			color:#fff;
+		}
+		a{
+			text-decoration:none;
+		}
+	}
+	.main-menu{
+		margin-top:8px;
+		ul{
+			a{
+				color:#fff;
+			}
+		}
+	}
+
+	.slicknav_menu{
+		.slicknav_nav{
+			box-shadow:0 0;
+			background:#fff;
+			
+		}
+	}
+	
+}
+
+
+/*------------------------------
+[---absolute-header  end---]
+-------------------------------*/
+
+/*------------------------------------
+[---absolute-header kid version start---]
+-------------------------------------*/
+
+.absolute-header.kid-v{
+	.slicknav_menu{
+		.slicknav_nav{
+			border-radius:35px 0 35px 0;
+		}
+	}
+}
+
+/*------------------------------------
+[---absolute-header kid version end---]
+-------------------------------------*/

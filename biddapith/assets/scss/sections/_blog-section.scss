@@ -1,0 +1,139 @@
+/*------------------------------
+	[---event-section  start---]
+-------------------------------*/
+
+/*=========================================
+<---weidget import start--->
+==========================================*/
+
+
+
+@import
+
+'sections/weidgets/weidget-2';
+
+
+
+/*=========================================
+<---weidget import end--->
+==========================================*/
+
+/*------------------------------
+	[---single-blog  start---]
+-------------------------------*/
+
+a.single-blog{
+	text-decoration:none;
+	display:block;
+	margin:15px 0;
+	.blog-bg{
+		width:100%;
+		height:300px;
+		background-size:cover;
+		background-position:center;
+		background-color:$primary-color;
+	}
+	.blog-bg-1{
+		background-image:url('../images/blog/event-1.jpg');
+	}
+	.blog-bg-2{
+		background-image:url('../images/blog/event-2.jpg');
+	}
+	.blog-bg-3{
+		background-image:url('../images/blog/blog-1.jpg');
+	}
+	.blog-bg-4{
+		background-image:url('../images/blog/blog-2.jpg');
+	}
+	.blog-content{
+		border:1px solid #eee;
+		background:#fff;
+		padding:15px;
+		transition:$transition-time;
+		border-radius:0 0 10px;
+		&:hover{
+			h3,h5{
+				color:$primary-color;
+			}
+		}
+		h3{
+			font-size:16px;
+
+		}
+		h5s{
+			font-size:16px;
+
+		}
+		.blog-meta{
+			color:$text-color;
+			i{
+				padding-right:5px;
+			}
+			i.fa-calendar{
+				padding-left:25px;
+			}
+		}
+	}
+}
+
+/*------------------------------
+	[---single-blog  end---]
+-------------------------------*/
+
+/*------------------------------
+[---single-blog theme-2  start---]
+-------------------------------*/
+
+.single-blog.theme-2{
+	.blog-bg{
+		height:160px;
+	}
+	.blog-content{
+		h3{
+			font-size:16px;
+		}
+	}
+}
+
+/*------------------------------
+[---single-blog theme-2  end---]
+-------------------------------*/
+
+/*------------------------------
+[---single-kid-event  start---]
+-------------------------------*/
+
+a.single-kid-event{
+	margin:15px 0;
+	text-decoration:none;
+	display:block;
+}
+
+.kid-event-info{
+	h4{
+		margin-top:20px;
+		color:$primary-color;
+		font-weight:400;
+	}
+	p{
+		margin-bottom:6px;
+		position:relative;
+		padding-left:20px;
+		color:$text-color;
+		i{
+			position:absolute;
+			left:0;
+			top:4px;;
+
+		}
+	}
+}
+
+/*------------------------------
+[---single-kid-event  end---]
+-------------------------------*/
+
+
+/*------------------------------
+	[---weidget-2  end---]
+-------------------------------*/

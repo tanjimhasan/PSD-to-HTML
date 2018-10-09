@@ -1,0 +1,144 @@
+/*------------------------------
+	[---single-speech-item  start---]
+-------------------------------*/
+
+
+/*=========================================
+<---cascade-slider-parts import start--->
+==========================================*/
+
+
+
+@import
+
+'sections/cascade-slider-parts/cascase-slider_nav',
+'sections/cascade-slider-parts/cascase-slider_arrow';
+
+
+
+/*=========================================
+<---cascade-slider-parts import end--->
+==========================================*/
+
+
+.single-speech-item{
+  	position: absolute;
+  	color:#313131;
+  	padding:30px;
+  	top: 50%;
+  	left: 50%;
+  	transform: translateY(-50%) translateX(-50%) scale(0.3);
+  	transition: all 1s ease;
+  	opacity: 0;
+  	z-index: -1;
+
+	&:after{
+		position:absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+		background:#fff;
+		content:"";
+		z-index:-1;
+		opacity:.8;
+		border-radius:0 0 15px;
+	}
+	img{
+		width:100px;
+		height:100px;
+		border-radius:0 0 15px;
+
+	}
+	p{
+		margin:0;
+		i.fa-quote-left{
+			padding-right:5px;
+		}
+		i.fa-quote-right{
+			padding-left:5px;
+		}
+	}
+	h3{
+		font-size:16px;
+		margin:15px 0;
+		line-height:25px;
+		span{
+			display:block;
+			font-size:75%;
+		}
+	}
+}
+.single-parent-speech{
+	p{
+		font-size:18px;
+		font-family: 'Gloria Hallelujah', cursive;
+		color:$heading-color;
+		font-weight:500;
+		@include media-breakpoint-between(xs, sm) {
+		    font-size:14px;
+		}
+	}
+}
+
+.single-speech-item.next{
+	left: 50%;
+	transform: translateY(-50%) translateX(-150%) scale(0.6);
+	opacity: 1;
+	z-index: 1;
+	@include media-breakpoint-only(lg) {
+        transform: translateY(-50%) translateX(-130%) scale(0.4);
+    }
+    @include media-breakpoint-only(md) {
+       transform: translateY(-50%) translateX(-130%) scale(0.35);
+    }
+    @include media-breakpoint-only(sm) {
+       transform: translateY(-50%) translateX(-140%) scale(0.25);
+    }
+    @include media-breakpoint-only(xs) {
+       transform: translateY(-50%) translateX(-145%) scale(0.15);
+    }
+}
+.single-speech-item.prev{
+	left: 50%;
+	opacity: 1;
+	z-index: 1;
+	transform: translateY(-50%) translateX(50%) scale(0.6);
+	@include media-breakpoint-only(lg) {
+       transform: translateY(-50%) translateX(30%) scale(0.4);
+    }
+	@include media-breakpoint-only(md) {
+       transform: translateY(-50%) translateX(-20%) scale(0.35);
+    }
+	@include media-breakpoint-only(sm) {
+       transform: translateY(-50%) translateX(-50%) scale(0.25);
+    }
+	@include media-breakpoint-only(xs) {
+       transform: translateY(-50%) translateX(-80%) scale(0.15);
+    }
+}
+.single-speech-item.now{
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%) scale(1);
+	opacity: 1;
+	z-index: 5;
+	@include media-breakpoint-only(lg) {
+        transform: translateY(-50%) translateX(-50%) scale(0.85);
+    }
+    @include media-breakpoint-only(md) {
+       transform: translateY(-50%) translateX(-75%) scale(0.8);
+    }
+    @include media-breakpoint-only(sm) {
+       transform: translateY(-50%) translateX(-95%) scale(0.62);
+    }
+    @include media-breakpoint-only(xs) {
+       transform: translateY(-50%) translateX(-112.5%) scale(0.53);
+    }
+}
+
+
+
+/*------------------------------
+	[---single-speech-item  end---]
+-------------------------------*/

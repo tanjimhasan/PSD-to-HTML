@@ -1,0 +1,112 @@
+/*------------------------------
+	[---cta start---]
+-------------------------------*/
+.cta-area{
+	color:#fff;
+	padding:50px 0;
+	background-size:cover;
+	background-position:center;
+	background-color:$primary-color;
+	position:relative;
+	z-index:2;
+
+	@include media-breakpoint-between(xs, md) {
+	   	text-align:center !important;
+    }
+    .text-right{
+    	text-align:center !important;
+    }
+    .boxed-btn{
+    	margin-top:10px;
+    }
+	p{
+		font-size:16px;
+		margin:0;
+		margin-top:10px;
+	}
+	h3{
+		margin:0;
+		@include media-breakpoint-between(xs, sm) {
+		    margin-bottom:10px;
+		}
+	}
+	.theme-kid{
+		&:after{
+			border-color:#333;
+		}
+	}
+}
+.cta-area.theme-2{
+	h3{
+		font-size:26px;
+		color:#fff;
+		font-weight:600;
+	}
+	p{
+		font-size:14px;
+	}
+}
+.cta-overlay{
+	position:relative;
+	z-index:2;
+	&:after{
+		position:absolute;
+		left:0;
+		top:0;
+		width:100%;
+		height:100%;
+		background:#333;
+		content:"";
+		opacity:.7;
+		z-index:-1;
+	}
+}
+.cta-area.video-v{
+	padding:60px 0;
+}
+.small-cta-v{
+	padding:60px 30px;
+	color:#fff;
+	background-size:cover;
+	background-position:center;
+	p{
+		margin:0;
+	}
+}
+.cta-bg-1{
+	background-image:url('../images/cta-bg-1.jpg');
+
+}
+.cta-bg-2{
+	background-image:url('../images/cta-bg-2.jpg');
+
+}
+.cta-bg-3{
+	background-image:url('../images/cta-bg-3.jpg');
+
+}
+.cta-bg-4{
+	background-image:url('../images/cta-bg-4.png');
+
+}
+
+/*------------------------------
+	[---cta  end---]
+-------------------------------*/
+
+
+/*=========================================
+<---cta section import start--->
+==========================================*/
+
+
+
+@import
+
+'sections/cta-section';
+
+
+
+/*=========================================
+<---cta section import end--->
+==========================================*/

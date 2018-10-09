@@ -1,0 +1,54 @@
+.section-bg,.green-bg,.social-links a:hover,.header-top,
+.slicknav_menu .slicknav_icon-bar,.slicknav_menu .slicknav_nav a:hover,
+.main-menu li ul li:hover > a,.section-title h2:after,
+.section-title.white-title h2:before,.footer-weidget .social-links a,.footer-weidget.theme-2 .social-links a,
+.footer-area.theme-2,.boxed-btn:before,
+.bordered-btn:hover:before,a.video-play-btn i,.cascade-slider_nav .cascade-slider_dot.cur,
+.speech-area,.weidget-2 a .event-date,a.single-blog .blog-bg,.kid-event-bg,
+.cta-area,.weidget,.featured-image-2:after,.kid-single-feature .feature-icon i,.hero-bg,
+.slide-bg,.single-hero-item .hero-area-fornm input[type=submit],.offer-register-form input[type=submit],
+.counter-area,.counter-area.section-overlay:after,.single-department-item h3:before, .single-department-item h3:after,
+.kid-teacher-list .owl-prev i, .kid-teacher-list .owl-next i,.single-teacher .teacher-info .social-info a:hover,
+.course-list .owl-nav,.single-course-item .course-bg,.single-course-item .course-bg:after,
+.single-course-item h3:after, .single-course-item h3:before,.offcanvas-menu-shade,
+.single-department-item.list-v .l-item-2:after,.breadcrumb-area,.blog-details .comment-form input[type=submit],
+a.single-event .event-bg,.blog-video,.blog-details-bg,a.single-event .event-bg .event-ticker,
+.event-details-bg,.course-details-bg,.activity-bg,.error-page h1:after, .error-page h1:before,
+.countdown:after, .countdown:before,.other-num:after,.authentication-form input[type=submit],
+.login-registration-section .registration-wrapper:after, .login-registration-section .login-wrapper:after,
+.contact-info-details.theme-2 .contact-details.theme-2 i,.contact-form input[type=submit],
+.layout-changer span.active,a.scrollToTop
+
+
+{
+	background-color:#16a085;
+}
+.owl-dots .owl-dot.active{
+	background:#16a085 !important;
+}
+.slicknav_menu .slicknav_nav a,.main-menu li.mega-menu ul.mega-menu-wrapper .mega-menu-cta h4 span,
+.main-menu a:hover,.kid-section-title h2,.footer-weidget .contact-details i,.footer-weidget ul a:hover,
+.footer-weidget .social-links a:hover,
+.owl-nav .owl-prev i, .owl-nav .owl-next i,a.view-details:hover, .back-btn:hover, .link-btn:hover,
+a.view-details:hover i, .back-btn:hover i, .link-btn:hover i,a.appy-btn,.copyright-area span,
+.copyright-area.theme-2 span,.weidget-2 a:hover,a.single-blog .blog-content:hover h3, a.single-blog .blog-content:hover h5,
+.kid-event-info h4,.single-program .program-number,.single-hero-item h2 span,
+.single-hero-item-2 h2 span,.single-department-item i.flaticon,.teacher-list .owl-nav,
+.single-teacher .teacher-info h4,.course-list .owl-nav,.single-course-kid .course-text h5,
+.kid-testimonial-author h5,.offcanvas-menu .off-c-menu a:hover,.offcanvas-menu .social-menu a:hover,
+.weidget-3 a:hover,.blog-details .blog-meta span,.event-details .event-info h5,
+.single-activities-item .item-l-2 .view-details,.authentication-text-wrapper .authentication-text .back-btn,
+.logo a h1 span
+
+{
+	color:#16a085;
+}
+
+.footer-weidget .social-links a:hover,.boxed-btn:hover:before, .bordered-btn:hover:before,
+.bordered-btn:before,.weidget.theme-2:after,.single-count-item.theme-2:hover,
+.single-department-item:hover,.single-teacher .teacher-info .social-info a:hover,
+.blog-details .comment-form input[type=submit]:hover,.error-page .error-text,.days span,
+.other-num div,.layout-changer span,.layout-changer span.active
+{
+	border-color: #16a085;
+}

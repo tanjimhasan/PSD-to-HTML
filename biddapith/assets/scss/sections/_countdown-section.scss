@@ -1,0 +1,128 @@
+/*------------------------------
+[---countdown section  start---]
+-------------------------------*/
+.countdown{
+	position:relative;
+	z-index:2;
+	@include media-breakpoint-only(sm) {
+       margin-left:24%;
+    }
+	@include media-breakpoint-only(xs) {
+       margin-left:14%;
+    }
+	&:after,&:before{
+		position:absolute;
+		right:45%;
+		top:0;
+		width:3px;
+		height:70.5%;
+		background:$primary-color;
+		opacity:1;
+		content:"";
+		z-index:-1;
+		@include media-breakpoint-only(lg) {
+            height:66.5%;
+            right:34%;
+        }
+        @include media-breakpoint-only(md) {
+	        right:28%;
+	        height:73%;
+	    }
+
+	    @include media-breakpoint-only(sm) {
+	       right:24%;
+	    }
+	    @include media-breakpoint-only(xs) {
+	       right:30.9%;
+	       height:74.5%;
+	    }
+	}
+	&:before{
+		width:15%;
+		height:3px;
+
+	}
+}
+.count-down-text{
+	@include media-breakpoint-between(xs, sm) {
+       display:none;
+    }
+	.social-links{
+		margin-top:30px;
+	}
+}
+.days{
+	font-size:140px;
+	line-height:1.1;
+	@include media-breakpoint-only(lg) {
+        font-size:115px;
+    }
+	@include media-breakpoint-only(md) {
+        font-size:100px;
+    }
+	@include media-breakpoint-only(xs) {
+        font-size:110px;
+    }
+	span{
+		display: block;
+	    font-size: 12%;
+	    border-top: 3px solid $primary-color;
+	    width: 43%;
+	    padding:12px 0;
+	    @include media-breakpoint-only(md) {
+	        width: 53%;
+	    }
+	    @include media-breakpoint-only(sm) {
+	       width: 60%;
+	    }
+	}
+}
+.other-num{
+	width:380px;
+	position:relative;
+		z-index:2;
+		&:after{
+			position: absolute;
+		    right: 85px;
+		    top: 0px;
+		    width: 8%;
+		    height: 3px;
+		    background: #00cf7f;
+		    content: "";
+		    @include media-breakpoint-only(lg) {
+		        right: 83px;
+		    }
+		    @include media-breakpoint-only(md) {
+		        right:145px;
+		    }
+		    @include media-breakpoint-only(xs) {
+		        right:155px;
+		    }
+		}
+	div{
+		border-top:3px solid $primary-color;
+		flex-basis:15%;
+		margin-right:7%;
+		font-size:45px;
+		line-height:1.4;
+		@include media-breakpoint-only(md) {
+	        font-size:30px;
+	        flex-basis:10%;
+	    }
+	    @include media-breakpoint-only(xs) {
+	        font-size:30px;
+	        flex-basis:6%;
+	    }
+		span{
+			display:block;
+			font-size:35%;
+			flex-basis:10%;
+		}
+	}
+}
+
+
+
+/*------------------------------
+[---countdown section  end---]
+-------------------------------*/

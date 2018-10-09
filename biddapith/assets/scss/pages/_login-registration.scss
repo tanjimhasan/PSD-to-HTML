@@ -1,0 +1,85 @@
+/*=========================================
+<---login registration section import start--->
+==========================================*/
+
+
+@import
+'sections/login-registration';
+
+
+
+/*=========================================
+<---login registration section import end--->
+==========================================*/
+
+.login-registration-section{
+	height: 100%;
+    position:relative;
+    perspective: 1500px;
+    overflow:hidden;
+    @include media-breakpoint-between(xs, sm) {
+       overflow-y:inherit;
+    }
+    .registration-wrapper,.login-wrapper{
+    	position:relative;
+    	height:100%;
+    	z-index: 2;
+    		 &:after{
+		    	position: absolute;
+			    left: 0;
+			    top: 0;
+			    width: 100%;
+			    height: 100%;
+			    background: $primary-color;
+			    content: "";
+			    z-index: -1;
+		    }
+    	}
+   
+    .section-p{
+    	position: absolute;
+	    left: 0;
+	    top: auto;
+	    width: 100%;
+	    height: 100%;
+
+    }
+}
+
+.user-authentication-wrapper{
+	position: relative;
+    z-index: 2;
+
+    &:after{
+    	position: absolute;
+	    right: -60px;
+	    top: 19%;
+	    width: 100%;
+	    height: 75%;
+	    background: #fff;
+	    content: "";
+	    opacity: .8;
+	    z-index: -1;
+	    @include media-breakpoint-only(md) {
+            right: 0;
+        }
+        @include media-breakpoint-between(xs, sm) {
+	       display:none;
+	    }
+    }
+}
+.user-authentication-wrapper.theme-2{
+
+    &:after{
+    	position: absolute;
+	    right: -60px;
+	    top: 32%;
+	    width: 100%;
+	    height: 65%;
+	    background: #fff;
+	    content: "";
+	    opacity: .8;
+	    z-index: -1;
+	    
+    }
+}

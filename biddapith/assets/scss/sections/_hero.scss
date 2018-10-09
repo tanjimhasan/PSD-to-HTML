@@ -1,0 +1,129 @@
+/*------------------------------
+	[---hero-area  start---]
+-------------------------------*/
+
+.hero-area{
+	.owl-dots{
+		left:auto;
+		right:15%;
+		bottom:60px;
+	}
+
+}
+
+/*------------------------------
+	[---hero-area  end---]
+-------------------------------*/
+
+/*------------------------------
+	[---hero-section-2  start---]
+-------------------------------*/
+
+
+.hero-area-2{
+
+}
+
+/*------------------------------
+	[---hero-section-2  end---]
+-------------------------------*/
+
+/*------------------------------
+	[---hero-area-3  start---]
+-------------------------------*/
+
+.hero-area-3,.hero-area-3 div{
+	height:100%;
+}
+.hero-area-3{
+	height:650px !important;
+	width:100%;
+
+	.owl-nav,.owl-dots{
+		height:auto !important;
+	}
+	.owl-nav{
+		.owl-prev,.owl-next{
+			@include media-breakpoint-only(xs) {
+			   display:none;
+			}
+		}
+	}
+	.owl-dots{
+		.owl-dot{
+			width:15px;
+			height:15px;
+			border-radius:50%;
+		}
+	}
+}
+.hero-bg{
+	background-size:cover;
+	background-position:center bottom;
+	background-color:$primary-color;
+	height:100%;
+	width:100%;
+
+}
+.hero-bg-1{
+	background-image:url('../images/slider/bg-1.jpg');
+}
+
+.hero-bg-2{
+	background-image:url(../images/slider/kid-bg.jpg);
+	background-attachment:fixed;
+}
+
+/*------------------------------
+	[---hero-area-3  end---]
+-------------------------------*/
+
+/*------------------------------
+	[---slider background  start---]
+-------------------------------*/
+
+.slider-bg-1{
+	background-image:url(../images/slider/bg-1.jpg);
+}
+.slider-bg-2{
+	background-image:url(../images/slider/bg-2.jpg);
+}
+.slider-bg-3{
+	background-image:url(../images/slider/bg-3.jpg);
+}
+.slider-bg-4{
+	background-image:url(../images/slider/school-1.jpg);
+}
+.slider-bg-5{
+	background-image:url(../images/slider/school-2.jpg);
+}
+.slider-bg-6{
+	background-image:url(../images/slider/bg-2.jpg);
+}
+.slider-bg-7{
+	background-image:url(../images/slider/library-1.jpg);
+}
+.slider-bg-8{
+	background-image:url(../images/slider/library-2.jpg);
+}
+
+/*------------------------------
+	[---slider background  end---]
+-------------------------------*/
+
+
+/*=========================================
+<---hero section import start--->
+==========================================*/
+
+
+
+@import
+
+'sections/hero-section';
+
+
+
+/*=========================================
+<---hero section import end--->
+==========================================*/

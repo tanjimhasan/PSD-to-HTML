@@ -1,0 +1,93 @@
+/*---------------------------------
+	[---teacher-list  start---]
+---------------------------------*/
+
+.teacher-list{
+	margin:-15px 0;
+	.owl-nav{
+		color:$primary-color;
+		.owl-prev,.owl-next{
+			position:absolute;
+			left:auto;
+			right:-8px;
+			top:-35px;
+			
+			@include media-breakpoint-only(xs) {
+			   top:auto;
+			   bottom:-40px;
+			}
+			i{
+				font-size:16px;
+				@include media-breakpoint-only(xs) {
+				   font-size:14px;
+				}
+			}
+			
+		}
+		.owl-next{
+			right:20px;
+			margin-right:10px;
+		}
+	}
+}
+
+/*---------------------------------
+	[---teacher-list  end---]
+---------------------------------*/
+
+/*---------------------------------
+	[---kid-teacher-list  start---]
+---------------------------------*/
+
+.kid-teacher-list {
+	margin:-15px 0;
+    .owl-prev,.owl-next{
+			position:absolute;
+			left:50%;
+			bottom:-80%;
+
+			@include media-breakpoint-only(xs) {
+			  
+			}
+			
+			i{
+				font-size:14px;
+				background:$primary-color !important;
+				color:#fff;
+				@include media-breakpoint-only(xs) {
+					
+				   
+				}
+			}
+		}
+		.owl-next{
+			left:46%;
+			 @include media-breakpoint-between(sm, md) {
+			    left:44%;
+			}
+			@include media-breakpoint-only(xs) {
+				 left:40%;		   
+			}
+		}
+}
+
+/*---------------------------------
+	[---kid-teacher-list  end---]
+---------------------------------*/
+
+
+/*=========================================
+<---signle-teacher section import start--->
+==========================================*/
+
+
+
+@import
+
+'sections/single-teacher';
+
+
+
+/*=========================================
+<---signle-teacher section import end--->
+==========================================*/

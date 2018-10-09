@@ -1,0 +1,79 @@
+/*------------------------------
+	[---speech-area  start---]
+-------------------------------*/
+
+/*=========================================
+<---signle-speech section import start--->
+==========================================*/
+
+
+
+@import
+
+'sections/single-speech-section';
+
+
+
+/*=========================================
+<---signle-speech section import end--->
+==========================================*/
+
+
+
+.speech-area{
+	background-size:cover;
+	background-position:center;
+	background-color:$primary-color;
+	position:relative;
+	z-index:2;
+
+	overflow:hidden;
+	.speech-slider-container{
+		position: relative;
+		width: 920px;
+		height: 440px;
+		margin: 0 auto;
+	}
+
+}
+.parent-speech{
+	.owl-nav{
+		.owl-prev,.owl-next{
+			left:-80px;
+			@include media-breakpoint-only(md) {
+			   left:-20px;
+			}
+			@include media-breakpoint-between(xs, sm) {
+			    left:0;
+			}
+			i{
+				border:none;
+				background:0 0!important;
+				color:$heading-color;
+				font-size:30px;
+
+			}
+		}
+		.owl-prev{
+			left:auto;
+			right:-80px;
+			@include media-breakpoint-only(md) {
+			   right:-20px;
+			}
+			@include media-breakpoint-between(xs, sm) {
+			    right:0;
+			}
+		}
+	}
+}
+.speech-bg-1{
+	background-image:url('../images/speech-bg.jpg');
+}
+.parent-testimonial-bg-1{
+	background-image:url('../images/slider/kid-parent-bg.png');
+	background-attachment:fixed;
+}
+
+/*------------------------------
+	[---speech area  end---]
+-------------------------------*/

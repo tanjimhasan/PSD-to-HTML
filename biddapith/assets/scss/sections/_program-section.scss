@@ -1,0 +1,51 @@
+/*------------------------------
+	[---program-section  start---]
+-------------------------------*/
+.single-program-box{
+	margin:-15px 0
+}
+.single-program{
+	border:8px solid #ddd;
+	padding:40px;
+	display:block;
+	position:relative;
+	z-index:1;
+	margin:15px 0;
+	margin-left: -15px;
+    margin-right: 15px;
+    @include media-breakpoint-only(lg) {
+	    height:190px;
+	}
+    @include media-breakpoint-between(xs, sm) {
+	    margin-left:0;
+	    margin-right:0;
+	}
+	h3{
+		@include media-breakpoint-only(lg) {
+	        fon-size:22px;
+	    }
+	}
+	i{
+		font-size:24px;
+		color:$text-color;
+		margin-bottom:10px;
+	}
+	.program-number{
+		font-size: 22px;
+	    color: $primary-color;
+	    font-weight: 700;
+	    background: #fff;
+	    width: 40px;
+	    height: 40px;
+	    z-index: 2;
+	    display: inline-block;
+	    text-align: center;
+	    position: absolute;
+	    right: -20px;
+	    top: 11px;
+	}
+}
+
+/*------------------------------
+	[---program-section  end---]
+-------------------------------*/

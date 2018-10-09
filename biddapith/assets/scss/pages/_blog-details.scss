@@ -1,0 +1,38 @@
+/*------------------------------
+[---blog-details section  start---]
+-------------------------------*/
+
+
+/*=========================================
+<---blog-details section import start--->
+==========================================*/
+
+
+@import
+'sections/blog-details-section';
+
+
+
+/*=========================================
+<---blog-details section import end--->
+==========================================*/
+
+.blog-area{
+	background:#f9fdff;
+}
+.blog-details-bg{
+	background-size:cover;
+	background-position:center;
+	background-color:$primary-color;
+	height:300px;
+	width:100%;
+	margin-bottom:30px;
+}
+.blog-details-bg-1{
+	background-image:url('../images/blog-details-1.jpg');
+	
+}
+
+/*------------------------------
+[---blog-details section  start---]
+-------------------------------*/

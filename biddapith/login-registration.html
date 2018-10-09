@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Education Theme</title>
+	
+	<!-- bootstrap css -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- fontawsome css -->
+	<link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
+	<!-- flaticon css -->
+	<link href="assets/css/flaticon.css" rel="stylesheet">
+	<!-- animate css -->
+	<link href="assets/css/animate.css" rel="stylesheet">
+	<!-- main css -->
+	<link href="assets/css/main.css" rel="stylesheet">
+	<!-- custom css -->
+	<link href="assets/css/custom.css" rel="stylesheet">
+	<!-- responsive css -->
+	<link href="assets/css/responsive.css" rel="stylesheet">
+	
+	<!-- Colornip Css-->
+	<link href="assets/css/colornip.css" rel="stylesheet">
+	<link id="theme" href="assets/css/theme-color/theme-green.css" rel="stylesheet">
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i|Rubik:400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+
+
+</head>
+<body>
+		<!--------------
+[=====pre loader=====]
+----------->	
+	<div id="preloader_1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+		<!--------------
+[=====color changer=====]
+----------->
+
+	<div class="Switcher">
+        <button id="Switcher__control" class="Switcher__control"><i class="fas fa-cog"></i></button>
+        <h5 style="margin-bottom: 20px">Change Color</h5>
+        <ul id="colors" data-dir="assets/css/theme-color/">
+            <li data-scheme="theme-orange" data-color="#f39c12"></li>
+            <li data-scheme="theme-greenSea" data-color="#16a085"></li>
+            <li data-scheme="theme-green" data-color="#27ae60"></li>
+            <li data-scheme="theme-blue" data-color="#2980b9"></li>
+            <li data-scheme="theme-purple" data-color="#8e44ad"></li>
+            <li data-scheme="theme-black" data-color="#2c3e50"></li>
+        </ul>
+		      
+    </div>
+
+	<section class="login-registration-section">
+		
+		<div class="section-p registration-p front">
+			<div class="registration-wrapper">
+				<div class="container">
+					<div class="user-authentication-wrapper">
+						<div class="row justify-content-center">
+							<div class="col-md-5 offset-lg-2 offset-md-1">
+								<div class="authentication-text-wrapper d-table">
+									<div class="authentication-text d-table-cell text-center">
+										<h2>Have an Account?</h2>
+										<a href="" class="bordered-btn login-btn">Log in</a>
+										<a href="index.html" class="back-btn">Go to Home</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-5 col-md-6">
+								<div class="authentication-form">
+									<form action="">
+										<p><input type="text" placeholder="Your Name"></p>
+										<p><input type="email" placeholder="Your Email"></p>
+										<p><input type="text" placeholder="username"></p>
+										<p>
+											<select name="usertype">
+												<option value="">Select User type</option>
+												<option value="">Student</option>
+												<option value="">Teacher</option>
+												<option value="">Admin</option>
+											</select>
+										</p>
+										<p><input type="password" placeholder="password"></p>
+										<p><input type="submit" value="Register"></p>
+									</form>
+								</div>			
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section-p login-p back">
+			<div class="login-wrapper">
+				<div class="container">
+					<div class="user-authentication-wrapper theme-2">
+						<div class="row justify-content-center">
+							<div class="col-md-5 offset-lg-2 offset-md-1">
+								<div class="authentication-text-wrapper d-table">
+									<div class="authentication-text theme-2 d-table-cell text-center">
+										<h2>Don't Have an account? </h2>
+										<a href="" class="bordered-btn register-btn">Resister</a>
+										<a href="index.html" class="back-btn">Go to Home</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-5 col-md-6">
+								<div class="authentication-form theme-2">
+									<form action="">
+										<p><input type="text" placeholder="username"></p>
+										<p>
+											<select name="usertype" id="">
+												<option value="">Select User type</option>
+												<option value="">Student</option>
+												<option value="">Teacher</option>
+												<option value="">Admin</option>
+											</select>
+										</p>
+										<p><input type="password" placeholder="password"></p>
+										<p>
+											<input type="submit" value="Log in">
+											<a href="" class="link-btn">Lost your Password?</a>
+										</p>
+									</form>
+								</div>			
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!----------------------
+	===hero area end===
+	----------------------->
+	
+
+	<!-- jquery js -->
+	<script src="assets/js/jquery.min.js"></script>
+	<!-- popper js -->
+	<script src="assets/js/popper.min.js"></script>
+	<!-- Colornip js -->
+	<script src="assets/js/colornip.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<script>
+		jQuery(document).ready(function($){
+			
+			//section active
+			$(".login-btn").on('click',function(){
+				
+				$(".login-registration-section").addClass('flip');
+
+				return false;
+			});
+			$(".register-btn").on('click',function(){
+				$(".login-registration-section").removeClass('flip');
+
+				return false;
+			});
+			$(window).on("load",function(){
+				$("#preloader_1").fadeOut(3000);
+			});
+
+		});
+	</script>
+</body>
+</html>

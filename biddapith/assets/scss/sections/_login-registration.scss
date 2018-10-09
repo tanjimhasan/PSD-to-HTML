@@ -1,0 +1,196 @@
+/*------------------------------
+[---login registration section  start---]
+-------------------------------*/
+.authentication-text-wrapper{
+	height:100%;
+	.authentication-text{
+		vertical-align:middle;
+		padding-top:45px;
+		height:100%;
+		h2{
+			@include media-breakpoint-between(xs, sm) {
+		       margin-left:0;
+		    }
+		}
+		.bordered-btn{
+			padding:10px 40px;
+			margin-top:20px;
+			&:hover{
+				&:before{
+					@include media-breakpoint-between(xs, sm) {
+				       border-color:#fff;
+
+				    }
+				}
+			}
+			
+			@include media-breakpoint-between(xs, sm) {
+		       margin-left:0;
+		       float:left;
+		    }
+		}
+		.back-btn{
+			display:block;
+			margin-top:20px;
+			text-decoration:none;
+			color:$primary-color;
+			@include media-breakpoint-between(xs, sm) {
+		       color:#333;
+		       margin-left:0;
+		       float:right;
+		       margin-top:30px;
+		    }
+		}
+	}
+	.authentication-text.theme-2{
+		vertical-align:middle;
+		padding-top:125px;
+		@include media-breakpoint-between(xs, sm) {
+	       padding-top:35px;
+	       h2{
+	       	margin-left:0;
+	       }
+	       .bordered-btn{
+	       	margin-left:0;
+	       	float:left;
+	       }
+	       .back-btn{
+	       	margin-left:0;
+	       	float:right;
+	       	margin-top:30px;
+	       }
+	    }
+		
+	}
+}
+.authentication-form{
+	margin-top:70px;
+	background:#fff;
+	padding:40px;
+	@include media-breakpoint-between(xs, sm) {
+       margin-top:20px;
+       border: 1px solid #ddd;
+    }
+	input,select{
+		width:100%;
+		border:1px solid #efefef;
+		padding:10px 20px;
+		color:$text-color;
+	}
+	input[type=submit]{
+		width:auto;
+		background:$primary-color;
+		color:#fff;
+		padding:10px 40px;
+		margin-bottom:0;
+	}
+	p{
+		margin-bottom:25px;
+		&:last-child{
+			margin-bottom:0;
+		}
+	}
+	.link-btn{
+		float:right;
+		margin-top:15px;
+		@include media-breakpoint-only(md) {
+            float:none;
+            font-size:12px;
+        }
+	}
+}
+
+.authentication-form.theme-2{
+	margin-top:140px;
+	@include media-breakpoint-between(xs, sm) {
+       margin-top:20px;
+       border: 1px solid #ddd;
+    }
+}
+
+.login-registration-section {
+	margin: 0 auto;
+	height: 130px;  
+	position: relative;
+	-webkit-perspective: 600px;
+	-moz-perspective: 600px;
+}
+
+.login-registration-section {
+	.front,.back{
+		text-align: center;
+	}
+	
+}
+	
+.login-registration-section  {
+	.front{
+		height: inherit;
+		position: absolute;
+		top: 0;
+		z-index: 900;
+		text-align: center;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		   -moz-transform: rotateX(0deg) rotateY(0deg);
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		-webkit-transition: all .8s ease-in-out;
+		   -moz-transition: all .8s ease-in-out;
+			-ms-transition: all .8s ease-in-out;
+			 -o-transition: all .8s ease-in-out;
+				transition: all .8s ease-in-out;
+
+
+
+  
+ 
+	}
+	
+}
+
+.login-registration-section  {
+	.back{
+		height: inherit;
+		position: absolute;
+		top: 0;
+		z-index: 1000;
+		-webkit-transform: rotateY(-180deg);
+		   -moz-transform: rotateY(-180deg);
+		-webkit-transform-style: preserve-3d;
+		   -moz-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+		   -moz-backface-visibility: hidden;
+		-webkit-transition: all .8s ease-in-out;
+		   -moz-transition: all .8s ease-in-out;
+			-ms-transition: all .8s ease-in-out;
+			 -o-transition: all .8s ease-in-out;
+				transition: all .8s ease-in-out;
+
+
+
+ 
+	}
+	
+}
+.login-registration-section.flip  {
+	.front{
+		z-index: 900;
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+	}
+	
+}
+.login-registration-section.flip  {
+	.back{
+		z-index: 1000;
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		-moz-transform: rotateX(0deg) rotateY(0deg);
+	}
+	
+}
+
+/*------------------------------
+[---login registration section  end---]
+-------------------------------*/

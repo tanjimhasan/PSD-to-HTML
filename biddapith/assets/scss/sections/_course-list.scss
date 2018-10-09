@@ -1,0 +1,108 @@
+
+
+/*------------------------------
+	[---course-area start---]
+-------------------------------*/
+
+.course-area{
+	background:#f9fdff;
+}
+
+
+/*------------------------------
+	[---course-area start---]
+-------------------------------*/
+
+
+/*------------------------------
+	[---course-list start---]
+-------------------------------*/
+
+.course-list{
+	.owl-nav{
+		color:$primary-color;
+		.owl-prev,.owl-next{
+			position:absolute;
+			left:50%;
+			bottom:-200px;
+
+			@include media-breakpoint-only(xs) {
+			  
+			}
+			
+			i{
+				font-size:14px;
+				background:$primary-color !important;
+				color:#fff;
+				@include media-breakpoint-only(xs) {
+					
+				   
+				}
+			}
+		}
+		.owl-next{
+			left:46%;
+			 @include media-breakpoint-between(sm, md) {
+			    left:44%;
+			}
+			@include media-breakpoint-only(xs) {
+				 left:40%;		   
+			}
+		}
+	}
+}
+
+.boxed-single-kid-course,.boxed-single-course{
+	margin:-15px 0;
+}
+.course-bg-1{
+	background-image:url('../images/courses/social.jpg');
+}
+.course-bg-2{
+	background-image:url('../images/courses/chemestry.jpg');
+}
+.course-bg-3{
+	background-image:url('../images/courses/social.jpg');
+}
+.course-bg-4{
+	background-image:url('../images/courses/ged.jpg');
+}
+.course-bg-5{
+	background-image:url('../images/courses/physics.jpg');
+}
+.course-bg-6{
+	background-image:url('../images/courses/body-fitness.jpg');
+}
+.course-bg-7{
+	background-image:url('../images/courses/ict.jpg');
+}
+.kid-course-section-bg-1{
+	background-image:url('../images/slider/kid-course-bg.png');
+	background-attachment:fixed;
+}
+
+
+
+/*=========================================
+<---single course section import start--->
+==========================================*/
+
+
+
+@import
+'sections/single-course-section';
+
+
+
+/*=========================================
+<---single-course section import end--->
+==========================================*/
+
+
+
+/*------------------------------
+	[---course-list  end---]
+-------------------------------*/
+
+
+

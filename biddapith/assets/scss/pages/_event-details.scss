@@ -1,0 +1,37 @@
+/*------------------------------
+[---event-details section  start---]
+-------------------------------*/
+
+
+/*=========================================
+<---event-details section import start--->
+==========================================*/
+
+
+@import
+'sections/event-details-section';
+
+
+
+/*=========================================
+<---event-details section import end--->
+==========================================*/
+
+.event-area{
+	background:#f9fdff;
+}
+.event-details-bg{
+	background-size:cover;
+	background-position:center;
+	background-color:$primary-color;
+	height:300px;
+	width:100%;
+	margin-bottom:30px;
+}
+.event-details-bg-1{
+	background-image:url('../images/event-detail-1.jpg');
+}
+
+/*------------------------------
+[---event-details section  start---]
+-------------------------------*/

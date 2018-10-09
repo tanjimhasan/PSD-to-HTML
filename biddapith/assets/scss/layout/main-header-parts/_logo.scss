@@ -1,0 +1,48 @@
+/*------------------------------
+	[---logo  start---]
+-------------------------------*/
+
+.logo{
+	@include media-breakpoint-between(xs, md) {
+	   	text-align:center !important;
+    }
+	img{
+		max-width:57px;
+	}
+	a{
+		text-decoration:none;
+		h1{
+			font-size:28px;
+			color:$heading-color;
+			margin-bottom:0;
+			margin-top:12px;
+			@include media-breakpoint-only(lg) {
+			   font-size:23px;
+			   margin-top:10px;
+			}
+			span{
+				color:$primary-color;
+			}
+			a{
+				display:inline-block;
+
+			}
+		}
+	}
+	
+}
+
+/*------------------------------
+	[---logo  end---]
+-------------------------------*/
+
+
+.logo.theme-2{
+	h4{
+		margin-bottom:0;
+		margin-top:14px;
+		@include media-breakpoint-only(lg) {
+           font-size:18px;
+        }
+	}
+}

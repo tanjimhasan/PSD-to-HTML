@@ -1,0 +1,25 @@
+/*------------------------------
+[---contact-info  start---]
+-------------------------------*/
+
+.contact-info{
+	color:#fff;
+	padding-top: 4px;
+	display: block;
+	@include media-breakpoint-between(xs, md){
+		text-align:center;
+	}
+	i{
+		padding-right:4px;
+		color:#fff;
+	}
+	i.fa-envelope{
+		padding-left:40px;
+		@include media-breakpoint-only(md) {
+            padding-left:20px;
+        }
+	}
+}
+/*------------------------------
+[---contact-info end---]
+-------------------------------*/

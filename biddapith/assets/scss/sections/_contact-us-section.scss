@@ -1,0 +1,84 @@
+/*------------------------------
+[---contact-us section  start---]
+-------------------------------*/
+
+.contact-info-details{
+	border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    padding:15px;
+	h3{
+		font-weight:600;
+		font-size:18px;
+		line-height:1.7;
+		margin-bottom:0;
+		@include media-breakpoint-between(xs, sm) {
+	       margin-bottom:15px;
+	    }
+		span{
+			display:block;
+			color:$text-color;
+			font-size:14px;
+			font-weight:400;
+			font-family:'Rubik', sans-serif;
+		}
+	}
+	.contact-icon{
+		i{
+			font-size:26px;
+			color:$heading-color;
+		}
+	}
+}
+.contact-info-details.theme-2{
+	border:none;
+
+	.contact-details.theme-2{
+		position:relative;
+		padding-left:80px;
+		height:60px;
+
+		i{
+			background:$primary-color;
+			color:#fff;
+			height:50px;
+			width:50px;
+			text-align:center;
+			line-height:50px;
+			font-size:20px;
+			position:absolute;
+			left:0;
+			top:0;
+			border-radius:0 0 15px;
+		}
+	}
+}
+
+.contact-form{
+	@include media-breakpoint-between(xs, md) {
+       margin-bottom:30px;
+    }
+	h3{
+		margin-bottom:30px;
+		font-weight:700;
+	}
+	p{
+		margin-bottom:20px;
+	}
+	input,textarea{
+		width:100%;
+		border:1px solid #efefef;
+		padding:8px 20px;
+		border-radius:4px;
+	}
+	input[type=submit]{
+		width:auto;
+		background:$primary-color;
+		color:#fff;
+	}
+}
+
+
+
+/*------------------------------
+[---contact-us section  end---]
+-------------------------------*/

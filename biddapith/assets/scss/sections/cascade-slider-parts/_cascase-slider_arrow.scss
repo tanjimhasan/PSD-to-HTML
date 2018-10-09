@@ -1,0 +1,40 @@
+
+/*----------------------------------
+[---cascade-slider_arrow start---]
+-----------------------------------*/
+
+.cascade-slider_arrow {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+	z-index: 5;
+	left: -190px;
+	color: #fff;
+	@include media-breakpoint-only(lg) {
+        left: -50px;
+    }
+    @include media-breakpoint-only(md) {
+       left: -20px;
+    }
+     @include media-breakpoint-only(sm) {
+	  display:none;
+	}
+	i{
+		font-size:20px;
+	}
+}
+.cascade-slider_arrow.cascade-slider_arrow-right{
+	left:auto;
+	right:-190px;
+	@include media-breakpoint-only(lg) {
+        right: -50px;
+    }
+    @include media-breakpoint-only(md) {
+       right:205px;
+    }
+}
+
+/*----------------------------------
+[---cascade-slider_arrow end---]
+-----------------------------------*/

@@ -1,0 +1,52 @@
+
+/*------------------------------
+[---course-details  start---]
+-------------------------------*/
+.course-details-bg{
+	background-size:cover;
+	background-position:center;
+	background-color:$primary-color;
+	height:360px;
+	width:100%;
+}
+.course-details-bg-1{
+	background-image:url('../images/single-course-bg-2.jpg');
+}
+.course-featured-image{
+	margin-top:60px;
+	img{
+		float:right;
+		width:80%;
+		height:450px;
+		border-radius:0 0 15px;
+		@include media-breakpoint-between(xs, md) {
+	      float:left;
+	    }
+	}
+	
+	
+	
+}
+
+/*=========================================
+<---course-details section import start--->
+==========================================*/
+
+
+@import
+'sections/course-details-section';
+
+
+
+/*=========================================
+<---course-details section import end--->
+==========================================*/
+
+
+
+/*------------------------------
+[---course-details  start---]
+-------------------------------*/
+
+
+

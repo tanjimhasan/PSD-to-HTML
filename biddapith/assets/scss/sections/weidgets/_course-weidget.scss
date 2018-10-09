@@ -1,0 +1,33 @@
+/*------------------------------
+[---course weidget start---]
+-------------------------------*/
+
+.course-weidget{
+	margin-top:40px;
+	h3{
+		font-size:24px;
+		margin-bottom:30px;
+	}
+	p{
+		margin-bottom:25px;
+	}
+	.single-info-item{
+		h5{
+			font-size:14px;
+			color:$text-color;
+			margin-bottom:5px;
+		}
+	}
+	.boxed-btn{
+		margin-top:15px;
+	}
+}
+.course-weidget.ml-50{
+		@include media-breakpoint-between(xs, md) {
+	       margin-left:0;
+	    }
+	}
+
+/*------------------------------
+[---course weidget end---]
+-------------------------------*/
