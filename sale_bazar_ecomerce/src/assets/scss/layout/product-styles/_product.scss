@@ -1,0 +1,122 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+product style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.product-slide-list,.product-slide-list-two{
+
+	margin:-20px 0;
+	margin-left:-15px;
+}
+.vertical-product-slider{
+	.slick-arrow.slick-prev-btn{
+		right:40px;
+		top:-56px;
+	}
+	.slick-arrow.slick-next-btn{
+		top:-56px;
+		right:15px;
+	}
+}
+.horizontal-product-list{
+	.slick-arrow{
+		top:-56px;
+	}
+	.vertical-product-details{
+		@include media-breakpoint-only(sm) {
+	        margin-left:0 !important;
+	    }
+		
+	}
+}
+.horizontal-double-row-product{
+	.slick-arrow.slick-prev-btn{
+		right:25px;
+		top:-56px;
+	}
+	.slick-arrow.slick-next-btn{
+		top:-56px;
+		right:0;
+	}
+	.slick-current{
+		.double-product-box{
+			.single-vertical-product{
+				margin-right:15px !important;
+				@include media-breakpoint-only(xs) {
+			       margin-right:0 !important;
+			    }
+			}
+		}
+	}
+
+	.slick-active{
+		.double-product-box{
+			margin-right:0;
+		}
+	}
+	
+}
+.shop-product-box{
+	margin:-20px 0;
+	.single-product{
+		padding-left:0; 
+	} 
+}
+.shop-product-box.column-five{
+	[class*="xl-col-5"]{
+		-webkit-box-flex: 1;
+	    -ms-flex: 1 0 20%;
+	    flex: 1 0 20%;
+	    width: 20%;
+	    max-width: 20%;
+
+	    @include media-breakpoint-only(lg) {
+	            -ms-flex: 0 0 25%;
+			    flex: 0 0 25%;
+			    max-width: 25%;
+	    }
+	    @include media-breakpoint-only(md) {
+	        -ms-flex: 0 0 33.333333%;
+		    flex: 0 0 33.333333%;
+		    max-width: 33.333333%;
+	    }
+	    @include media-breakpoint-only(sm) {
+            -ms-flex: 0 0 50%;
+		    flex: 0 0 50%;
+		    max-width: 50%;
+	    }
+	    @include media-breakpoint-only(xs) {
+            -ms-flex: 0 0 100%;
+		    flex: 0 0 100%;
+		    max-width: 100%;
+	    }
+
+	}
+	.xl-col-5{
+		padding-right:10px;
+		padding-left:10px;
+	}
+}
+.shop-product-box.list{
+	.single-grid-product{
+		display:none;
+	}
+	[class*="col"], [class*="col-"]{
+		-webkit-box-flex: 1;
+	    -ms-flex: 1 0 100%;
+	    flex: 1 0 100%;
+	    width: 100%;
+	    max-width: 100%;
+	}
+}
+.shop-product-box.grid{
+	.single-list-product{
+		display:none !important;
+	}
+}
+.row.shop-product-box{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+/* =-=-=-=-=-=-=-=-=-=-=
+product style end 
+=-=-=-=-=-=-=-=-=-=-= */

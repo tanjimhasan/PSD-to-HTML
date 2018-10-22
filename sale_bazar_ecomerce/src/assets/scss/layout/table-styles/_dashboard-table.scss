@@ -1,0 +1,50 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+dashboard table style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.table-title-btn{
+	h4{
+		font-size:16px;
+		font-weight:600;
+		color:$heading-color;
+		margin-bottom:18px;
+	}
+	a{
+		margin-left:auto;
+		color:$primary-color;
+		text-decoration:none;
+	}
+}
+.dashboard_table{
+	thead{
+		background:#f4f4f4;
+		color:$heading-color;
+	}
+	.llittle_wide{
+		min-width:100px;
+	}
+	.medium_wide{
+		min-width:110px;
+	}
+	.large_wide{
+		min-width:190px;
+	}
+	.dashboard-action{
+		a{
+			color:$primary-color;
+			text-decoration:none;
+			transition:$transition-time;
+			&:hover{
+				color:$text-color;
+			}
+		}
+		span{
+			color:$primary-color;
+			font-weight:800;
+		}
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+dashboard table end start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

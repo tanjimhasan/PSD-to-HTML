@@ -1,0 +1,44 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+related-product-form style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.related-product-form{
+	margin-top:25px;
+	.table-wrapper{
+		table{
+			border:1px solid $border-color;
+			td{
+				border-bottom:1px solid $border-color;
+				border-right:1px solid $border-color;
+				padding:10px;
+				width:33.33%;
+				text-align:center;
+			}
+			.p_name{
+				font-weight:600;
+			}
+			.p_quantity{
+				.cart-product-qty{ 
+					input{
+						width:30px;
+						border:0;
+						height:30px;
+						line-height:30px;
+						text-align:center;
+					}
+					a{
+						color:$text-color;
+						border: 1px solid #dae2e6;
+					    display: inline-block;
+					    padding: 3px 8px;
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=
+related-product-form style end 
+=-=-=-=-=-=-=-=-=-=-= */

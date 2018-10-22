@@ -1,0 +1,15 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+header bottom style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.header-bottom{
+	background:#f4f4f4;
+	@include media-breakpoint-between(xs, md) {
+         background:#fff;
+    }
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=
+header bottom style end 
+=-=-=-=-=-=-=-=-=-=-= */

@@ -1,0 +1,41 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+info-box style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.info-box-area{
+	background:#f4f4f4;
+	
+
+}
+
+.info-box-area.theme-2{
+	background:#fff;
+	.info-box-wrapper{
+		background:#f4f4f4;
+		@include media-breakpoint-between(xs, sm) {
+	      padding:0px 10px; 
+	      
+	    }
+		.info-box{
+			
+			@include media-breakpoint-between(xs, sm) {
+		      padding-left:10px;
+		      border-left:0px solid #fff;
+		    }
+			&:first-child,&:last-child{
+				padding-left:50px;
+				@include media-breakpoint-between(xs, sm) {
+			      margin-left:auto;
+			      width:260px;
+		       	  padding-left: 0px;
+			    }
+			    @include media-breakpoint-only(md) {
+		            padding-left:30px;
+		        }
+			}
+		}
+	}
+}
+/* =-=-=-=-=-=-=-=-=-=-=
+info-box style end 
+=-=-=-=-=-=-=-=-=-=-= */

@@ -1,0 +1,56 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+checkBox style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.check-box{
+	input[type="checkbox"] + label{
+	    position: relative;
+	    padding-left: 30px;
+	    line-height: 20px;
+	    font-size: 14px;
+	    font-weight: 400;
+	    color: $heading-color;
+	    margin: 0;
+	    &:before{
+	    	position: absolute;
+		    left: 0;
+		    top: 0;
+		    width: 20px;
+		    height: 20px;
+		    display: block;
+		    border: 2px solid $heading-color;
+		    content: "";
+		    -webkit-transition: all 0.3s ease 0s;
+		    -o-transition: all 0.3s ease 0s;
+		    transition: all 0.3s ease 0s;
+	    }
+	    &:after{
+	    	position: absolute;
+		    left: 4px;
+		    top: 0;
+		    display: block;
+		    content: "\f00c";
+		    font-weight:900;
+		    font-family: "Font Awesome 5 Free";
+		    opacity: 0;
+		    text-align: center;
+		    -webkit-transition: all 0.3s ease 0s;
+		    -o-transition: all 0.3s ease 0s;
+		    transition: all 0.3s ease 0s;
+	    }
+	}
+	input[type=checkbox]{
+		display:none;
+	}
+	input[type="checkbox"]{
+		&:checked + label{
+			&:after{
+				opacity:1;
+			}
+		}
+	}
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+checkBox style end 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

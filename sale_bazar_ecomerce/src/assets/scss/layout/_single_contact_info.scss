@@ -1,0 +1,27 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+single contact info style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.single-contact{
+	position:relative;
+	padding-left:60px;
+	margin-bottom: 20px;
+	i{
+		position:absolute;
+		left:0;
+		top:6px;
+		font-size:16px;
+		height:45px;
+		width:45px;
+		line-height:45px;
+		text-align:center;
+		background:$primary-color;
+		color:#fff;
+
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+single contact info end start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

@@ -1,0 +1,28 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+form element style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.form-element{
+	margin-bottom:20px;
+	input,select,label,textarea{
+		width:100%;
+		
+	}
+	input,select,textarea{
+		padding:10px;
+		border:1px solid $border-color;
+	}
+	input#address{
+		margin-bottom:8px;
+	}
+}
+
+.edit-form-action{
+	input[type=submit]{
+		margin-left:auto;
+		border:0;
+	}
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+form element style end 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

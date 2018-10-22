@@ -1,0 +1,38 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+section-head style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+.title-block{
+	font-family: "Oswald",sans-serif;
+	font-size:18px;
+	text-transform:uppercase;
+	position:relative;
+	z-index:2;
+	margin-bottom: 30px;
+    padding-bottom: 6px;
+	&:after{
+		position:absolute;
+		left:0;
+		bottom:-10px;
+		background:#dae2e6;
+		height:2px;
+		width:100%;
+		content:"";
+	}
+	&:before{
+		position:absolute;
+		left:0;
+		bottom:-11px;
+		background:$primary-color;
+		height:4px;
+		width:80px;
+		content:"";
+		z-index:1;
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+section-head end start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

@@ -1,0 +1,49 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+single client testimonial style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+.single-client-testimonial{
+	padding:0 20px;
+	.client-info{
+		img{
+			max-width:80px;
+			border-radius:50%;
+		}
+	}
+	.client-text{
+		margin-left:15px;
+		margin-top:15px;
+		h4{
+			font-weight:600;
+			font-size:16px;
+			text-transform:uppercase;
+			line-height:1.6;
+			span{
+				display:block;
+				font-size:80%;
+				color:$text-color;
+			}
+		}
+	}
+	.client-speech{
+		margin-left:70px;
+		p{
+			padding:0 20px;
+			i{
+				color:$primary-color;
+			}
+			i.fa-quote-left{
+				padding-right:10px;
+			}
+			i.fa-quote-right{
+				padding-left:10px;
+			}
+		}
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+single client testimonial end start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

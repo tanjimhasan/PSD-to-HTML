@@ -1,0 +1,164 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+quick-view-modal style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.single-tab-menu-item{
+	padding: 0 10px;
+	a{
+		display:block;
+		img{
+			
+			border:1px solid $border-color;
+		}
+	}
+}
+
+
+
+.product-options{
+	h2,p{
+		margin-bottom:6px;
+	}
+	p{
+		color:$heading-color;
+	}
+	.product-title{
+		color:$heading-color;
+		font-size:20px;
+		font-weight:600;
+		span{
+			color:$text-color;
+		}
+	}
+	.product-price{
+		font-weight:600;
+		font-size:18px;
+	}
+	.condition{
+		color:$text-color;
+		span{
+			
+			color:$heading-color;
+		}
+	}
+	.user-task-links{
+		ul{
+			margin:15px 0;
+			li{
+				display:inline-block;
+				a{
+					color:$text-color;
+					margin-right:10px;
+					text-decoration:none;
+					i{
+						padding-right:5px;
+						font-size:18px;
+					}
+				}
+			}
+		}
+	}
+	p.product-color {
+	    border-top: 1px solid #ddd;
+	    border-bottom: 1px solid #ddd;
+	    padding: 15px 0;
+	    margin-top: 18px;
+	    margin-bottom: 15px;
+	    .color-block{
+	    	margin-top:5px;
+	    }
+	}
+	.social-share-links{
+		margin:15px 0;
+		ul{
+			li{
+				display:inline-block;
+				a{
+					color: $text-color;
+				    border: 1px solid $border-color;
+				    padding: 4px 16px;
+				    display: inline-block;
+				    text-decoration:none;
+				    i{
+				    	margin-right:5px;
+				    }
+				    &:hover{
+				    	background:$text-color;
+				    	color:#fff;
+				    }
+				}
+				a.twitter{
+					&:hover{
+						background:#56D7FF;
+					}
+				}
+				a.facebook{
+					&:hover{
+						background:#3C5B9B;
+					}
+				}
+				a.googlePlus{
+					&:hover{
+						background:#E04B34;
+					}
+				}
+				a.pinterest{
+					&:hover{
+						background:#CE1F21;
+					}
+				}
+			}
+		}
+	}
+	.stock{
+		.stock-status{
+			margin-left:10px;
+		}
+	}
+	.quantity{
+		margin:15px 0;
+		.inc,.dec{
+			width:30px;
+			height:30px;
+			color:$heading-color;
+			border:1px solid $border-color;
+			line-height:30px;
+			text-align:center;
+			display:inline-block;
+		}
+		.counter {
+			input[type=text]{
+				width: 30px;
+			    height: 30px;
+			    text-align: center;
+			    border: 1px solid $border-color;
+			}
+		    
+		}
+	}
+	.size{
+		select{
+			color:$text-color;
+			border:1px solid $border-color;
+			width:30%;
+			padding:8px;
+			margin-right:15px;
+			margin-left:10px;
+		}
+	}
+	.shop_action{
+		margin-top:25px;
+		.site-btn{
+			text-decoration:none;
+		}
+	}
+	.action-add-cart{
+		margin-top:15px;
+		text-decoration:none;
+		margin-bottom:15px;
+	}
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=
+quick-view-modal style end 
+=-=-=-=-=-=-=-=-=-=-= */

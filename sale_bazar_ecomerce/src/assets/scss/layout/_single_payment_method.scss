@@ -1,0 +1,71 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+check payment method section style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.checkout-payment-method {
+    margin-top: 25px;
+}
+.single-method{
+	margin-bottom:15px;
+	&:last-child{
+		margin-bottom:0;
+	}
+	label,p{
+		font-size:16px;
+	}
+	p{
+		margin-top:8px;
+		display:none;
+		color:$heading-color;
+	}
+	input[type="radio"] + label{
+	    position: relative;
+	    padding-left: 30px;
+	    line-height: 20px;
+	    font-size: 14px;
+	    font-weight: 400;
+	    color: #202020;
+	    margin: 0;
+	    &:before{
+	    	position: absolute;
+		    left: 0;
+		    top: 0;
+		    width: 20px;
+		    height: 20px;
+		    display: block;
+		    border: 2px solid #999999;
+		    content: "";
+		    -webkit-transition: all 0.3s ease 0s;
+		    -o-transition: all 0.3s ease 0s;
+		    transition: all 0.3s ease 0s;
+	    }
+	    &:after{
+	    	position: absolute;
+		    left: 5px;
+		    top: 5px;
+		    display: block;
+		    content: "";
+		    opacity: 0;
+		    background-color: #202020;
+		    width: 10px;
+		    text-align: center;
+		    height: 10px;
+		    -webkit-transition: all 0.3s ease 0s;
+		    -o-transition: all 0.3s ease 0s;
+		    transition: all 0.3s ease 0s;
+	    }
+	}
+	input[type=radio]{
+		display:none;
+	}
+	input[type="radio"]{
+		&:checked + label{
+			&:after{
+				opacity:1;
+			}
+		}
+	}
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+check payment method section end start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

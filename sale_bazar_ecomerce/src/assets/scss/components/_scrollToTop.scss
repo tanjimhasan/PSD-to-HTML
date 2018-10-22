@@ -1,0 +1,27 @@
+/*--------------------------
+[---scrollToTop start---]
+--------------------------*/
+
+a.scrollToTop {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background: #404040;
+    bottom: 30px;
+    right: 20px;
+    color: #fff;
+    z-index: 999;
+    text-align: center;
+    line-height: 40px;
+    text-decoration:none;
+    display:none;
+    &:hover{
+        background:#555;
+    }
+}
+
+
+/*--------------------------
+[---scrollToTop end---]
+--------------------------*/

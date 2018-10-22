@@ -1,0 +1,65 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=
+category weidget style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.category-weidget{
+	border:1px solid #dae2e6;
+	h3{
+		font-size:15px;
+		font-weight:700;
+		padding:15px;
+		border-bottom:1px solid #dae2e6;
+		margin-bottom:0;
+		background:#ddd;
+		text-transform:uppercase;
+	}
+	.category-weidget-body{
+		padding:15px 20px;
+		ul{
+			
+			li{
+				display:block;
+				
+				border-bottom:1px solid #dae2e6;
+			}
+			a{
+				color:$text-color;
+				display:block;
+				padding:8px 10px;
+				cursor:pointer;
+				text-decoration:none;
+				&:hover{
+					background:$primary-color;
+					color:#fff;
+				}
+			}
+			a.active{
+				background:$primary-color;
+				color:#fff;
+			}
+			i.fas{
+				margin-right:5px;
+			}
+			i.flaticon{
+				&:before{
+					margin-left:0;
+					font-size:15px;
+					margin-right:5px;
+				}
+			}
+		}
+		.site-btn{
+			text-decoration:none;
+			width:100%;
+			padding:12px 0;
+			background:$primary-color;
+			margin-top:32px;
+		}
+	}
+	
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=
+category weidget style end 
+=-=-=-=-=-=-=-=-=-=-= */

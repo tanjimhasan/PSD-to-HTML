@@ -1,0 +1,140 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+cart table style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.t-cart{
+	thead{
+		background:#eee;
+		@include media-breakpoint-between(xs, sm) {
+	         display:none;
+	    }
+	}
+	tr{
+		td{
+			text-align:center;
+			vertical-align:middle;
+			padding:20px 15px;
+			border: 0;
+			border-bottom:1px solid $border-color;
+			@include media-breakpoint-between(xs, sm) {
+		        display: block;
+			    width: 100%;
+			    max-width: none;
+			    padding: 15px;
+			    text-align: left;
+		    }
+		}
+		td.pro_name_column{
+			min-width:160px;
+		}
+		td.p_quantity{
+			min-width:80px;
+
+			.cart-product-qty{
+				border:1px solid $border-color;
+				display: block;
+    			padding: 6px 8px;
+    			width:100px;
+				.qty-btn-cart{
+					color:$text-color;
+				}
+				input{
+					width:40px;
+					text-align:center;
+					border:0;
+					color:$text-color;
+				}
+			}
+		}
+		.pro_delete_column{
+			a{
+				color:$text-color;
+				&:hover{
+					color:$primary-color;
+				}
+			}
+			
+		}
+	}
+	tfoot{
+		tr{
+			td{
+				padding:15px 0;
+			}
+		}
+		@include media-breakpoint-between(xs, sm) {
+	        .float-left{
+				float:none !important;
+			}
+			.float-right{
+				float:none !important;
+				a{
+					display:inline-block;
+					margin-top:12px;
+				}
+			}
+	    }
+		
+		.bordered-btn{
+			text-decoration:none;
+		}
+	}
+	.pro_figure_column{
+		img{
+			max-width:120px;
+			border:1px solid $border-color;
+		}
+	}
+}
+.cart-coupon-action{
+	position:relative;
+	height: 90px;
+	.discount-form{
+		position:absolute;
+		left:0;
+		top:0;
+		background:#fff;
+		width:60%;
+		@include media-breakpoint-between(xs, sm) {
+	        width:100%;
+	    }
+		h4{
+			font-size:18px;
+			font-weight:600;
+		}
+	}
+	input{
+		padding:10px 20px;
+		@include media-breakpoint-only(xs) {
+	        padding:10px 10px;
+	    }
+	}
+	input[type=text]{
+		width:70%;
+		border:1px solid $border-color;
+		@include media-breakpoint-between(xs, md) {
+	        width:65%;
+	    }
+	}
+	input[type=submit]{
+		width:30%;
+		float:right;
+		border:0;
+		@include media-breakpoint-between(xs, md) {
+	        width:35%;
+	    }
+	}
+	.site-btn{
+		padding:11px 20px;
+		background:$primary-color;
+		@include media-breakpoint-only(xs) {
+	        padding:11px 5px;
+	    }
+	}
+}
+
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+cart table end start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

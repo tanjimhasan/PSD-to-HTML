@@ -1,0 +1,81 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 03/10/2018 10:33
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../webfonts/Flaticon.eot");
+  src: url("../webfonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../webfonts/Flaticon.woff") format("woff"),
+       url("../webfonts/Flaticon.ttf") format("truetype"),
+       url("../webfonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-001-bobbin:before { content: "\f100"; }
+.flaticon-002-safety-pin:before { content: "\f101"; }
+.flaticon-003-pincushion:before { content: "\f102"; }
+.flaticon-004-sewing:before { content: "\f103"; }
+.flaticon-005-buttons:before { content: "\f104"; }
+.flaticon-006-needle:before { content: "\f105"; }
+.flaticon-007-pattern:before { content: "\f106"; }
+.flaticon-008-yarn-ball:before { content: "\f107"; }
+.flaticon-009-needles:before { content: "\f108"; }
+.flaticon-010-pin:before { content: "\f109"; }
+.flaticon-011-scissors:before { content: "\f10a"; }
+.flaticon-012-sewing-thimble:before { content: "\f10b"; }
+.flaticon-013-measuring-tape:before { content: "\f10c"; }
+.flaticon-014-thread:before { content: "\f10d"; }
+.flaticon-015-scissors-1:before { content: "\f10e"; }
+.flaticon-016-sewing-machine:before { content: "\f10f"; }
+.flaticon-017-mannequin:before { content: "\f110"; }
+.flaticon-018-thread-1:before { content: "\f111"; }
+.flaticon-019-sewing-1:before { content: "\f112"; }
+.flaticon-020-safety-pin-1:before { content: "\f113"; }
+.flaticon-021-chalk:before { content: "\f114"; }
+.flaticon-022-wool-ball:before { content: "\f115"; }
+.flaticon-023-handmade:before { content: "\f116"; }
+.flaticon-024-sewing-2:before { content: "\f117"; }
+.flaticon-025-steam:before { content: "\f118"; }
+.flaticon-026-pattern-1:before { content: "\f119"; }
+.flaticon-027-hanger:before { content: "\f11a"; }
+.flaticon-028-sewing-machine-1:before { content: "\f11b"; }
+.flaticon-029-blade:before { content: "\f11c"; }
+.flaticon-030-pattern-2:before { content: "\f11d"; }
+.flaticon-031-shirt:before { content: "\f11e"; }
+.flaticon-032-catalogue:before { content: "\f11f"; }
+.flaticon-033-ripper:before { content: "\f120"; }
+.flaticon-034-pattern-3:before { content: "\f121"; }
+.flaticon-035-crochet:before { content: "\f122"; }
+.flaticon-036-thread-spool:before { content: "\f123"; }
+.flaticon-037-zipper:before { content: "\f124"; }
+.flaticon-038-threader:before { content: "\f125"; }
+.flaticon-039-sewing-3:before { content: "\f126"; }
+.flaticon-040-chalk-1:before { content: "\f127"; }
+.flaticon-041-embroidery:before { content: "\f128"; }
+.flaticon-042-cutter:before { content: "\f129"; }
+.flaticon-043-test:before { content: "\f12a"; }
+.flaticon-044-dress:before { content: "\f12b"; }
+.flaticon-045-pocket:before { content: "\f12c"; }
+.flaticon-046-embroidery-1:before { content: "\f12d"; }
+.flaticon-047-knitting:before { content: "\f12e"; }
+.flaticon-048-leather:before { content: "\f12f"; }
+.flaticon-049-cutter-1:before { content: "\f130"; }
+.flaticon-050-vest:before { content: "\f131"; }

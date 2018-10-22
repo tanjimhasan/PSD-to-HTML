@@ -1,0 +1,27 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+header top style start 
+=-=-=-=-=-=-=-=-=-=-= */
+.header-top{
+	color:#fff;
+	
+	.container{
+		position:relative;
+		padding:6px 15px;
+		&:after{
+			position:absolute;
+			left:15px;
+			right:15px;
+			bottom:0;
+			height:1px;
+			background:#4073D8;
+			content:"";
+
+		}
+	}
+}
+
+
+
+/* =-=-=-=-=-=-=-=-=-=-=
+header top style end 
+=-=-=-=-=-=-=-=-=-=-= */

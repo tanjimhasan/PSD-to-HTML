@@ -1,0 +1,139 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+single blog section style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.blog-details{
+	.blog-meta{
+		border-bottom:0;
+	}
+	.blog-title{
+		h2{
+			font-size:22px;
+		}
+	}
+	.blog-share-links{
+		flex-direction:row;
+		padding:25px 0;
+		border-top:1px solid $border-color;
+		border-bottom:1px solid $border-color;
+		h3{
+			font-size:26px;
+			font-weight:600;
+			margin-bottom:0;
+			line-height: 26px;
+		}
+		.social-icons{
+			margin-left:15px;
+			a{
+				display:inline-block;
+				color:#fff;
+				background:#3b5a9a;
+				height:40px;
+				width:40px;
+				text-align:center;
+				line-height:40px;
+				text-decoration:none;
+			}
+			a.twitter{
+				background:#1aa9e1;
+			}
+			a.googlePlus{
+				background:#dd4b39;
+			}
+			a.pinterest{
+				background:#dd4b39;
+			}
+		}
+	}
+	.author-comment{
+		padding-bottom:30px;
+		border-bottom:1px solid $border-color;
+		.author-image{
+			img{
+				max-width:100px;
+			}
+		}
+		.comment-text{
+			margin-left:20px;
+			h3{
+				font-size:20px;
+				color:$text-color;
+				font-weight:600;
+				margin-bottom:10px;
+				text-transform:capitalize;
+			}
+			p{
+				line-height:1.6;
+			}
+		}
+	}
+	.comments-reply{
+		h3{
+			font-size:18px;
+			font-weight:600;
+		}
+		.comment-list{
+
+		}
+		.single-comment{
+			margin-bottom:50px;
+			.com-author-img{
+				img{
+					max-width:100px;
+				}
+			}
+			.comment-content{
+				margin-left:20px;
+				h3{
+					font-size:18px;
+					color:$text-color;
+					font-weight:700;
+					margin-bottom:6px;
+					span{
+						font-weight:400;
+						font-size:85%;
+					}
+				}
+				p{
+					margin-bottom:5px;
+					line-height:1.6;
+				}
+				.comment-rply-btn{
+					text-decoration:none;
+					color:$text-color;
+					&:hover{
+						color:$primary-color;
+					}
+				}
+			}
+		}
+		.comment-child{
+			margin-left:40px;
+		}
+	}
+	.comment-form{
+		h2{
+			font-size:26px;
+			font-weight:600;
+			margin-bottom:25px;
+		}
+		input,textarea{
+			width:100%;
+			border:2px solid $border-color;
+			padding:10px 12px;
+		}
+		.form-element{
+			margin-bottom:20px;
+		}
+		.bordered-btn{
+			margin-top:20px;
+			text-decoration:none;
+			border:2px solid $border-color;
+			font-weight:700;
+		}
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+single blog section end start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

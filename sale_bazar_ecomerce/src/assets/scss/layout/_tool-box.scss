@@ -1,0 +1,118 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+tool-box style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.tool-box-body{
+	@include media-breakpoint-between(xs,md) {
+       display:block !important;
+    }
+
+}
+.tool-box.mb-30{
+	margin-bottom:15px;
+}
+.tool-box-header{
+	font-size:20px;
+	text-transform:uppercase;
+	color:$text-color;
+	font-weight:600;
+	margin-bottom:20px;
+	line-height: 16px;
+}
+.tool-box-left{
+	 @include media-breakpoint-only(xs) {
+      display: block !important;
+    }
+	.product-sort{
+		select{
+			border:1px solid $border-color;
+			padding:6px 10px;
+		}
+	}
+	.product-show{
+		margin-left:20px;
+		@include media-breakpoint-only(xs) {
+	      margin-left:0px;
+	      margin-top:20px;
+	    }
+	    p{
+	    	margin-bottom:0;
+	    }
+		select{
+			border:1px solid $border-color;
+			padding:6px 10px;
+		}
+	}
+}
+.tool-box-right{
+	margin-left:auto;
+	.view-mode{
+		@include media-breakpoint-between(xs, md) {
+	         margin-top:15px;
+	    }
+		a{
+			color:$text-color;
+			font-size:24px;
+			display:inline-block;
+			margin-left:20px;
+			line-height:1.2;
+			text-decoration:none;
+			span{
+				display:block;
+				font-size:12px;
+			}
+		}
+		a.active{
+			color:$heading-color;
+		}
+	}
+}
+
+.bottom-tool-box{
+	border-top:1px solid $border-color;
+	padding:15px 0;
+	border-bottom:1px solid $border-color;
+	.search-result {
+	    line-height: 33px;
+	}
+	@include media-breakpoint-only(xs) {
+      display: block !important;
+    }
+	.pagination-container{
+		margin-left: auto;
+		@include media-breakpoint-only(xs) {
+	      margin-top: 10px;
+	    }
+		ul{
+			li{
+				display:inline-block;
+				border:1px solid $border-color;
+				padding:4px 10px;
+				a{
+					display:block;
+					text-decoration:none;
+					color:$text-color;
+				}
+			}
+			li.previous, li.next, li.dots{
+				border:0;
+			}
+			li.active{
+				background:$primary-color;
+				a{
+					color:#fff;
+				}
+				
+			}
+			li.disabled{
+				opacity:.5;
+			}
+			li.next{
+				color:$heading-color;
+			}
+		}
+	}
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+tool-box end start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

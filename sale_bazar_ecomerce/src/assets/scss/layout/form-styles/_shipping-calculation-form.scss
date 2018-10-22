@@ -1,0 +1,15 @@
+.shipping-calculation-form{
+			margin-bottom:30px;
+			label,input,select{
+				width:100%;
+
+			}
+			input,select{
+				padding:10px;
+				border:1px solid $border-color;
+				color:$text-color;
+			}
+			.form-element{
+				margin-bottom:20px;
+			}
+		}

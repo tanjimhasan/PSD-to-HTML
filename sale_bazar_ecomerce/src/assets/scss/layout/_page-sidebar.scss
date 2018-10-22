@@ -1,0 +1,51 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+page-sidebar style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.page-side-bar {
+    border: 1px solid $border-color;
+    @include media-breakpoint-between(xs,sm) {
+       margin-top:40px;
+    }
+    
+}
+
+.tag-container{
+    ul{
+        margin-top:-10px;
+        li{
+            display:inline-block;
+            border:1px solid $border-color;
+            padding:4px 10px;
+            margin-right:10px;
+            margin-top:10px;
+            &:hover{
+                
+                background:$primary-color;
+                border-color:$primary-color;
+                a{
+                    color:#fff;
+                }
+            }
+            a{
+                display:block;
+                color:$text-color;
+                text-decoration:none;
+                text-transform:uppercase;
+                
+            }
+        }
+        li.active{
+            
+            background:$primary-color;
+            border-color:$primary-color;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+page-sidebar end start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

@@ -1,0 +1,139 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=
+header top section style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.header-top-left{
+	@include media-breakpoint-between(xs, md) {
+       justify-content:center;
+    }
+	p{
+		font-size:12px;
+		margin:0;
+		line-height:2;
+		text-transform:uppercase;
+		@include media-breakpoint-only(xs) {
+	       display:none;
+	    } 
+	}
+}
+.header-top-dropdown{
+	color:inherit;
+	position:relative;
+	padding-right:20px;
+	margin-right:25px;
+	@include media-breakpoint-only(xs) {
+       margin-right:0;
+       margin-left: 10px;
+    }
+	&:hover{
+		ul{
+			opacity:1;
+			visibility:visible;
+			top:25px;
+		}
+	}
+	&:before{
+		position: absolute;
+	    right: -8px;
+	    top: 20%;
+	    background: #e6ebee;
+	    width: 1px;
+	    height: 60%;
+	    content: "";
+	    @include media-breakpoint-only(xs) {
+		       display:none;
+		    } 
+	}
+	ul{
+		background:#fff;
+		position:absolute;
+		text-align:center;
+		left:0;
+		top:40px;
+		width:100%;
+		padding:4px 0;
+		box-shadow:0 0 5px #e6ebee;
+		opacity:0;
+		visibility:hidden;
+		transition:$transition-time;
+		z-index:99;
+		li{
+			&:hover{
+				background:#e6ebee;
+			}
+		}
+		a{
+			
+			color:#777;
+
+		}
+	}
+	img{
+		padding-right:5px;
+	}
+	a{
+		color:inherit;
+		font-size:12px;
+		text-transform:uppercase;
+		position:relative;
+		text-decoration:none;
+		i{
+			display:inline-block;
+			position:absolute;
+			right:-12px;
+			top:0;
+
+		}
+
+	}
+	
+
+}
+.header-top-menu{
+	ul{
+
+		li{
+			display:inline-block;
+			position:relative;
+			margin-right:40px;
+			@include media-breakpoint-only(xs) {
+		        margin-right:16px;
+		    } 
+			&:before{
+				position: absolute;
+			    right: -25px;
+			    top: 20%;
+			    background: #ddd;
+			    width: 1px;
+			    height: 60%;
+			    content: "";
+			    @include media-breakpoint-only(xs) {
+			        right:-12px;
+			    } 
+			}
+			&:last-child{
+				margin-right:0;
+				&:before{
+					width:0px;
+				}
+			}
+		}
+		a{
+			font-size:12px;
+			text-transform:uppercase;
+			color:inherit;
+			
+
+		}
+		
+	}
+}
+.header-top-right{
+	@include media-breakpoint-between(xs, md) {
+       text-align:center;
+       margin-top:15px;
+    }
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=
+header top section style end 
+=-=-=-=-=-=-=-=-=-=-=-=-= */

@@ -1,0 +1,27 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+login register form style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.login-resiatration-wrapper{
+	.col-sm-6{
+		&:first-child{
+			border-right:1px solid $border-color;
+		}
+	}
+	.lr-btn{
+		text-decoration:none;
+		background:#333;
+		color:#fff;
+		transition:$transition-time;
+		&:hover{
+			background:$primary-color;
+			opacity:1;
+		}
+	}
+}
+
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+login register form end start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

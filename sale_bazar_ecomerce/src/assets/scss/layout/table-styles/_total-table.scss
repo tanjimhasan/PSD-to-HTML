@@ -1,0 +1,32 @@
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+total table style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.table.t-table{
+	margin-bottom:0;
+	tr{
+		td{
+			font-size:16px;
+			color:$heading-color;
+			border-color:$heading-color;
+			&:last-child{
+				text-align:right;
+			}
+		}
+	}
+	tfoot{
+		tr{
+			td{
+				font-size:16px;
+				font-weight:800;
+
+			}
+		}
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+total table style end 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

@@ -1,0 +1,40 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+	ticker style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.ticker{
+	font-size:10px;
+	color:#fff;
+	font-weight:600;
+	background:#EB2771;
+	border-radius:4px;
+	padding:2px 6px;
+	line-height:10px;
+	display:inline-block;
+	position:relative;
+	margin-left:5px;
+	z-index:1;
+	&:after{
+		position:absolute;
+	  width: 0;
+      height: 0;
+      left:-5px;
+      top:50%;
+      margin-top:-4px;
+      border-top: 3px solid transparent;
+      border-right: 6px solid #EB2771;
+      border-bottom: 3px solid transparent;
+      content:"";
+	}
+}
+.ticker.ticker-new{
+	background:#0FC567;
+	&:after{
+		border-right: 6px solid #0FC567;
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+	ticker style end 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

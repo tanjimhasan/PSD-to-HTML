@@ -1,0 +1,26 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+	slider arrows style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+.slick-arrow{
+	position:absolute;
+	right:0;
+	top:-35px;
+	width:20px;
+	height:20px;
+	border:1px solid #7a7d82;
+	text-align:center;
+	line-height:20px;
+	cursor:pointer;
+	z-index: 98;
+}
+.slick-arrow.slick-prev-btn{
+	right:25px;
+}
+
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+	slider arrows style end 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

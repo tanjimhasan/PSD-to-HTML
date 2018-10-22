@@ -1,0 +1,25 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+search style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.weidget-search{
+	position:relative;
+
+	input{
+		width:100%;
+		padding:12px 10px;
+		border:1px solid $border-color;
+		border-radius:4px;
+	}
+	.search-btn{
+		position: absolute;
+	    right: 15px;
+	    color: #21293c;
+	    top: 14px;
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=
+search style end 
+=-=-=-=-=-=-=-=-=-=-= */

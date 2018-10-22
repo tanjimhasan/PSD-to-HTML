@@ -1,0 +1,39 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+product sidebar section style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+.single-sidebar-item{
+	padding: 5px 0;
+
+	.product-image{
+		img{
+			width:75px;
+			height:70px;
+			border:1px solid #dae2e6;
+		}
+	}
+	.product-detials{
+		margin-left:20px;
+		h5{
+			font-size:14px;
+			font-weight:600;
+			font-family: "Oswald",sans-serif;
+			span{
+				display:block;
+				font-family: 'Open Sans', sans-serif;
+				font-size:130%;
+				line-height:1.8;
+			}
+		}
+	}
+}
+.left-banner{
+	@include media-breakpoint-between(xs, sm) {
+      text-align:center;
+    }
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+product sidebar section end start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

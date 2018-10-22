@@ -1,0 +1,46 @@
+.product-color{
+	margin-bottom:5px;
+	a{
+		text-decoration:none;
+		.color-block{
+			width:25px !important;
+			height:25px;
+			background:#ddd;
+			text-align:center;
+			display:inline-block;
+			margin-right:5px;
+			line-height:20px;
+		}
+		.color-block.choice-1{
+			background:#16a085;
+		}
+		.color-block.choice-2{
+			background:#27ae60;
+		}
+		.color-block.choice-3{
+			background:#8e44ad;
+		}
+		.color-block.choice-4{
+			background:#d35400;
+		}
+		span{
+			position:relative;
+		}
+	}
+	a.active{
+		span{
+			&:before{
+				font-size: 14px;
+			    content: "\f00c";
+			    font-weight: 900;
+			    color: inherit;
+			    font-family: "Font Awesome 5 Free";
+			    position: absolute;
+			    right: 6px;
+			    top: 2px;
+			    color: #fff;
+
+			}
+		}
+	}
+}

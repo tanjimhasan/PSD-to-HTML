@@ -1,0 +1,49 @@
+/* =-=-=-=-=-=-=-=-=-=-=
+modal style start 
+=-=-=-=-=-=-=-=-=-=-= */
+
+.shoppingCartModalContainer,.quickViewModalContainer{
+	.modal-dialog{
+		max-width:900px;
+		border-bottom:0;
+	}
+}
+.shoppingCartModalContainer{
+	z-index:9999;
+}
+.quickViewModalContainer{
+	padding:0;
+	.modal-header{
+		border-bottom:0;
+		padding:0;
+		.close{
+			margin-right: 0px;
+    		margin-top: -10px;
+		}
+	}
+	.modal-body{
+
+	}
+}
+.nav.single-tab-menu {
+    margin: 15px 0;
+    .slick-arrow{
+    	top:50%;
+    	margin-top:-15px;
+    }
+    .slick-arrow.slick-prev-btn{
+    	right:-15px;
+    }
+    .slick-arrow.slick-next-btn{
+    	left:-15px;
+    	right:auto;
+    }
+}
+
+.single-tab-menu-box{
+	padding: 0 20px;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=
+modal style end 
+=-=-=-=-=-=-=-=-=-=-= */

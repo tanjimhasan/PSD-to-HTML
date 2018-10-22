@@ -1,0 +1,73 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+info-box section style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+.info-box-wrapper{
+	@include media-breakpoint-between(xs, sm) {
+            flex-direction:column;
+            jextify-content:center;
+        }
+	.info-box{
+		flex-basis:33.33%;
+		padding:20px 0;
+		border-left:1px solid #fff;
+		padding-left: 50px;
+		&:first-child{
+			border-left:0;
+		}
+		@include media-breakpoint-only(md) {
+            padding-left:30px;
+        }
+        @include media-breakpoint-between(xs, sm) {
+	        font-size:12px;
+	    }
+		&:first-child,&:last-child{
+			@include media-breakpoint-between(xs, sm) {
+		      margin-left:auto;
+		      width:260px;
+		      border-left:0px solid #fff;
+	       	  padding-left: 0px;
+
+		    }
+		}
+		p{
+			margin:0;
+			position:relative;
+			padding-left:65px;
+			text-transform:uppercase;
+			font-weight:700;
+			line-height:20px;
+			color:$heading-color;
+			@include media-breakpoint-only(md) {
+	            padding-left:50px;
+	        }
+			i{
+				position:absolute;
+				left:0;
+				top:5px;
+				font-size:26px;
+			}
+			i.fa-dollar-sign{
+				font-size:22px;
+				height:40px;
+				width:40px;
+				border: 1px solid $heading-color;
+				border-radius:50%;
+				text-align:center;
+				line-height:40px;
+			}
+			span{
+				color:$text-color;
+				text-transform:capitalize;
+				font-size:90%;
+				font-weight:300;
+			}
+		}
+	}
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+info-box section end start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

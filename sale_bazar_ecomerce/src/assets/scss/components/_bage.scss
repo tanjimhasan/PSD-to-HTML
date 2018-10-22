@@ -1,0 +1,90 @@
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+	bage style start 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+.bage{
+	&:before{
+		position:absolute;
+		background:#ddd;
+		width:32px;
+		height:32px;
+		text-align:center;
+		font-size:12px;
+		line-height:32px;
+		border-radius:50%;
+		color:#fff;
+		content:"";
+		right:0;
+		top:4px;
+	}
+	
+}
+.bage.new-bage{
+	&:before{
+		content:"New";
+		background:#0FC567;
+	}
+}
+
+.new-bage{
+	position:relative;
+	&:before{
+		position:absolute;
+		right:0;
+		top:10px;
+		width:50px;
+		height:25px;
+		text-align:center;
+		line-height:25px;
+		content:"New";
+		background:#0FC567;
+		z-index:1;
+		color:#fff;
+	}
+
+}
+.sale-bage{
+	position:relative;
+	&:after{
+		position:absolute;
+		right:0;
+		top:45px;
+		width:50px;
+		height:25px;
+		text-align:center;
+		line-height:25px;
+		content:"Sale";
+		background:#F36B6C;
+		z-index:1;
+		color:#fff;
+	}
+
+}
+
+.round-bage{
+	&:before{
+		position:absolute;
+		background:#ddd;
+		width:32px;
+		height:32px;
+		text-align:center;
+		font-size:12px;
+		line-height:32px;
+		border-radius:50%;
+		color:#fff;
+		content:"";
+		right:0;
+		top:4px;
+	}
+}
+.round-bage.new-round-bage{
+	&:before{
+		content:"New";
+		background:#0FC567;
+	}
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+	bage style end 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
