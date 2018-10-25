@@ -51,6 +51,9 @@ a{
 .mb-40{
 	margin-bottom:40px;
 }
+.mb-25{
+	margin-bottom:25px;
+}
 .pdt-0{
 	padding-top:0px !important;
 }
@@ -69,6 +72,11 @@ a{
 }
 .small-device-mb-40{
 	@include media-breakpoint-between(xs, md) {
+         margin-bottom:40px;
+    }
+}
+.very-small-device-mb-40{
+	@include media-breakpoint-between(xs, sm) {
          margin-bottom:40px;
     }
 }

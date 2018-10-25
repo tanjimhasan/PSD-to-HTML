@@ -2715,6 +2715,9 @@ a {
 .mb-40 {
   margin-bottom: 40px; }
 
+.mb-25 {
+  margin-bottom: 25px; }
+
 .pdt-0 {
   padding-top: 0px !important; }
 
@@ -2731,6 +2734,10 @@ a {
 
 @media (max-width: 991.98px) {
   .small-device-mb-40 {
+    margin-bottom: 40px; } }
+
+@media (max-width: 767.98px) {
+  .very-small-device-mb-40 {
     margin-bottom: 40px; } }
 
 @media (min-width: 1200px) {
@@ -3048,15 +3055,14 @@ product details tab section style start
     border: 1px solid #dae2e6; }
     .single-product-tab .product-specification ul li {
       border-bottom: 1px solid #dae2e6;
-      padding: 15px 25px; }
+      padding: 15px 20px;
+      color: #7a7d82;
+      display: block; }
       .single-product-tab .product-specification ul li:last-child {
         border-bottom: 0px; }
-      .single-product-tab .product-specification ul li a {
-        color: #7a7d82;
-        display: block; }
-        .single-product-tab .product-specification ul li a i {
-          margin-right: 10px;
-          color: #40739e; }
+      .single-product-tab .product-specification ul li i {
+        margin-right: 10px;
+        color: #40739e; }
   .single-product-tab .single-product-reviews {
     margin-bottom: 20px;
     border-bottom: 1px solid #dae2e6;
@@ -3097,8 +3103,7 @@ product details tab section style start
     font-weight: 600; }
   .single-product-tab .review-form input, .single-product-tab .review-form textarea {
     width: 100%;
-    border: 1px solid #dae2e6; }
-  .single-product-tab .review-form input {
+    border: 1px solid #dae2e6;
     padding: 8px; }
   .single-product-tab .review-form input[type=submit] {
     width: auto;
@@ -5288,7 +5293,7 @@ header middle section style start
   .header-search-form .header-search-form-wrapper {
     position: absolute;
     left: 0;
-    top: 0x;
+    top: 2px;
     width: 100%;
     background: #fff;
     border-radius: 30px; }
@@ -5313,13 +5318,15 @@ header middle section style start
       width: 58%;
       padding: 8px 15px;
       border-right: 1px solid #ddd;
-      border-radius: 30px 0 0 30px; }
+      border-radius: 30px 0 0 30px;
+      height: 42px; }
       @media (max-width: 575.98px) {
         .header-search-form .header-search-form-wrapper input[type=text] {
           width: 44%; } }
     .header-search-form .header-search-form-wrapper select {
       width: 30%;
-      border-right: 1px solid #ddd; }
+      border-right: 1px solid #ddd;
+      height: 41px; }
       @media (max-width: 575.98px) {
         .header-search-form .header-search-form-wrapper select {
           width: 40%;

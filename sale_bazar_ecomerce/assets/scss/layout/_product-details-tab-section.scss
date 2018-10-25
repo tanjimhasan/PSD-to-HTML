@@ -32,17 +32,15 @@ product details tab section style start
 		ul{
 			li{
 				border-bottom:1px solid $border-color;
-				padding:15px 25px;
+				padding:15px 20px;
 				&:last-child{
 					border-bottom:0px;
 				}
-				a{
-					color:$text-color;
-					display:block;
-					i{
-						margin-right:10px;
-						color:$primary-color;
-					}
+				color:$text-color;
+				display:block;
+				i{
+					margin-right:10px;
+					color:$primary-color;
 				}
 			}
 		}
@@ -110,10 +108,7 @@ product details tab section style start
 		input,textarea{
 			width:100%;
 			border:1px solid $border-color;
-		}
-		input{
 			padding:8px;
-
 		}
 		input[type=submit]{
 			width:auto;

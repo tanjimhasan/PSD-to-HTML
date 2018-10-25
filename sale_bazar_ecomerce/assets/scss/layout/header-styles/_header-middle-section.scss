@@ -87,7 +87,7 @@ header middle section style start
 	.header-search-form-wrapper{
 		position:absolute;
 		left:0;
-		top:0x;
+		top:2px;
 		width:100%;
 		background:#fff;
 		border-radius:30px;
@@ -115,6 +115,7 @@ header middle section style start
 			padding: 8px 15px;
 			border-right:1px solid #ddd;
 			border-radius:30px 0 0 30px;
+            height:42px;
             @include media-breakpoint-only(xs) {
                 width:44%;
             }
@@ -122,6 +123,7 @@ header middle section style start
 		select{
 			width:30%;
 			border-right:1px solid #ddd;
+            height:41px;
             @include media-breakpoint-only(xs) {
                 width:40%;
                 padding:8px 0;
