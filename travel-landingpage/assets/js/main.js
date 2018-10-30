@@ -1,7 +1,8 @@
 jQuery(document).ready(function($){
 
-	
+	// masonry active
 	$(".destination-lists").masonry();
+	//site-testimonial active
 	$(".site-testimonial").owlCarousel({
 		items : 2,
 		margin: 30,
@@ -34,6 +35,7 @@ jQuery(document).ready(function($){
 		}
 		
 	});
+	//tour-type-list active
 	$(".tour-type-list").owlCarousel({
 		items : 2,
 		margin: 30,
@@ -70,6 +72,7 @@ jQuery(document).ready(function($){
 			}
 		}
 	});
+	//blog slides active
 	$(".blog-slides").owlCarousel({
 		items : 3,
 		margin: 50,
@@ -109,7 +112,7 @@ jQuery(document).ready(function($){
          delegate: 'a', // child items selector, by clicking on it popup will open
  		 type: 'image'
     });
-
+	 //wow js active
 	 wow = new WOW(
 	      {
 	        animateClass: 'animated',
@@ -172,4 +175,9 @@ jQuery(document).ready(function($){
 		setTimeout(function(){
 	        $('body').addClass('loaded');
 	    }, 3000);
+		//add active class to the menu
+	    $('.main-menu li a').click(function(){
+			$('.main-menu li a').removeClass('active');
+			$(this).addClass('active');
+		});
 });

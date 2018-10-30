@@ -6,8 +6,11 @@
 
 
  .main-menu{
- 	@include media-breakpoint-only(xs) {
+ 	@include media-breakpoint-between(xs, sm) {
        display:none;
+    }
+    @include media-breakpoint-only(md) {
+       text-align:center;
     }
     @include media-breakpoint-only(sm) {
        text-align:left;
@@ -42,19 +45,18 @@
  			text-decoration:none;
  			color:$hero-text-color;
  			transition:$transition-time;
+ 			font-size:16px;
  			@include media-breakpoint-only(md) {
 	           margin-right:5px;
 	           padding:5px;
-	           font-size:12px;
 	        }
- 			@include media-breakpoint-only(sm) {
-	           padding:5px;
-	           font-size:12px;
-	           margin-right:0;
-	        }
+ 			
  			&:hover{
  				color:$primary-color-one;
  			}
+ 		}
+ 		a.active{
+ 			color:$primary-color-one;
  		}
  		ul{
  			position:absolute;

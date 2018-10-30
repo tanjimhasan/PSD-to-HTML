@@ -54,7 +54,7 @@
  	width:100%;
  	transition:.5s;
  	#mobile-menu{
- 		@include media-breakpoint-between(sm, xl) {
+ 		@include media-breakpoint-between(md, xl) {
 	       display:none;
 	    }
  		.slicknav_menu{
@@ -98,13 +98,13 @@
  		}
  	}
  	.logo{
-	 	@include media-breakpoint-only(sm) {
+	 	@include media-breakpoint-only(md) {
 	       text-align: center;
-			margin-bottom: 8px;
+			margin-bottom: 10px;
 	    }
 	 	img{
 	 		width:100px;
-	 		transition:.5s;
+	 		transition:.4s;
 	 		
 	 	}
 	 }

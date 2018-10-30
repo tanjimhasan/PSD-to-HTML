@@ -2723,7 +2723,7 @@ input, textarea {
   padding: 20px;
   width: 100%;
   transition: .5s; }
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     .header-area #mobile-menu {
       display: none; } }
   .header-area #mobile-menu .slicknav_menu {
@@ -2752,13 +2752,13 @@ input, textarea {
         padding: 5px; }
       .header-area #mobile-menu .slicknav_menu .slicknav_nav a {
         color: #333; }
-  @media (min-width: 576px) and (max-width: 767.98px) {
+  @media (min-width: 768px) and (max-width: 991.98px) {
     .header-area .logo {
       text-align: center;
-      margin-bottom: 8px; } }
+      margin-bottom: 10px; } }
   .header-area .logo img {
     width: 100px;
-    transition: .5s; }
+    transition: .4s; }
 
 /*--------------------------
 [---header-area end---]
@@ -2777,9 +2777,13 @@ input, textarea {
 /*--------------------------
 [---main-menu start---]
 --------------------------*/
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .main-menu {
     display: none; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main-menu {
+    text-align: center; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .main-menu {
@@ -2807,19 +2811,16 @@ input, textarea {
     padding: 10px;
     text-decoration: none;
     color: #fff;
-    transition: 0.35s; }
+    transition: 0.35s;
+    font-size: 16px; }
     @media (min-width: 768px) and (max-width: 991.98px) {
       .main-menu li a {
         margin-right: 5px;
-        padding: 5px;
-        font-size: 12px; } }
-    @media (min-width: 576px) and (max-width: 767.98px) {
-      .main-menu li a {
-        padding: 5px;
-        font-size: 12px;
-        margin-right: 0; } }
+        padding: 5px; } }
     .main-menu li a:hover {
       color: #2ca3f2; }
+  .main-menu li a.active {
+    color: #2ca3f2; }
   .main-menu li ul {
     position: absolute;
     left: 0;
