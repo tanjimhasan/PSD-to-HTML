@@ -171,5 +171,5 @@ jQuery(document).ready(function($){
 		// timeout for loader
 		setTimeout(function(){
 	        $('body').addClass('loaded');
-	    }, 2000);
+	    }, 3000);
 });

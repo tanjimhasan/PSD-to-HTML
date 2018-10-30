@@ -26,7 +26,9 @@
 /*--------------------------
 [---boxed-layout start---]
 --------------------------*/
-
+.site{
+	overflow-x:hidden;
+}
 body.boxed-layout{
 	overflow-x:hidden;
 	background:#fff;
@@ -36,7 +38,7 @@ body.boxed-layout{
 	    background: #fff;
 	    position: relative;
 	    box-shadow:0 0 15px #ddd;
-	    
+	    overflow-x:hidden;
 	    .is-sticky{
 	    	.header-area{
 	    		max-width:1200px!important;
