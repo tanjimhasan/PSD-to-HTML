@@ -1,0 +1,44 @@
+/*=============================================
+    15: Breadcrumb
+==============================================*/
+
+.breadcrumb-bg{
+	background-image:url('../images/breadcrumb-bg.jpg');
+	background-size:cover;
+	background-position:center;
+	background-color:#ddd;
+	padding:70px 0;
+}
+
+.breadcrumb-area{
+	h2{
+		color:#fff;
+		font-size:36px;
+	}
+	li{
+		a{
+			color:#fff;
+			font-size:18px;
+			font-family: 'PT Sans', sans-serif;
+			text-decoration:none;
+			&:hover{
+				color:$primary-color;
+			}
+		}
+		&:last-child{
+			a{
+				color:$primary-color;
+				pointer-events: none;
+			}
+		}
+	}
+	li+li{
+		&:before{
+			content: '\f101';
+		    font-family: "Font Awesome 5 Free";
+		    color: #fff;
+		    padding: 0 8px;
+		    font-weight: 900;
+		}
+	}
+}

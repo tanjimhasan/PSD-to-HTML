@@ -1,0 +1,122 @@
+/*---------------------------------------------
+
+    Template Name: - CallDee
+    Version: 1.0
+    Author:         ThemeLooks
+    Author url:     http://themelooks.com
+
+    NOTE:
+    -----
+    Please DO NOT EDIT THIS CSS, you may need to use "custom.css" file for writing your custom css.
+    We may release future updates so it will overwrite this file. it's better and safer to use "custom.css".
+
+    [Table of Content]
+
+    01: General CSS 
+        1.1: Default CSS
+        1.2: Buttons
+        1.3: Default classes
+        1.4: Padding
+        1.5: Animations
+    02: Section/Widget title
+    03: Header
+        3.1: Header Top
+            3.1.1: Header Top Info
+            3.1.2: Header Top Menu
+        3.2: Main Header
+            3.2.1: Logo
+            3.2.2: Main Menu
+            3.2.3: Mobile Menu
+            3.2.4: Header Search
+            3.2.5: Header Cart
+        3.3: Sticky header
+    05: Home Slider
+        5.1: Single Home Slider
+    06: services
+        6.1: Single Services
+    07: Connections
+    08: Included Services
+        8.1: Include Service List
+            8.1.1: Single Include Service
+        8.2: Include Service Solution
+    09: Counter
+        9.1: Single Counter
+    10: Pricing Table
+        10.1: Single Pricing Table
+    11: Customers
+        11.1: Customers Comments
+        11.2: Client Logos
+    12: News/Blog
+        12.1: Single post
+    13: App Section
+    13: Subscription
+    14: Footer
+        14.1: Footer menu
+        14.2: Social Icons
+        14.3: Footer Bottom
+    15: Breadcrumb
+    16: Features
+        16.1: Server Features
+            16.1.1: Single Server Feature
+        16.2: Additional Features
+        16.3: Configuration
+        16.4: FAQ
+    17: Product
+        17.1: Product Page Content
+        17.2: Page Sidebar
+    18: Product Details
+        18.1: Product View Tab
+        18.2: Product Option
+        18.2: Product Details
+    19: Project Gallery
+    16: Domain
+        16.1: Domain checker
+        16.2: Domain price
+        16.3: Domain table
+    17: Contact
+    18: Others
+
+
+----------------------------------------------*/
+  
+
+@import 'variables';
+
+@import 'general';
+
+@import 'header';
+
+@import 'section-title';
+
+@import 'home-slider';
+
+@import 'services';
+
+@import 'connections';
+
+@import 'include-services';
+
+@import 'counter';
+
+@import 'pricing-table';
+
+@import 'customers';
+
+@import 'blog';
+
+@import 'app-section';
+
+@import 'subscription';
+
+@import 'breadcrumb';
+
+@import 'features';
+
+@import 'product';
+
+@import 'product-details';
+
+@import 'project-gallery';
+
+@import 'footer';
+

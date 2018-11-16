@@ -1,0 +1,79 @@
+/*=============================================
+    13: App Section
+==============================================*/
+
+.app-wrapper{
+	margin-bottom:170px;
+	margin-top:30px;
+	@media #{$tablet-device}{
+		margin-top:0;
+		margin-bottom:100px;
+	}
+	@media #{$large-mobile}{
+		margin-top:0;
+	}
+}
+.app-content{
+	h2{
+		font-size:36px;
+		font-weight:500;
+		margin-bottom:20px;
+		@media #{$extra-small-mobile}{
+			font-size:30px;
+		}
+	}
+	.subtitle{
+		color:$text-color;
+		font-size:18px;
+		margin-bottom:20px;
+		display:block;
+		@media #{$extra-small-mobile}{
+			font-size:16px;
+		}
+	}
+	p{
+		color:$sub-title-color;
+		line-height:24px;
+		margin-bottom:25px;
+	}
+	ul{
+		li{
+			margin-right:10px;
+			&:last-child{
+				margin-right:0;
+				@media #{$small-mobile}{
+					margin-top:15px;
+				}
+			}
+			a{
+				i{
+					padding-right:10px;
+				}
+			}
+			.btn-icon{
+				padding:6px 15px;
+				@media #{$extra-small-mobile}{
+					padding:6px 10px;
+				}
+			}
+		}
+	}
+}
+.app-img{
+	img{
+		position:absolute;
+		right:0;
+		top:0;
+		bottom:0;
+		margin:auto;
+		@media #{$tablet-device}{
+			display:none;
+		}
+		@media #{$large-mobile}{
+			display:none;
+		}
+		@media #{$small-mobile}{
+			display:none;
+		}
+	}
+}

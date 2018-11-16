@@ -1,0 +1,143 @@
+/*=============================================
+    8: Include Services
+==============================================*/
+
+
+/* 8.1: Include Service List */
+
+.include-service-wrapper{
+	border-top:1px solid #00c544;
+	padding:35px;
+	box-shadow: 0 5px 10px rgba(0,0,0,.05);
+	.col-lg-12{
+		flex: 0 0 95%;
+    	max-width: 95%;
+	}
+	.slick-active{
+		.single-included-services{
+
+		}
+	}
+}
+.include-services-list{
+	.slick-slide{
+		margin-right:30px;
+	}
+	.slick-arrow{
+		@media #{$tablet-device}{
+			right:-35px;
+		}
+		@media #{$large-mobile}{
+			right:-32px;
+		}
+		@media #{$large-mobile}{
+			right:-32px;
+		}
+		@media #{$extra-small-mobile}{
+			top:0;
+		}
+		
+	}
+	.slick-arrow.slick-next-btn{
+		@media #{$extra-small-mobile}{
+			top:auto;
+			bottom:0;
+		}
+		
+	}
+
+}
+
+/* 8.1.1: Single Include Service */
+
+.single-included-services{
+	text-align:center;
+	padding: 20px 15px 15px;
+	border:1px solid #ecf7fe;
+	margin-right:20px;
+	transition:.2s;
+	&:hover{
+		background:$primary-color;
+		h2{
+			color:#fff;
+		}
+		.service-icon{
+			i{
+				color:#fff;
+			}
+		}
+	}
+	.service-icon{
+		i{
+			font-size:28px;
+			color:$primary-color;
+			display:inline-block;
+			transition:.2s;
+		}
+	}
+	h2{
+		font-size:16px;
+		line-height:22px;
+		margin-bottom:0;
+		margin-top:10px;
+		transition:.2s;
+	}
+}
+
+/* 8.2: Include Service Solution */
+
+.service-solution-text{
+	h2{
+		font-size:36px;
+		font-weight:500;
+		margin-bottom:20px;
+		margin-top:-8px;
+		line-height: 48px;
+		span{
+			color:$primary-color;
+		}
+	}
+	p{
+		font-size:18px;
+		color:$sub-title-color;
+		margin-bottom:20px;
+	}
+
+	.solution-list{
+		li{
+			position:relative;
+			padding-left:25px;
+			margin-bottom:15px;
+			font-weight:700;
+			&:before{
+			    content: "\f058";
+			    color:$primary-color;
+			    font-weight: 900;
+			    font-family: "Font Awesome 5 Free";
+			    position: absolute;
+			    left: 0;
+			    top: 0;
+			}
+		}
+	}
+	.bordered-btn{
+		margin-top:15px;
+	}
+}
+
+.service-solution-img{
+	img{
+		@media #{$tablet-device}{
+			display:none;
+		}
+		@media #{$large-mobile}{
+			display:none;
+		}
+		@media #{$small-mobile}{
+			display:none;
+		}
+		@media #{$extra-small-mobile}{
+			display:none;
+		}
+	}
+}
