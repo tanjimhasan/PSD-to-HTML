@@ -1,0 +1,103 @@
+/*=============================================
+    xx: Countdown Area
+==============================================*/
+
+.shop--count-down-area{
+	padding:45px 0;
+	.shop--countdown-leftside{
+		flex-basis: 50%;
+	}
+	.shop--countdown-rightside{
+		flex-basis: 50%;
+	}
+	.shop--single-countdown{
+		    width: 800px;
+		    display: flex;
+		    justify-content: space-between;
+		    align-items: center;
+	}
+}
+/*xx: countdown Text */
+
+.shop--countdown-text{
+	h3{
+		font-size: 30px;
+		line-height: 37px;
+		font-weight: 400;
+	}
+	h6{
+		line-height: 37px;
+		color:#5a5a5a;
+		letter-spacing: 4px;
+	}
+}
+
+/*xx: countdown */
+.countdown{
+	li{
+		display:inline-block;
+		font-family: 'Montserrat', sans-serif;
+		font-size:36px;
+		line-height: 32px;
+		color: $heading-color;
+		font-weight:500;
+		padding-right: 55px;
+		span{
+			display: block;
+			font-size:12px;
+			font-weight: 300;
+			line-height: 28px;
+			color: #7a7a7a;
+			text-transform: uppercase;
+		}
+	}
+}
+
+/*xx: Trendy Product Item */
+.shop--trendy-product-item{
+	padding:15px;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+	background-color:#fff;
+	.shop--trendy-product-image{
+		padding-bottom:15px;
+		border-bottom:1px solid $border-color;
+	}
+	h6{
+		font-size:14px;
+		line-height:16px;
+		color:$heading-color;
+		margin-top:12px;
+	}
+	.shop--trendy-product-meta{
+		display:flex;
+		justify-content: space-between;
+		.product-price{
+			.current-price{
+				font-family: 'Montserrat', sans-serif;
+				font-size:12px;
+				line-height: 30px;
+				color:$heading-color;
+				font-weight:400;
+				padding-right:4px;
+			}
+			.old-price{
+				font-family: 'Montserrat', sans-serif;
+				font-size:10px;
+				line-height: 30px;
+				font-weight:300;
+				color:#7a7a7a;
+			}
+		}
+		.product-actions{
+			a{
+				i{
+					width:30px;
+					height:30px;
+					color:$text-color;
+					border:1px solid $border-color;
+					line-height:30px
+				}
+			}
+		}
+	}
+}
