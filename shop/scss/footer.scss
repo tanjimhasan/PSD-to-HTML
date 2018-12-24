@@ -60,6 +60,7 @@
 		line-height:30px;
 		text-align: center;
 		border:1px solid $border-color;
+		transition:.35s;
 	}
 	.shop--footer-contact-text{
 		margin-left:20px;
@@ -74,11 +75,6 @@
 			}
 		}
 	}
-}
-
-/* xx: Footer Blog List */
-.shop--footer-blog-list{
-	
 }
 
 /* xx: Single Blog Link */
@@ -111,6 +107,11 @@
 	.shop--blog-text{
 		margin-left:20px;
 		margin-top:-10px;
+		&:hover{
+			h5{
+				color:$heading-color;
+			}
+		}
 		h6{
 			font-size: 10px;
 			line-height: 30px;
@@ -151,13 +152,45 @@
 
 /* xx: Footer Image Gallery */
 .shop--footer-image-gallery{
-	img{
-		max-width: 80px;
+	.shop--single-footer-gallery-image{
+		max-width: 78px;
 		margin-bottom:6px;
-		margin-right:4px;
+		margin-right:5px;
 		&:nth-child(3n){
 			margin-right:0;
 		}
+		@media #{$tablet-device}{
+			&:nth-child(3n){
+				margin-right:5px;
+			}
+			&:nth-child(4n){
+				margin-right:0;
+			}
+		}
+		@media #{$large-mobile}{
+			&:nth-child(3n){
+				margin-right:5px;
+			}
+			&:nth-child(6n){
+				margin-right:0;
+			}
+		}
+	}
+	img{
+		
+		
+		// @media #{$large-tablet}{
+		// 	max-width: 100%;
+		// }
+		// @media #{$tablet-device}{
+		// 	max-width: 100%;
+		// }
+		// @media #{$large-mobile}{
+		// 	max-width: 100%;
+		// }
+		// @media #{$iphone-devices}{
+		// 	max-width: 78px;
+		// }
 	}
 }
 /* xx: Footer Bottom */

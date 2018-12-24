@@ -10,6 +10,9 @@
 		line-height: 22px;
 		font-weight:500;
 		margin-bottom:15px;
+		@media #{$iphone-devices}{
+			font-size: 28px;
+		}
 	}
 	p{
 		font-family: 'Montserrat', sans-serif;
@@ -29,9 +32,27 @@
 		padding:0 20px;
 		color:#9a9a9a;
 		border:1px solid #eaeaea;
+		@media #{$tablet-device}{
+			width:70%;
+		}
+		@media #{$large-mobile}{
+			width:70%;
+		}
+		@media #{$iphone-devices}{
+			width:65%;
+		}
 	}
 	button{
 		width:20%;
+		@media #{$tablet-device}{
+			width:28%;
+		}
+		@media #{$large-mobile}{
+			width:28%;
+		}
+		@media #{$iphone-devices}{
+			width:33%;
+		}
 	}
 	.subscribe-btn{
 		position:absolute;
@@ -42,18 +63,29 @@
 		height:40px;
 		line-height:40px;
 		right:0;
+		&:hover{
+			background-color: $heading-color;
+		}
 	}
 }
 
-.subscription-image-wrapper{
-	height:205px;
-	width:205px;
-	position:absolute;
-	right:0;
+/* xx: Subscription Image */
+
+.shop--subscription-image-wrapper{
+	@media #{$large-mobile}{
+		display: flex;
+		justify-content: center;
+		margin-top:30px;
+	}
+	.subscription-image-inner{
+		height:205px;
+		width:205px;
+		.subscription-image{
+			height:100%;
+			width:100%;
+			border-radius: 50%;
+			background-size: cover !important;
+		}
+	}
 }
-.subscription-image{
-	height:100%;
-	width:100%;
-	border-radius: 50%;
-	background-size: cover !important;
-}
+

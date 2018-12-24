@@ -27,11 +27,17 @@
     .mb-md-30{
     	margin-bottom: 30px;
     }
+    .mb-md-40{
+    	margin-bottom: 40px;
+    }
 }
 /* xx. Large Mobile (less than  992px) */
 @media (max-width: 767.98px) {
     .mb-sm-30{
     	margin-bottom: 30px;
+    }
+    .mb-sm-40{
+    	margin-bottom: 40px;
     }
 }
     

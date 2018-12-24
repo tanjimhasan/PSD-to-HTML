@@ -11,13 +11,44 @@ We may release future updates so it will overwrite this file. it's better and sa
 
 [Table of Content]
 
-xx: Category Sliding Menu
+xx: Main Header
+xx: Changing Language
+xx: Sliding Categroy Button
+xx: Sliding Categroy Submenu
+xx: Background Image
+xx: Check Data
+xx: Owl Carousel
+xx: CountDown One
+xx: CountDown Two
+xx: Back To Top
+xx: Changing Svg Color
 
 
 ----------------------------------------------*/
 
     (function($) {
         "use strict";
+
+        /* xx: Main Header
+        ==============================================*/
+
+        $('.shop--main-menu a[href="#"]').on('click', function(event) {
+                event.preventDefault();
+            });
+
+        $(".shop--main-menu nav").menumaker({
+            title: '<i class="fa fa-bars"></i>',
+            format: "multitoggle"
+        });
+        if($(window).scrollTop() > 260){
+               $('.shop--header').addClass('sticky'); 
+           };
+        $(window).on('scroll', function(e){
+            if($(this).scrollTop() < 260){
+                $('.shop--header').removeClass('sticky')
+            }else
+                $('.shop--header').addClass('sticky')        
+        });
 
         /* xx: Changing Language
         ==============================================*/
@@ -44,7 +75,7 @@ xx: Category Sliding Menu
             $(".shop--category-sliding-menu").slideUp("250");
         });
 
-        /* xx: Sliding Category Button
+        /* xx: Sliding Category Submenu
         ==============================================*/
         var windows = $(window);
 
@@ -62,7 +93,6 @@ xx: Category Sliding Menu
         categorySubMenuToggle();
         windows.resize(categorySubMenuToggle);
 
-        /*-- Category Sub Menu --*/
         $('.shop--category-sliding-menu').on('click', 'li a, li a span+span.menu-expand', function (e) {
             var $a = $(this).hasClass('menu-expand') ? $(this).parent() : $(this);
             if ($a.parent().hasClass('shop--menu-item-has-children')) {
@@ -90,64 +120,117 @@ xx: Category Sliding Menu
         });
 
 
-            /*==================================
-            XX: Check Data
-            ====================================*/
-            var checkData = function (data, value) {
-                return typeof data === 'undefined' ? value : data;
-            };
-
-            /*==================================
-            XX: Owl Carousel
-            ====================================*/
-            var $owlCarousel = $('.owl-carousel');
-             
-            $owlCarousel.each(function () {
-                var $t = $(this);
-                    
-                $t.owlCarousel({
-                    items: checkData( $t.data('owl-items'), 1 ),
-                    margin: checkData( $t.data('owl-margin'), 0 ),
-                    stagePadding: checkData( $t.data('owl-stagePadding'), 0 ),
-                    loop: checkData( $t.data('owl-loop'), true ),
-                    smartSpeed: 450,
-                    autoplay: checkData( $t.data('owl-autoplay'), true ),
-                    autoplayTimeout: checkData( $t.data('owl-speed'), 8000 ),
-                    center: checkData( $t.data('owl-center'), false ),
-                    animateOut: checkData( $t.data('owl-animate'), false ),
-                    nav: checkData( $t.data('owl-nav'), false ),
-                    navText: ["<i class='fa fa-angle-right'></i>" , "<i class='fa fa-angle-left'></i>"],
-                    dots: checkData( $t.data('owl-dots'), false ),
-                    responsive: checkData( $t.data('owl-responsive'), {} )
-                });
-            });
-      
-        var owlAnimateFilter = function(even) {
-            $(this)
-            .addClass('__loading')
-            .delay(70 * $(this).parent().index())
-            .queue(function() {
-                $(this).dequeue().removeClass('__loading')
-            })
+        /*==================================
+        XX: Check Data
+        ====================================*/
+        var checkData = function (data, value) {
+            return typeof data === 'undefined' ? value : data;
         };
+
+        /*==================================
+        XX: Owl Carousel
+        ====================================*/
+        var $owlCarousel = $('.owl-carousel');
+         
+        $owlCarousel.each(function () {
+            var $t = $(this);
+                
+            $t.owlCarousel({
+                items: checkData( $t.data('owl-items'), 1 ),
+                margin: checkData( $t.data('owl-margin'), 0 ),
+                loop: checkData( $t.data('owl-loop'), true ),
+                smartSpeed: 450,
+                autoplay: checkData( $t.data('owl-autoplay'), true ),
+                autoplayTimeout: checkData( $t.data('owl-speed'), 8000 ),
+                center: checkData( $t.data('owl-center'), false ),
+                animateOut: checkData( $t.data('owl-animate'), false ),
+                nav: checkData( $t.data('owl-nav'), false ),
+                navText: ["<i class='fa fa-angle-right'></i>" , "<i class='fa fa-angle-left'></i>"],
+                dots: checkData( $t.data('owl-dots'), false ),
+                responsive: checkData( $t.data('owl-responsive'), {} )
+            });
+        });
+      
+        // var owlAnimateFilter = function(even) {
+        //     $(this)
+        //     .addClass('__loading')
+        //     .delay(70 * $(this).parent().index())
+        //     .queue(function() {
+        //         $(this).dequeue().removeClass('__loading')
+        //     })
+        // };
 
         /* xx: Top Category Slider
         ==============================================*/
-        $('.shop--product-slider-menu').on('click', '.filter-btn', function(e) {
-            var filter_data = $(this).data('filter');
+        // $('.shop--product-slider-menu').on('click', '.filter-btn', function(e) {
+        //     var filter_data = $(this).data('filter');
 
-            /* return if current */
-            if($(this).hasClass('active')) return;
+        //     /* return if current */
+        //     if($(this).hasClass('active')) return;
 
-            /* active current */
-            $(this).addClass('active').siblings().removeClass('active');
+        //      active current 
+        //     $(this).addClass('active').siblings().removeClass('active');
 
-            /* Filter */
-            owl.owlFilter(filter_data, function(_owl) { 
-                $(_owl).find('.item').each(owlAnimateFilter); 
+        //     /* Filter */
+        //     owl.owlFilter(filter_data, function(_owl) { 
+        //         $(_owl).find('.item').each(owlAnimateFilter); 
+        //     });
+        // });
+
+        /* xx: Count Down One
+        ==============================================*/
+
+        var $countDown = $('[data-countdown]');
+        $countDown.each(function () {
+            var $t = $(this);
+            
+            $t.countdown($t.data('countdown'), function(e) {
+                $(this).html( '<ul class="list-unstyled">' + e.strftime('<li>%D<span>Days</span></li><li>%H<span>Hours</span></li><li>%M<span>Minutes</span></li><li>%S<span>Seconds</span></li>') + '</ul>' );
             });
         });
-        
+
+        /* xx: Count Down Two
+        ==============================================*/
+
+        var $countDown = $('[data-countdown2]');
+        $countDown.each(function () {
+            var $t = $(this);
+            
+            $t.countdown($t.data('countdown2'), function(e) {
+                $(this).html( '<ul class="list-unstyled">' + e.strftime('<li>%D<span>Days</span></li><li>%H<span>Hours</span></li><li>%M<span>Minutes</span></li><li>%S<span>Seconds</span></li>') + '</ul>' );
+            });
+        });
+
+        /* xx: Back To Top
+        ==============================================*/
+
+        var $backToTopBtn = $('.back-to-top');
+
+        if ($backToTopBtn.length) {
+            var scrollTrigger = 350, // px
+            backToTop = function () {
+                var scrollTop = $(window).scrollTop();
+                if (scrollTop > scrollTrigger) {
+                    $backToTopBtn.addClass('show');
+                } else {
+                    $backToTopBtn.removeClass('show');
+                }
+            };
+
+            backToTop();
+
+            $(window).on('scroll', function () {
+                backToTop();
+            });
+
+            $backToTopBtn.on('click', function (e) {
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 700);
+            });
+        }
+
         /* xx: Changing svg color
         ==============================================*/
 
@@ -183,4 +266,12 @@ xx: Category Sliding Menu
         
             }, 'xml');
         });
+
+        $('select').niceSelect();
+        var searchToggle = $('.shop--search-toggle');
+        var searchArea = $('.shop--search-block-wrapper');
+        searchToggle.on('click', function () {
+            searchArea.slideToggle();
+        });
+
     })(jQuery);

@@ -3,20 +3,161 @@
 ==============================================*/
 
 .shop--count-down-area{
-	padding:45px 0;
 	.shop--countdown-leftside{
 		flex-basis: 50%;
+		background-size:cover !important;
+		@media #{$large-tablet}{
+			display: none;
+		}
+		@media #{$tablet-device}{
+			display: none;
+		}
+		@media #{$large-mobile}{
+			display: none;
+		}
 	}
 	.shop--countdown-rightside{
 		flex-basis: 50%;
+		overflow: hidden;
+		@media #{$large-tablet}{
+			flex-basis: 100%;
+		}
+		@media #{$tablet-device}{
+			flex-basis: 100%;
+		}
+		@media #{$large-mobile}{
+			flex-basis: 100%;
+			padding:50px 0;
+		}
+		@media #{$small-mobile}{
+			padding:50px 0;
+		}
+		@media #{$extra-small-mobile}{
+			padding-bottom:95px;
+		}
+		@media #{$iphone-devices}{
+			padding-bottom:105px;
+		}
+
+	}
+	.shop--countdown-slider{
+		.owl-item.active{
+			.shop--single-countdown{
+				.shop--trendy-product-item{
+					box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+				}
+			}
+		}
+		.owl-nav{
+			button{
+				position:absolute;
+				bottom:30px;
+				left: 270px;
+				@media #{$large-mobile}{
+					left:80px;
+				}
+				@media #{$small-mobile}{
+					left:60px;
+				}
+				@media #{$extra-small-mobile}{
+					bottom:-40px;
+					left:200px;
+				}
+				@media #{$iphone-devices}{
+					bottom:-30px;
+					left:150px;
+				}
+				&:hover{
+					i{
+						border-color: #9a9a9a;
+						color:$heading-color;
+					}
+				}
+				i{
+					height:30px;
+					width:30px;
+					border:1px solid $border-color;
+					font-size:14px;
+					line-height:30px;
+					text-align: center;
+					background-color:#fafafa;
+				}
+			}
+			button.owl-prev{
+				left:310px;
+				@media #{$large-mobile}{
+					left: 115px;
+				}
+				@media #{$small-mobile}{
+					left:100px;
+				}
+				@media #{$extra-small-mobile}{
+					left:240px;
+				}
+				@media #{$iphone-devices}{
+					left:190px;
+				}
+			}
+			button.owl-next{
+				&:after{
+					position: absolute;
+				    right: 30px;
+				    bottom: 45%;
+				    width: 312px;
+				    content: "";
+				    background: $border-color;
+				    height: 1px;
+				}
+				
+			}
+		}
 	}
 	.shop--single-countdown{
-		    width: 800px;
-		    display: flex;
-		    justify-content: space-between;
-		    align-items: center;
+		max-width:800px;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    @media #{$large-tablet}{
+			max-width:100%;
+		}
+		@media #{$tablet-device}{
+			max-width:100%;
+		}
+		@media #{$large-mobile}{
+			flex-flow: column;
+		}
 	}
 }
+
+/*xx: countdown Text */
+.shop--countdown-banner-wrapper{
+	max-width: 370px;
+	padding-right: 40px;
+	padding-top:112px;
+	h4{
+		color:#fff;
+		font-size:30px;
+		line-height: 37px;
+		font-weight:400;
+		margin-bottom: 22px;
+		span{
+			font-weight: 700;
+		}
+	}
+	.shop--bordered-btn{
+		line-height: 40.66px;
+	}
+}
+
+.shop--countdown-wrpper{
+	padding-left:40px;
+	margin-top:-45px;
+	@media #{$small-mobile}{
+		max-width:100%;
+		padding-left:20px;
+	}
+}
+
 /*xx: countdown Text */
 
 .shop--countdown-text{
@@ -24,16 +165,24 @@
 		font-size: 30px;
 		line-height: 37px;
 		font-weight: 400;
+		margin-bottom: 10px;
 	}
 	h6{
 		line-height: 37px;
 		color:#5a5a5a;
 		letter-spacing: 4px;
+		margin-bottom:12px;
+		@media #{$large-mobile}{
+			text-align: center;
+		}
 	}
 }
 
 /*xx: countdown */
 .countdown{
+	@media #{$small-mobile}{
+		margin-bottom:0;
+	}
 	li{
 		display:inline-block;
 		font-family: 'Montserrat', sans-serif;
@@ -42,6 +191,31 @@
 		color: $heading-color;
 		font-weight:500;
 		padding-right: 55px;
+		position:relative;
+		@media #{$large-mobile}{
+			text-align: center;
+		}
+		@media #{$iphone-devices}{
+			font-size: 22px;
+			padding-right:32px;
+		}
+		&:last-child{
+			padding-right:0;
+			&:after{
+				display:none;
+			}
+		}
+		&:after{
+			position: absolute;
+		    left: 50%;
+		    top: 50%;
+		    height: 30px;
+		    width: 1px;
+		    background: #eaeaea;
+		    content: "";
+		    margin-left: 25%;
+		    margin-top: -19px;
+		}
 		span{
 			display: block;
 			font-size:12px;
@@ -56,21 +230,36 @@
 /*xx: Trendy Product Item */
 .shop--trendy-product-item{
 	padding:15px;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 	background-color:#fff;
+	margin: 48px 0;
+	@media #{$large-tablet}{
+		margin-right:40px;
+	}
+	@media #{$tablet-device}{
+		margin-right:40px;
+	}
+	@media #{$large-mobile}{
+		margin:20px 0;
+		margin-right:0;
+	}
 	.shop--trendy-product-image{
 		padding-bottom:15px;
 		border-bottom:1px solid $border-color;
+		img{
+			max-height:188px;
+		}
 	}
 	h6{
 		font-size:14px;
 		line-height:16px;
 		color:$heading-color;
 		margin-top:12px;
+		
 	}
 	.shop--trendy-product-meta{
 		display:flex;
 		justify-content: space-between;
+		padding-top:6px;
 		.product-price{
 			.current-price{
 				font-family: 'Montserrat', sans-serif;
@@ -90,6 +279,12 @@
 		}
 		.product-actions{
 			a{
+				&:hover{
+					i{
+						background-color: $heading-color;
+						color:#fff;
+					}
+				}
 				i{
 					width:30px;
 					height:30px;

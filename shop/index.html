@@ -27,6 +27,9 @@
     <!-- Magnific-Popup css file -->
     <link rel="stylesheet" href="plugins/Magnific-Popup/magnific-popup.css">
 
+    <!-- Nice Select css file -->
+    <link rel="stylesheet" href="plugins/nice-select/nice-select.css">
+
     <!--==== Style css file ====-->
     <link rel="stylesheet" href="css/main.css">
 
@@ -49,7 +52,7 @@
 <!-- Start main wrapper -->
 <div class="main-wrapper home-shop">
     <!-- Start header -->
-    <header class="header">
+    <header class="shop--header">
         <div class="container">
             <!-- Start Logo container -->
             <div class="shop--logo-container">
@@ -173,6 +176,9 @@
                             <!-- End of Categpry Sliding Menu -->
                         </div>
                         <!-- End of header side category -->
+                        <div class="shop--sticky-logo">
+                            <img src="img/logo.jpg" alt="logo">
+                        </div>
                     </div>
                     <div class="col-lg-6">
                         <!-- Start header middle -->
@@ -333,6 +339,45 @@
                                     </button>
                                 </div>
                                 <!-- End of search button -->
+                                <div class="shop--search-block-wrapper">
+                                    <form action="#">
+                                        <div class="search-block">
+                                            <input type="text" name="search" placeholder="Search Here">
+                                            <select name="search" id="search_option">
+                                                <option value="01" class="d-flex">
+                                                    <span>All Categories</span>
+                                                </option>
+                                                <option value="01" class="d-flex">
+                                                    <span>Men's</span>
+                                                    <span>(2356)</span>
+                                                </option>
+                                                <option value="01" class="d-flex">
+                                                    <span>Men's</span>
+                                                    <span>(2356)</span>
+                                                </option>
+                                                <option value="01" class="d-flex">
+                                                    <span>Men's</span>
+                                                    <span>(2356)</span>
+                                                </option>
+                                                <option value="01" class="d-flex">
+                                                    <span>Men's</span>
+                                                    <span>(2356)</span>
+                                                </option>
+                                                <option value="01" class="d-flex">
+                                                    <span>Men's</span>
+                                                    <span>(2356)</span>
+                                                </option>
+                                                <option value="01" class="d-flex">
+                                                    <span>Men's</span>
+                                                    <span>(2356)</span>
+                                                </option>
+                                            </select>
+                                            <button type="submit">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                             <!-- End of Header Middle Bottom -->
                         </div>
@@ -356,9 +401,9 @@
     <!-- Start Banner Area -->
     <section class="shop--banner-area-container">
         <!-- Start Banner Area Slider -->
-        <div class="shop--banner-area-slider owl-carousel" data-owl-nav="true" data-owl-animate="fadeOut">
+        <div class="shop--banner-area-slider owl-carousel" data-owl-nav="true" data-owl-animate="fadeOut" data-owl-autoplay="false">
             <!-- Start Single Banner Slider -->
-            <div class="shop--single-banner-slider shop--banner-bg d-flex justify-content-center align-items-center shop--gradient-overlay" data-bg-img="../img/banner/banner-bg-1.jpg">
+            <div class="shop--single-banner-slider shop--banner-bg d-flex justify-content-center align-items-center shop--gradient-overlay" data-bg-img="img/banner/banner-bg-1.jpg">
                 <div class="container">
                     <div class="row justify-content-end">
                         <div class="col-lg-7">
@@ -378,10 +423,10 @@
             <!-- End of Single Banner Slider -->
 
             <!-- Start Single Banner Slider -->
-            <div class="shop--single-banner-slider shop--banner-bg d-flex justify-content-center align-items-center shop--gradient-overlay"  data-bg-img="../img/banner/banner-bg-2.jpg">
+            <div class="shop--single-banner-slider shop--banner-bg d-flex justify-content-center align-items-center shop--gradient-overlay"  data-bg-img="img/banner/banner-bg-2.jpg">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-lg-9 text-center">
+                        <div class="col-lg-10 text-center">
                             <!-- Start Slider Content -->
                             <div class="shop--slider-content">
                                 <p>Special Offer</p>
@@ -478,7 +523,7 @@
                 <!-- Start col-lg-3 -->
                 <div class="col-md-6 col-lg-4 col-xl-3">
                     <!-- Start Single Special Feature -->
-                    <div class="shop--single-special-feature text-center mt-lg-30 mb-sm-30">
+                    <div class="shop--single-special-feature text-center mt-lg-30">
                         <!-- Start Feature Icon -->
                         <div class="shop--feature-icon">
                             <img class="svg" src="img/feature-icons/support-phone-icon.svg" alt="">
@@ -504,7 +549,7 @@
     <!-- End of Speacial Feature Area -->
     
     <!-- Start Top Category Slider -->
-    <div class="shop--top-category-slider owl-carousel pb-100" data-owl-items="6" data-owl-margin="30" data-owl-stagePadding="10" data-owl-responsive='{"0": {"items": "2"}, "576": {"items": "3"}, "991": {"items": "5"}, "1200": {"items":"6"}}'>
+    <div class="shop--top-category-slider owl-carousel pb-100" data-owl-items="6" data-owl-margin="30" data-owl-responsive='{"0": {"items": "2"}, "576": {"items": "3"}, "991": {"items": "5"}, "1200": {"items":"6"}}'>
         <!-- Start Single Top Category Slider -->
         <div class="shop--single-top-category-slider">
            <!--  Start Category Slider Image -->
@@ -732,7 +777,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-2.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -811,7 +856,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-3.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -886,7 +931,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-4.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -965,7 +1010,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-5.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -1118,7 +1163,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-6.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -1192,7 +1237,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-7.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -1271,7 +1316,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-8.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -1345,7 +1390,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-9.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -1423,7 +1468,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-10.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -1497,7 +1542,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-11.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -1575,7 +1620,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-10.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -1727,7 +1772,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-3.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -1801,7 +1846,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-4.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -1879,7 +1924,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-6.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -1953,7 +1998,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-3.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -2031,7 +2076,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-5.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -2105,7 +2150,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-8.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -2183,7 +2228,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-9.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -2257,7 +2302,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-10.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -2336,7 +2381,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-9.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -2410,7 +2455,7 @@
                                 <!-- Start Product Image -->
                                 <div class="shop--product-image shop--product-bage">
                                     <a href="#">
-                                        <img src="img/products/product-1.jpg" alt="">
+                                        <img src="img/products/product-2.jpg" alt="">
                                     </a>
                                 </div>
                                 <!-- End of Product Image -->
@@ -2490,10 +2535,21 @@
         </div>
     </section>
     <!-- End of What New Area -->
-    <section class="shop--count-down-area d-flex gray-bg">
-        <div class="shop--countdown-leftside"></div>
+    <section class="shop--count-down-area d-flex gray-bg flex-wrap">
+       <!--  <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6"></div>
+            </div>
+        </div> -->
+        <div class="shop--countdown-leftside" data-bg-img="img/banner-img-2.jpg">
+            <div class="shop--countdown-banner-wrapper text-right float-right">
+                <h4>Become A Premium Member & Get Up To <span>75%</span> Off!</h4>
+                <a href="#" class="btn shop--bordered-btn">View Details</a>
+            </div>
+        </div>
         <div class="shop--countdown-rightside">
-            <div class="shop--countdown-slider">
+            <div class="shop--countdown-slider owl-carousel" data-owl-nav="true" data-owl-autoplay="false">
                 <!-- Start Single countdown -->
                 <div class="shop--single-countdown">
                     <!-- Start Countdown Wrapper -->
@@ -2506,13 +2562,8 @@
                         <!-- End of Countdown Text -->
 
                         <!-- Start Countdown -->
-                        <div class="countdown">
-                            <ul class="list-unstyled">
-                                <li>27<span>Days</span></li>
-                                <li>14<span>Hours</span></li>
-                                <li>36<span>Minutes</span></li>
-                                <li>58<span>Seconds</span></li>
-                            </ul>
+                        <div class="countdown" data-countdown="2019/12/31">
+                            
                         </div>
                         <!-- End of Countdown -->
                     </div>
@@ -2522,7 +2573,64 @@
                     <div class="shop--trendy-product-item text-center">
                         <!-- Start Trendy Product Image -->
                         <div class="shop--trendy-product-image">
-                            <img src="../img/trendy-products/product-1.jpg" alt="">
+                            <img src="img/trendy-products/product-1.jpg" alt="">
+                        </div>
+                        <!-- End of Trendy Product Image -->
+                        <h6>Stylish Footwears-Trendy 2k17</h6>
+                        <!-- Start Trendy Product meta -->
+                        <div class="shop--trendy-product-meta">
+                            <!-- Start Product Price -->
+                            <div class="product-price">
+                                <span class="current-price">$15.50</span>
+                                <span class="old-price">$18.25</span>
+                            </div>
+                            <!-- End of Product Price -->
+                            
+                            <!-- Start Product Actions -->
+                            <div class="product-actions">
+                                <a href="#">
+                                    <i class="fa fa-heart-o"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-exchange"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </a>
+                            </div>
+                            <!-- End of Product Actions -->
+                        </div>
+                        <!-- End of Trendy Product meta -->
+                    </div>
+                    <!-- End of Trendy Product Item -->
+                </div>
+                <!-- End of Single Countdown -->
+                <!-- Start Single countdown -->
+                <div class="shop--single-countdown">
+                    <!-- Start Countdown Wrapper -->
+                    <div class="shop--countdown-wrpper">
+                        <!-- Start Countdown Text -->
+                        <div class="shop--countdown-text">
+                            <h3>Deal Of The Month !</h3>
+                            <h6>Offers Ends In...</h6>
+                        </div>
+                        <!-- End of Countdown Text -->
+
+                        <!-- Start Countdown -->
+                        <div class="countdown" data-countdown2="2019/12/31">
+                        </div>
+                        <!-- End of Countdown -->
+                    </div>
+                    <!-- End of Countdown Wrapper -->
+
+                    <!-- Start Trendy Product Item -->
+                    <div class="shop--trendy-product-item text-center">
+                        <!-- Start Trendy Product Image -->
+                        <div class="shop--trendy-product-image">
+                            <img src="img/trendy-products/product-1.jpg" alt="">
                         </div>
                         <!-- End of Trendy Product Image -->
                         <h6>Stylish Footwears-Trendy 2k17</h6>
@@ -2966,7 +3074,7 @@
         <div class="container">
            <div class="row">
                 <div class="col-12">
-                    <div class="shop--offer-banner-content" data-bg-img="../img/banner-img-1.jpg">
+                    <div class="shop--offer-banner-content" data-bg-img="img/banner-img-1.jpg">
                         <div class="shop--offer-banner-wrapper">
                              <div class="shop--offer-banner-text">
                                 <p class="shop--dashed-text">Special</p>
@@ -2985,7 +3093,7 @@
     </div>
 
     <!-- Start Testimonial Section -->
-    <div class="shop--testimonial-area shop--color-overlay" data-bg-img="../img/testimonial-bg.jpg">
+    <div class="shop--testimonial-area shop--color-overlay" data-bg-img="img/testimonial-bg.jpg">
         <div class="container">
             <!-- Start row -->
             <div class="row justify-content-center">
@@ -3098,15 +3206,17 @@
                 <!-- Start col-lg-12 -->
                 <div class="col-lg-12">
                     <!-- Start Blog Slider -->
-                    <div class="shop--blog-slider owl-carousel" data-owl-items="3" data-owl-margin="30" data-owl-nav="true" data-owl-responsive='{"0": {"items": "1"},"600":{"items":"1"}, "768": {"items": "2"}, "991": {"items": "3"}, "1200": {"items":"3"}}'>
+                    <div class="shop--blog-slider owl-carousel" data-owl-items="3" data-owl-margin="30" data-owl-nav="true" data-owl-responsive='{"0": {"items": "1"},"600":{"items":"1"}, "768": {"items": "2"}, "991": {"items": "2"}, "1120": {"items":"3"}}'>
                         <!-- Shop--single-blog-item -->
                         <div class="shop--single-blog-item">
                             <!-- Start blog Bckground Image -->
-                            <div class="shop--blog-bg shop--blog-bage" data-bg-img="../img/blog-images/blog-img-1.jpg"></div>
+                            <div class="shop--blog-bg shop--blog-bage" data-bg-img="img/blog-images/blog-img-1.jpg"></div>
                             <!-- End of Backgroud Image -->
                             <!-- Start Blog Content -->
                             <div class="shop--blog-content">
-                                <h4>Teaching Mama By Angela Thayer Crafts For Kids | Craft Paper Scissors.</h4>
+                                <a href="#">
+                                    <h4>Teaching Mama By Angela Thayer Crafts For Kids | Craft Paper Scissors.</h4>
+                                </a>
                                 <!-- Start Blog meta -->
                                 <ul class="shop--blog-meta list-unstyled">
                                     <li>19 January 2k17</li>
@@ -3143,11 +3253,13 @@
                         <!-- Shop--single-blog-item -->
                         <div class="shop--single-blog-item">
                             <!-- Start blog Bckground Image -->
-                            <div class="shop--blog-bg shop--blog-bage" data-bg-img="../img/blog-images/blog-img-2.jpg"></div>
+                            <div class="shop--blog-bg shop--blog-bage" data-bg-img="img/blog-images/blog-img-2.jpg"></div>
                             <!-- End of Backgroud Image -->
                             <!-- Start Blog Content -->
                             <div class="shop--blog-content">
-                                <h4>Teaching Mama By Angela Thayer Crafts For Kids | Craft Paper Scissors.</h4>
+                                <a href="#">
+                                    <h4>Teaching Mama By Angela Thayer Crafts For Kids | Craft Paper Scissors.</h4>
+                                </a>
                                 <!-- Start Blog meta -->
                                 <ul class="shop--blog-meta list-unstyled">
                                     <li>19 January 2k17</li>
@@ -3184,11 +3296,13 @@
                         <!-- Shop--single-blog-item -->
                         <div class="shop--single-blog-item">
                             <!-- Start blog Bckground Image -->
-                            <div class="shop--blog-bg shop--blog-bage" data-bg-img="../img/blog-images/blog-img-3.jpg"></div>
+                            <div class="shop--blog-bg shop--blog-bage" data-bg-img="img/blog-images/blog-img-3.jpg"></div>
                             <!-- End of Backgroud Image -->
                             <!-- Start Blog Content -->
                             <div class="shop--blog-content">
-                                <h4>Teaching Mama By Angela Thayer Crafts For Kids | Craft Paper Scissors.</h4>
+                                <a href="#">
+                                    <h4>Teaching Mama By Angela Thayer Crafts For Kids | Craft Paper Scissors.</h4>
+                                </a>
                                 <!-- Start Blog meta -->
                                 <ul class="shop--blog-meta list-unstyled">
                                     <li>19 January 2k17</li>
@@ -3225,11 +3339,13 @@
                         <!-- Shop--single-blog-item -->
                         <div class="shop--single-blog-item">
                             <!-- Start blog Bckground Image -->
-                            <div class="shop--blog-bg shop--blog-bage" data-bg-img="../img/blog-images/blog-img-1.jpg"></div>
+                            <div class="shop--blog-bg shop--blog-bage" data-bg-img="img/blog-images/blog-img-1.jpg"></div>
                             <!-- End of Backgroud Image -->
                             <!-- Start Blog Content -->
                             <div class="shop--blog-content">
-                                <h4>Teaching Mama By Angela Thayer Crafts For Kids | Craft Paper Scissors.</h4>
+                                <a href="#">
+                                    <h4>Teaching Mama By Angela Thayer Crafts For Kids | Craft Paper Scissors.</h4>
+                                </a>
                                 <!-- Start Blog meta -->
                                 <ul class="shop--blog-meta list-unstyled">
                                     <li>19 January 2k17</li>
@@ -3276,34 +3392,43 @@
     <!-- Start Call to Action -->
     <div class="shop--call-to-action gray-bg">
         <!-- Start Call to Action -->
-       <div class="shop--call-to-action-wrapper pt-100 pb-100">
+       <div class="shop--call-to-action-wrapper pt-60 pb-60">
            <div class="container">
                 <!-- Start row -->
-               <div class="row">
+               <div class="row align-items-center">
                    <!-- Start col-lg-8 -->
-                   <div class="col-lg-8">
+                   <div class="col-md-8">
+                       <!-- Start Subscription Heading -->
                        <div class="subscription-heading">
                            <h3>Don’t Miss The Updates</h3>
                            <p>Stay Up To Date With Latest News, New Products & Exclusive Offers</p>
                        </div>
+                       <!-- End of Subscription Heading -->
+                       <!-- Start Subscription Form -->
                        <div class="subscription-form">
                            <form action="#">
                                <input type="email" id="email" placeholder="Enter Your Valid E-mail Adderss">
                                <button type="submit" class="btn subscribe-btn">Subscribe Now</button>
                            </form>
                        </div>
+                       <!-- End of Subscription Form -->
                    </div>
                    <!-- End of col-lg-8 -->
 
-                   <!-- Start col-lg-4 -->
-                   <div class="col-lg-3 offset-lg-1 text-right position-relative">
-                        <div class="subscription-image-wrapper">
-                            <div class="subscription-image" data-bg-img="../img/subscription-bg.jpg">
+                   <!-- Start col-lg-3 -->
+                   <div class="col-lg-3 offset-lg-1 col-md-4">
+                        <div class="shop--subscription-image-wrapper float-md-right">
+                            <!-- Start Subscription Image Wrapper -->
+                            <div class="subscription-image-inner">
+                                <!-- Start Subscription Image -->
+                                <div class="subscription-image" data-bg-img="img/subscription-bg.jpg">
+                                </div>
+                                <!-- End of Subscription Image -->
                             </div>
+                            <!-- End of Subscription Image Wrapper -->
                         </div>
-                        
                    </div>
-                   <!-- End of col-lg-4 -->
+                   <!-- End of col-lg-3 -->
                </div>
                <!-- End of row -->
            </div>
@@ -3320,7 +3445,7 @@
                 <!-- Start col-lg-12 -->
                 <div class="col-lg-12">
                     <!-- Start Client logo slider -->
-                    <div class="shop--client-logo-slider owl-carousel" data-owl-items="6" data-owl-margin="70" data-owl-nav="false" data-owl-responsive='{"0": {"items": "2"}, "576": {"items": "4"}, "991": {"items": "5"}, "1200": {"items":"6"}}'>
+                    <div class="shop--client-logo-slider owl-carousel" data-owl-items="6" data-owl-margin="70" data-owl-nav="false" data-owl-responsive='{"0": {"items": "2"}, "576": {"items": "3"}, "991": {"items": "4"}, "1200": {"items":"6"}}'>
                         <!-- Start Single Client Logo -->
                         <div class="shop--single-client-logo">
                             <a href="#">
@@ -3382,7 +3507,7 @@
                 <div class="row">
                     <!-- Start col-lg-3 -->
                     <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div class="shop--footer-weidget mb-md-30 mb-sm-30">
+                        <div class="shop--footer-weidget mb-md-40 mb-sm-40">
                             <div class="shop--footer-about-text">
                                 <p>Quality Is Our Business Plan & Honesty</p>
                             </div>
@@ -3425,8 +3550,8 @@
                     </div>
                     <!-- End of col-lg-3 -->
                     <!-- Start col-lg-3 -->
-                    <div class="col-md-6 col-lg-4 col-xl-3 mb-sm-30">
-                        <div class="shop--footer-weidget mb-md-30">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="shop--footer-weidget mb-md-40 mb-sm-40">
                             <div class="shop--footer-header">
                                 <h4>Recent Blog</h4>
                             </div>
@@ -3498,13 +3623,37 @@
                             <div class="shop--footer-header">
                                 <h4>Instagram</h4>
                             </div>
-                            <div class="shop--footer-image-gallery">
-                                <img src="img/gallery-images/gallery-img-1.jpg" alt="">
-                                <img src="img/gallery-images/gallery-img-2.jpg" alt="">
-                                <img src="img/gallery-images/gallery-img-3.jpg" alt="">
-                                <img src="img/gallery-images/gallery-img-4.jpg" alt="">
-                                <img src="img/gallery-images/gallery-img-5.jpg" alt="">
-                                <img src="img/gallery-images/gallery-img-6.jpg" alt="">
+                            <div class="shop--footer-image-gallery d-flex flex-wrap">
+                                <div class="shop--single-footer-gallery-image">
+                                    <a href="#">
+                                        <img src="img/gallery-images/gallery-img-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="shop--single-footer-gallery-image">
+                                    <a href="#">
+                                        <img src="img/gallery-images/gallery-img-2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="shop--single-footer-gallery-image">
+                                    <a href="#">
+                                        <img src="img/gallery-images/gallery-img-3.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="shop--single-footer-gallery-image">
+                                    <a href="#">
+                                        <img src="img/gallery-images/gallery-img-4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="shop--single-footer-gallery-image">
+                                    <a href="#">
+                                        <img src="img/gallery-images/gallery-img-5.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="shop--single-footer-gallery-image">
+                                    <a href="#">
+                                        <img src="img/gallery-images/gallery-img-6.jpg" alt="">
+                                    </a>
+                                </div>
                             </div>
                             <h5 class="follow-instagram">
                                 Follow us on Instragram
@@ -3617,9 +3766,11 @@
     <!-- End of Footer -->
     
     <!-- back to top -->
-    <!-- <div class="back-to-top">
-        <a href="#"><i class="fa fa-chevron-up"></i></a>
-    </div> -->
+    <div class="back-to-top">
+        <a href="#">
+            <img src="img/top-icon.svg" alt="" class="svg">
+        </a>
+    </div>
     <!-- back to top -->
 
 </div>
@@ -3655,6 +3806,9 @@
 
     <!-- ====Count down==== -->
     <script src="plugins/countdown/jquery.countdown.min.js"></script>
+
+    <!-- ====Nice Select==== -->
+    <script src="plugins/nice-select/jquery.nice-select.min.js"></script>
 
     <!-- ==== Menu  js file==== -->
     <script src="js/menu.min.js"></script>

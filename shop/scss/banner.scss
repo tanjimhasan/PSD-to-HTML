@@ -28,6 +28,14 @@
 			color:#fff;
 			margin-bottom:32px;
 			margin-top:18px;
+			@media #{$tablet-device}{
+				font-size: 88px;
+			}
+			@media #{$large-mobile}{
+				font-size: 60px;
+				margin-bottom: 25px;
+				margin-top:10px;
+			}
 		}
 		h2{
 			text-transform:uppercase;
@@ -36,6 +44,9 @@
 			font-weight:700;
 			line-height:45px;
 			margin-bottom:5px;
+			@media #{$large-mobile}{
+				font-size: 50px;
+			}
 		}
 		.shop--bordered-btn{
 			margin-top:13px;
@@ -147,6 +158,11 @@
 			letter-spacing: 3.5px;
 			font-weight:400;
 			color:#5a5a5a;
+			span{
+				font-weight:700;
+				color:$heading-color;
+				font-size:18px;
+			}
 		}
 	}
 }

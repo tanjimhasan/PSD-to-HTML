@@ -5,6 +5,7 @@
 /* xx: Single Product Item */
 .shop--single-product-item{
 	position:relative;
+	overflow: hidden;
 	transition:.35s;
 	&:hover{
 		border:1px solid $border-color;
@@ -99,6 +100,24 @@
 				line-height:30px;
 			}
 		}
+	}
+}
+
+/* xx: What New Section Title */
+.shop--product-bage{
+	position:relative;
+	&:after{
+		position:absolute;
+		left:-27px;
+		top:27px;
+		background:#7a7a7a;
+		color:#fff;
+		font-family: 'Montserrat', sans-serif;
+		font-size:12px;
+		font-weight:300;
+		content:"Best Seller";
+		padding:5px 10px;
+		transform:rotate(-90deg);
 	}
 }
 

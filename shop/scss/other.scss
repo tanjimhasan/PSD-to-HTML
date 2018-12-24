@@ -1,0 +1,46 @@
+/*=============================================
+    xx: Other
+==============================================*/
+
+/* xx: Back  To Top */
+
+.back-to-top{
+	height:50px;
+	width:50px;
+	background-color:#fff;
+	position:fixed;
+	bottom:55px;
+	right:55px;
+	text-align: center;
+    line-height: 50px;
+    border:1px solid #eaeaea;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s all linear;
+    z-index:99999;
+    &:hover{
+    	border-color:$primary-color;
+    	.svg{
+    		.cls-1{
+    			fill:$primary-color;
+    		}
+    	}
+    }
+}
+.back-to-top.show{
+	opacity:1;
+	visibility: visible;
+}
+
+/* xx: Client Logo Slider */
+
+.shop--single-client-logo{
+	img{
+		filter: grayscale(100%);
+		transition:.3s;
+		&:hover{
+			filter: grayscale(0%);
+		}
+	}
+}

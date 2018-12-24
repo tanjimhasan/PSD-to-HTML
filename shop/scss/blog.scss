@@ -33,6 +33,9 @@
 			line-height: 22px;
 			font-weight: 400;
 			color:#5a5a5a;
+			&:hover{
+				color:$heading-color;
+			}
 		}
 		.blog-text{
 			margin-bottom: 25px;
