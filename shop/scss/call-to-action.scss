@@ -12,6 +12,7 @@
 		margin-bottom:15px;
 		@media #{$iphone-devices}{
 			font-size: 28px;
+			line-height: 30px;
 		}
 	}
 	p{
@@ -39,7 +40,8 @@
 			width:70%;
 		}
 		@media #{$iphone-devices}{
-			width:65%;
+			width:67%;
+			padding:0 5px;
 		}
 	}
 	button{
@@ -63,6 +65,8 @@
 		height:40px;
 		line-height:40px;
 		right:0;
+		@media #{$iphone-devices}{
+			font-size: 12px;		}
 		&:hover{
 			background-color: $heading-color;
 		}

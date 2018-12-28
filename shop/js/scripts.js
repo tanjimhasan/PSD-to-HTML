@@ -21,6 +21,7 @@ xx: Owl Carousel
 xx: CountDown One
 xx: CountDown Two
 xx: Back To Top
+xx: Product Slider Tab menu
 xx: Changing Svg Color
 
 
@@ -65,15 +66,29 @@ xx: Changing Svg Color
         /* xx: Sliding Category Button
         ==============================================*/
 
-        $(".shop--category-sliding-btn").on("click", function (event) {
+        $(".shop--category-sliding-header .shop--hamburger-icon").on("click", function (event) {
             event.stopPropagation();
             $(".shop--category-sliding-menu").slideDown("250");
+            $('.shop--category-sliding-header .shop--close-btn').addClass('show');
+            $('.shop--category-sliding-area').addClass('active');
+            $(this).toggleClass('remove');
         });
 
-        $(".shop--close-btn").on("click", function (event) {
+        $(".shop--category-sliding-header .shop--close-btn").on("click", function (event) {
             event.stopPropagation();
             $(".shop--category-sliding-menu").slideUp("250");
+            $('.shop--category-sliding-header .shop--close-btn').toggleClass('show');
+            $(".shop--category-sliding-header .shop--hamburger-icon").toggleClass('remove');
+             $('.shop--category-sliding-area').removeClass('active');
         });
+
+        // $( ".shop--category-sliding-wrapper" ).mouseover(function() {
+        //     $('.shop--category-sliding-area').toggleClass('show');
+        // });
+
+        // $( ".shop--category-sliding-wrapper" ).mouseleave(function() {
+        //     $('.shop--category-sliding-area').toggleClass('remove');
+        // });
 
         /* xx: Sliding Category Submenu
         ==============================================*/
@@ -231,6 +246,21 @@ xx: Changing Svg Color
             });
         }
 
+        /* xx: Product Slider Tab Menu
+        ==============================================*/
+
+        $('.shop--product-slider-menu-list li').on('click', function (e) {
+            e.preventDefault();
+           
+            var $href = $(this).attr('href');
+            $('.shop--product-slider-menu-list li').removeClass('active');
+            $(this).addClass('active');
+
+            $('.shop--new-product-list .tab-pane').removeClass('active show');
+            $('.shop--new-product-list ' + $href).addClass('active show');
+
+        });
+
         /* xx: Changing svg color
         ==============================================*/
 
@@ -267,10 +297,14 @@ xx: Changing Svg Color
             }, 'xml');
         });
 
+        /* xx: Category Select
+        ==============================================*/
+
         $('select').niceSelect();
         var searchToggle = $('.shop--search-toggle');
         var searchArea = $('.shop--search-block-wrapper');
         searchToggle.on('click', function () {
+            event.stopPropagation();
             searchArea.slideToggle();
         });
 

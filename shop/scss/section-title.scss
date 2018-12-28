@@ -28,7 +28,7 @@
 .shop--product-slider-menu{
 	margin-left:60px;
 	.shop--product-slider-menu-list{
-		margin-bottom:0;
+		margin-bottom:4px;
 		li{
 			display:inline-block;
 			margin-right:6px;
@@ -48,5 +48,37 @@
 			border-color: $text-color;
 			color:$heading-color;
 		}
+	}
+}
+
+
+/* xx: What New Section Title */
+
+.shop--what-new-area{
+	.shop--section-title{
+		@media #{$tablet-device}{
+			flex-direction: column;
+		}
+		@media #{$large-mobile}{
+			flex-direction: column;
+		}
+	}
+	.shop--product-slider-menu{
+		@media #{$tablet-device}{
+			margin-left:0;
+			margin:20px 0;
+		}
+		@media #{$large-mobile}{
+			margin-left:0;
+			margin-top:20px;
+			margin-bottom:5px;
+			text-align:center;
+		}
+		li{
+			@media #{$large-mobile}{
+				margin-bottom:15px;
+			}
+		}
+		
 	}
 }

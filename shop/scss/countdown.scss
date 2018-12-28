@@ -53,8 +53,11 @@
 				position:absolute;
 				bottom:30px;
 				left: 270px;
+				@media #{$large-device}{
+					left:220px;
+				}
 				@media #{$large-mobile}{
-					left:80px;
+					left:120px;
 				}
 				@media #{$small-mobile}{
 					left:60px;
@@ -85,8 +88,11 @@
 			}
 			button.owl-prev{
 				left:310px;
+				@media #{$large-device}{
+					left:260px;
+				}
 				@media #{$large-mobile}{
-					left: 115px;
+					left: 160px;
 				}
 				@media #{$small-mobile}{
 					left:100px;
@@ -134,6 +140,9 @@
 	max-width: 370px;
 	padding-right: 40px;
 	padding-top:112px;
+	@media #{$large-device}{
+		// padding-right:20px;
+	}
 	h4{
 		color:#fff;
 		font-size:30px;
@@ -152,6 +161,9 @@
 .shop--countdown-wrpper{
 	padding-left:40px;
 	margin-top:-45px;
+	@media #{$large-device}{
+		// padding-left:20px;
+	}
 	@media #{$small-mobile}{
 		max-width:100%;
 		padding-left:20px;
@@ -192,6 +204,10 @@
 		font-weight:500;
 		padding-right: 55px;
 		position:relative;
+		@media #{$large-device}{
+			padding-right:45px;
+			font-size:28px;
+		}
 		@media #{$large-mobile}{
 			text-align: center;
 		}

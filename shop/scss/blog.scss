@@ -8,22 +8,22 @@
 /* xx: Single Blog Item */
 
 .shop--single-blog-item{
+	
 	.shop--blog-bg{
 		height: 220px;
 		background-size: cover !important;
+		position: relative;
 	}
-	.shop--blog-bage{
-		position:relative;
-		&:after{
-			position: absolute;
-		    right: 10px;
-		    bottom: 10px;
-		    line-height:30px;
-		    font-family: 'Montserrat', sans-serif;
-		    color:#fff;
-		    padding:2px 9px;
+	.shop-blog-bage{
+		position:absolute;
+		right:10px;
+		bottom:16px;
+		span{
+			font-family: 'Montserrat', sans-serif;
+			color:#fff;
+		    padding:8px 10px;
 		    background: #7a7a7a;
-		    content: "Kid’s Fashion";
+		    font-size:12px;
 		}
 	}
 	.shop--blog-content{

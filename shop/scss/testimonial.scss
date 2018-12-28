@@ -73,6 +73,9 @@
 			left:50%;
 			font-size:14px;
 			transition:.3s;
+			@media #{$extra-small-mobile}{
+				bottom:50px;
+			}
 			&:hover{
 				background-color:#fff;
 				i{

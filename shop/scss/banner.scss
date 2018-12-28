@@ -6,6 +6,12 @@
 
 .shop--single-banner-slider{
 	min-height:650px;
+	@media #{$small-mobile}{
+		min-height: 600px;
+	}
+	@media #{$extra-small-mobile}{
+		min-height: 500px;
+	}
 	.shop--slider-content{
 		color:#fff;
 		margin-top:-15px;
@@ -16,6 +22,14 @@
 			font-size:18px;
 			line-height:45px;
 			letter-spacing:13px;
+			@media #{$extra-small-mobile}{
+				letter-spacing: 12px;
+				font-size: 16px;
+			}
+			@media #{$iphone-devices}{
+				line-height: 35px;
+				letter-spacing: 11px;
+			}
 		}
 		.shop--discount-text{
 			letter-spacing:8px;
@@ -35,6 +49,15 @@
 				font-size: 60px;
 				margin-bottom: 25px;
 				margin-top:10px;
+			}
+			@media #{$extra-small-mobile}{
+				font-size: 55px;
+				margin-bottom: 20px;
+				margin-top:10px;
+				line-height: 50px;
+			}
+			@media #{$iphone-devices}{
+				margin-top:15px;
 			}
 		}
 		h2{

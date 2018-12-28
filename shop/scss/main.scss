@@ -18,27 +18,53 @@
         x.x: Buttons
         x.x: Margin/Padding
         x.x: Animations
+
     xx: Header
         xx:Main Header
-            xx: Header Category
-            xx: Header Middle
-                xx: Header Middle Top List
+            xx: Header Side Category
+                xx: Category Menu
+                    xx: Cateory Sub Menu
+            xx: Header Middle Top
+            xx: Header Middle Bottom
                 xx: Main Menu
+                    xx: Sub Menu
+                        xx: Sub Menu Button
+                xx: Header Search Block
+                    xx: Header Search Button
             xx: Header Phone
-    xx: Banner Slider
+        xx:Sticky Header
+        xx: Mobile Menu
+
+    xx: Banner
         xx: Single Banner Slider
+
     xx: Special Feature Area
         xx: Single Feature
+
     xx: Top Category Slider
         xx: Single Top Category
+
     xx: Section Title
+
     xx: Product
+        xx: Single Product Item
+            xx: Product meta
+            xx: Product Actions
+            xx: Product tag
+            xx: Product Slider nav
+        xx: double row double product slider
+            xx: double row double product slider Nav
+
     xx: Testimonial
         xx: Single Testimonial
+
     xx: Call To Action
+
     xx: Blog
         xx:Single Blog
+
     xx: Footer
+
     xx: Other
         xx: Back To Top
 

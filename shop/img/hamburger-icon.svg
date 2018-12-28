@@ -1,0 +1,12 @@
+<svg id="Icon" xmlns="http://www.w3.org/2000/svg" width="15" height="11" viewBox="0 0 15 11">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1a1a1a;
+      }
+    </style>
+  </defs>
+  <rect id="Line" class="cls-1" y="10" width="15" height="1"/>
+  <rect id="Line-2" data-name="Line" class="cls-1" y="5" width="15" height="1"/>
+  <rect id="Line-3" data-name="Line" class="cls-1" width="15" height="1"/>
+</svg>
