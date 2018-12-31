@@ -1,9 +1,0 @@
-/*=============================================
-    8: Include Services
-==============================================*/
-/* 8.1: Include Service List */
-.include-service-wrapper {
-  border-top: 1px solid #00c544;
-  padding: 30px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05); }
