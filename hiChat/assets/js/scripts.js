@@ -213,7 +213,9 @@ We may release future updates so it will overwrite this file. it's better and sa
             $(".hiChat--offcanvas-menu").addClass('show');
             $(".hiChat--shade").addClass('active');
             $(".main-header").addClass('offcanvasActive');
-            $(".main-header").removeClass('sticky');
+            if( $(window).scrollTop() >= 100 ){
+                $(".main-header").addClass("sticky");
+            }
         });
 
         $(".hiChat--offcanvas-cancel , .hiChat--main-menu li a , .hiChat--shade").on('click', function () {
