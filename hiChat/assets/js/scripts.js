@@ -213,16 +213,16 @@ We may release future updates so it will overwrite this file. it's better and sa
             $(".hiChat--offcanvas-menu").addClass('show');
             $(".hiChat--shade").addClass('active');
             $(".main-header").addClass('offcanvasActive');
-            if( $(window).scrollTop() >= 100 ){
-                $(".main-header").addClass("sticky");
-            }
+            $(".main-header").removeClass('sticky');
         });
 
         $(".hiChat--offcanvas-cancel , .hiChat--main-menu li a , .hiChat--shade").on('click', function () {
             $(".hiChat--offcanvas-menu").removeClass('show');
             $(".hiChat--shade").removeClass('active');
             $(".main-header").removeClass('offcanvasActive');
-             $(".main-header").addClass('sticky');
+            if( $(window).scrollTop() >= 100 ){
+                $(".main-header").addClass("sticky");
+            }
         });
         
         // Main Menu Apend To Offcanvas Menu
