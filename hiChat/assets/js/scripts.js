@@ -242,6 +242,7 @@ We may release future updates so it will overwrite this file. it's better and sa
             }
              
         })
+        
         /* 11: Back To Top Button
         ==============================================*/
         var $backToTopBtn = $('.hiChat--backToTop');
