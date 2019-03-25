@@ -1,0 +1,118 @@
+/*=============================================
+    04: Home Slider
+==============================================*/
+
+.main-slider{
+	.slick-dots{
+		bottom:20px;
+		@media #{$desktop-device}{
+			margin-left: -35px;
+		}
+		@media #{$tablet-device}{
+			margin-left: -35px;
+		}
+		@media #{$large-mobile}{
+			margin-left: -35px;
+		}
+		li{
+			button{
+				background:transparent;
+			}
+		}
+		li.slick-active{
+			button{
+				background:#e2e6fb;
+			}
+		}
+	}
+}
+
+/* 4.1: Single Home Slider */
+
+.single-slider-item{
+	background-size:cover;
+	background-position:center;
+	background-color:#ddd;
+	.row{
+		padding:164px 0;
+		@media #{$very-extra-small-mobile}{
+			padding:120px 0;
+		}
+	}
+	.slide-content{
+		h3{
+			color:$heading-color;
+			font-size:24px;
+			font-style: italic;
+			position:relative;
+			padding-left:45px;
+			line-height:59px;
+			margin-top: -18px;
+			&:after{
+				position:absolute;
+				left:0;
+				top:50%;
+				width:35px;
+				height:2px;
+				background:$primary-color;
+				content:"";
+				margin-top:-2px;
+			}
+		}
+		h2{
+			font-size:60px;
+			text-transform:uppercae;
+			font-weight:500;
+			color:$heading-color;
+			font-style: italic;
+			line-height:71px;
+			margin-bottom:25px;
+			@media #{$tablet-device}{
+				font-size:50px;
+				font-style: inherit;
+				line-height:55px;
+			}
+			@media #{$large-mobile}{
+				font-size:50px;
+				font-style: inherit;
+				line-height:55px;
+			}
+			@media #{$small-mobile}{
+				font-size:40px;
+				font-style: inherit;
+				line-height:50px;
+			}
+			span{
+				font-weight:600;
+			}
+		}
+		p{
+			font-size:18px;
+			line-height:30px;
+			margin-bottom:28px;
+			font-style:italic;
+			@media #{$tablet-device}{
+				max-width:550px;
+				margin-bottom:25px;
+				margin-top:25px;
+			}
+		}
+		.bordered-btn{
+			margin-left:15px;
+		}
+		.bordered-btn,.boxed-btn{
+			@media #{$small-mobile}{
+				padding:10px 15px;
+			}
+		}
+	}
+}
+.single-slider-item.slider-bg-1{
+	background-image:url('../images/sldier-img/slider-img-1.jpg');
+}
+.single-slider-item.slider-bg-2{
+	background-image:url('../images/sldier-img/slider-img-2.jpg');
+}
+.single-slider-item.slider-bg-3{
+	background-image:url('../images/sldier-img/slider-img-3.jpg');
+}

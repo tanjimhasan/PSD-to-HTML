@@ -1,0 +1,16 @@
+/* ************************
+   xx: Padding
+   ********************* */
+// Padding Top
+@for $i from 0 through 15 
+  .pt-#{$i * 10} 
+    padding-top : #{$i * 10}px
+    +mobileLg
+        padding-top : #{($i * 10)/2}px
+
+// Padding Bottom    
+@for $i from 0 through 15 
+  .pb-#{$i * 10} 
+    padding-bottom : #{$i * 10}px
+    +mobileLg
+        padding-bottom : #{($i * 10)/2}px

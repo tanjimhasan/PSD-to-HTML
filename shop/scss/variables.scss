@@ -1,0 +1,15 @@
+$primary-color:#1a1a1a;
+$heading-color:#1a1a1a;
+$text-color:#9a9a9a;
+$border-color: #eaeaea;
+
+
+
+// Responsive Variables
+$large-device : 'only screen and (min-width: 1200px) and (max-width: 1499px)';
+$large-tablet : 'only screen and (min-width: 992px) and (max-width: 1199.98px)';
+$tablet-device:'only screen and (min-width: 768px) and (max-width: 991.98px)';
+$large-mobile:'only screen and (max-width: 767.98px)';
+$small-mobile: 'only screen and (max-width: 575.98px)';
+$extra-small-mobile: 'only screen and (max-width: 479.98px)';
+$iphone-devices: 'only screen and (max-width: 379.98px)';

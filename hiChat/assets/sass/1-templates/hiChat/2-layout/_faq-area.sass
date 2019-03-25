@@ -1,0 +1,125 @@
+
+
+/* 13.1: Single Faq */
+.hiChat--single-faq
+	background-color: #fff
+	padding-left: 60px
+	padding-right: 30px
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+	border-radius: 4px
+	margin-bottom: 20px
+	position: relative
+	z-index: 2
+	background-size: contain !important
+	background-repeat: no-repeat !important
+	background-position: top right !important
+	@extend .trans7
+	+mobileXs
+		padding-left: 45px
+		padding-right: 20px
+	.faq-shape
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-position: top right !important
+		background-repeat: no-repeat !important
+		opacity: 0
+		visibility: hidden
+	.question
+		font-size: 20px
+		padding: 30px 0
+		position: relative
+		cursor: pointer
+		margin-bottom: 0
+		+mobileLg
+			font-size: 18px
+		.icon-toggle
+			position: absolute
+			cursor: pointer
+			height: 10px
+			left: -38px
+			top: 38px
+			width: 100%
+			z-index: 2
+			+mobileXs
+				left: -45px
+			&:after , &:before
+				content: ''
+				height: 2px
+				left: 15px
+				position: absolute
+				top: 48%
+				width: 12px
+				transition: transform 500ms ease
+				transform: rotate(90deg)
+				@extend .hiChat--heading-color-bg
+			&:before
+				transform: rotate(180deg)
+	.accordion-text
+		display: none
+		p
+			font-size: 16px
+			line-height: 1.5
+			margin-top: 5px
+		&.active
+			display: block
+		
+.hiChat--single-faq
+	&.active
+		padding-top: 10px
+		padding-bottom: 50px
+		box-shadow: 10px 11px 29px rgba(0, 0, 0, 0.1)
+		@extend .hiChatGradient
+		&:after
+			height: 100%
+			width: 100%
+			@extend .trans3
+		.faq-shape
+			opacity: 1
+			visibility: visible
+		.question
+			box-shadow: 0 0
+			color: #fff
+			.icon-toggle
+				&:after
+					transform: rotate(0deg)
+					background-color: #fff
+				&:before
+					transform: rotate(0deg)
+					background-color: #fff
+			
+		.accordion-text
+			p
+				color: #efefef
+
+.hiChat--faq-image
+	@extend .moveUpDown
+	+tab
+		text-align: center
+		margin-top: 10px
+	img 
+		z-index: 2
+	.hiChat--questionMark
+		position: absolute
+		left: 30px
+		top: 25px
+		z-index:1
+
+
+
+
+/* 13.2: Single Faq Right */
+
+.hiChat--single-faq
+	&.text-right
+		padding-right: 60px
+		padding-left: 30px
+		.question
+			.icon-toggle
+				left: auto
+				right: -38px
+				&:after , &:before
+					left: auto
+					right: 15px

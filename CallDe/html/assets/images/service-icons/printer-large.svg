@@ -1,0 +1,19 @@
+<svg id="Services" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130" height="130" viewBox="0 0 130 130">
+  <defs>
+    <filter id="filter" x="-9" y="0" width="274" height="304" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="10" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="3.162"/>
+      <feFlood result="flood" flood-opacity="0.05"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Services-2" data-name="Services">
+    <g id="_2" data-name="2">
+      <g id="VFAX">
+        
+        <path id="Icon_Shape" data-name="Icon Shape" opacity="0.051" class="cls-1" d="M100,46A15,15,0,1,0,85,31,15.017,15.017,0,0,0,100,46Zm0-24a9,9,0,1,1-9,9A9.011,9.011,0,0,1,100,22ZM4-23H58a3,3,0,0,0,3-3,3,3,0,0,0-3-3H4a3,3,0,0,0-3,3A3,3,0,0,0,4-23Zm72,9H4a3,3,0,0,0-3,3A3,3,0,0,0,4-8H76a3,3,0,0,0,3-3A3,3,0,0,0,76-14Zm0,93H4a3,3,0,0,0,0,6H76A3,3,0,0,0,76,79Zm0,15H4a3,3,0,0,0,0,6H76A3,3,0,0,0,76,94ZM103,1V-50H-23V1H-50V103h18v9h9v18H103V112h9v-9h18V1H103ZM-17-44H97V1H-17V-44ZM-23,7H124V55H-44V7h21Zm-3,99V85a3,3,0,0,0-3-3,3,3,0,0,0-3,3V97H-44V61h21v45h-3ZM97,124H-17V61H97v63Zm15-27V85a3,3,0,1,0-6,0v21h-3V61h21V97H112ZM-32,22h9a3,3,0,0,0,3-3,3,3,0,0,0-3-3h-9a3,3,0,0,0-3,3A3,3,0,0,0-32,22Zm0,12h9a3,3,0,0,0,3-3,3,3,0,0,0-3-3h-9a3,3,0,0,0-3,3A3,3,0,0,0-32,34Zm0,12h9a3,3,0,0,0,3-3,3,3,0,0,0-3-3h-9a3,3,0,0,0-3,3A3,3,0,0,0-32,46Zm21-24h9a3,3,0,0,0,3-3,3,3,0,0,0-3-3h-9a3,3,0,0,0-3,3A3,3,0,0,0-11,22Zm0,12h9a3,3,0,0,0,3-3,3,3,0,0,0-3-3h-9a3,3,0,0,0-3,3A3,3,0,0,0-11,34Zm0,12h9a3,3,0,0,0,3-3,3,3,0,0,0-3-3h-9a3,3,0,0,0-3,3A3,3,0,0,0-11,46ZM10,22h9a3,3,0,1,0,0-6H10A3,3,0,1,0,10,22Zm0,12h9a3,3,0,1,0,0-6H10A3,3,0,1,0,10,34Zm0,12h9a3,3,0,0,0,0-6H10A3,3,0,0,0,10,46Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

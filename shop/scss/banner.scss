@@ -1,0 +1,191 @@
+/*=============================================
+    xx: Banner
+==============================================*/
+
+/* xx: Single Banner Slider */
+
+.shop--single-banner-slider{
+	min-height:650px;
+	@media #{$small-mobile}{
+		min-height: 600px;
+	}
+	@media #{$extra-small-mobile}{
+		min-height: 500px;
+	}
+	.shop--slider-content{
+		color:#fff;
+		margin-top:-15px;
+		p{
+			text-transform:uppercase;
+			margin-bottom:0;
+			font-family: 'Montserrat', sans-serif;
+			font-size:18px;
+			line-height:45px;
+			letter-spacing:13px;
+			@media #{$extra-small-mobile}{
+				letter-spacing: 12px;
+				font-size: 16px;
+			}
+			@media #{$iphone-devices}{
+				line-height: 35px;
+				letter-spacing: 11px;
+			}
+		}
+		.shop--discount-text{
+			letter-spacing:8px;
+		}
+		h2{
+			font-size:100px;
+			text-transform:uppercase;
+			line-height:45px;
+			font-weight:900;
+			color:#fff;
+			margin-bottom:32px;
+			margin-top:18px;
+			@media #{$tablet-device}{
+				font-size: 88px;
+			}
+			@media #{$large-mobile}{
+				font-size: 60px;
+				margin-bottom: 25px;
+				margin-top:10px;
+			}
+			@media #{$extra-small-mobile}{
+				font-size: 55px;
+				margin-bottom: 20px;
+				margin-top:10px;
+				line-height: 50px;
+			}
+			@media #{$iphone-devices}{
+				margin-top:15px;
+			}
+		}
+		h3{
+			text-transform:uppercase;
+			color:#fff;
+			font-size:60px;
+			font-weight:700;
+			line-height:45px;
+			margin-bottom:5px;
+			@media #{$large-mobile}{
+				font-size: 50px;
+			}
+		}
+		.shop--bordered-btn{
+			margin-top:13px;
+			line-height:40.66px;
+			padding:0 30px;
+		}
+	}
+}
+
+/* Banner Background */
+.shop--banner-bg{
+	background-size:cover !important;
+	background-repeat: no-repeat !important;
+	background-color:#ddd;
+
+}
+
+/* Banner Nav */
+.shop--banner-area-slider.owl-carousel{
+	.owl-nav{
+		button{
+			font-size:18px;
+			color:$heading-color;
+			background:#fff;
+			height:100px;
+			width:30px;
+			opacity:.8;
+			transition:.3s;
+			&:hover{
+				opacity:1;
+			}
+		}
+		button.owl-prev{
+			position:absolute;
+			right:0;
+			top:50%;
+		}
+		button.owl-next{
+			position:absolute;
+			left:0;
+			top:50%;
+		}
+	}
+}
+
+
+/* xx: Offer Banner */
+
+.shop--offer-banner-content{
+	background-size: cover !important;
+	padding: 15px;
+	.shop--offer-banner-text{
+		padding: 78px 45px;
+		border:1px solid #818083;
+		padding-bottom:70px;
+		@media #{$small-mobile}{
+			padding: 68px 35px;
+			padding-bottom:58px
+		}
+		.shop--dashed-text{
+			font-size:18px;
+			padding-left: 260px;
+			line-height:30px;
+			color:#5a5a5a;
+			font-weight:400;
+			position:relative;
+			margin-bottom:0;
+			@media #{$small-mobile}{
+				padding-left: 208px;
+			}
+			@media #{$iphone-devices}{
+				padding-left: 186px;
+			}
+			&:after{
+				position:absolute;
+			    left: 0;
+			    top: 50%;
+			    width: 242px;
+			    height: 1px;
+			    margin-top:3px;
+			    background: #9a9a9a;
+			    content: "";
+			    @media #{$small-mobile}{
+					width:195px;
+				}
+			    @media #{$iphone-devices}{
+					width:175px;
+				}
+			}
+		}
+		h1{
+			font-size:72px;
+			font-weight:500;
+			line-height:30px;
+			margin-bottom:18px;
+			margin-top:8px;
+			@media #{$small-mobile}{
+				font-size:60px;
+			}
+			@media #{$iphone-devices}{
+				font-size:55px;
+			}
+
+		}
+		.shop--discount-text{
+			margin-top:18px;
+			font-size:14px;
+			line-height:30px;
+			letter-spacing: 3.5px;
+			font-weight:400;
+			color:#5a5a5a;
+			span{
+				font-weight:700;
+				color:$heading-color;
+				font-size:18px;
+			}
+		}
+	}
+}

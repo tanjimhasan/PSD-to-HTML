@@ -1,0 +1,139 @@
+.damke_blog-slider-wrapper
+	background-color: $white
+	box-shadow: 0 21px 40px rgba(0, 0, 0, 0.15)
+	border-radius: 10px 30px 10px 30px
+	margin-left: 40px
+	+mobileSm
+		margin-left: 0
+	.damke_blog-slider
+		margin-left: -40px
+		position: relative
+		.owl-stage-outer
+			padding-left: 40px
+			.owl-item
+				&.active 
+					.damke_single-blog
+						.post-content
+							> *
+								opacity: 1
+								transform: none
+						.post-img
+							img 
+								opacity: 1
+								transform: none
+		.owl-dots
+			position: absolute
+			right: -25px
+			top: 50%
+			transform: translateY(-50%)
+			.owl-dot
+				width: 8px
+				height: 8px
+				background-color: #1d99a1
+				border-radius: 4px
+				display: block
+				@extend .trans3
+				&:not(:last-child)
+					margin-bottom: 5px
+			.owl-dot.active
+				height: 40px
+
+/* 14.1: DAMKE Single Blog */
+
+.damke_single-blog
+	padding: 35px 0
+	+medium
+		padding: 30px 0
+
+	.post-img
+		border-radius: 30px
+		flex: 0 0 40%
+		margin-left: -40px
+		+mobileSm
+			display: none
+		img 
+			width: 100%
+			min-height: 366px
+			opacity: 0
+			transform: translateX(0px)
+			transition-delay: .3s
+			border-radius: 20px 20px 20px 30px
+			@extend .trans4
+			+medium
+				min-height: 300px
+			+tab
+				min-height: 250px
+	.post-content
+		margin-left: 45px
+		margin-right: 50px
+		> * 
+			opacity: 0
+			transform: translateY(25px)
+			@extend .trans3
+			&:nth-child(1) 
+				transition-delay: .3s
+			&:nth-child(2) 
+				transition-delay: .5s
+			&:nth-child(3) 
+				transition-delay: .65s
+			&:nth-child(4) 
+				transition-delay: .2s
+		.post-meta
+			color: #7987da
+			font-size: 15px
+			margin-bottom: 20px
+		h3 
+			font-size: 25px
+			font-weight: $medium
+			margin-bottom: 25px
+			line-height: 1.48
+			+medium
+				font-size: 22px
+			a 
+				@extend .damke_heading-color
+		p 
+			font-weight: $medium
+			margin-bottom: 30px
+
+
+/* 14.2: DAMKE News Letter */
+
+.damke_news-letter-form-wrapper
+	box-shadow: 0 21px 40px rgba(0, 0, 0, 0.15)
+	padding: 85px 45px
+	border-radius: 30px 30px 30px 10px
+	color: $white
+	@extend .damkeGradient2
+	+medium
+		padding: 85px 30px
+	+tab 
+		margin-top: 30px
+	.news-letter-shape
+		position: absolute
+		left: 0
+		top: 8%
+		background-size: auto !important
+		background-repeat: no-repeat !important
+		height: 100%
+		width: 100%
+	.damke_news-letter-form-inner
+		position: relative
+		z-index: 2
+		h2 
+			font-size: 35px
+			color: $white
+			font-weight: $medium
+			margin-bottom: 5px
+			margin-top: -8px
+			+medium
+				font-size: 30px
+		p 
+			padding: 15px
+		.news-letter-form
+			margin-top: 10px
+			position: relative
+			.damke_siteBtn
+				&:hover 
+					color: $white
+				&:after 
+					border-color: #ffffff

@@ -1,0 +1,96 @@
+
+/* 10.1: DAMKE Single Service */
+
+.damke_single-service-item
+	padding:0 45px 35px
+	box-shadow: 0 21px 81px rgba(0, 0, 0, 0.1)
+	margin-bottom: 30px
+	background-color: #fff
+	border-radius: 30px
+	&:hover
+		.service-icon
+			svg,i,img 
+				transform: rotate(20deg)
+	+mobileLg
+		margin-bottom: 15px
+	+medium
+		padding:0 38px 35px
+	&.text-left 
+		.service-icon
+			margin-left: auto
+			margin-left: 0
+	&.text-right 
+		.service-icon
+			margin-right: auto
+			margin-right: 0
+	&.style-2
+		margin-bottom: 50px
+		+mobileLg
+			margin-bottom: 25px
+	.service-icon
+		width: 110px
+		height: 125px 
+		margin: 0 auto
+		border-radius: 0 0 50px 50px
+		margin-bottom: 35px
+		@extend .damkeGradient3
+		svg,i,img 
+			@extend .trans3
+		.cls-1 
+			fill: #fff
+	.service-content
+		h4 
+			font-size: 25px
+			font-weight: $medium
+			margin-bottom: 16px
+			+medium
+				font-size: 22px
+		p 
+			font-weight: $regular
+			margin-bottom: 30px
+
+/* 10.2: DAMKE Service Details */
+.dame_service-content
+	.service-featured-img
+		margin-bottom: 25px
+		img 
+			border-radius: 20px 20px 0 0
+			width: 100%
+	.analysis-text
+		p 
+			&:not(:last-child) 
+				margin-bottom: 15px
+
+.damke_analysis-content
+	margin-top: 25px
+	.analysis-content-text
+		h4 	
+			font-size: 25px
+			font-weight: $medium
+			margin-bottom: 20px
+	.analysis-img
+		+tab
+			margin-top: 25px
+	.analysis-list
+		margin-top: 16px
+		li 
+			font-size: 16px
+			&:not(:last-child) 
+				margin-bottom: 15px
+	.service-bottom-text
+		margin-top: 24px
+		h4 
+			font-size: 25px
+			margin-bottom: 20px
+
+/* 10.3: DAMKE Service Details Pricing */
+.damke_pricing-inner
+	+tab 	
+		margin-bottom: 20px
+	+mobileLg
+		margin-bottom: 30px
+	.pricing-title
+		margin-bottom: 30px
+		h2 
+			font-size: 35px
+			margin-top: -10px

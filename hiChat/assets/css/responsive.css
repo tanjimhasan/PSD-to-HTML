@@ -1,0 +1,620 @@
+/*============================================
+
+[Table of content]
+
+1. Large devices (less than 1500px)
+2. Large tablets (less than  1200px)
+3. Tablet Devices (less than  992px)
+4. Large Mobile (less than  768px)
+5. Small Mobile (less than  576px)
+6. Extra Small Mobile (less than  480px)
+7. Iphone Device (less than  380px)
+8. Custom Devices(less than  321px)
+
+============================================*/
+
+/* 1. Large Devices (less than 1500px) */
+@media (min-width: 1200px) and (max-width: 1499px){
+  
+}
+/* 2. Large tablets (less than 1200px) */
+@media only screen and (max-width: 1199px){
+  .hiChat--download-btn a{
+    padding: 14px 30px;
+  }
+  .hiChat--hero-slider-area .hiChat--hero-area-content .hiChat--download-btn a + a{
+    margin-left: 20px;
+  }
+  .hiChat--hero-pagination{
+    bottom: -70px !important;
+  }
+  .hiChat--slider-counting{
+    bottom: -45px;
+  }
+  .hiChat--single-feature .feature-hovr-shape{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+  .hiChat-feature-images .hiChat--feature-shape{
+    left: -95px;
+  }
+  .hiChat-feature-images.style-2 .hiChat--feature-shape{
+    right: -95px;
+  }
+}
+/* 3. Tablet Devices (less than  992px) */
+@media only screen and (max-width: 991px){
+  .hiChat--header .main-header{
+    padding: 20px 0;
+  }
+  .hiChat--header .main-header.sticky{
+    padding: 20px 0;
+  }
+  .hiChat--footer-area{
+    padding-bottom: 20px;
+  }
+  .hiChat--download-btn a{
+    padding: 14px 40px;
+  }
+  .hiChat--section-padding{
+    padding: 65px 0;
+  }
+  .hiChat--hero-area{
+    padding-bottom: 0;
+    padding-top: 90px;
+  }
+  .hiChat--hero-area .hiChat--hero-image{
+    text-align: center;
+    margin-top: 60px;
+  }
+  .hiChat--feature-section.hiChat--section-padding{
+    padding-bottom: 35px;
+  }
+  .hiChat--feature-expand-section.hiChat--section-padding{
+    padding-bottom: 50px;
+    padding-top: 60px;
+  }
+  .hiChat--feature-expand-section.style-2{
+    padding-bottom: 60px;
+    padding-top: 0;
+  }
+  .hiChat-feature-images{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .hiChat-feature-images .hiChat--feature-shape{
+    left: 50px;
+  }
+  .hiChat-feature-images.style-2{
+    text-align: center !important;
+    margin-top: 45px;
+    margin-bottom: 0;
+  }
+  .hiChat-feature-images.style-2 .hiChat--feature-shape{
+    right: 30px;
+  }
+  .hiChat--screenshot-slider-section.hiChat--section-padding{
+    padding-bottom: 10px;
+  }
+  .hiChat--pricing-tab-content{
+    margin-top: 40px;
+  }
+  .hiChat--feedback-section.hiChat--section-padding{
+    padding-bottom: 60px;
+  }
+  .hiChat--feedback-section .swiper-button-prev{
+    top: 40%;
+  }
+  .hiChat--feedback-section .swiper-button-next{
+    top: 56%;
+  }
+  .hiChat--feedback-slider-wrapper{
+    height: 465px;
+    margin-top: 0;
+  }
+  .hiChat--single-feedback-slider .single-feedback-inner{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .hiChat--single-feedback-slider .single-feedback-inner .customer-image{
+    margin-bottom: 20px;
+  }
+  .hiChat--single-feedback-slider .single-feedback-inner .customer-feedback{
+    margin-left: 0;
+  }
+  .hiChat--single-feedback-slider .single-feedback-inner .customer-feedback .feedback-rating{
+    margin-top: 5px;
+  }
+  .hiChat--faq-image{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .hiChat--Blog-section.hiChat--section-padding{
+    padding-bottom: 45px;
+  }
+  .hiChat-blog-wrapper .hiChat--blog-metro .hiChat--single-blog-item{
+    width: 50%;
+  }
+  .hiChat-blog-wrapper .hiChat--blog-metro .hiChat--single-blog-item.large-bg{
+    width: 50%;
+  }
+  .hiChat-blog-wrapper .hiChat--blog-metro .hiChat--single-blog-item.wide-bg{
+    width: 50%;
+  }
+  .hiChat--download-app-section.hiChat--section-padding{
+    padding-bottom: 30px;
+  }
+  .hiChat--download-app-section .hiChat--download-btn a{
+    margin-bottom: 30px;
+  }
+  .hiChat--freeTrial-container .hiChat--freeTrial-content-wrapper .freeTrial_img img{
+    left: 0;
+  }
+  .hiChat--freeTrial-container .hiChat--freeTrial-content-wrapper .freeTrial-content{
+    min-height: 355px;
+  }
+  .hiChat--freeTrial-container .hiChat--freeTrial-content-wrapper .freeTrial-content .freeTrial-close-btn{
+    right: 15px;
+    top: 10px;
+  }
+  .hiChat--subscription-wrap .subscription-form input[type=email]{
+    height: 60px;
+  }
+  .hiChat--subscription-wrap .subscription-form button{
+    padding: 0 45px;
+    height: 60px;
+  }
+  .footer-weidget{
+    margin-bottom: 40px;
+  }
+}
+
+/* 4. Large Mobile (less than  768px) */
+@media only screen and (max-width: 767px){
+  .pt-0{
+    padding-top: 0px;
+  }
+  .pt-10{
+    padding-top: 5px;
+  }
+  .pt-20{
+    padding-top: 10px;
+  }
+  .pt-30{
+    padding-top: 15px;
+  }
+  .pt-40{
+    padding-top: 20px;
+  }
+  .pt-50{
+    padding-top: 25px;
+  }
+  .pt-60{
+    padding-top: 30px;
+  }
+  .pt-70{
+    padding-top: 35px;
+  }
+  .pt-80{
+    padding-top: 40px;
+  }
+  .pt-90{
+    padding-top: 45px;
+  }
+  .pt-100{
+    padding-top: 50px;
+  }
+  .pt-110{
+    padding-top: 55px;
+  }
+  .pt-120{
+    padding-top: 60px;
+  }
+  .pt-130{
+    padding-top: 65px;
+  }
+  .pt-140{
+    padding-top: 70px;
+  }
+  .pt-150{
+    padding-top: 75px;
+  }
+  .pb-0{
+    padding-bottom: 0px;
+  }
+  .pb-10{
+    padding-bottom: 5px;
+  }
+  .pb-20{
+    padding-bottom: 10px;
+  }
+  .pb-30{
+    padding-bottom: 15px;
+  }
+  .pb-40{
+    padding-bottom: 20px;
+  }
+  .pb-50{
+    padding-bottom: 25px;
+  }
+  .pb-60{
+    padding-bottom: 30px;
+  }
+  .pb-70{
+    padding-bottom: 35px;
+  }
+  .pb-80{
+    padding-bottom: 40px;
+  }
+  .pb-90{
+    padding-bottom: 45px;
+  }
+  .pb-100{
+    padding-bottom: 50px;
+  }
+  .pb-110{
+    padding-bottom: 55px;
+  }
+  .pb-120{
+    padding-bottom: 60px;
+  }
+  .pb-130{
+    padding-bottom: 65px;
+  }
+  .pb-140{
+    padding-bottom: 70px;
+  }
+  .pb-150{
+    padding-bottom: 75px;
+  }
+  .mt-10{
+    margin-top: 5px;
+  }
+  .mt-20{
+    margin-top: 10px;
+  }
+  .mt-30{
+    margin-top: 15px;
+  }
+  .mt-40{
+    margin-top: 20px;
+  }
+  .mt-50{
+    margin-top: 25px;
+  }
+  .mt-60{
+    margin-top: 30px;
+  }
+  .mt-70{
+    margin-top: 35px;
+  }
+  .mt-80{
+    margin-top: 40px;
+  }
+  .mt-90{
+    margin-top: 45px;
+  }
+  .mt-100{
+    margin-top: 50px;
+  }
+  .mt-110{
+    margin-top: 55px;
+  }
+  .mt-120{
+    margin-top: 60px;
+  }
+  .mt-130{
+    margin-top: 65px;
+  }
+  .mt-140{
+    margin-top: 70px;
+  }
+  .mt-150{
+    margin-top: 75px;
+  }
+  .mb-10{
+    margin-bottom: 5px;
+  }
+  .mb-20{
+    margin-bottom: 10px;
+  }
+  .mb-30{
+    margin-bottom: 15px;
+  }
+  .mb-40{
+    margin-bottom: 20px;
+  }
+  .mb-50{
+    margin-bottom: 25px;
+  }
+  .mb-60{
+    margin-bottom: 30px;
+  }
+  .mb-70{
+    margin-bottom: 35px;
+  }
+  .mb-80{
+    margin-bottom: 40px;
+  }
+  .mb-90{
+    margin-bottom: 45px;
+  }
+  .mb-100{
+    margin-bottom: 50px;
+  }
+  .mb-110{
+    margin-bottom: 55px;
+  }
+  .mb-120{
+    margin-bottom: 60px;
+  }
+  .mb-130{
+    margin-bottom: 65px;
+  }
+  .mb-140{
+    margin-bottom: 70px;
+  }
+  .mb-150{
+    margin-bottom: 75px;
+  }
+  .hiChat--hero-area{
+    padding-top: 130px;
+  }
+  .hiChat--hero-pagination{
+    bottom: -40px !important;
+  }
+  .hiChat--slider-counting{
+    bottom: -40px;
+  }
+  .hiChat--counter-area-inner{
+    -ms-flex-flow: column;
+        flex-flow: column;
+    margin-top: -25px;
+    margin-left: 45px;
+  }
+  .hiChat--single-counter{
+    margin-top: 25px;
+  }
+  .hiChat--feature-section.hiChat--section-padding{
+    padding-bottom: 25px;
+  }
+  .hiChat--single-feature{
+    padding: 48px 45px;
+  }
+  .hiChat-feature-images .hiChat--feature-shape{
+    display: none;
+  }
+  .hiChat-feature-images.style-2 .hiChat--feature-shape{
+    display: none;
+  }
+  .hiChat--feedback-section .swiper-button-prev{
+    left: auto;
+    right: -30px;
+    top: auto;
+    bottom: 250px;
+  }
+  .hiChat--feedback-section .swiper-button-next{
+    left: auto;
+    right: -30px;
+    top: auto;
+    bottom: 200px;
+  }
+  .hiChat--feedback-slider-wrapper{
+    height: 490px;
+  }
+  .hiChat--single-faq .question{
+    font-size: 18px;
+  }
+  .hiChat--freeTrial-container .hiChat--freeTrial-content-wrapper .freeTrial_img{
+    display: none;
+  }
+  .hiChat--freeTrial-container .hiChat--freeTrial-content-wrapper .freeTrial-content .freeTrial-close-btn{
+    right: 20px;
+    top: 20px;
+  }
+  .hiChat--subscription-wrap .subscription-form button{
+    padding: 0 30px;
+  }
+}
+    
+/* 5. Small Mobile (less than  576px) */
+@media only screen and (max-width: 575px){
+  .hiChat--menu-trigger{
+    position: absolute;
+    right: 15px;
+    top: -25px;
+  }
+  .hiChat--download-btn a{
+    padding: 14px 38px;
+  }
+  .hiChat--section-title h2{
+    font-size: 34px;
+  }
+  .hiChat--hero-area .hiChat--hero-area-content h1{
+    font-size: 48px;
+  }
+  .hiChat--hero-slider-area .hiChat--hero-area-content .hiChat--download-btn a{
+    padding: 14px 28px;
+  }
+  .hiChat--feature-expand-text h2{
+    font-size: 30px;
+  }
+  .hiChat--feedback-section .swiper-button-prev{
+    right: 2px;
+    bottom: 275px;
+  }
+  .hiChat--feedback-section .swiper-button-next{
+    right: 2px;
+    bottom: 205px;
+  }
+  .hiChat--feedback-slider-wrapper{
+    height: 440px;
+  }
+  .hiChat--single-feedback-slider.swiper-slide-active .single-feedback-inner{
+    padding: 40px 30px 35px 30px;
+  }
+  .hiChat-blog-wrapper .hiChat--blog-metro .hiChat--single-blog-item{
+    width: 100%;
+  }
+  .hiChat-blog-wrapper .hiChat--blog-metro .hiChat--single-blog-item.large-bg{
+    width: 100%;
+  }
+  .hiChat-blog-wrapper .hiChat--blog-metro .hiChat--single-blog-item.wide-bg{
+    width: 100%;
+  }
+  .hiChat--freeTrial-container .hiChat--freeTrial-content-wrapper .freeTrial-content .freeTrial-close-btn{
+    right: 15px;
+    top: 10px;
+  }
+}
+
+/* 6. Extra Small devices (less than  480px) */
+@media only screen and (max-width: 479px){
+  .hiChat--download-btn a + a{
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .hiChat--single-counter .hiChat--single-counter-inner .hiChat--counter-content .count{
+    font-size: 34px;
+  }
+  .hiChat--single-counter .hiChat--single-counter-inner .hiChat--counter-content span{
+    font-size: 20px;
+  }
+  .hiChat--pricing-tab-menu ul.nav li a{
+    padding: 40px 30px;
+  }
+  .hiChat--pricing-tab-menu ul.nav li a h2{
+    font-size: 30px;
+  }
+  .hiChat--pricing-tab-menu ul.nav li a .price-amount{
+    font-size: 30px;
+  }
+  .hiChat--pricing-tab-content{
+    padding: 40px;
+  }
+  .hiChat--feedback-slider-wrapper{
+    height: 485px;
+  }
+  .hiChat--single-blog-item .blog-content .blog-content-text h4{
+    font-size: 20px;
+  }
+  .hiChat--download-app-section .hiChat--download-btn a{
+    margin-bottom: 0;
+  }
+  .hiChat--download-app-section .hiChat--download-btn a + a{
+    margin-left: 0;
+  }
+  .hiChat--freeTrial-container .hiChat--freeTrial-content-wrapper .freeTrial-content{
+    min-height: 400px;
+    padding: 0 25px;
+  }
+  .hiChat--blog-details-page .post-comments-wrap .post-comments-inner{
+    padding: 30px 20px;
+  }
+  .hiChat--blog-details-page .post-comments-wrap .post-comments-inner .post-comments .post-comments{
+    padding-left: 55px;
+  }
+  .hiChat--blog-details-page .post-comments-wrap .post-comments-inner .post-comments .single-comment .comment-author-img{
+    max-width: 70px;
+  }
+}
+
+/* 7. Iphone Devices (less than  380px) */
+@media only screen and (max-width: 379px){
+  .hiChat--section-title h2{
+    font-size: 30px;
+  }
+  .hiChat--hero-area .hiChat--hero-area-content h1{
+    font-size: 44px;
+  }
+  .hiChat--pricing-tab-menu ul.nav li a{
+    padding: 30px 20px;
+  }
+  .hiChat--pricing-tab-menu ul.nav li a h2{
+    font-size: 26px;
+  }
+  .hiChat--pricing-tab-menu ul.nav li a .price-amount{
+    font-size: 26px;
+  }
+  .hiChat--pricing-tab-content{
+    padding: 30px;
+  }
+  .hiChat--feedback-slider-wrapper{
+    height: 520px;
+  }
+  .hiChat--single-feedback-slider.swiper-slide-active .single-feedback-inner{
+    padding: 30px 20px 25px 20px;
+  }
+  .hiChat--single-faq{
+    padding-left: 45px;
+    padding-right: 20px;
+  }
+  .hiChat--single-faq .question .icon-toggle{
+    left: -45px;
+  }
+  .hiChat--single-blog-item .blog-content{
+    padding: 35px 25px;
+  }
+  .hiChat--subscription-wrap .subscription-form input[type=email]{
+    padding: 0 30px;
+  }
+  .hiChat--subscription-wrap .subscription-form button{
+    padding: 0 25px;
+    height: 60px;
+  }
+  .hiChat--blog-details-page .post-author .author-img{
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100px;
+            flex: 0 0 100px;
+    margin-right: 15px;
+  }
+  .hiChat--blog-details-page .post-comments-wrap .post-comments-inner .post-comments .single-comment .comment-author-img{
+    margin-right: 15px;
+  }
+  .hiChat--blog-details-page .post-comments-wrap .post-comments-inner .post-comments .single-comment h5 .date-time{
+    margin-left: 10px;
+  }
+}
+
+/* 8. Custom Devices (min-width: 0px) and (max-width: 320px) */
+@media only screen and (min-width: 0px) and (max-width: 320px){
+  .hiChat--feedback-section .swiper-button-prev{
+    right: 3px;
+    bottom: 310px;
+  }
+  .hiChat--feedback-section .swiper-button-next{
+    right: 3px;
+    bottom: 225px;
+  }
+  .hiChat--feedback-slider-wrapper{
+    height: 575px;
+  }
+  .hiChat-blog-pagination-wrap .blog-pagination li.prev{
+    padding-right: 15px;
+  }
+  .hiChat-blog-pagination-wrap .blog-pagination li.next{
+    padding-left: 15px;
+  }
+  .hiChat--freeTrial-container .hiChat--freeTrial-content-wrapper .freeTrial-content{
+    padding: 0 15px;
+  }
+  .hiChat--freeTrial-container .hiChat--freeTrial-content-wrapper .freeTrial-content .freeTrial-close-btn{
+    right: 10px;
+    top: 5px;
+  }
+  .hiChat--subscription-wrap .hiChat--section-title h2{
+    font-size: 22px;
+  }
+  .hiChat--subscription-wrap .subscription-form button{
+    padding: 0 15px;
+  }
+  .hiChat--blog-details-page .post-comments-wrap .post-comments-inner .post-comments .post-comments{
+    padding-left: 30px;
+  }
+}

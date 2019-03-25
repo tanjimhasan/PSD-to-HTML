@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1110" height="127" viewBox="0 0 1110 127">
+  <defs>
+    <linearGradient id="my-cool-gradient" x2="1" y2="1">
+    <stop offset="0%" style="stop-color:#04b642" />
+    <stop offset="100%" style="stop-color:#02fd59" />
+  </linearGradient>
+  </defs>
+  <path id="Shape" d="M405,1504V1394.37s60.747,81.52,232.42,86.42c117.226,3.34,177.838-48.17,314.529-43.23,129.571,4.69,211.541,39.76,320.991,37.63,142.69-2.79,241.56-53.35,241.56-53.35s0.5,0.02.5,82.16H405Z" transform="translate(-405 -1377)" fill="url(#my-cool-gradient)"/>
+</svg>

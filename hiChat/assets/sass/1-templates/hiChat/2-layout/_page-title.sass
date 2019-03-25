@@ -1,0 +1,23 @@
+.hiChat--page-title-inner
+	padding: 230px 0 130px
+	background-color: #f5f5ff
+	.page-title
+		h1 
+			font-size: 40px
+			margin-top: -10px
+			font-weight: $bold
+			margin-bottom: 25px
+		ul 
+			li
+				a 
+					font-weight: $medium
+					@extend .hiChat--heading-color
+					&:hover
+						@extend .hiChat--primary-color
+				a.active
+					@extend .hiChat--primary-color	
+
+			li + li 
+				&:before 
+					content:"/"
+					padding: 0 5px

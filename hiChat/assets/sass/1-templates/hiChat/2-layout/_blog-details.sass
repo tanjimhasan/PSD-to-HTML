@@ -1,0 +1,250 @@
+/* 18.1: Post Content */
+.hiChat--blog-details-page
+	p 
+		line-height: 1.63
+	.hiChat--post-meta
+		margin-top: 35px
+		margin-bottom: 18px
+	.post-main-text
+		margin-bottom: 30px
+		span 
+			float: left
+			font-size: 70px
+			font-weight: $medium
+			font-family: $barlow
+			line-height: 60px
+			margin-right: 6px
+			@extend .hiChat--heading-color
+		p 
+			font-size: 18px
+			text-align: justify
+			line-height: 1.67
+	.post-thumb
+		margin-top: 55px
+		h4 
+			font-size: 24px
+			font-weight: $medium
+			margin-bottom: 40px
+		.blog-banner
+			position: relative
+			overflow: hidden
+			z-index: 1
+			&:hover
+				&:before, &:after
+					transform: scale(1)
+					opacity:0
+					z-index: -1
+			&:after , &:before
+				position: absolute
+				left:0
+				top:0
+				width: 100%
+				height: 100%
+				background: rgba(255,255,255,.4)
+				transform: scale(0)
+				transition: all .6s ease-in-out 0s
+				opacity: 1
+				z-index: 2
+				content: ""
+				pointer-events: none
+			&:before
+				transform-origin: 0 0
+			&:after 
+				transform-origin: 100% 100%
+			img 
+				margin-bottom: 30px
+				width: 100%
+
+	.post-qoute-box
+		padding: 30px 45px 40px
+		margin-top: 38px
+		margin-bottom: 36px
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06)
+		border-left: 2px solid
+		@extend .hiChat--primary-color-bo
+		position: relative
+		&:after
+			position: absolute
+			left: 28px
+			top: 0px
+			content: "“"
+			font-size: 90px
+			font-weight: 900
+			opacity: .1
+			z-index: -1
+		p 
+			font-size: 20px
+			font-style: italic 
+			@extend .hiChat--heading-color
+		h5 
+			font-family: $lato
+			font-size: 16px
+			margin-top: 12px
+			@extend .hiChat--secondary-color
+	.post-social-tags
+		margin-top: 52px
+		.post-tag-list
+			ul 
+				li 
+					display: inline-block
+					&:not(:first-child)
+						a 	
+							font-size: 14px
+							@extend .hiChat--secondary-color
+						&:hover
+							a 	
+								@extend .hiChat--primary-color
+					&:first-child
+						@extend .hiChat--heading-color
+		.post-share-links
+			ul 
+				li 
+					display: inline-block
+					@extend .hiChat--heading-color
+					a 
+						font-size: 14px
+					&:not(:first-child)
+						margin-left: 10px
+						a 
+							
+							@extend .hiChat--secondary-color
+							&:hover 
+								@extend .hiChat--primary-color
+					&:first-child 
+						margin-right: 8px
+						a 
+							@extend .hiChat--heading-color
+
+	.post-author
+		margin: 60px 0
+		padding: 40px 30px
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06)
+		.author-img
+			flex: 0 0 135px
+			margin-right: 20px
+			+mobileXs
+				flex: 0 0 100px
+				margin-right: 15px
+		.author-quotes
+			h4 
+				font-size: 16px
+				font-weight: $medium
+			p 
+				font-size: 14px
+				line-height: 1.7
+				margin: 10px 0
+			.author-social-links
+				a 
+					font-size: 16px
+					@extend .hiChat--secondary-color
+					&:not(:last-child)
+						margin-right: 10px
+					&:hover
+						@extend .hiChat--primary-color
+
+	.post-comments-wrap
+		margin-bottom: 60px
+		.comment-title
+			font-size: 18px
+			font-weight: $bold
+			position: relative
+			margin-bottom: 40px
+			cursor: pointer
+			&:after
+				font-family: "fontAwesome"
+				content: "\f107"
+				margin-left: 15px
+			.hide-comments
+				display: none
+			.show-comments
+				display: inline-block
+			&.show 
+				.hide-comments
+					display: inline-block
+				.show-comments
+					display: none
+
+		.post-comments-inner
+			padding: 40px 30px
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06)
+			+mobileSm
+				padding: 30px 20px
+			.post-comments
+				li 
+					padding: 30px 0
+					&:not(:first-child)
+						border-top: 1px solid #f3f3f3
+					&:first-child
+						padding-top: 0
+					&:last-child
+						padding-bottom: 0
+				.post-comments
+					padding-left: 120px
+					+mobileSm
+						padding-left: 55px
+					+customMq(0px,320px)
+						padding-left: 30px
+					li 
+						&:first-child
+							border-top: 1px solid #f3f3f3
+							margin-top: 30px
+							padding-top: 30px
+						&:last-child
+							padding-bottom: 0
+				.single-comment
+					.comment-author-img
+						margin-right: 20px
+						+mobileSm
+							max-width: 70px
+						+mobileXs
+							margin-right: 15px
+					h5 
+						margin-bottom: 12px
+						margin-top: -4px
+						a 
+							font-size: 16px
+							font-weight: $medium
+							@extend .hiChat--heading-color
+							@extend .trans3
+						.date-time
+							font-family: $lato
+							font-size: 14px
+							margin-left: 18px
+							@extend .hiChat--secondary-color
+							+mobileXs
+								margin-left: 10px
+					p 	
+						font-weight: $regular
+						font-size: 14px
+						line-height: 1.7
+						margin-bottom: 10px
+					a 	
+						font-family: $barlow
+						font-weight: $regular
+						@extend .hiChat--heading-color
+						@extend .trans3
+						&:hover
+							@extend .hiChat--primary-color
+
+	.your-comment-wrap
+		h4
+			font-size: 18px
+			font-weight: $bold
+		.contact-form
+			.theme-input-style-2
+				width: 100%
+				border: 0
+				border-bottom: 1px solid $hiChat-s1
+				padding-top: 32px
+				padding-bottom: 5px
+				font-family: $lato
+			textarea.theme-input-style-2
+				min-height: 155px
+				padding-top: 35px
+			button
+				margin-top: 35px
+
+
+
+
+

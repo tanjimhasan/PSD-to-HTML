@@ -1,0 +1,170 @@
+/*---------------------------------------------
+
+    Template Name: - CallDee
+    Version: 1.0
+    Author:         ThemeLooks
+    Author url:     http://themelooks.com
+
+    NOTE:
+    -----
+    Please DO NOT EDIT THIS CSS, you may need to use "custom.css" file for writing your custom css.
+    We may release future updates so it will overwrite this file. it's better and safer to use "custom.css".
+
+    [Table of Content]
+
+    01: General CSS 
+        1.1: Default CSS
+        1.2: Buttons
+        1.3: Default classes
+        1.4: Padding
+        1.5: Animations
+    02: Section/Widget title
+    03: Header
+        3.1: Header Top
+            3.1.1: Header Top Info
+            3.1.2: Header Top Menu
+        3.2: Main Header
+            3.2.1: Logo
+            3.2.2: Main Menu
+            3.2.3: Mobile Menu
+            3.2.4: Header Search
+            3.2.5: Header Cart
+        3.3: Sticky header
+    04: Home Slider
+        4.1: Single Home Slider
+    05: Services
+        5.1: Single Services
+        5.2: Service Details
+            5.2.1: Service Details Table
+    06: Connections
+    07: Included Services
+        7.1: Include Service List
+            7.1.1: Single Include Service
+        7.2: Include Service Solution
+    08: Counter
+        8.1: Single Counter
+    09: Pricing Table
+        9.1: Single Pricing Table
+    10: Customers
+        10.1: Customers Comments
+        10.2: Client Logos
+    11: News/Blog
+        11.1: Single Post
+        11.2: Blog Details
+            11.2.1: Blog Details Content
+            11.2.2: Comment & Replay
+    12: App Section
+    13: Subscription
+    14: Breadcrumb
+    15: Features
+        15.1: Server Features
+            15.1.1: Single Server Feature
+        15.2: Additional Features
+        15.3: Configuration
+        15.4: FAQ
+    16: Product
+        16.1: Product Page Content
+        16.2: Page Sidebar
+    17: Product Details
+        17.1: Product View Tab
+        17.2: Product Option
+        17.2: Product Details
+    18: Project Gallery
+    19: Project Details
+    20: FAQ
+    21: Call To Action
+    22: Domain
+        22.1: Domain checker
+        22.2: Domain price Table
+        22.3: Domain Features
+    23: Checkout
+        23.1: Checkout Alert
+        23.2: Billing Details
+        23.3: Ordered Product Details
+        23.4: Payment Method
+    24: Contact
+        24.1: Contact Details
+        24.2: Contact Form
+    25: Data Center
+    26: About
+        26.1: Company Details
+        26.2: Team Members
+        26.3: Why Choose Us
+    27: Affiliate
+        27.1: Affiliate Commissions
+        27.2: Affilate Program
+    28: Cart
+    29: Footer
+        29.1: Footer menu
+        29.2: Social Icons
+        29.3: Footer Bottom
+    30: 404 Page
+    31: Preloader
+
+----------------------------------------------*/
+  
+
+@import 'variables';
+
+@import 'general';
+
+@import 'header';
+
+@import 'section-title';
+
+@import 'home-slider';
+
+@import 'services';
+
+@import 'connections';
+
+@import 'include-services';
+
+@import 'counter';
+
+@import 'pricing-table';
+
+@import 'customers';
+
+@import 'blog';
+
+@import 'app-section';
+
+@import 'subscription';
+
+@import 'breadcrumb';
+
+@import 'features';
+
+@import 'product';
+
+@import 'product-details';
+
+@import 'project-gallery';
+
+@import 'project-details';
+
+@import 'faq';
+
+@import 'call-to-action';
+
+@import 'domain';
+
+@import 'checkout';
+
+@import 'contact';
+
+@import 'data-center';
+
+@import 'about';
+
+@import 'affiliate';
+
+@import 'cart';
+
+@import 'footer';
+
+@import '404';
+
+@import 'preloader';
+

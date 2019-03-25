@@ -1,0 +1,116 @@
+/* ************************
+   xx: Reset
+   ********************* */
+*
+    list-style: none
+    outline: none !important
+
+ol,
+ul 
+    margin: 0
+    padding: 0
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+    -webkit-appearance: none
+    appearance: none
+    margin: 0
+
+input[type="number"]
+    -moz-appearance: textfield
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active 
+    transition: background-color 5000s ease-in-out 0s
+
+::selection 
+    text-shadow: none
+    color: $white
+    background: #31333e
+
+::placeholder
+    // color: $damke-s1 !important
+    opacity: 1 !important
+
+iframe
+    max-width: 100%
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus
+    outline: none !important
+
+button,
+button[type="submit"],
+input[type="submit"]
+    border: none
+    background-color: transparent
+    cursor: pointer
+    -webkit-appearance: button
+    -moz-appearance: button
+    appearance: button
+
+textarea
+    resize: none
+
+img
+    max-width: 100%
+    height: auto
+
+a,
+a:hover,
+a:active,
+a:focus,
+input,
+input:hover,
+input:focus,
+input:active,
+select,
+textarea
+    text-decoration: none
+    outline: none !important
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p 
+    margin-bottom: 0
+    padding: 0
+
+p  
+    line-height: 1.75
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    @extend .damke_heading-color
+
+h1
+    font-size: 48px
+h2
+    font-size: 30px
+h3
+    font-size: 24px
+h4
+    font-size: 18px
+h5
+    font-size: 16px
+h6
+    font-size: 14px
+
+body
+    overflow-x: hidden !important
+    font-size: 16px
+    background-color: $white
+    font-family: $popins
+    @extend .damke--secondary-color
+    

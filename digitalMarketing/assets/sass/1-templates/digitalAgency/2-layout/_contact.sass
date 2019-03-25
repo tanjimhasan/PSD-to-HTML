@@ -1,0 +1,71 @@
+
+/* x.x: DamKe Contact Form */
+.damke_contact-form
+	background-color: $white
+	padding: 70px 50px
+	border-radius: 20px
+	+tab
+		margin-bottom: 30px
+	.damke_input-wrapper
+		border-color: #48ddd6
+		input 
+			padding-bottom: 12px
+			color: #c6c6c8
+			&:focus 
+				&::placeholder 
+					opacity: 0
+					visibility: hidden
+		textarea 
+			color: #c6c6c8
+			&:focus 
+				&::placeholder 
+					opacity: 0
+					visibility: hidden
+
+/* x.x: DamKe Contact Info */
+.damke_contact-info-wrap
+	h2 
+		font-size: 35px
+		font-weight: $medium
+		margin-bottom: 14px
+		+mobileSm
+			font-size: 30px
+	p 	
+		font-size: 20px
+		font-weight: $regular
+	.damke_contact-info-list
+		margin-top: 35px
+		.damke_single-contact
+			&:not(:last-child)
+				margin-bottom: 40px
+			.contact-icon
+				min-width: 60px
+				min-height: 60px
+				display: flex
+				align-items: center
+				justify-content: center
+				border-radius: 50%
+				@extend .damkeGradient4
+				i 
+					font-size: 25px
+					color: #fff
+			.contact-text
+				padding-left: 20px
+				p 	
+					font-size: 18px
+
+/* x.x: DamKe Google Map */
+
+.damke-map-shape
+	position: absolute
+	left: 0
+	top: 0
+	background-position: top center !important
+	background-repeat: no-repeat !important
+	background-size: auto !important
+	width: 100%
+	min-height: 32%
+	z-index: 1
+#damke_google-map
+	min-height: 670px
+	width: 100%

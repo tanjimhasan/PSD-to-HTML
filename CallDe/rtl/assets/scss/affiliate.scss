@@ -1,0 +1,160 @@
+/*=============================================
+    27: Affilate
+==============================================*/
+
+/* 27.1: Affiliate Commissions */
+
+.affilate-programs-commission{
+	.affilate-title{
+		h2{
+			font-size:36px;
+			font-weight:500;
+			margin-bottom:15px;
+			line-height:48px;
+			margin-top: -8px;
+			@media #{$large-mobile}{
+				font-size:32px;
+				line-height:42px;
+			}
+			span{
+				color:$primary-color;
+			}
+			span.small-text{
+				font-size:18px;
+				color:$heading-color;
+				font-weight:500;
+			}
+		}
+		
+	}
+	blockquote{
+		p{
+			text-indent:20px;
+			color:$sub-title-color;
+			font-size:18.2px;
+			line-height:30px;
+			font-family: 'PT Sans', sans-serif;
+			font-style:italic;
+			position:relative;
+			i{
+				color:$primary-color;
+				font-size:8px;
+				position:absolute;
+			}
+			i.fa-quote-left{
+				left:-20px;
+				top:10px;
+			}
+			i.fa-quote-right{
+				bottom:8px;
+				margin-left:-10px;
+			}
+		}
+	}
+	.author-name{
+		font-size:18px;
+		font-weight:500;
+		font-style:italic;
+		margin-top:22px;
+		color:$primary-color;
+		margin-bottom:0;
+		line-height:30px;
+	}
+	.commission-list{
+		ul{
+			li{
+				display:flex;
+				justify-content:space-between;
+				color:$heading-color;
+				font-weight:500;
+				line-height:30px;
+				&:first-child{
+					background:$primary-color;
+					color:#fff;
+					padding:15px 18px;
+				}
+				&:not(:first-child){
+					padding:15px 20px;
+					border-bottom:1px solid #e2e6fb;
+					background:#ecf7fe;
+					position:relative;
+					span{
+						background:#ecf7fe;
+						z-index:2;
+						&:first-child{
+							&:after{
+								position:absolute;
+								left:0;
+								right:0;
+								width:calc(100% - 50px);
+								border:1px dotted $heading-color;
+								content:"";
+								margin:auto;
+								bottom:25px;
+								z-index:-1;
+							}
+						}
+						&:last-child{
+							padding-left:10px;
+						}
+						i{
+							background:#ecf7fe;
+							display:inline-block;
+							z-index:1;
+							padding-right:5px;
+						}
+					}
+				}
+				&:last-child{
+					border-bottom:0;
+				}
+			}
+		}
+	}
+}
+
+
+/* 27.1: Single Affilate Program */
+
+.single-affiliate-program{
+	padding:28px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+	transition:.3s;
+
+	@media #{$large-mobile}{
+		display:block !important;
+	}
+	&:hover{
+		box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+	}
+	.program-img{
+		min-width:250px;
+		
+		@media #{$large-mobile}{
+			margin-bottom:25px;
+			text-align:center;
+		}
+	}
+	.program-detials{
+		margin-left:35px;
+		flex-direction:column;
+		@media #{$large-mobile}{
+			text-align:center;
+			margin-left:0;
+		}
+		h3{
+			margin-bottom:0;
+			font-weight:700;
+			line-height:24px;
+		}
+		p{
+			margin:24px 0;
+			color:$sub-title-color;
+			line-height:24px;
+			font-weight:500;
+			span{
+				color:$primary-color;
+			}
+		}
+	}
+}

@@ -1,0 +1,141 @@
+/*============================================
+
+[Table of content]
+
+1. Large devices (less than 1200px)
+2. Large tablets (less than  992px)
+3. Medium devices (less than  768px)
+4. Small devices (less than  576px)
+5. Extra Small devices (less than  480px)
+
+============================================*/
+
+/* xx. Large Devices (less than 1200px) */
+@media (min-width: 1200px) and (max-width: 1499px){
+  
+}
+/* xx. Large tablets (less than 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px){
+    /*Margin*/
+    .mt-lg-30{
+    	margin-top: 30px;
+    }
+
+}
+
+/* xx. Tablet Devices (less than  992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Margin */
+    .mb-md-30{
+    	margin-bottom: 30px;
+    }
+    .mb-md-40{
+    	margin-bottom: 40px;
+    }
+
+    .mt-md-30{
+        margin-top:30px;
+    }
+    .mt-md-25{
+        margin-top:25px;
+    }
+
+    /* Padding */
+
+    .pt-md-90{
+        padding-top:90px;
+    }
+    .pt-md-15{
+        padding-top:15px;
+    }
+    .pb-md-60{
+        padding-bottom:60px;
+    }
+}
+
+/* xx. Large Mobile (less than  992px) */
+@media (max-width: 767.98px) {
+
+    /*Margin*/
+    .mt-sm-40{
+        margin-top:40px;
+    }
+    .mt-sm-0{
+        margin-top:0px;
+    }
+    .mt-sm-25{
+        margin-top:25px;
+    }
+    .mb-sm-30{
+    	margin-bottom: 30px;
+    }
+    .mb-sm-40{
+        margin-bottom: 40px;
+    }
+    .mb-sm-30{
+        margin-bottom: 30px;
+    }
+    .mb-sm-50{
+    	margin-bottom: 50px;
+    }
+
+    /* Padding */
+    .pt-sm-0{
+        padding-top: 0px;
+    }
+    .pt-sm-15{
+        padding-top: 15px;
+    }
+    .pt-sm-50{
+        padding-top:50px;
+    }
+    .pt-sm-60{
+        padding-top:60px;
+    }
+    .pt-sm-40{
+        padding-top:40px;
+    }
+    .pt-sm-80{
+        padding-top:80px;
+    }
+    .pb-sm-0{
+        padding-bottom: 0px;
+    }
+    .pb-sm-10{
+        padding-bottom: 10px;
+    }
+    .pb-sm-15{
+        padding-bottom: 15px;
+    }
+    .pb-sm-20{
+        padding-bottom: 20px;
+    }
+    .pb-sm-50{
+        padding-bottom:50px;
+    }
+    .pb-sm-60{
+        padding-bottom:60px;
+    }
+    .pb-sm-40{
+        padding-bottom:40px;
+    }
+    .pb-sm-30{
+        padding-bottom:30px;
+    }
+}
+    
+/* xx. Small Mobile (less than  768px) */
+@media (max-width: 575.98px) {
+
+}
+
+/* xx. Extra Small devices (less than  480px) */
+@media (max-width: 479.98px) {
+
+   
+}
+
+/* xx. Iphone Devices (less than  380px) */
+@media (max-width: 379.98px) {
+    
+}

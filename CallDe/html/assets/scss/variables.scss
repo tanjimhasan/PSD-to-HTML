@@ -1,0 +1,16 @@
+$primary-color:#00c544;
+$heading-color:#31333e;
+$text-color:#4c4f60;
+$sub-title-color:#8287a7;
+
+
+
+// Responsive Variables
+$extra-large-device : 'only screen and (min-width: 1500px)';
+$laptop-device : 'only screen and (min-width: 1200px) and (max-width: 1499px)';
+$desktop-device : 'only screen and (min-width: 992px) and (max-width: 1199.98px)';
+$tablet-device:'only screen and (min-width: 768px) and (max-width: 991.98px)';
+$large-mobile:'only screen and (max-width: 767.98px)';
+$small-mobile: 'only screen and (max-width: 576px)';
+$extra-small-mobile: 'only screen and (max-width: 479px)';
+$very-extra-small-mobile: 'only screen and (max-width: 379px)';

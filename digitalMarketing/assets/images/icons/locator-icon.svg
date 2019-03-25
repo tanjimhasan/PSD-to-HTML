@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="80" viewBox="0 0 60 80">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 80px;
+        fill: #1d97a0;
+        font-family: FontAwesome5FreeSolid;
+      }
+    </style>
+  </defs>
+  <text id="Icon" class="cls-1" x="-0.5" y="70.001"></text>
+</svg>

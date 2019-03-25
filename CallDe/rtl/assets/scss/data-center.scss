@@ -1,0 +1,61 @@
+/*=============================================
+    25: Data Center
+==============================================*/
+
+
+/* Data Center Countries */
+
+.data-center-countries{
+	.data-center-title{
+		font-size:36px;
+		font-weight:500;
+		line-height:48px;
+		margin-bottom:15px;
+		margin-top:-10px;
+		@media #{$extra-small-mobile}{
+			font-size:30px;
+			line-height:42px;
+		}
+		span{
+			color:$primary-color;
+		}
+	}
+	.sub-title{
+		font-size:18px;
+		margin-bottom:20px;
+		color:$text-color;
+		line-height:30px;
+	}
+	p{
+		color:$sub-title-color;
+	}
+}
+.data-center-feature-image{
+	@media #{$tablet-device}{
+		text-align:center;
+		margin-top:30px;
+	}
+	@media #{$large-mobile}{
+		text-align:center;
+		margin-top:30px;
+	}
+	img{
+		min-height:380px;
+		@media #{$very-extra-small-mobile}{
+			min-height:320px;
+		}
+	}
+	
+}
+/* Data Center Countries */
+
+.data-center-details{
+	
+	p{
+		color:$sub-title-color;
+	}
+	h4{
+		font-size:18px;
+		font-weight:600;
+	}
+}

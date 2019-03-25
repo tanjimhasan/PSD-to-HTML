@@ -1,0 +1,81 @@
+
+.damke_team-section
+	.damke_section-title
+		margin-bottom: 40px
+.damke_team-carousel
+	.owl-stage-outer
+		margin-left: -15px
+		margin-right: -15px
+		z-index: -1
+		.owl-stage
+			margin-left: 15px
+			margin-top: 50px
+			margin-bottom: 60px
+	.owl-dots
+		text-align: center
+		margin-top: -28px
+		.owl-dot 
+			margin-right: 15px
+			&:last-child
+				margin-right: 0
+			span 
+				width: 20px
+				height: 20px
+				background-color: #01f4f4
+				border: 5px solid #11437e
+				display: block
+				border-radius: 50%
+
+/* 12.1.: DAMKE Single Team Box */
+.damke_single-team
+	box-shadow: 0 21px 81px rgba(0, 0, 0, 0.15)
+	border-radius: 30px
+	position: relative
+	background-color: $white
+	&:hover
+		.member-img
+			img 
+				transform: scale(1.07)
+	.member-img
+		img 
+			padding: 8px
+			background-color: $white
+			box-shadow: 0 21px 81px rgba(0, 0, 0, 0.15)
+			border-radius: 50%
+			margin-left: -15px
+			margin-top: -30px
+			width: auto
+			display: inline-block
+			@extend .trans3
+	.member-detail
+		margin-top: 72px
+		padding:0 0 35px 40px
+		h4 
+			font-size: 25px
+			font-weight: $semi-bold
+			margin-bottom: 12px
+		p 
+			@extend .damke--secondary-color
+	.member-social-links
+		position: absolute
+		right: 40px
+		top: 40px
+		ul 
+			li 
+				&:not(:last-child)
+					margin-bottom: 20px
+				a 	
+					i
+						@extend .damke_heading-color
+					&:hover
+
+						i.fa-dribbble
+							color: #fa4c89
+						i.fa-facebook
+							color: #4267b2
+						i.fa-linkedin
+							color: #0073b2
+						i.fa-behance
+							color: #3c00ff
+						i.fa-pinterest-p
+							color: #cc081e

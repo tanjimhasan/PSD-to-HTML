@@ -1,0 +1,79 @@
+/*=============================================
+    xx: Page Title
+==============================================*/
+.shop--page-title{
+	padding: 90px 0;
+	@media #{$large-mobile}{
+		padding:45px 0;
+	}
+}
+.shop--page-title-wrap{
+	display: flex;
+	justify-content: space-between;
+	@media #{$large-mobile}{
+		flex-flow: column;
+	}
+}
+
+.shop--page-title-heading{
+	@media #{$large-mobile}{
+		margin-bottom:20px;
+	}
+	h1.h2{
+		color:$heading-color;
+		font-weight: 800;
+		text-transform: uppercase;
+		position:relative;
+		margin-bottom:0;
+		line-height: 40px;
+		white-space: nowrap;
+		@media #{$iphone-devices}{
+			font-size: 28px;
+		}
+		span{
+			font-size: 60px;
+			color: #333;
+			font-weight: 800;
+			text-transform: uppercase;
+			position:absolute;
+			left:70%;
+			top:0;
+			transform:translateY(-20%);
+			opacity:.1;
+			line-height:60px;
+			@media #{$large-mobile}{
+				left:25%;
+			}
+			@media #{$small-mobile}{
+				left:0;
+			}
+			@media #{$iphone-devices}{
+				font-size: 50px;
+				line-height: 64px;
+			}
+		}
+	}
+}
+
+.shop--page-title-wrap{
+	ul{
+		li{
+			a{
+				color:#5a5a5a;
+			}
+		}
+		li+li{
+			&:before{
+				content: '\f105';
+			    font-family: "FontAwesome";
+			    padding: 0 8px;
+			    font-weight: 900;
+			}
+		}
+		li.active{
+			a{
+				color:$heading-color;
+			}
+		}
+	}
+}

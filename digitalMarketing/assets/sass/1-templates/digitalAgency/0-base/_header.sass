@@ -1,0 +1,347 @@
+/* 4.2: DAMKE Header Right */
+
+.damke_headerRight
+	+mobileMd
+		position: absolute
+		margin-top: 30px
+		position: absolute
+		top: -55px
+		right: 15px				
+	.social-links
+		position: relative
+		margin-left: 105px
+		+medium 
+			margin-left: 0
+		+tab 
+			margin-left: 110px
+		+mobileLg
+			margin-left: 42px
+		+mobileMd
+			display: none
+		ul 
+			li 
+				display: inline-block
+				position: relative
+				margin-right: 22px
+				+tab
+					margin-right: 18px
+				&:last-child
+					&:after
+						position: absolute
+						right:-25px
+						top: 50% 
+						height: 22px
+						margin-top: -11px
+						width: 1px
+						content: ""
+						@extend .damke_heading-color-bg
+						+medium
+							right: -45px
+						+tab
+							display: none
+						+mobileMd
+							display: none
+				a 
+					font-size: 22px
+					@extend .damke_heading-color
+					&:hover 
+						opacity: .7
+					+mobileMd
+						color: $white !important
+					+mobileLg
+						font-size: 18px
+	.search-box-wrap
+		position: relative
+		margin-left: 50px
+		display: none
+		+medium
+			margin-left: 0
+		+mobileLg
+			margin-left: -25px
+		+mobileMd
+			margin-left: 0
+		&:after
+			position: absolute
+			right: -30px
+			top: 50%
+			background-color: $white
+			content:""
+			width: 1px
+			height: 22px
+			transform: translateY(-50%)
+			+medium
+				right: -25px
+			+tab 
+				display: none
+		&:before
+			position: absolute
+			left: 0
+			bottom: 0
+			background-color: $white
+			width: 100%
+			height: 1px
+			content:""
+		input 
+			border: 0
+			background: transparent
+			color: $white
+			padding-left: 5px
+			padding-bottom: 5px
+			&:focus 
+				&::placeholder 
+					opacity: 0
+					visibility: hidden
+			&::placeholder 
+				color: $white
+		button 
+			position: absolute
+			top: 50%
+			right: 0
+			color: $white
+			font-size: 20px
+			transform: translateY(-58%)
+	.menu-trigger
+		cursor: pointer
+		position: relative
+		height: 25px
+		width: 35px	
+		margin-left: auto
+		&:after,&:before
+			position: absolute
+			left: 0
+			top: 0
+			display: block
+			width: 35px
+			height: 3px
+			background-color: #333
+			content:""
+			opacity: 1
+			visibility: visible
+			transition: transform 0.4s 0.4s, opacity 0.4s 0.4s
+			transform: translate3d(0, 0, 0)
+		&:before 
+			bottom: 0
+			top: auto
+
+		span 
+			position: relative
+			width: 100%
+			height: 3px
+			display: block
+			&:before , &:after
+				position: absolute
+				display: block
+				left: -10px 
+				border-radius: 1.5px
+				top: 11px
+				width: 35px
+				height: 3px
+				background-color: #333
+				transform: rotate(0)
+				content: ""
+				transition: transform 0.4s
+
+.damke_overlay-menu
+	height: 100vh
+	overflow-y: hidden
+
+/* 4.2: DAMKE Main Menu */
+.damke_menu-wrapper
+	.damke_menu-container
+		position: fixed
+		right: -100px
+		top: -100px
+		width: 200px
+		height: 200px
+		z-index: 999
+		border-radius: 50%
+		overflow-x: hidden
+		opacity: 0
+		visibility: hidden
+		@extend .trans4
+		@extend .damkeGradient1
+
+		.damke_main-menu
+			text-align: center
+			margin-top: 65px
+			height: 100%
+			opacity: 1
+			visibility: visible
+			+mobileMd
+				margin-top: 0
+			ul 
+				li
+					position: relative
+					min-width: 300px
+					+mobileXs
+						min-width: 270px
+					&.has-sub-menu
+						.submenu-button
+							position: absolute
+							right: 0
+							top: 15px
+							width: 30px
+							height: 44px
+							z-index: 999
+							cursor: pointer
+							+mobileMd
+								top: 8px
+							&:after 
+								content: "\f107"
+								font-size: 22px
+								line-height: 44px
+								font-family: "FontAwesome"
+								color: $white
+								display: block
+								text-align: center
+							&.sub-menu-oppened
+								&:after
+									content: "\f106"
+
+					a 
+						font-size: 40px
+						padding: 6px 0
+						font-weight: $semi-bold
+						color: $white
+						letter-spacing: 2px
+						line-height: 1.9
+						+mobileMd
+							font-size: 32px
+					>ul
+						display: none
+						>li
+							>a 
+								font-size: 25px
+								padding: 16px 0
+								font-weight: $medium
+								letter-spacing: 3px
+								line-height: 2.2
+	&.full-menu 
+		.damke_menu-container
+			position: fixed
+			padding: 40px 0
+			width: 100%
+			height: 100%
+			border-radius: 0%
+			right: 0
+			top: 0
+			opacity: 1
+			visibility: visible
+			overflow-y: auto
+			+mobileMd
+				padding: 65px 0 40px
+			.damke_main-menu
+				opacity: 1
+				visibility: visible 
+			
+.damke_header
+	position: relative
+	&.active 
+		.damke_logo
+			+tab
+				display: none
+		.main-header
+			&.sticky 
+				background-color: transparent 
+				box-shadow: 0 0
+			.damke_logo
+				img 
+					display: inline-block !important
+				img + img
+					display: none !important
+			.damke_headerRight
+				.social-links
+					display: none
+				.search-box-wrap
+					display: block
+					width: 58%
+					+medium
+						width: 70%
+					+tab 
+						display: none 
+				.menu-trigger
+					+mobileMd
+						margin-top: 20px
+					&:after, &:before
+						opacity: 0
+						visibility: hidden
+						transform: translate3d(100%, 0, 0)
+						transition: all 0.4s
+					span 
+						&:before
+							background-color: $white
+							transform: rotate(45deg)
+							transition: transform 0.4s 0.4s
+						&:after
+							background-color: $white
+							transform: rotate(-45deg)
+							transition: transform 0.4s 0.4s
+	.main-header
+		position: fixed 
+		z-index: 999
+		width: 100%
+		padding: 40px 0
+		@extend .trans3
+		.damke_logo
+			img + img 
+				display: none
+		&.sticky
+			position: fixed
+			background-color: $white
+			padding: 25px 0
+			box-shadow: 0 3px 16px rgba(0, 0, 0, 0.1)
+			.damke_logo
+				img 	
+					display: none
+				img + img 
+					display: inline-block
+		
+
+
+/* 4.2: DAMKE Header Style 2 */
+.damke_header
+	&.style-2
+		.main-header
+			&.sticky
+				.damke_headerRight
+					.social-links
+						ul 
+							li 
+								&:last-child
+									&:after 
+										background-color: #3c4858 !important  
+								a 
+									i 
+										@extend .damke_heading-color
+					.menu-trigger
+						&:before,&:after 
+							background-color: #3c4858 !important
+						span 
+							&:before, &:after 
+								background-color: #3c4858 !important
+	
+		&.active 
+			.main-header
+				&.sticky
+					.damke_headerRight
+						.menu-trigger
+							span
+								&:before , &:after 
+									background-color: $white !important
+
+
+		.damke_headerRight
+			.social-links
+				ul 
+					li 
+						&:last-child 
+							&:after 
+								background-color: $white !important
+						i 
+							color: $white
+			.menu-trigger
+				&:before,&:after 
+					background-color: $white !important
+				span 
+					&:before, &:after 
+						background-color: $white !important

@@ -1,0 +1,19 @@
+<svg id="Services" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="130" height="109" viewBox="0 0 130 109">
+  <defs>
+    <filter id="filter" x="-9" y="0" width="274" height="304" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="10" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="3.162"/>
+      <feFlood result="flood" flood-opacity="0.05"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Services-2" data-name="Services">
+    <g id="_2" data-name="2">
+      <g id="VOIP_Drive" data-name="VOIP Drive">
+       
+        <path id="Icon" class="cls-1" opacity="0.051" d="M129.533,55.489L68.585-48.472A3.2,3.2,0,0,0,65.843-50H10.99a3.858,3.858,0,0,0-2.743,1.223l-57.9,97.847a3.58,3.58,0,0,0,0,3.058l27,54.173a2.734,2.734,0,0,0,.432,1.171,3.37,3.37,0,0,0,.961.928,2.769,2.769,0,0,0,1.782.6H99.364a3.2,3.2,0,0,0,2.743-1.529l27.426-48.923A2.787,2.787,0,0,0,129.533,55.489Zm-7.923-1.529H70.718L39.449-2.129a2.76,2.76,0,0,0-.423-1.089L16.3-43.885H64.014Zm-58.017,0H10.905L36.261,4.885Zm-52.7-94.624L23.27-18.44,32.626-1.383,3.371,55.093a3.993,3.993,0,0,0-.3.4L-19.511,99.16-43.559,50.9ZM97.535,102.884H-14.372L7.745,60.076H121.61Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

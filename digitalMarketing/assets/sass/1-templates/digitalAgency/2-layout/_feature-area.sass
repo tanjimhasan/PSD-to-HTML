@@ -1,0 +1,38 @@
+.damke_feature-area
+	.damke_feature-btn
+		+tab 
+			margin-bottom: 30px
+
+/* 8.1: DAMKE Single Feature */
+
+.damke_single-feature
+	box-shadow: 0 21px 81px rgba(0, 0, 0, 0.1)
+	padding: 50px 60px 45px
+	margin-bottom: 30px
+	border-radius: 30px
+	background-color: #fff
+
+	+medium
+		padding: 50px 40px 45px
+	&:hover 
+		.feature-icon
+			svg,img,i 
+				transform: rotate(20deg)
+	.feature-icon
+		margin-bottom: 35px
+		svg,img,i 
+			@extend .trans3
+		.cls-1 
+			fill: url(#linear-gradient)
+	.feature-content
+		h3 
+			font-size: 25px
+			font-weight: $medium
+			margin-bottom: 18px
+			+medium
+				font-size: 22px
+		p 
+			line-height: 1.75
+
+		.damke_more-btn
+			margin-top: 26px

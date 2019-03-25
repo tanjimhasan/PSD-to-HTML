@@ -1,0 +1,106 @@
+.damke_client-section
+	.damke_section-shape
+		&.shape-left
+			top: 50%
+			transform: translateY(-50%)
+			z-index: -1
+			+medium
+				left: -175px
+.damke_review-slider
+	position: relative
+	margin-right: -45px
+	margin-left: -45px
+	margin-top: -30px
+	margin-bottom: -40px
+	+mobileMd
+		margin-right: -15px 
+		margin-left: -15px 
+	.owl-stage-outer
+		padding-left: 40px
+		padding-right: 40px
+		margin-right: -70px
+		padding-bottom: 40px
+		+mobileMd
+			padding-left: 15px
+			padding-right: 15px 
+			margin-right: -30px
+	.owl-nav
+		position: absolute
+		right: -110px
+		top: 50%
+		transform: translateY(-50%)
+		+tab
+			top:0
+			right: -30px
+			transform: translateY(0%)
+		+mobileMd
+			right: 0
+		.owl-prev
+			top: auto
+			position: absolute
+			bottom: -30px
+			+tab
+				bottom: 0
+				right: auto
+				left: -35px
+
+
+/* 13.1: DAMKE Single Review */
+
+.damke_single-review
+	box-shadow: 0 21px 40px rgba(0, 0, 0, 0.15)
+	padding: 45px 45px 45px 110px
+	border-radius: 10px 30px 10px 30px
+	position: relative
+	margin-top: 55px
+	background-color: $white
+	+mobileMd
+		padding: 45px
+	.reviewer-img
+		position: absolute
+		left: -35px
+		top: -30px
+		+mobileMd
+			display: none
+		img 
+			border-radius: 50%
+			background-color: $white
+			box-shadow: 0 21px 81px 0px rgba(0, 0, 0, 0.15)
+			padding: 5px
+			width: auto
+	.review-content
+		position: relative
+		.review-info
+			+mobileXs
+				text-align: center
+		.quote-icon
+			position: absolute
+			left: -75px
+			bottom: 5px
+			width: auto
+			+mobileMd
+				display: none
+			.cls-1
+				fill: url(#linear-gradient)
+		p 
+			margin-bottom: 20px
+			font-size: 15px
+		.review-info
+			+mobileXs
+				flex-direction: column
+				justify-content: center !important
+			.reviewer-name
+				+mobileXs
+					margin-bottom: 20px
+				h4 
+					font-size: 16px
+					font-weight: $semi-bold
+					line-height: 1.5
+				span 
+					color: #6d6d6d 
+					font-size: 14px
+			.rating
+				i 
+					color: #ffd643
+					&:not(:last-child)
+						margin-right: 8px

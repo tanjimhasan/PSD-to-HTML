@@ -1,0 +1,165 @@
+.damke_aboutUs-area
+	.container-fluid
+		+tab
+			max-width: 540px
+	.damke_section-shape
+		&.shape-left
+			top: 100px
+			z-index: -1
+
+/* 9.1: DAMKE About Area Image */
+
+.damke_about-img
+	margin-right: 20px
+	position: relative
+	max-width: 790px
+	img 
+		&:nth-child(2)
+			position: absolute
+			top: 4%
+			right: 34%
+			+tab
+				top: 0%
+				right: 34%
+				width: 18%
+			+mobileSm
+				max-width: 25%
+				top: 1%
+			+mobileXs
+				top: 1%
+		&:nth-child(3)
+			position: absolute
+			top: 15%
+			right: -2%
+			+tab
+				top: 12%
+				right: -8%
+				width: 10%
+			+mobileMd
+				right: -6%
+			+mobileSm
+				max-width: 15%
+			+customMq(0px,320px)
+				top: 6%
+		&:nth-child(4)
+			position: absolute
+			bottom: 20%
+			right: -2%
+			+tab
+				bottom: 8%
+				right: -9%
+				width: 14%
+			+mobileMd
+				right: -4%
+			+mobileSm
+				max-width: 15%
+				right: 0
+		&:nth-child(5)
+			position: absolute
+			left: 51%
+			bottom: 20%
+			+tab
+				left: 50%
+				max-width: 20%
+			+mobileLg
+				max-width: 16%
+		&:nth-child(6)
+			position: absolute
+			bottom: 42%
+			left: 0
+			width: 12%
+	+tab
+		text-align: center
+
+/* 9.2: DAMKE About Area Content */
+
+.damke_about-content-wrap
+	max-width: 450px
+	+tab
+		max-width: 100%
+		text-align: center
+		margin-top: 30px
+	.damke_section-title
+		margin-bottom: 20px
+		+tab
+			h5 
+				padding-left: 0
+				&:after, &:before 
+					display: none
+	.about-content-text
+		.damke_siteBtn
+			margin-top: 26px
+
+.damke_about-content
+	h3 
+		font-size: 35px
+		margin-bottom: 20px
+		line-height: 1.52
+	p 
+		margin-bottom: 25px
+	.damke_siteBtn
+		margin-top: -4px
+
+/* 9.2: DAMKE About Video */
+
+.damke_video-popup-wrap
+	height: 515px
+	width: 515px
+	border-radius: 50%
+	+medium
+		height: 450px
+		width: 450px
+	+tab
+		margin: 0 auto
+		margin-top: 30px
+	+mobileSm
+		height: 380px
+		width: 380px
+	+mobileXs
+		height: 275px
+		width: 275px
+	.popup-video-bg
+		background-size: cover !important
+		background-repeat: no-repeat 
+		width: 100%
+		height: 100%
+		border-radius: 50%
+		display: flex
+		align-items: center 
+		justify-content: center
+		position: relative
+		z-index: 2
+		&:after 
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			opacity: .6
+			border-radius: 50%
+			z-index: -1
+			content: ""
+			@extend .damkeGradient3
+
+		.damke_video-btn
+			animation: ripple 3s infinite 
+			box-shadow: 0 0 0 0 rgba(255, 255, 255, .6)
+			border-radius: 50%
+			position: relative
+			&:after, &:before 
+				position: absolute
+				height: 100%
+				width: 100%
+				left: 50%
+				top: 50%
+				transform: translate(-50%,-50%)
+				animation: ripple 3s infinite 
+				box-shadow: 0 0 0 0 rgba(255, 255, 255, .6)
+				border-radius: 50%
+				content: ""
+			&:after
+				animation-delay: .9s
+			&:before 
+				animation-delay: .6s
+
+

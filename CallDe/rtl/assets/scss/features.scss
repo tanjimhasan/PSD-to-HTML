@@ -1,0 +1,290 @@
+/*=============================================
+    15: Features
+==============================================*/
+
+/* 15.1 Server Features */
+
+.boxed-feature{
+	margin:-15px 0;
+}
+	/* 15.1.1 single Server Feature */
+
+	.single-feature{
+		padding:40px 0;
+		background:#fff;
+		box-shadow:0 10px 10px rgba(0, 0, 0, 0.05);
+		border-top:1px solid $primary-color;
+		transition:.3s;
+		margin:15px 0;
+		&:hover{
+			border-top-width:2px;
+			padding:39px 0;
+			box-shadow:0 15px 15px rgba(0, 0, 0, 0.09);
+		}
+		i{
+			color:$primary-color;
+			font-size:24px;
+			margin-bottom:18px;
+		}
+		h3{
+			font-weight:700;
+			font-size:18px;
+			text-transform:uppercase;
+			font-family: 'PT Sans', sans-serif;
+		}
+	}
+
+	/* single Feature Two */
+	.single-feature-two{
+		background:#fff;
+		flex-direction:column;
+		padding:55px 40px;
+		margin:15px 0;
+		box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+		transition:.3s;
+		&:hover{
+			box-shadow: 0 15px 15px rgba(0, 0, 0, 0.10);
+			.feature-icon{
+				background:$primary-color;
+				i{
+					color:#fff;
+				}
+			}
+		}
+		.feature-icon{
+			width:100px;
+			height:80px;
+			border:1px solid #ecf7fe;
+			text-align:center;
+			transition:.3s;
+			i{
+				line-height:80px;
+				font-size:24px;
+				color:$primary-color;
+				transition:.3s;
+			}
+		}
+		.feature-content{
+			h3{
+				margin:25px 0;
+				font-weight:700;
+				font-size:18px;
+			}
+			p{
+				line-height:24px;
+				font-weight:600;
+			}
+		}
+	}
+
+/* 15.2 Additional Features */
+
+.feature-table-container{
+	.table{
+		margin-bottom:0;
+		tr{
+			th{
+				border:1px solid #ecf7fe;
+				border-right:0;
+				background:#ecf7fe;
+				text-align:center;
+				padding:30px 0;
+				font-family: 'PT Sans', sans-serif;
+				font-size:18px;
+				font-weight:400;
+
+			}
+			.features{
+				min-width:290px;
+			}
+			.virtual_c{
+				min-width:270px;
+			}
+			.physical_c{
+				min-width:270px;
+			}
+			.vertual_physical_c{
+				min-width:270px;
+			}
+			td{
+				border:1px solid #e2e6fb;
+				text-align:center;
+				vertical-align:middle;
+				font-family: 'PT Sans', sans-serif;
+				font-size:16px;
+				padding: 25px 30px;
+				line-height:20px;
+				&:first-child{
+					text-align:left;
+					font-weight:500;
+				}
+			}
+
+			&:last-child{
+				td{
+					background-repeat: no-repeat!important;
+    				background-position: bottom!important;
+    				padding-bottom: 75px;
+    				padding-top:35px;
+    				position:relative;
+    				svg{
+    					position:absolute;
+    					left:0;
+    					bottom:0;
+    				}
+					&:first-child{
+						border:0;
+					}
+					
+				}
+			}
+		}
+	}
+}
+
+/* 15.3 Configuration */
+
+.configuration-table-wrapper{
+	.table{
+		border-collapse:collapse;
+		background:#fff;
+		margin-bottom:0;
+		thead{
+			th{
+				font-size:18px;
+				white-space: nowrap;
+				background:$primary-color;
+				color:#fff;
+				font-family: 'PT Sans', sans-serif;
+				text-transform:uppercase;
+				border:0;
+				text-align:center;
+				padding:30px 0;
+				line-height:20px;
+				font-weight:500;
+				border-color:$primary-color;
+				&:last-child{
+			    	padding-right:30px;
+			    }
+			}
+			.server{
+				min-width:130px;
+			}
+			.ram{
+				min-width:80px;
+			}
+			.hdd{
+				min-width:130px;
+			}
+			.order{
+				min-width:200px;
+			}
+		}
+		tr{
+			border-right:1px solid #e2e6fb;
+			border-left: 1px solid #e2e6fb;
+			
+			td{
+				font-size: 12px;
+			    color: $text-color;
+			    border-top: 0;
+			    border-bottom: 1px solid #e2e6fb;
+			    background: #fff;
+			    vertical-align: middle;
+			    padding: 20px;
+			    font-weight:500;
+			    line-height:20px;
+			    &:first-child{
+			    	padding-left:30px;
+			    }
+			    &:last-child{
+			    	min-width:190px;
+			    	padding-right:30px;
+			    }
+			}
+		}
+		
+	}
+}
+
+/* 15.4 FAQ */
+
+.feature-faq{
+	.section-title{
+		margin-bottom:45px;
+	}
+	.faq-img{
+		@media #{$desktop-device}{
+			text-align:center;
+			margin-top:20px;
+		}
+		img{
+			@media #{$tablet-device}{
+				display:none;
+			}
+			@media #{$large-mobile}{
+				display:none;
+			}
+		}
+	}
+	p{
+		color:$sub-title-color;
+		line-height:30px;
+		margin-bottom:10px;
+		margin-top: -8px;
+		span{
+			color:$primary-color;
+		}
+	}
+	.boxed-btn{
+		margin-top:15px;
+	}
+	.faq-wrapper{
+		h5{
+			padding-left:0 !important;
+			&:hover{
+				color:$primary-color;
+				i{
+					color:$primary-color !important;
+				}
+			}
+			@media #{$extra-small-mobile}{
+                font-size:14px !important;
+            }
+			i{
+				left:auto !important;
+				right: 0;
+				color:$heading-color !important;
+				@media #{$tablet-device}{
+                    right:35px;
+                }
+				@media #{$large-mobile}{
+                    right:100px;
+                }
+				@media #{$extra-small-mobile}{
+                    right:-5px;
+                }
+			}
+		}
+		[aria-expanded=false]{
+			i.fa-angle-down{
+				display:block;
+			}
+		}
+		[aria-expanded=true]{
+			i.fa-angle-up{
+				display:block;
+			}
+			i.fa-angle-down{
+				display:none !important;
+			}
+		}
+		.card-body{
+			padding-left:0;
+		}
+		.card-header{
+			margin-bottom:5px !important;
+		}
+	}
+}
+

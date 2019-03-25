@@ -1,0 +1,39 @@
+/*=============================================
+    21: Call To Action
+==============================================*/
+
+.call-to-action{
+	h2{
+		font-size:36px;
+		font-weight:500;
+		line-height:48px;
+		@media #{$tablet-device}{
+			text-align:center !important;
+			margin-bottom:25px;
+		}
+		@media #{$large-mobile}{
+			text-align:center !important;
+			margin-bottom:25px;
+			font-size:32px;
+			line-height:42px;
+		}
+	}
+	.bordered-btn{
+		font-weight:500;
+		font-family: 'PT Sans', sans-serif;
+		font-size:16px;
+	}
+	.bordered-btn.style-2{
+		&:after{
+			background: $heading-color;
+		}
+	}
+	.text-right{
+		@media #{$tablet-device}{
+			text-align:center !important;
+		}
+		@media #{$large-mobile}{
+			text-align:center !important;
+		}
+	}
+}

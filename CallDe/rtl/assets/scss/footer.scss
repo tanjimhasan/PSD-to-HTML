@@ -1,0 +1,96 @@
+/*=============================================
+    29: Footer
+==============================================*/
+
+.footer-weidget{
+	h3{
+		color:#31333e;
+		font-size:18px;
+		font-weight:700;
+		line-height:48px;
+		margin-bottom:8px;
+	}
+}
+
+/* 29.1: footer menu */
+
+
+.footer-menu{
+	li{
+		margin-bottom:10px;
+		&:last-child{
+			margin-bottom:0;
+		}
+		a{
+			color:#8287a7;
+			font-size:13px;
+			text-decoration:none;
+			line-height:22px;
+			&:hover{
+				color:$primary-color;
+			}
+		}
+	}
+}
+
+
+/* 29.2: Social Icons */
+
+.social-icons{
+	a{
+		color:#8287a7;
+		text-decoration:none;
+		margin-right:20px;
+		&:hover{
+			color:$primary-color;
+		}
+		i{
+			font-size:12px;
+		}
+	}
+}
+
+/* 29.3: Footer Bottom */
+
+.footer-bottom{
+	.text-right{
+		@media #{$tablet-device}{
+			text-align:center !important;
+		}
+		@media #{$large-mobile}{
+			text-align:center !important;
+		}
+	}
+	.text-left{
+		@media #{$tablet-device}{
+			text-align:center !important;
+		}
+		@media #{$large-mobile}{
+			text-align:center !important;
+		}
+	}
+	
+	.copy-right-text{
+		p{
+			margin-bottom:0;
+			color:#4c4f60;
+			font-size:16px;
+			font-weight:500;
+			line-height:30px;
+			@media #{$tablet-device}{
+				margin-bottom:15px;
+			}
+			@media #{$large-mobile}{
+				margin-bottom:15px;
+			}
+		}
+	}
+	.payment-method{
+		color:#4c4f60;
+		font-size:16px;
+		font-weight:500;
+		img{
+			padding-left:10px;
+		}
+	}
+}

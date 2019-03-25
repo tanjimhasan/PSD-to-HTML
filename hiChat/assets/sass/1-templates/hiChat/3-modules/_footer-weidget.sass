@@ -1,0 +1,52 @@
+
+/* x.x: Footer Weidget */
+.footer-weidget
+	+tab
+		margin-bottom: 40px
+	.footer-logo
+		margin-bottom: 35px
+	.footer-header
+		margin-bottom: 35px
+		h4
+			font-size: 24px
+			font-weight: $medium
+			margin-bottom: 0
+	.hiChat--social-links
+		margin-top: 30px
+		ul
+			li
+				display: inline-block 
+				margin-right: 20px
+				a
+					i
+						font-size: 24px
+						color: #0085ca
+						&.fa-facebook-square
+							color: #0085ca
+						&.fa-twitter-square
+							color: #5cc7ff
+						&.fa-instagram
+							color: #e371d7
+						&.fa-google-plus-square
+							color: #f02b34
+						&.fa-linkedin-square
+							color: #0696e8
+
+	&.footer-menu-style-2
+		.footer-content
+			p 
+				font-weight: $light
+			.footer-list
+				a
+					display: block
+					font-weight: $light
+					margin-bottom: 5px
+					transition: .35s
+					@extend .hiChat--secondary-color
+					&:hover
+						@extend .hiChat--primary-color
+					i
+						margin-right: 5px
+	&.footer-payment-style-2
+		.payment-logos
+			margin-top: 30px

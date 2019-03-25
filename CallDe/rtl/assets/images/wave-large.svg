@@ -1,0 +1,12 @@
+<svg id="Pricing_Plan" data-name="Pricing Plan" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMin slice" viewBox="" style="width: 100%; padding-bottom: 0; height: 100px; overflow: visible">
+  <defs>
+  	
+   
+    <filter id="filter" x="0" y="-17" width="1110" height="127" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="0" y="-17" width="1110" height="127" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTExMCIgaGVpZ2h0PSIxMjciIHZpZXdCb3g9IjAgMCAxMTEwIDEyNyI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC5jbHMtMSB7CiAgICAgICAgZmlsbDogdXJsKCNsaW5lYXItZ3JhZGllbnQpOwogICAgICB9CiAgICA8L3N0eWxlPgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJsaW5lYXItZ3JhZGllbnQiIHgxPSI2NjQuOTg1IiB5MT0iMTI3IiB4Mj0iNDQ1LjAxNSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMwMmZkNTkiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDRiNjQyIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSIxMTEwIiBoZWlnaHQ9IjEyNyIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Shape" class="cls-1" d="M0,110V0.375S60.747,81.892,232.42,86.787c117.226,3.342,177.838-48.17,314.529-43.224,129.572,4.689,211.544,39.759,320.989,37.624C1010.63,78.4,1109.5,27.844,1109.5,27.844s0.5,0.017.5,82.151H0Z"/>
+</svg>

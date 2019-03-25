@@ -1,0 +1,60 @@
+/*=============================================
+    14: Breadcrumb
+==============================================*/
+
+.breadcrumb-bg{
+	background-image:url('../images/breadcrumb-bg.jpg');
+	background-size:cover;
+	background-position:center;
+	background-color:#ddd;
+	padding-top:86px;
+	padding-bottom:25px;
+}
+.breadcrumb-bg.section-overlay{
+	&:after{
+		opacity:.3 !important;
+	}
+}
+
+.breadcrumb-area{
+	h2{
+		color:#fff;
+		font-size:36px;
+		line-height:71px;
+		margin-bottom:0;
+		@media #{$very-extra-small-mobile}{
+			line-height:48px;
+		}
+	}
+	ul{
+		margin-top:-5px;
+		@media #{$very-extra-small-mobile}{
+			margin-top:5px;
+		}
+	}
+	li{
+		a{
+			color:#fff;
+			font-size:18px;
+			font-family: 'PT Sans', sans-serif;
+			text-decoration:none;
+			&:hover{
+				color:$primary-color;
+			}
+		}
+		&:last-child{
+			a{
+				pointer-events: none;
+			}
+		}
+	}
+	li+li{
+		&:before{
+			content: '\f101';
+		    font-family: "Font Awesome 5 Free";
+		    color: #fff;
+		    padding: 0 8px;
+		    font-weight: 900;
+		}
+	}
+}

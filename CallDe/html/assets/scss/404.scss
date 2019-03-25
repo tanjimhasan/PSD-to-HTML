@@ -1,0 +1,49 @@
+/*=============================================
+    30: 404 Page
+==============================================*/
+
+.error-section{
+	border-bottom:1px solid rgba(0,0,0,.1);
+}
+
+/* Not Found Content */
+
+.not-found-content{
+	h1{
+		font-size:100px;
+		font-weight:700;;
+		color:$primary-color;
+		margin-top:-28px;
+	}
+	h3{
+		font-size:24px;
+		color:$heading-color;
+		margin-bottom:35px;
+	}
+	.search-action{
+		position: relative;
+		
+		input[type=text] {
+			border: 0;
+	      	background: #ecf7fe;
+	      	padding: 0 20px;
+	      	padding-right: 42px;
+	      	height: 40px;
+	      	width: 100%;
+		}
+		button{
+			background: #00c544;
+	      	color: #fff;
+	      	border: 0;
+	      	position: absolute;
+	      	right: 0;
+	      	top: 0;
+	      	width: 55px;
+	      	height: 40px;
+	      	cursor: pointer;
+	      	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+	      	border-radius:0;
+		}
+	}
+}
+

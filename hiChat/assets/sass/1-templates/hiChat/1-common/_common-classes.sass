@@ -1,0 +1,78 @@
+
+/* x.x: Common Classes */
+
+.hiChat--gradient-bg
+	@extend .hiChatGradient
+	
+.hiChat--section-padding
+	padding: 130px 0
+	+tab 
+		padding: 65px 0
+
+.hiChat--section-bg
+	background-size: cover !important
+	background-repeat: no-repeat !important
+
+.hiChat--section-title
+	margin-bottom: 65px
+	user-select: none
+	h5
+		font-size: 18px
+		line-height: 1.67
+		margin-bottom: 4px
+		margin-top: -10px
+		text-transform: uppercase
+		@extend .hiChat--primary-color
+	h2
+		font-size: 40px
+		line-height: 1.2
+		font-weight: 600
+		margin-bottom: 32px
+		text-transform: capitalize
+		@extend .hiChat--heading-color
+		+mobileMd
+			font-size: 34px
+		+mobileXs
+			font-size: 30px
+	p
+		font-size: 16px
+		line-height: 1.67
+		@extend .hiChat--secondary-color
+.hiChat--banner-shape
+	position: absolute
+	left: 0
+	background-repeat: no-repeat
+.hiChat--shape
+	background-repeat: no-repeat
+	position: absolute
+
+.hiChat--shade
+	position: fixed
+	width: 100%
+	height: 100%
+	opacity: 0
+	visibility: hidden
+	@extend .trans3
+	@extend .hiChatGradient
+
+.hiChat--shade
+	&.active
+		opacity: .5
+		visibility: visible
+		z-index: 99
+
+.hiChat--post-meta
+	margin-bottom: 12px
+	ul 
+		li 
+			display: inline-block
+			@extend .hiChat--heading-color
+			&:not(:last-child)
+				margin-right: 18px
+
+			a
+				font-size: 14px
+				@extend .trans2
+				@extend .hiChat--secondary-color
+				&:hover
+					@extend .hiChat--primary-color

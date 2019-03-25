@@ -1,0 +1,129 @@
+
+/* x.x: DamKe Animation */
+[data-animate].animated 
+	visibility: visible
+
+[data-animate] 
+	visibility: hidden
+	-webkit-animation-duration: .6s
+	animation-duration: .6s
+.animated 
+	-webkit-animation-fill-mode: backwards
+	animation-fill-mode: backwards
+
+.ghostwhite-bg-color
+	background-color: #f8f8f8
+
+/* x.x: DamKe Section Pattern */
+.damke_section-pattern
+	.icon 
+		position: absolute
+		animation-name: rotateme 
+		-webkit-animation-name: rotateme
+		-webkit-animation-duration: 2s
+		-webkit-animation-iteration-count: infinite
+		-webkit-animation-timing-function: linear
+		&.icon-one
+			left: 10%
+			bottom: 10%
+		&.icon-two
+			right: 10%
+			bottom: 2%
+		&.icon-three
+			left: 60%
+			top: 20%
+
+/* x.x: DamKe Section Title */
+.damke_section-title
+	margin-bottom: 60px
+	max-width: 460px
+	h5 
+		font-size: 15px
+		font-weight: $medium
+		color: #52575d
+		position: relative
+		padding-left: 50px
+		margin-top: -3px
+		&:after 
+			position: absolute
+			left:0
+			top:50%
+			height:2px
+			margin-top: -1px
+			width: 32px
+			background-color: #104381
+			content:""
+			z-index: 1
+		&:before
+			position: absolute
+			left:30px
+			top: 50%
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			border: 3px solid #06ca74
+			content: ""
+			margin-top: -5px
+			z-index: 2
+	h3 
+		font-size: 35px
+		font-weight: $semi-bold
+		line-height: 1.67
+	p 
+		line-height: 1.75
+		margin-top: -2px
+		color: #5c5c5c
+	.damke_siteBtn
+		margin-top: 25px
+	&.text-right 
+		h5 
+			padding-right: 50px
+			&:before 
+				right: 30px
+			&:after 	
+				right: 0 
+	&.text-center
+		margin: 0 auto
+		margin-bottom: 60px
+		h5
+			padding-left: 0
+			&:after,&:before
+				display: none
+	 
+/* x.x: DamKe Section Shape */
+.damke_section-shape.shape-right
+	position: absolute
+	right: 0
+
+.damke_section-shape.shape-left
+	position: absolute
+	left: 0
+
+.damke_input-wrapper
+	position: relative
+	border-bottom: 1px solid #ddd
+	margin-bottom: 30px
+	input , textarea
+		width: 100%
+		font-size: 15px
+		background-color: transparent
+		border: 0
+		color: #e9e7e7
+		padding-left: 35px
+		padding-bottom: 6px
+		&::placeholder 
+			color: #e9e7e7
+		&:focus 
+			&::placeholder 
+				opacity: 0
+				visibility: hidden
+	textarea
+		min-height: 80px
+	.input-icon
+		position: absolute
+		left: 10px
+		top: 0px
+		+medium
+			left: 6px
+		i 
+			color: #e9e7e7

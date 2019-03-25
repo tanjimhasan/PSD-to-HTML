@@ -1,0 +1,32 @@
+/*=============================================
+    xx: Special Feature Area
+==============================================*/
+
+/* xx: Single Feature */
+
+.shop--single-special-feature{
+	border:1px solid $border-color;
+	padding:20px 22px 17px 22px;
+	transition:.3s;
+	&:hover{
+		border-color:$heading-color;
+		.shop--feature-icon{
+			.svg{
+				.cls-1{
+					fill:$heading-color;
+				}
+			}
+		}
+	}
+	.shop--feature-content{
+		h5{
+			margin-top:10px;
+			font-size:14px;
+			line-height:30px;
+			margin-bottom:7px;
+		}
+		p{
+
+		}
+	}
+}

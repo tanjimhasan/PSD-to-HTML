@@ -1,0 +1,42 @@
+.damke_counter-area
+	padding-top: 90px
+	padding-bottom: 95px
+	border-radius: 10px 20px 10px 20px
+	@extend .damkeGradient4
+	.counter-shape
+		position: absolute
+		left: 0
+		top: 10px
+		width: 100%
+		height: 100%
+		background-size: auto !important
+		background-position: bottom center !important
+		background-repeat: no-repeat !important
+.damke_counter-area-inner
+	justify-content: space-around
+	+tab
+		flex-flow: column
+		margin-top: -25px
+
+/* 8.1: Single Counter */
+.damke_single-counter
+	+mobileLg
+		margin-top: 35px
+	.damke_single-counter-inner
+		.damke_counter-icon
+			margin-top: 3px
+		.damke_counter-content
+			.count
+				font-size: 50px
+				font-weight: $semi-bold
+				color: $white
+				margin-bottom: 18px
+				margin-top: -2px
+				+mobileSm
+					font-size: 34px
+			span
+				font-size: 20px
+				color: $white
+				font-weight: $semi-bold
+				+mobileSm
+					font-size: 20px

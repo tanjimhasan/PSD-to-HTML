@@ -1,0 +1,129 @@
+
+.hiChat--freeTrial-container
+	&.show 
+		.hiChat--freeTrial-content-wrapper
+			opacity:1
+			visibility: visible
+			.freeTrial-content
+				transform: scale(1)
+
+	.hiChat--freeTrial-content-wrapper
+		position: fixed
+		top:0
+		left:0
+		right:0
+		bottom:0
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+		z-index:999
+		opacity: 0
+		visibility: hidden
+		@extend .trans7
+		.freeTrial_img
+			+mobileLg
+				display: none
+			img
+				position: absolute
+				top: 0
+				bottom: 0
+				left:20px
+				margin: auto
+				+tab
+					left: 0
+		.freeTrial-content
+			padding: 0px 50px
+			margin: 0 auto
+			background: #fff
+			box-shadow: 0 21px 81px rgba(0, 0, 0, 0.1)
+			min-height: 435px
+			position: relative
+			left: 0
+			top: 0
+			border-radius: 10px
+			transform: scale(.5)
+			@extend .trans7
+			+tab
+				min-height: 355px
+			+mobileSm
+				min-height: 400px
+				padding: 0 25px
+			+customMq(0px,320px)
+				padding: 0 15px
+			.freeTrial-close-btn
+				position: absolute
+				right: 30px
+				top: 30px
+				cursor: pointer
+				+tab 
+					right: 15px
+					top: 10px
+				+mobileLg
+					right: 20px
+					top: 20px
+				+mobileMd
+					right: 15px
+					top: 10px
+				+customMq(0px,320px)
+					right: 10px
+					top: 5px
+				.cls-1
+					fill: $hiChat-p1
+	.hiChat--modal-overlay
+		position: fixed
+		left:0
+		top:0
+		right:0
+		bottom:0
+		opacity: 0 
+		visibility: hidden
+		@extend .trans3
+		@extend .hiChatGradient
+
+/* 16.1: Subscription Styles */
+
+.hiChat--subscription-wrap
+	.hiChat--section-title
+		margin-bottom: 45px
+		h2 
+			margin-top: -12px
+			+customMq(0px,320px)
+				font-size: 22px
+		p 
+			line-height: 1.87
+	.subscription-form
+		input[type='email']
+			width: 100%
+			border: 0
+			height: 60px
+			box-shadow: 0 10px 38px rgba(0, 0, 0, 0.1)
+			border-radius: 40px
+			padding: 0 50px
+			font-size: 18px
+			font-family: $lato	
+			@extend .hiChat--secondary-color
+			+tab
+				height: 60px
+			+mobileXs
+				padding: 0 30px
+		button
+			position: absolute
+			font-size: 18px
+			right: 0
+			top: 0
+			height: 60px
+			border-radius: 40px
+			border: 0
+			padding: 0 38px
+			color: $white
+			@extend .hiChatGradient
+			+tab
+				padding: 0 45px
+				height: 60px
+			+mobileLg
+				padding: 0 30px
+			+mobileXs
+				padding: 0 25px
+				height: 60px
+			+customMq(0px,320px)
+				padding: 0 15px
+
+		

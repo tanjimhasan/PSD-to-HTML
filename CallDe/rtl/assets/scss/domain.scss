@@ -1,0 +1,219 @@
+/*=============================================
+    22: Domain
+==============================================*/
+
+
+
+/* 22.1: Domain Checker */
+
+.domain-checker{
+    .section-title{
+        p{
+            color:$text-color;
+            font-size:18px;
+            margin-top:30px;
+            font-weight:600;
+        }
+    }
+}
+
+.domain-checker-form-wrapper{
+    padding:75px 48px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    @media #{$extra-small-mobile}{
+        padding:30px 15px;
+    }
+    .checker-form{
+        .input-ground{
+            background:#ecf7fe;
+            input[type=email]{
+                background:#ecf7fe;
+                @media #{$extra-small-mobile}{
+                    padding:4px;
+                }
+            }
+            input[type=submit]{
+                @media #{$extra-small-mobile}{
+                    width:40%;
+                }
+            }
+        }
+        .domain-slider{
+            margin:0 40px;
+
+            .slick-arrow{
+                font-size:14px;
+                border:0 !important;
+                background:transparent;
+                top:-8px;
+                right:-30px !important;
+                opacity:.7;
+                width:20px !important;
+                &:hover{
+                    color:$primary-color;
+                }
+            }
+            .slick-arrow.slick-prev-btn{
+                right:auto;
+                left:-30px;
+            }
+            .single-domain{
+                position:relative;
+                margin:0 5px;
+                text-align: center;
+                @media #{$extra-small-mobile}{
+                    margin:0;
+                }
+
+                input[type=checkbox]{
+                    display:none;
+                }
+                input[type=checkbox] + label{
+                    position: relative;
+                      padding-left: 15px;
+                      font-family: 'PT Sans', sans-serif;
+                      color:$text-color;
+                      font-size: 16px;
+                      margin-bottom: 0;
+                      &:before{
+                        position: absolute;
+                        left: 0;
+                        top: 8px;
+                        width: 10px;
+                        height: 10px;
+                        display: block;
+                        border: 1px solid #e4e8fb;
+                        content: "";
+                        transition: all 0.3s ease 0s;
+                        border-radius: 2px;
+                      }
+                      &:after{
+                        position: absolute;
+                        width: 6px;
+                        height: 6px;
+                        background: $sub-title-color;
+                        content: "";
+                        left: 2px;
+                        top: 10px;
+                        border-radius: 2px;
+                        display: block;
+                        font-weight: 900;
+                        opacity: 0;
+                        text-align: center;
+                        transition: all 0.3s ease 0s; 
+                      }
+                }
+                input[type=checkbox]{
+                    &:checked + label{
+                        &:after{
+                            opacity:1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 22.2: Domain Price Table */
+
+.domain-table-wrapper{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    table{
+        margin-bottom:0;
+        td{
+            border:0;
+            vertical-align:middle;
+            a.boxed-btn{
+                text-align:center;
+                min-width:160px;
+            }
+        }
+        thead{
+            border-bottom:1px solid #e2e6fb;
+            tr{
+                padding-left:10px;
+            }
+            th{
+                border:0;
+                color:$primary-color;
+                font-family: 'PT Sans', sans-serif;
+                font-weight:500;
+                font-size:16px;
+                line-height:22px;
+                padding: 30px 0;
+                white-space: nowrap;
+                padding-left: 30px;
+                &:last-child{
+                    text-align:center;
+                    padding-left:0;
+                    padding-right: 20px;
+                }
+                @media #{$desktop-device}{
+                    text-align:left;
+                }
+            }
+        }
+        tbody{
+            tr{
+                &:nth-child(even){
+                    background:#ecf7fe;
+                }
+                td{
+                    padding:20px 30px;
+                }
+            }
+        }
+        tfoot{
+            td{
+                padding:0;
+
+                .wave-bg{
+                    width: 100%;
+                    background-size: cover;
+                    height: 110px;
+                    background-position:center;
+                     
+                }
+            }
+        }
+    }
+    
+}
+
+
+/* 22.3: Domain Features */
+.boxed-domain-features{
+    margin:-15px 0;
+}
+.single-domain-feature{
+    background:#fff;
+    padding:30px 15px;
+    margin:15px 0;
+    &:hover{
+       .domain-feature-icon{
+        i{
+            transform:rotate(360deg);
+        }
+       } 
+    }
+    .domain-feature-icon{
+        i{
+            font-size:24px;
+            color:$primary-color;
+            margin-bottom:25px;
+            transform:rotate(0deg);
+        }
+    }
+    .domain-feature-content{
+        h3{
+            font-size:16px;
+            font-weight:700;
+            margin-bottom:15px;
+        }
+        P{
+            font-weight:600;
+            line-height:24px;
+        }
+    }
+}

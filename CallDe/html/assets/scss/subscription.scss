@@ -1,0 +1,63 @@
+/*=============================================
+    13: Subscription
+==============================================*/
+
+.subscription-heading{
+	h2{
+		margin-bottom:0;
+		font-weight:500;
+		font-size:36px;
+		line-height:48px;
+		@media #{$desktop-device}{
+			font-size:26px;
+			line-height:36px;
+		}
+		@media #{$tablet-device}{
+			font-size:32px;
+			margin-bottom:20px;
+			line-height:34px;
+		}
+		@media #{$large-mobile}{
+			font-size:30px;
+			margin-bottom:20px;
+			line-height:34px;
+		}
+		@media #{$small-mobile}{
+			font-size:26px;
+		}
+	}
+}
+
+.subcription-form,.checker-form{
+	.input-ground{
+		height:60px;
+		padding:10px;
+		background:#fff;
+		.input-group-append{
+			height:40px;
+			margin-left:0;
+		}
+		input{
+			
+			border:0;
+		}
+		input[type=email]{
+			width:72%;
+			padding:4px 15px;
+			@media #{$small-mobile}{
+				width:70%;
+			}
+		}
+		input[type=submit]{
+			width:28%;
+			background:$primary-color;
+			color:#fff;
+			font-weight:600;
+			cursor:pointer;
+			box-shadow: 0 10px 15px rgba(0, 0, 0, 0.10);
+			@media #{$small-mobile}{
+				width:30%;
+			}
+		}
+	}
+}

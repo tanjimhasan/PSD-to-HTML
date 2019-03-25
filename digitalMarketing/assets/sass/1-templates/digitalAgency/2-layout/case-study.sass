@@ -1,0 +1,219 @@
+/* x.x: DAMKE Case Study Menu */
+.damke_case-study-menu 
+	text-align: center
+	margin-bottom: 35px
+	+mobileLg
+		margin-bottom: 18px
+	li 	
+		display: inline-block
+		border: 2px solid transparent
+		padding: 8px 35px
+		border-radius: 23.5px
+		cursor: pointer
+		color: #100505
+		font-size: 18px
+		font-weight: $regular
+		margin-bottom: 30px
+		@extend .trans3
+		+mobileXs
+			padding: 8px 30px
+			font-size: 16px
+		&:not(:last-child)
+			margin-right: 10px
+			+mobileXs
+				margin-right: 6px
+		&:hover 
+			border-color: #3fd9d5
+		&.active
+			border-color: #3fd9d5
+
+
+/* x.x: DAMKE Signle Case Study */
+.damke_single-case-study
+	position: relative
+	z-index: 3
+	overflow: hidden
+	margin-bottom: 30px
+	+mobileLg
+		margin-bottom: 15px
+	&:after 
+		position: absolute
+		width: calc(100% - 30px)
+		bottom: 0
+		height: 0%
+		content: ""
+		opacity: 0
+		visibility: hidden
+		z-index: 2
+		border-radius: 20px
+		@extend .trans3
+		@extend .damkeGradient3
+	&:hover 
+		&:after 
+			top: 0
+			height: 100%
+			opacity: .8
+			visibility: visible
+		.damke_case-study-hover
+			.case-study-inner
+				.case-text
+					opacity: 1
+					visibility: visible
+					bottom: 22px
+				.case-icon
+					right: 25px
+					opacity: 1
+					visibility: visible
+	.case-study-img
+		img 
+			width: 100%
+			border-radius: 20px
+.damke_case-study-hover 
+	.case-study-inner
+		position: relative
+		z-index: 3
+		.case-text
+			position: absolute
+			left: 25px
+			bottom: 10px
+			opacity: 0
+			visibility: hidden 
+			@extend .trans4
+			h4 
+				font-size: 25px
+				font-weight: $semi-bold
+				+medium
+					font-size: 22px
+				a 
+					color: $white
+					font-weight: $medium
+			span 
+				font-size: 15px
+				color: $white
+		.case-icon
+			position: absolute
+			right: 10px
+			bottom: 20px
+			opacity: 0
+			visibility: hidden
+			@extend .trans7
+			i 
+				color: $white
+
+/* x.x: DAMKE Case Study Details */
+.damke_brief-section-inner
+	.damke_section-title
+		margin-bottom: 30px
+
+.damke_client-brief-details
+	.brief-lists
+		margin-top: 25px
+		ul 
+			li 
+				display: inline-block
+				width: 49% 
+				position: relative
+				padding-left: 25px
+				margin-bottom: 20px
+				+mobileXs
+					width: 100%
+				.list-bullet
+					position: absolute
+					left: 0
+					top:50%
+					width: 12px
+					height: 12px
+					border-radius: 50%
+					transform: translateY(-50%)
+					@extend .damke_heading-color-bg
+
+.damke_project-info-list
+	background-color: $white
+	border-radius: 20px
+	padding: 50px 55px
+	+tab
+		margin-top: 10px
+	h4 
+		font-size: 25px
+		font-weight: $semi-bold
+	.damke_info-list-inner
+		margin-top: 30px
+		ul 
+			li 
+				display: flex
+				justify-content: space-between
+				&:not(:last-child)
+					margin-bottom: 18px
+				span 	
+					&:first-child 
+						font-size: 18px
+						font-weight: $semi-bold
+						@extend .damke_heading-color
+
+/* x.x: DAMKE About Project */
+.damke_pro-about-inner,.damke_pro-result-inner
+	.damke_section-title
+		margin-bottom: 35px
+
+.damke_pro-about-inner
+	.damke_pro-about-img
+		text-align: center
+		+tab 
+			margin-bottom: 30px
+
+.damke_about-pro-txt
+	p 
+		&:not(:last-child)
+			margin-bottom: 30px
+
+/* x.x: DAMKE Project Result */
+
+.damke_pro-result-inner
+	.pro-result-text
+		p 
+			&:not(:last-child)
+				margin-bottom: 30px
+	.pro-result-absolute
+			
+		+mobileMd
+			display: none
+		img 
+			position: absolute
+			left: 5%
+			bottom: 10%
+			animation-name: rotateme 
+			-webkit-animation-name: rotateme
+			-webkit-animation-duration: 8s
+			-webkit-animation-iteration-count: infinite
+			-webkit-animation-timing-function: linear
+			+medium
+				left: 0
+			+tab
+				left: 14%
+			+mobileLg
+				left: 4%
+		img + img 
+			position: absolute
+			right: 0
+			left: auto
+			bottom: 48%
+			+medium
+				bottom: 50%
+			+tab
+				bottom: 44%
+			+mobileLg
+				bottom: 48%
+	.pro-result-img
+		text-align: center
+		margin-top: 30px
+
+.damke_result-calc-inner
+	margin-top: 40px
+.damke_single-result
+	h2 	
+		font-size: 25px
+		line-height: 1.2
+		font-weight: $medium
+		margin-top: 22px
+		+mobileSm
+			font-size: 22px

@@ -1,0 +1,124 @@
+
+.hiChat--home-inner-shape
+	background: url("../images/home-inner-shape.png")
+	height: 100%
+	width: 100%
+	position: absolute
+	right: 0
+	top: 0
+	background-position: top right !important
+	background-repeat: no-repeat
+	background-size: contain !important
+
+/* 7.1: Home Hero Area  */	
+.hiChat--hero-area
+	padding-top: 200px
+	padding-bottom: 120px
+	+tab
+		padding-bottom: 0
+		padding-top: 90px
+	+mobileLg
+		padding-top: 130px
+	.hiChat--hero-area-content
+		h1
+			font-size: 60px
+			@extend .hiChat--heading-color
+			line-height: 1.2
+			text-transform: uppercase
+			font-weight: $bold
+			margin-bottom: 20px
+			+mobileMd
+				font-size: 48px
+			+mobileXs
+				font-size: 44px
+			span
+				display: block 
+				.hiChat-dots
+					display: inline-block
+					@extend .hiChat--primary-color
+		p
+			font-size: 18px
+			line-height: 1.67
+			margin-bottom: 45px
+		
+	.hiChat--hero-image
+		@extend .moveUpDown
+		+tab
+			text-align: center
+			margin-top: 60px
+
+/* 7.2: Hero Slider Area */		
+.hiChat--hero-slider-area
+	padding-bottom: 55px
+	.hiChat--hero-area-content
+		.hiChat--download-btn
+			a 
+				+mobileMd
+					padding: 14px 28px
+			a+a 
+				+medium
+					margin-left: 20px
+				
+
+.hiChat--hero-pagination
+	display: flex
+	align-items: center
+	left: 15px !important
+	bottom: -10px !important
+	+medium
+		bottom: -70px !important
+	+mobileLg
+		bottom: -40px !important
+	.swiper-pagination-bullet
+		margin: 0 10px !important
+		background: #cbcbcb !important
+		opacity: 1 !important
+	.swiper-pagination-bullet-active
+		opacity: 1
+		height: 22px
+		width: 22px
+		background: $white !important
+		position: relative
+		border: 1px solid #444444
+		&:after 
+			position: absolute
+			height: 8px
+			width: 8px
+			content: ""
+			top: 50%
+			margin-top: -4px
+			left: 50%
+			margin-left: -4px
+			border-radius: 50%
+			@extend .hiChat--primary-color-bg
+
+.hiChat--slider-counting
+	position: absolute
+	right: 15px
+	bottom: -64px
+	font-family: $barlow
+	+medium
+		bottom: -45px
+	+mobileLg
+		bottom: -40px
+	.current-slide
+		@extend .hiChat--heading-color
+		font-weight: $bold
+		font-size: 26px
+		font-style: italic
+		text-decoration: line-through
+	.total-slide
+		margin-left: 70px
+		position: relative
+		font-style: italic
+		font-size: 16px
+		font-weight: $semi-bold
+		&:after
+			position: absolute
+			left: -60px
+			top: 50%
+			width: 50px
+			height: 2px
+			background: #353535
+			content: ""
+			margin-top: -1px

@@ -1,0 +1,87 @@
+/* x.x: DamKe 404 Content */
+.damke_404-content
+	.error-img
+		margin-bottom: 85px
+		position: relative
+		img 
+			&:nth-child(2)
+				position: absolute
+				left: 42%
+				top: -8%
+				animation-duration: 6s !important
+				@extend .moveUpDown
+				+tab
+					left: 38%
+					top: -10%
+				+mobileLg
+					top: -24%
+					left: 35%
+				+mobileSm
+					max-width: 28%
+					left: 36%
+			&:nth-child(3)
+				position: absolute
+				right: 16.6%
+				bottom: 42%
+				+medium
+					right: 10.6%
+				+tab
+					right: -1%
+				+mobileLg
+					right: -4%
+					bottom: 38%
+				+mobileMd
+					max-width: 12%
+					bottom: 40%
+					right: -2%
+			&:nth-child(4)
+				position: absolute
+				left: 24%
+				bottom: 8%
+				+tab
+					left: 10%
+				+mobileSm
+					max-width: 25%
+	.search-form-wrap
+		h2 
+			font-size: 50px
+			font-weight: $bold
+			margin-bottom: 30px
+			+mobileLg
+				font-size: 40px
+		p 	
+			font-size: 25px
+			font-weight: $medium
+			+mobileLg
+				font-size: 20px
+		.search-form
+			position: relative
+			border-bottom: 1px solid $damke-p1
+			max-width: 645px
+			margin: 0 auto
+			margin-top: 56px
+			padding-bottom: 6px
+			input 	
+				border: 0
+				padding-left: 10px
+				width: 100%
+				font-size: 20px
+				font-weight: $medium
+				color: #b1b0b0
+				&:focus 
+					&::placeholder 
+						opacity: 0
+						visibility: hidden
+			button 
+				position: absolute
+				right: 6px
+				top: 50%
+				transform: translateY(-50%)
+				color: #b1b0b0
+	.back-top-btn
+		margin-top: 50px
+		a 
+			font-size: 20px
+			font-weight: $semi-bold
+			i 
+				margin-left: 5px

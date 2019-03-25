@@ -1,0 +1,114 @@
+
+.damke_footer-wrapper
+	position: relative
+	background-size: cover !important
+	background-repeat: no-repeat !important
+	overflow: hidden
+	@extend .damkeGradient1
+	.footer-bg
+		position: absolute
+		height: 100%
+		width: 100%
+		background-repeat: no-repeat !important
+		background-size: auto !important
+		animation: damke_map-move 12s linear 0s infinite
+		+mobileLg
+			display: none
+
+/* 5.1: Footer Top */
+
+.damke_footer-top
+	padding: 75px 0 46px 0
+	+mobileLg
+		padding: 40px 0 10px 0
+	.weidget
+		color: $white
+		margin-bottom: 30px
+		.footer-header
+			margin-bottom: 38px
+			h4 
+				font-size: 30px
+				color: $white
+				font-weight: $medium
+				+medium
+					font-size: 26px
+		.footer-content
+			.footer-contact-wrap
+				.footer-contact-list 
+					li 
+						font-size: 18px
+						padding-left: 40px
+						line-height: 1.67
+						position: relative
+						+medium
+							font-size: 16px
+						&:not(:last-child)
+							margin-bottom: 12px
+						span 
+							position: absolute
+							left: 0
+			.footer-social-area
+				margin-top: 24px
+				.footer--social-list
+					li 
+						display: inline-block
+						height: 40px
+						width: 40px
+						line-height: 40px
+						border-radius: 50%
+						text-align: center
+						@extend .damke_primary-color-bg
+						@extend .trans2
+						&:not(:last-child)
+							margin-right: 12px
+						&:hover
+							background-color: #ffffff
+							i 
+								@extend .damke_primary-color
+
+						i 
+							color: $white
+
+			.weidget-nav-menu
+				ul 
+					li  
+						@extend .trans3
+						&:not(:last-child)
+							margin-bottom: 12px
+						&:hover
+							padding-left: 5px
+						a 
+							font-size: 18px
+							color: $white
+							+medium
+								font-size: 16px
+							i 
+								color: $white
+								margin-right: 10px
+			.blog-list
+				li 
+					&:not(:last-child)
+						margin-bottom: 25px
+					a 
+						color: $white
+						font-size: 16px
+						span 
+							margin-right: 12px
+					h4 
+						margin-top: 10px
+						font-size: 18px
+						font-weight: $bold
+						line-height: 1.67
+
+/* 5.2: Footer Bottom */
+
+.damke_footer-bottom-wrap
+	.footer-bottom-text
+		border-top: 1px solid #8dc3cd
+		padding: 36px 0
+		p 
+			color: $white
+			margin-bottom: 0
+			a 
+				color: $white
+				font-weight: $semi-bold

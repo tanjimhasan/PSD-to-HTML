@@ -1,0 +1,47 @@
+.damke_page-title-inner
+	padding: 260px 0 180px
+	@extend .damkeGradient1
+	+mobileMd
+		padding: 150px 0 100px
+	.page-titleShape
+		position: absolute
+		left: -10%
+		top: 0
+		height: 100%
+		width: 100%
+		background-size: contain !important
+		background-position: left top !important
+		background-repeat: no-repeat !important
+	.page-title
+		h1 
+			font-size: 50px
+			color: $white
+			margin-top: -10px
+			font-weight: $semi-bold
+			margin-bottom: 12px
+			+mobileLg
+				font-size: 40px
+			+mobileXs
+				font-size: 32px
+		ul 
+			li
+				a 
+					font-size: 20px
+					font-weight: $medium
+					color: $white
+					+mobileMd
+						font-size: 18px
+					&:hover
+						color: #00f8ff
+				a.active
+					color: #00f8ff	
+
+			li + li 
+				&:before 
+					content:""
+					height: 8px
+					width: 8px
+					display: inline-block
+					margin: 0 5px 0 8px
+					background-color: $white
+					border-radius: 4px

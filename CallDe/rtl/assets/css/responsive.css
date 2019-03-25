@@ -1,0 +1,1132 @@
+/*
+
+[Responsive Stylesheet]
+
+Project: CallDe - Multipurpose Hosting with WHMCS and Technology Business Template
+Version: 1
+Author : themelooks.com
+
+
+NOTE:
+------
+PLEASE DO NOT EDIT THIS CSS, YOU MAY NEED TO USE "custom.css" FILE FOR WRITING YOUR CUSTOM CSS.
+WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SAFER TO USE "custom.css".
+
+
+/*============================================
+
+[Table of content]
+
+
+1. MEDIA QUERIES
+    1.1. Extra Large Device, Desktop
+    1.2. Large Device, Laptop
+    1.3. Large Tablet Device, TABLETS
+    1.4. Medium Device, Medium Screen
+    1.5. Small Device, Smartphone
+    1.6. Very Small Device, Small Screen's Smartphone
+    1.7. Extra Small Device, Iphone
+
+============================================*/
+
+
+/* 1.1 Extra large Devices */
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
+
+  /*service Details Table */
+  .service-details-table .table-responsive {
+    display: table !important;
+  }
+}
+
+
+/* 1.2 Large Devices */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+
+  /* Main Menu */
+  .main-menu ul li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .main-menu ul li>a {
+    font-size: 14px;
+  }
+  .main-menu ul li>ul {
+    left: 11px;
+  }
+  .main-slider .slick-dots {
+    margin-left: -35px;
+  }
+
+  /* Connection Image */
+  .connection-img img {
+    max-width: 500px;
+    top: -20px;
+  }
+
+  /* Pricing Table List */
+  .pricing-table-list .slick-dots {
+    margin-left: -35px;
+  }
+
+  /* Customer */
+  .customer-left-image{
+    display: none;
+  }
+  .client-logo-slider{
+    padding-right:20px;
+  }
+  .customers-commetns-wrapper{
+    padding-right:0;
+  }
+
+  /* Blog */
+  .blog-container .slick-dots {
+    margin-left: -35px;
+  }
+  .blog-details-bottom .tag-list {
+    -ms-flex-preferred-size: 60%;
+    flex-basis: 60%;
+  }
+
+  /* Subscription */
+  .subscription-heading h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  /* Feature Faq */
+  .feature-faq .faq-img {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Domain Table */
+  .domain-table-wrapper table thead th {
+    text-align: left;
+  }
+
+  /* Discount Form */
+  .discount-form-wrapper {
+    width: 40%;
+  }
+  
+  /* Feature Table */
+  .feature-table-container .table tr .features {
+    min-width: 240px;
+  }
+
+  .feature-table-container .table tr .virtual_c {
+    min-width: 230px;
+  }
+
+  .feature-table-container .table tr .physical_c {
+    min-width: 230px;
+  }
+
+  .feature-table-container .table tr .vertual_physical_c {
+    min-width: 230px;
+  }
+
+  .product-options .user-action-list .quantity{
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 48%;
+  }
+
+  .product-options .user-action-list .add-cart-btn{
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 28%;
+  }
+
+  .product-options .user-action-list .add-cart-btn a{
+    font-size:13px;
+  }
+
+  .product-options .user-action-list .user-task-links{
+      -ms-flex-preferred-size: 35%;
+      flex-basis: 28%;
+  }
+  .product-options .user-task-links{
+    margin-right: 0;
+  }
+  .product-options .user-task-links ul li{
+    padding-right:18px;
+  }
+
+  .product-options .user-task-links ul li:after{
+    right: 8px;
+  }
+}
+
+
+/* 1.3 Large Tablet Devices */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+
+  /* Header */
+  .main-header {
+    padding: 20px 0;
+  }
+
+  /* Main Menu */
+  .main-menu ul li>a:before {
+    display: none;
+  }
+  .main-menu .sub-menu-icon:after,
+  .main-menu .left-sub-menu-icon:after {
+    display: none;
+  }
+  .main-menu .left-sub-menu-icon:after {
+    display: none;
+  }
+  .main-slider .slick-dots {
+    margin-left: -35px;
+  }
+  .mobile-menu .mean-bar .meanmenu-reveal{
+    top:-28px;
+  }
+  /* Single Slider */
+  .single-slider-item .slide-content h2 {
+    font-size: 50px;
+    font-style: inherit;
+    line-height: 55px;
+  }
+  .single-slider-item .slide-content p {
+    max-width: 550px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  /* Service Details */
+  .service-details-title h2 {
+    max-width: 100%;
+  }
+
+  /* Connettion */
+  .connection-text h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .connection-text p {
+    margin-bottom: 30px;
+  }
+  .connection-img {
+    height: 45px;
+  }
+  .connection-img img {
+    max-width: 400px;
+    top: -25px;
+  }
+
+  /* Include Service List */
+  .include-services-list .slick-arrow {
+    left: -52px;
+  }
+  /* Service Solution */
+  .service-solution-img img {
+    display: none;
+  }
+  /* Single Counter */
+  .single-counter p {
+    font-size: 16px;
+  }
+
+  /* Pricing Table List */
+  .pricing-table-list .slick-dots {
+    margin-left: -20px;
+  }
+  /* Customer */
+  .customer-section{
+    padding-bottom:120px;
+  }
+  .customer-section-wrapper .customer-left-image {
+    display: none;
+  }
+  .customer-section-wrapper .customer-right-bg {
+    display: none;
+  }
+  .customer-fullwidth .customer-left {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .customer-fullwidth .customer-right {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  .customer-fullwidth .customer-right .customer-right-bg {
+    height: 550px;
+  }
+  .customers-commetns-wrapper {
+    padding-left: 30px;
+  }
+  .customers-commetns-wrapper .section-title h2 {
+    font-size: 30px;
+  }
+  .customers-commetns-wrapper .customer-comments{
+    padding-bottom:120px;
+  }
+  .customers-commetns-wrapper .customer-comments .slick-arrow{
+    bottom:50px;
+  }
+  .customers-commetns-wrapper .customer-comments .single-comment p {
+    font-size: 16px;
+  }
+
+  /* Client Logo Slider */
+  .client-logo-slider {
+    height: auto;
+    padding:15px 0;
+  }
+
+  .client-logo-slider:after{
+    width:100%;
+  }
+
+  /* Blog */
+  .blog-container .slick-dots {
+    margin-left: -20px;
+  }
+
+  /* App Wrapper */
+  .app-wrapper {
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+  .app-img img {
+    display: none;
+  }
+  /* Subscription Heading */
+  .subscription-heading h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 34px;
+  }
+
+  /* Feature Faq */
+  .feature-faq .faq-img img {
+    display: none;
+  }
+  .feature-faq .faq-wrapper h5 i {
+    left: 35px;
+  }
+
+  /* Single Sidebar */
+  .single-sidebar.sidebar-banner {
+    text-align: center;
+  }
+
+  /* Product Options */
+  .product-options .user-action-list .quantity {
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+  }
+  .product-options .user-action-list .add-cart-btn {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+  }
+  .product-options .user-action-list .user-task-links {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+  }
+  .product-options .user-task-links {
+    margin-left: 0;
+    margin-right:5px;
+  }
+  .product-options .user-task-links ul li {
+    padding-right: 20px;
+  }
+  .product-options .user-task-links ul li:after {
+    right: 10px;
+  }
+
+  /* Single Project Item */
+  .single-project-item {
+    width: 46%;
+    -ms-flex-preferred-size: 46%;
+    flex-basis: 46%;
+    margin: 0 2%;
+    margin-bottom:30px;
+  }
+
+  /* Single Pagination */
+  a.single-pagination {
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+  }
+  .single-pagination.pagination-icon {
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+  }
+
+  /* Call To Action */
+  .call-to-action h2 {
+    text-align: center !important;
+    margin-bottom: 25px;
+  }
+  .call-to-action .text-right {
+    text-align: center !important;
+  }
+
+  /* Contact Location */
+  #contact-location {
+    height: 450px !important;
+  }
+
+  /* Data Center Feature Image */
+  .data-center-feature-image {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  /* Team Member List */
+  .team-member-list .slick-arrow {
+    right: 42%;
+  }
+  .team-member-list .slick-arrow.slick-prev-btn {
+    right: 50%;
+  }
+
+
+  /* Discount Form */
+  .discount-form-wrapper {
+    width: 34%;
+  }
+  .discount-form-inner .input-group .input-group-append input {
+    width: 60%;
+  }
+  .discount-form-inner .input-group .input-group-append button {
+    width: 38%;
+  }
+
+  /* Footer */
+  .footer-bottom .text-right {
+    text-align: center !important;
+  }
+  .footer-bottom .text-left {
+    text-align: center !important;
+  }
+  .footer-bottom .copy-right-text p {
+    margin-bottom: 15px;
+  }
+}
+
+
+/* 1.4 Medium Devices */
+@media only screen and (max-width: 767.98px) {
+
+  /* Header Top */
+  .header-top {
+    padding: 20px 0;
+  }
+  .heder-top-info {
+    margin-bottom: 10px;
+  }
+  .heder-top-info li {
+    border: 0;
+    height: auto;
+  }
+  .header-top-menu .header-top-dropdown {
+    border: 0;
+    height: auto;
+  }
+  .header-top-menu .header-top-dropdown:hover ul {
+    top: 38px;
+  }
+
+  /* Main Header */
+  .main-header {
+    padding: 20px 0;
+  }
+  .main-menu ul li>a:before {
+    display: none;
+  }
+  .main-menu .sub-menu-icon:after,
+  .main-menu .left-sub-menu-icon:after {
+    display: none;
+  }
+
+
+  /* Mobile Menu */
+  .mobile-menu .mean-bar .meanmenu-reveal {
+    top: -28px;
+    right: 180px !important;
+  }
+
+  /* Header Form */
+  .header-form {
+    display: none;
+  }
+
+  /* Header Cart */
+  .header-cart {
+    margin-right: 60px;
+  }
+  .header-cart:after {
+    display: none;
+  }
+
+  /* Slider dots */
+  .main-slider .slick-dots {
+    margin-left: -35px;
+  }
+
+  /* Single Slider Item */
+  .single-slider-item .slide-content h2 {
+    font-size: 50px;
+    font-style: inherit;
+    line-height: 55px;
+  }
+
+  /* Exclusive Service List */
+  .exclusive-service-list .slick-arrow {
+    top: -38px !important;
+  }
+
+  /* Service Details Title */
+  .service-details-title h2 {
+    max-width: 100%;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .service-details-title p {
+    font-size: 17px;
+  }
+
+  /* Connection */
+  .connection-text p {
+    margin-bottom: 10px;
+  }
+  .connection-person img {
+    display: none;
+  }
+  .connection-img {
+    height: auto;
+  }
+  .connection-img img {
+    max-width: 100%;
+    position: static;
+  }
+
+  /* Include Service List */
+  .include-services-list .slick-arrow {
+    left: -32px;
+    top:0;
+  }
+
+  .slick-arrow.slick-prev-btn{
+    bottom:0;
+    top:auto;
+  }
+
+  /* Service Solution */
+  .service-solution-text h2 {
+    font-size: 32px;
+  }
+  .service-solution-img img {
+    display: none;
+  }
+
+  /* Pricing Table List */
+  .pricing-table-list .slick-dots {
+    margin-left: -35px;
+  }
+
+  /* Customer */
+  .customer-section{
+    padding-bottom:120px;
+  }
+  .customer-section-wrapper .customer-left-image {
+    display: none;
+  }
+  .customer-section-wrapper .customer-right-bg {
+    display: none;
+  }
+  .customers-commetns-wrapper {
+    padding-left: 30px;
+  }
+  .customers-commetns-wrapper .customer-comments{
+    padding-bottom:100px;
+  }
+  .customers-commetns-wrapper .customer-comments .slick-arrow{
+    bottom:30px;
+  }
+  .client-logo-slider{
+    height:110px;
+    padding-right:0;
+    margin-left:0;
+  }
+  
+  .client-logo-slider .single-logo{
+    padding:20px 0;
+  }
+  .client-logo-slider:after{
+    width:110%;
+    left:-4%;
+  }
+
+
+  /* Blog */
+  .blog-container .slick-dots {
+    margin-left: -35px;
+  }
+  .blog-details-content .left-align-img {
+    float: none;
+    max-width: 100%;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .blog-details-bottom .tag-list {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+  .blog-detials-pagination:after {
+    display: none;
+  }
+
+  /* App Wrapper */
+  .app-wrapper {
+    margin-top: 0;
+    margin-bottom: 95px;
+  }
+
+  /* App Image */
+  .app-img img {
+    display: none;
+  }
+
+  /* Subscription Heading */
+  .subscription-heading h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 34px;
+  }
+  /* Feature Faq */
+  .feature-faq .faq-img img {
+    display: none;
+  }
+  .feature-faq .faq-wrapper h5 i {
+    left: 100px;
+  }
+
+  /* Single Sidebar */
+  .single-sidebar.sidebar-banner {
+    text-align: center;
+  }
+
+  /* Tab Menu */
+  .tab-menu-box .single-tab-menu .single-tab-menu-item a {
+    margin: 0 20px;
+  }
+
+  /* Product Options */
+  .product-options .user-action-list .quantity {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+  }
+  .product-options .user-action-list .add-cart-btn {
+    -ms-flex-preferred-size: 15%;
+    flex-basis: 15%;
+  }
+  .product-options .user-action-list .user-task-links {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+  }
+
+  /* Single Project Item */
+  .single-project-item {
+    width: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  /* Single Pagination */
+  a.single-pagination {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-top: 25px;
+    display: block;
+  }
+  a.single-pagination:first-child {
+    margin-top: 0;
+  }
+
+  /* Call to Action */
+  .call-to-action h2 {
+    text-align: center !important;
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .call-to-action .text-right {
+    text-align: center !important;
+  }
+
+  /* Contact Location */
+  #contact-location {
+    height: 400px !important;
+  }
+
+  /* Data Center Feature Image */
+  .data-center-feature-image {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  /* Company Detials */
+  .company-details h2 {
+    font-size: 30px;
+  }
+
+  /* Team Member List */
+  .team-member-list .slick-arrow {
+    right: 42%;
+  }
+  .team-member-list .slick-arrow.slick-prev-btn {
+    right: 52%;
+  }
+
+  /* Affiliate Program */
+  .affilate-programs-commission .affilate-title h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  /* Single Affiliate Program */
+  .single-affiliate-program {
+    display: block !important;
+  }
+  .single-affiliate-program .program-img {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .single-affiliate-program .program-detials {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  /* Cart Table Actions */
+  .cart-table-actions {
+    display: block !important;
+    width: 100%;
+  }
+
+  /* Discount Form */
+  .discount-form-wrapper {
+    width: 100%;
+  }
+
+  /* Footer Bottom */
+  .footer-bottom .text-right {
+    text-align: center !important;
+  }
+  .footer-bottom .text-left {
+    text-align: center !important;
+  }
+  .footer-bottom .copy-right-text p {
+    margin-bottom: 15px;
+  }
+}
+
+
+/* 1.5 Small Devices */
+@media only screen and (max-width: 576px) {
+
+  /* Header Top */
+  .heder-top-info li:nth-child(2) {
+    display: none;
+  }
+
+  /* Main Menu */
+  .main-menu ul li>a:before {
+    display: none;
+  }
+  .main-menu .sub-menu-icon:after,
+  .main-menu .left-sub-menu-icon:after {
+    display: none;
+  }
+
+  /* Mobile Menu */
+  .mobile-menu .mean-bar .meanmenu-reveal {
+    top: -28px;
+    right: 180px !important;
+  }
+
+  /* Header Cart */
+  .header-cart {
+    margin-right: 60px;
+  }
+  .header-cart:after {
+    display: none;
+  }
+
+  /* Section Title */
+  .section-title h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  /* Single Slider Item */
+  .single-slider-item .slide-content h2 {
+    font-size: 40px;
+    font-style: inherit;
+    line-height: 50px;
+  }
+  .single-slider-item .slide-content .bordered-btn,
+  .single-slider-item .slide-content .boxed-btn {
+    padding: 10px 15px;
+  }
+
+  /* Connection */
+  .connection-text h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .connection-person img {
+    display: none;
+  }
+
+  /* Include Service list */
+  .include-services-list .slick-arrow {
+    top: 5px;
+  }
+  .include-services-list .slick-arrow.slick-next-btn {
+    top: auto;
+    bottom: 5px;
+  }
+
+  /* Service Solution */
+  .service-solution-text h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .service-solution-img img {
+    display: none;
+  }
+
+  /* Blog Details */
+  .blog-details-bottom .tag-list {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .blog-details-bottom .social-icons {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+
+  /* App Content */
+  .app-content ul li {
+    margin-top: 15px;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .app-content ul li:first-child {
+    margin-top: 0;
+  }
+
+  /* App Image */
+  .app-img img {
+    display: none;
+  }
+
+  /* Subscription */
+  .subscription-heading h2 {
+    font-size: 26px;
+  }
+  .subcription-form .input-ground input[type=email],
+  .checker-form .input-ground input[type=email] {
+    width: 70%;
+  }
+  .subcription-form .input-ground input[type=submit],
+  .checker-form .input-ground input[type=submit] {
+    width: 30%;
+  }
+
+  /* Sidebar */
+  .sidebar-price .filter-form button {
+    padding: 10px 25px;
+  }
+
+  /* Tab Menu */
+  .tab-menu-box .single-tab-menu .single-tab-menu-item a {
+    margin: 0 10px;
+  }
+
+  /* Product Options */
+  .product-options .product-title {
+    line-height: 35px;
+  }
+  .product-options .user-action-list .add-cart-btn {
+    -ms-flex-preferred-size: 20%;
+    flex-basis: 20%;
+  }
+  .product-options .user-task-links {
+    margin-right: 0;
+  }
+
+  /* Product Detials */
+  .product-detials-tab-container .product-detail-menu ul {
+    margin-bottom: -10px;
+  }
+  .product-detials-tab-container .product-detail-menu ul li {
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Project */
+  .project-gallery p {
+    margin-top: -15px;
+  }
+  .project-filter li {
+    margin-bottom: 15px;
+  }
+  .single-project-item .project-gallery-hover .gallery-text p {
+    margin-top: 0;
+  }
+
+  /* Contact Location */
+  #contact-location {
+    height: 350px !important;
+  }
+
+  /* Team Member */
+  .team-member-list .slick-arrow {
+    right: 36%;
+  }
+  .team-member-list .slick-arrow.slick-prev-btn {
+    right: 52%;
+  }
+}
+
+
+/* 1.5 Very Small Devices */
+@media only screen and (max-width: 479px) {
+
+  /* Connection Person */
+  .connection-person img {
+    display: none;
+  }
+
+  /* Include Service List */
+  .include-services-list .slick-arrow {
+    top: 0;
+  }
+  .include-services-list .slick-arrow.slick-next-btn {
+    top: auto;
+    bottom: 0;
+  }
+
+  /* Service Solution */
+  .service-solution-text h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .service-solution-img img {
+    display: none;
+  }
+
+  /* Post Author */
+  .post-author {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .post-author .author-details {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .post-author .author-details {
+    margin-left: 0;
+  }
+
+  /* Comment reply */
+  .comment-reply .comment-list>li .comment-child {
+    margin-left: 25px;
+  }
+  .comment-reply .single-comment .comment-text {
+    margin-left: 10px;
+  }
+
+  /* Customer */
+  .single-logo{
+    margin:0 55px;
+  }
+
+  /* App Content */
+  .app-content h2 {
+    font-size: 30px;
+  }
+  .app-content .subtitle {
+    font-size: 16px;
+  }
+  .app-content ul li .btn-icon {
+    padding: 6px 10px;
+  }
+
+  /* Feature Faq */
+  .feature-faq .faq-wrapper h5 {
+    font-size: 14px !important;
+  }
+  .feature-faq .faq-wrapper h5 i {
+    left: -5px;
+  }
+
+  /* Product Options */
+  .product-options .user-action-list {
+    margin-bottom: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: normal !important;
+    -ms-flex-align: normal !important;
+    -ms-grid-row-align: normal !important;
+    align-items: normal !important;
+  }
+  .product-options .user-action-list .quantity {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .product-options .user-action-list .add-cart-btn {
+    -ms-flex-preferred-size: 70%;
+    flex-basis: 70%;
+    margin-bottom: 20px;
+  }
+  .product-options .user-action-list .user-task-links {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Domain Checker */
+  .domain-checker-form-wrapper {
+    padding: 30px 15px;
+  }
+  .domain-checker-form-wrapper .checker-form .input-ground input[type=email] {
+    padding: 4px;
+  }
+  .domain-checker-form-wrapper .checker-form .input-ground input[type=submit] {
+    width: 40%;
+  }
+  .domain-checker-form-wrapper .checker-form .domain-slider .single-domain {
+    margin: 0;
+  }
+
+  /* Order Details Box */
+  .order-detail-box {
+    padding: 25px 10px;
+  }
+
+  /* Data Center */
+  .data-center-countries .data-center-title {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  /* Discount Form */
+  .discount-form-inner {
+    width: 80%;
+  }
+  .discount-form-inner .input-group .input-group-append input {
+    width: 62%;
+  }
+  .discount-form-inner .input-group .input-group-append button {
+    width: 36%;
+  }
+
+  /* Shopping Actions */
+  .shopping-actions .bordered-btn {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* .17 Extra Small Devices */
+@media only screen and (max-width: 379px) {
+
+  /* Header top */
+  .header-top-menu .header-top-dropdown ul {
+    right: -25px;
+    width: 110px;
+  }
+  .header-top-menu .header-top-dropdown ul li {
+    padding: 12px 14px;
+  }
+  .header-top-menu .header-top-dropdown ul a {
+    font-size: 13px;
+  }
+
+  /* Mobile Menu */
+  .mobile-menu .mean-bar .meanmenu-reveal {
+    top: -28px;
+    right: 176px !important;
+  }
+
+  /* Single Slider */
+  .single-slider-item .row {
+    padding: 120px 0;
+  }
+
+  /* Client Logo */
+  .client-logo-slider .slick-track{
+    right:16%;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb-area h2 {
+    line-height: 48px;
+  }
+
+  .breadcrumb-area ul {
+    margin-top: 5px;
+  }
+  
+  /*Single Affilate Program*/
+  .single-affiliate-program .program-img{
+    display:none;
+  }
+  .single-feature-two{
+    padding:30px 40px;
+  }
+  /* Tab Menu */
+  .tab-menu-box .single-tab-menu .slick-arrow {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    bottom: 15%;
+  }
+  .tab-menu-box .single-tab-menu .single-tab-menu-item a {
+    margin: 0 5px;
+  }
+
+  /* Faq Wrapper */
+  .faq-wrapper .card-header h5 {
+    max-width: 320px;
+  }
+
+  /* Data Center Feature Image */
+  .data-center-feature-image img {
+    min-height: 320px;
+  }
+
+  /* Team Member List */
+  .team-member-list .slick-arrow {
+    right: 32%;
+  }
+}
+
+
+
+
+
+
+
+
+

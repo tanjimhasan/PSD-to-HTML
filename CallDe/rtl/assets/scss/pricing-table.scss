@@ -1,0 +1,172 @@
+/*=============================================
+    9: Pricing Table
+==============================================*/
+
+/* Pricing Table List */
+
+.pricing-table-list{
+    margin:0 -14px;
+    .slick-slide{
+        margin:0 15px;
+        margin-bottom:40px;
+    }
+    .slick-dots{
+        margin-left: -25px;
+        @media #{$desktop-device}{
+            margin-left: -35px;
+        }
+        @media #{$tablet-device}{
+            margin-left: -20px;
+        }
+        @media #{$large-mobile}{
+            margin-left: -35px;
+        }
+    }
+     
+}
+
+.pricing-table-list.style-2{
+    .slick-dots{
+        li{
+            button{
+                border-color:#8287a7;
+                background:transparent;
+            }
+        }
+        li.slick-active{
+            button{
+                background:$sub-title-color;
+                height:12px;
+                margin-top:-6px;
+            }
+        }
+    }
+}
+
+/* Pricing Tab Menu */
+
+.pricing-tab-menu{
+    margin-bottom:65px;
+}
+/* Single Pricing Tab Menu */
+
+.single-pricing-tab-menu-item{
+    a{
+        border:1px solid #e2e6fb;
+        display:inline-block;
+        padding:8px 30px;
+        color:$heading-color;
+        font-size:16px;
+        font-family: 'PT Sans', sans-serif;
+        font-weight:500;
+        text-decoration:none;
+        background:transparent;
+    }
+    a.active{
+        color:#fff;
+        background:$primary-color;
+        border:1px solid $primary-color;
+    }
+}
+
+/* 9.1: Single Pricing Table */
+
+.single-pricing-table{
+    color: #8287a7;
+    padding-top: 30px;
+    transition: all .2s;
+    background-size: contain!important;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat!important;
+    background-position: bottom!important;
+    background-color:#fff !important;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    &:hover{
+            box-shadow: 0 15px 15px rgba(0,0,0,.09);
+        .pricing-head{
+            &:before{
+                background:$primary-color;
+            }
+        }
+    }
+    .pricing-head{
+        border-bottom:0 solid #e2e6fb;
+        transition:.3s;
+        padding:0 30px;
+        position:relative;
+        &:before{
+            position:absolute;
+            left:0;
+            right:0;
+            bottom:-28px;
+            margin: 0 auto;
+            background:#e2e6fb;
+            width:84%;
+            height:1px;
+            content:"";
+
+        }
+        h4{
+            color:$primary-color;
+            font-weight:400;
+            font-size:18px;
+            margin-bottom:25px;
+        }
+        h2{
+            font-size:30px;
+            font-weight:600;
+            span{
+                font-size:14px;
+                font-weight:500;
+            }
+        }
+        p{
+            font-size:16px;
+            font-family: 'PT Sans', sans-serif;
+            color:$sub-title-color;
+            margin-bottom:25px;
+        }
+    }
+    .pricing-content{
+        padding:0 30px;
+        padding-top:25px;
+        ul{
+            li{
+                color:$sub-title-color;
+                margin-bottom:12px;
+                &:last-child{
+                    margin-bottom:0;
+                }
+            }
+        }
+        a.bordered-btn{
+            margin-top:30px;
+            margin-bottom:20px;
+        }
+    }
+}
+
+/* Single Pricing Table Active */
+
+.single-pricing-table.active{
+    overflow:hidden;
+    .pricing-head{
+        position:relative;
+        &:after{
+            content: "Popular Plan";
+            position: absolute;
+            right: -38px;
+            top: -6px;
+            background: #31333e;
+            color: #fff;
+            font-family: 'PT Sans', sans-serif;
+            font-weight: 800;
+            font-size: 12px;
+            padding: 5px 36px;
+            transform: rotate(45deg);
+            text-transform: Uppercase;
+            font-weight:400;
+        }
+    }
+}

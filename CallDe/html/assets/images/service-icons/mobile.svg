@@ -1,0 +1,15 @@
+<svg id="Services" xmlns="http://www.w3.org/2000/svg" width="35" height="60" viewBox="0 0 35 60">
+  <defs>
+  </defs>
+  <g id="Services-2" data-name="Services">
+    <g id="_1" data-name="1">
+      <g id="VOIP_App_Hover_" data-name="VOIP App (Hover)">
+        <g id="Hover">
+          <g id="Content">
+            <path id="Icon" class="cls-1" d="M30.943,0H4.056A4.074,4.074,0,0,0-.017,4.052V55.944A4.077,4.077,0,0,0,4.056,60H30.943a4.075,4.075,0,0,0,4.074-4.053V4.052A4.075,4.075,0,0,0,30.943,0ZM13.2,2.92h8.6a0.491,0.491,0,1,1,0,.982H13.2A0.491,0.491,0,1,1,13.2,2.92Zm4.3,55.053a2.026,2.026,0,1,1,2.036-2.027A2.032,2.032,0,0,1,17.5,57.973ZM32.183,52.5H2.818V6.426H32.183V52.5Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

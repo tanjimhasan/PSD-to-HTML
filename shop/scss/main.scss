@@ -1,0 +1,135 @@
+/*---------------------------------------------
+
+    Template Name: - Crypdrone
+    Version: 1.0
+    Author:         ThemeLooks
+    Author url:     http://themelooks.com
+
+    NOTE:
+    -----
+    Please DO NOT EDIT THIS CSS, you may need to use "custom.css" file for writing your custom css.
+    We may release future updates so it will overwrite this file. it's better and safer to use "custom.css".
+
+    [Table of Content]
+
+    xx: General CSS 
+        x.x: Default CSS
+        x.x: Background
+        x.x: Buttons
+        x.x: Margin/Padding
+        x.x: Animations
+
+    xx: Header
+        xx:Main Header
+            xx: Header Side Category
+                xx: Category Menu
+                    xx: Cateory Sub Menu
+            xx: Header Middle Top
+            xx: Header Middle Bottom
+                xx: Main Menu
+                    xx: Sub Menu
+                        xx: Sub Menu Button
+                xx: Header Search Block
+                    xx: Header Search Button
+            xx: Header Phone
+        xx:Sticky Header
+        xx: Mobile Menu
+
+    xx: Banner
+        xx: Single Banner Slider
+
+    xx: Special Feature Area
+        xx: Single Feature
+
+    xx: Top Category Slider
+        xx: Single Top Category
+
+    xx: Section Title
+        xx: Section Title Text
+        xx: What New Section Title
+            xx: What New Section Title Product Slider Menu
+
+    xx: Product
+        xx: Single Product Item
+            xx: Product meta
+            xx: Product Actions
+            xx: Product tag
+            xx: Product Slider nav
+        xx: double row double product slider
+            xx: double row double product slider Nav
+
+    xx: Testimonial
+        xx: Single Testimonial
+
+    xx: Call To Action
+
+    xx: Blog
+        xx:Single Blog
+
+    xx: Page Title
+
+    xx: Shop 
+        xx: Shop Tool Bar
+
+    xx: Shop Details
+        xx: Shop Product Details
+        
+    xx: About Us
+        
+    xx: Footer
+
+    xx: Modal Window
+        xx: Quick View Modal
+        xx: WishList Modal
+
+    xx: Cart
+
+    xx: Other
+        xx: Back To Top
+
+----------------------------------------------*/
+
+
+@import 'variables';
+
+@import 'general';
+
+@import 'header';
+
+@import 'banner';
+
+@import 'speacial-feature';
+
+@import 'top-category-slider';
+
+@import 'section-title';
+
+@import 'product';
+
+@import 'testimonial';
+
+@import 'blog';
+
+@import 'page-title';
+
+@import 'call-to-action';
+
+@import 'countdown';
+
+@import 'shop';
+
+@import 'shop-details';
+
+@import 'cart';
+
+@import 'checkout';
+
+@import 'about';
+
+@import 'single-product';
+
+@import 'footer';
+
+@import 'modal-window';
+
+@import 'other';

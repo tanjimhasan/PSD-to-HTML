@@ -1,0 +1,57 @@
+/* x.x: DAMKE Sidebar Category Weidget */
+
+.damke-service-sidebar
+	.weidget 
+		margin-bottom: 50px
+		&:last-child 
+			+tab 
+				margin-bottom: 0
+		.weidget-inner
+			background-color: $white
+			padding: 45px 30px
+			border-radius: 20px
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)
+			.weidget-title
+				h4 
+					font-size: 25px
+					margin-bottom: 40px
+
+.damke_category-weidget
+	ul 
+		li 
+			background-color: $white
+			display: flex
+			align-items: center
+			padding: 12px 20px
+			border-radius: 26.5px
+			@extend .trans3
+			&:not(:last-child) 
+				margin-bottom: 20px
+			&:hover
+				background-color: #3fd9d5
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09)
+				i,a,svg,img
+					color: $white
+			&.active
+				background-color: #3fd9d5
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09)
+				i,a,svg,img
+					color: $white
+			i,img,svg 
+				margin-right: 18px
+				@extend .damke_heading-color
+			a 
+				font-size: 16px
+				font-weight: $medium
+				@extend .damke_heading-color
+
+.damke_contact-weidget
+	.contact-form
+		.damke_input-wrapper
+			border-color: #25cab3
+			input 	
+				@extend .damke_heading-color
+		.damke_siteBtn
+			width: 100%
+			box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1)
+			background-color: #25cab3

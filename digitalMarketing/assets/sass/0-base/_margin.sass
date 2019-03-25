@@ -1,0 +1,19 @@
+/* ************************
+   xx: Margin
+   ********************* */
+// Margin Top
+@for $i from 1 through 20 
+  .mt-#{$i * 10} 
+    margin-top : #{$i * 10}px
+    +mobileLg
+        margin-top : #{($i * 10)/2}px
+
+// Margin Bottom
+@for $i from 1 through 20 
+  .mb-#{$i * 10} 
+    margin-bottom : #{$i * 10}px
+    +mobileLg
+        margin-bottom : #{($i * 10)/2}px
+
+  
+

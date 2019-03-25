@@ -1,0 +1,79 @@
+
+/* 7.1: DAMKE Banner */
+.damke_banner-shape
+	position: absolute
+	right: 30%
+	left: 0
+	top: 0
+	+mobileMd
+		right: 12%
+.damke_banner-shape.style-2
+	right: 35%
+.damke_banner-area-inner , .damke_coming-soon-inner
+	padding-top: 150px
+	padding-bottom: 90px
+	+tab
+		padding-top: 90px
+	
+	.banner-image
+		position: relative
+		img 
+			&:nth-child(2)
+				position: absolute
+				right: 30%
+				bottom: 40%
+				animation-duration: 6s !important
+				@extend .moveUpDown
+				+medium
+					right: 27%
+				+mobileLg
+					bottom: 38%
+				+mobileSm
+					width: 6%
+				+customMq(0px,320px)
+					right: 20%
+					bottom: 34%
+			&:nth-child(3)
+				position: absolute
+				left: 14%
+				bottom: 30%
+				animation-duration: 6s !important
+				@extend .moveUpDown
+				+medium
+					left: 12%
+					bottom: 27%
+				+tab
+					left: 18%
+					bottom: 30%
+				+mobileLg
+					left: 12%
+					bottom: 26%
+				+mobileMd
+					bottom: 28%
+				+mobileSm
+					left: 8%
+					bottom: 32%
+					width: 12%
+			&:nth-child(4)
+				position: absolute
+				left: 14%
+				bottom: 30%
+		+tab 
+			text-align: center
+			margin-bottom: 15px
+	.banner-content
+		h1 
+			font-size: 80px
+			font-weight: $semi-bold
+			margin-bottom: 22px
+			+tab
+				font-size: 72px
+			+mobileSm
+				font-size: 60px
+			+mobileXs
+				font-size: 52px
+		p 
+			font-size: 18px
+			font-weight: $regular
+			line-height: 1.67
+			margin-bottom: 28px

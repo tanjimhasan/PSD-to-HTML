@@ -1,0 +1,92 @@
+/*=============================================
+    20: FAQ
+==============================================*/
+
+.faq-section{
+	h2{
+		margin-bottom:40px !important;
+	}
+}
+
+/* Faq Header */
+
+.faq-header{
+	padding-bottom:20px;
+	border-bottom:1px solid #e2e6fb;
+	h3{
+		font-weight:700;
+		font-size:18px;
+		margin-bottom:0;
+		span{
+			color:$primary-color;
+			float:right;
+			font-family: 'PT Sans', sans-serif;
+			font-weight:700;
+			font-size:14px;
+			line-height:24px;
+		}
+	}
+}
+
+/* Faq Wrapper */
+
+.faq-wrapper{
+	.card{
+		border:0;
+		background:#fff;
+	}
+	.card-header{
+		border:0;
+		padding:0;
+		background:#fff;
+		margin-bottom: 0;
+		h5{
+				font-size:16px;
+				color:$text-color;
+				text-decoration:none;
+				padding-left:16px;
+				position:relative;
+				font-weight:500;
+				cursor:pointer;
+				line-height:30px;
+				@media #{$very-extra-small-mobile}{
+					max-width:320px;
+				}
+				i{
+				    position: absolute;
+				    left: 0;
+    				top: 10px;
+				    display: none;
+				    color:$primary-color;
+				    font-size:12px;
+				}
+			}
+			[aria-expanded=false]{
+				i.fa-angle-right{
+					display:block;
+				}
+			}
+			[aria-expanded=true]{
+				i.fa-angle-down{
+					display:block;
+			}
+		}
+
+	}
+	.card-body{
+		padding:0;
+		color:$sub-title-color;
+		line-height:24px;
+		padding-left:20px;
+	}  
+	.more-btn{
+		margin-top:25px;
+		display:inline-block;
+		font-family: 'PT Sans', sans-serif;
+		font-weight:500;
+		font-size:16px;
+		i{
+			font-size:14px;
+		}
+	}
+}

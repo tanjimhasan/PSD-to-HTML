@@ -1,0 +1,34 @@
+
+// transitions
+.trans2
+	+transition(.2s,linear)
+.trans3
+	+transition(.3s,linear)
+
+.trans7
+	+transition(.7s,ease)
+
+// Colors
++colors($hiChat-p1,hiChat--primary-color)
++colors($hiChat-heading,hiChat--heading-color)
++colors($hiChat-s1,hiChat--secondary-color)
+
+// Animations
+.animFadeIn
+	+animation(fadeIn,.8s,ease,0s,1)
+.animFadeInDown
+	+animation(fadeInDown,.8s,ease,0s,1)
+.animFadeInRight
+	+animation(fadeInRight,.8s,ease,0s,1)
+.animFadeOutLeft
+	+animation(fadeOutLeft,1s,ease,0s,1)
+.animMoveLeftRight
+	+animation(moveLeftRight,3s,linear,0s,infinite)
+.moveUpDown
+	+animation(moveUpDown,3s,linear,0s,infinite)
+	
+// Gradient
+.hiChatGradient
+	+horizontal-gradient($hiChat-gradient1,$hiChat-gradient2)
+.hiChatMetroGradient
+	+vertical-gradient(#ffffff,#000000)

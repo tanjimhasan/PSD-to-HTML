@@ -1,0 +1,156 @@
+/*=============================================
+    xx: Cart
+==============================================*/
+
+/* xx: Cart List Table */
+.shop--cart-list-form-wrapper{
+	padding:0 40px;
+}
+.shop--cart-list-table{
+	margin-bottom:0;
+	margin-top: -4px;
+	thead{
+		tr{
+			border-bottom:1px solid $heading-color;
+			td{
+				border-top:0;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 14px;
+				color:$heading-color;
+				font-weight:500;
+				padding-top:0;
+			}
+		}
+	}
+	tbody{
+		tr{
+			border-bottom:1px solid $border-color;
+			&:last-child{
+				border-bottom-color: $heading-color;
+			}
+			td{
+				vertical-align: middle;
+				border-top:0;
+			}
+		}
+	}
+	.shop--pro-info{
+		display: flex;
+		align-items: center;
+		min-width: 200px;
+		.shop--product-img-wrap{
+			margin-right:10px;
+		}
+	}
+	.shop--pro-quantity{
+		min-width: 110px;
+	}
+}
+
+.shop--cart-list-bottom{
+	margin-top:40px;
+	.shop--cart-btn{
+		a{
+			color:$heading-color;
+			border-color:$heading-color;
+			line-height: 24px;
+			padding:10px 15px;
+			display: inline-block;
+			&:hover{
+				background-color:$primary-color;
+				color:#fff;
+			}
+		}
+	}
+	.shop--shopping-btn{
+		margin-left:10px;
+		@media #{$iphone-devices}{
+			margin-left:0;
+			margin-top:25px;
+		}
+	}
+	.shop--coupon{
+		position:relative;
+		margin-top:60px;
+		@media #{$tablet-device}{
+			margin-top:40px;
+			margin-bottom:40px;
+		}
+		@media #{$large-mobile}{
+			margin-top:40px;
+			margin-bottom:40px;
+		}
+		input[type=text]{
+			width:100%;
+			height: 40px;
+			padding-left:10px;
+			padding-right:120px;
+			@media #{$iphone-devices}{
+				padding-right:100px;
+			}
+		}
+		button{
+			position: absolute;
+		    background-color: $heading-color;
+		    padding: 0 15px;
+		    font-size: 14px;
+		    height: 40px;
+		    line-height: 40px;
+		    right: 0;
+		    top:0;
+		    color:#fff;
+		    transition:.35s;
+		    @media #{$iphone-devices}{
+				padding:0 10px;
+			}
+		}
+	}
+	.shop--total-table-wrap{
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+		padding:25px;
+		@media #{$iphone-devices}{
+			padding:15px;
+		}
+		h4{
+			font-size: 16px;
+			font-weight:600;
+		}
+		.table{
+			margin-bottom: 0;
+		}
+		tbody{
+			tr{
+				td{
+					color:$heading-color;
+					&:last-child{
+						color:$text-color;
+					}
+				}
+			}
+		}
+		tfoot{
+			tr{
+				td{
+					color:$heading-color;
+					font-size:14px;
+					font-weight: 600;
+				}
+			}
+		}
+		.shop--proceed-to-checkout{
+			text-align: center;
+			margin-top:15px;
+			a{
+				color: #1a1a1a;
+			    border-color: #1a1a1a;
+			    line-height: 24px;
+			    padding: 10px 15px;
+			    transition:.35s;
+			    &:hover{
+			    	background-color: $heading-color;
+			    	color:#fff;
+			    }
+			}
+		}
+	}
+}

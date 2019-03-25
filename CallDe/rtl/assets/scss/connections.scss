@@ -1,0 +1,83 @@
+/*=============================================
+    6: Connections
+==============================================*/
+
+.connection-bg{
+	background-size:cover;
+	background-position:center;
+	background-color:#ddd;
+	background-image:url('../images/connections/connection-bg.jpg');
+}
+.connection-text{
+	h2{
+		font-size:36px;
+		font-weight:500;
+		line-height:48px;
+		margin-bottom:0;
+		@media #{$tablet-device}{
+			font-size:32px;
+			line-height:40px;
+		}
+		@media #{$small-mobile}{
+			font-size:30px;
+			line-height:40px;
+		}
+		span{
+			color:$primary-color;
+		}
+	}
+	p{
+		font-size:18px;
+		margin-top:35px;
+		line-height:30px;
+		@media #{$tablet-device}{
+			margin-bottom:30px;
+		}
+		@media #{$large-mobile}{
+			margin-bottom:10px;
+		}
+	}
+}
+
+.connection-person{
+	img{
+		@media #{$large-mobile}{
+			display:none;
+		}
+		@media #{$small-mobile}{
+			display:none;
+		}
+		@media #{$extra-small-mobile}{
+			display:none;
+		}
+	}
+}
+
+.connection-img{
+	height:50px;
+	@media #{$tablet-device}{
+		height:45px;
+	}
+	@media #{$large-mobile}{
+		height:auto;;
+	}
+	img{
+		position:absolute;
+		left:0;
+		right:0;
+		margin:auto;
+		top:-30px;
+		@media #{$desktop-device}{
+			max-width:500px;
+			top:-20px;
+		}
+		@media #{$tablet-device}{
+			max-width:400px;
+			top:-25px;
+		}
+		@media #{$large-mobile}{
+			max-width:100%;
+			position:static;
+		}
+	}
+}
