@@ -95,17 +95,18 @@ Author:         TemplateBuilder
 
         /* 07: Portfolio Filter
          ==============================================*/
-         
-        $(".portfolio-list").isotope();
-        $('.portfolio-filter li').on('click', function () {
-            $('.portfolio-filter li').removeClass("active");
-            $(this).addClass("active");
-            let selector = $(this).attr("data-filter");
-            $('.portfolio-list').isotope({
-                filter: selector,
-                percentPosition: true,
-                layoutMode: 'fitRows',
-                transitionDuration: '0.8s'
+        $(window).load(function() {
+            $(".portfolio-list").isotope();
+            $('.portfolio-filter li').on('click', function () {
+                $('.portfolio-filter li').removeClass("active");
+                $(this).addClass("active");
+                let selector = $(this).attr("data-filter");
+                $('.portfolio-list').isotope({
+                    filter: selector,
+                    percentPosition: true,
+                    layoutMode: 'fitRows',
+                    transitionDuration: '0.8s'
+                });
             });
         });
 
