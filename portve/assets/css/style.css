@@ -879,7 +879,7 @@ h6 {
 
 .main-menu ul li a:after {
   position: absolute;
-  top: 100%;
+  top: 120%;
   left: 0;
   opacity: 0.8;
   content: attr(data-hover);
