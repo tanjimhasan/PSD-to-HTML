@@ -831,6 +831,10 @@ h6 {
   padding-top: 8px;
 }
 
+.site-header .main-header.sticky .main-menu ul li a:after{
+  top: 120%;
+}
+
 .site-header .main-header.sticky .logo{
   margin-top: 8px;
 }
@@ -879,7 +883,7 @@ h6 {
 
 .main-menu ul li a:after {
   position: absolute;
-  top: 120%;
+  top: 100%;
   left: 0;
   opacity: 0.8;
   content: attr(data-hover);
