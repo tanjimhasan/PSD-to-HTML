@@ -1,0 +1,114 @@
+/*============================================
+
+[Table of content]
+
+1. Large Devices (less than  1200px)
+2. Tablet Devices (less than  992px)
+3. Large Mobile (less than  768px)
+4. Small Mobile (less than  576px)
+5. Extra Small Mobile (less than  480px)
+6. Iphone Device (less than  380px)
+7. Custom Devices(less than  321px)
+
+============================================*/
+
+
+/* 1. Large tablets (less than 1200px) */
+
+@media only screen and (max-width: 1199px) {}
+
+
+/* 2. Tablet Devices (less than  992px) */
+
+@media only screen and (max-width: 991px) {
+  .about-content .about-text {
+    margin-top: 20px;
+  }
+  .contact-info {
+    margin-bottom: 15px;
+  }
+}
+
+
+/* 3. Large Mobile (less than  768px) */
+
+@media only screen and (max-width: 767px) {
+  .section-padding {
+    padding: 50px 0;
+  }
+  .section-title {
+    margin-bottom: 50px;
+  }
+  .section-title h2 {
+    font-size: 26px;
+  }
+  .banner-content h2 {
+    font-size: 50px;
+  }
+  .banner-content h2 h2+h2 {
+    font-size: 44px;
+  }
+  .service-section.section-padding {
+    padding-bottom: 25px;
+  }
+  .portfolio-section.section-padding {
+    padding-bottom: 25px;
+  }
+}
+
+
+/* 4. Small Mobile (less than  576px) */
+
+@media only screen and (max-width: 575px) {
+  .single-banner {
+    padding: 220px 0 180px;
+  }
+  .offcanvas-menu {
+    width: 320px;
+  }
+}
+
+
+/* 5. Extra Small devices (less than  480px) */
+
+@media only screen and (max-width: 479px) {
+  .banner-content h2 {
+    font-size: 44px;
+  }
+  .banner-content h2 h2+h2 {
+    font-size: 38px;
+  }
+  .menu-trigger {
+    margin-top: 20px;
+  }
+}
+
+
+/* 6. Iphone Devices (less than  380px) */
+
+@media only screen and (max-width: 379px) {
+  .backToTop {
+    bottom: 145px;
+  }
+  .single-banner {
+    padding: 200px 0 160px;
+  }
+}
+
+
+/* 7. Custom Devices (min-width: 0px) and (max-width: 320px) */
+
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+  .banner-content h2 {
+    font-size: 36px;
+  }
+  .banner-content h2 h2+h2 {
+    font-size: 28px;
+  }
+  .offcanvas-menu {
+    width: 290px;
+  }
+  .menu-trigger {
+    margin-top: 15px;
+  }
+}
