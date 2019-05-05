@@ -1,0 +1,172 @@
+
+@font-face 
+    font-family: 'Helvetica'
+    font-style: normal
+    font-weight: normal
+    src: local('Helvetica'), url('../fonts/Helvetica.woff') format('woff')
+
+
+
+@font-face 
+    font-family: 'Helvetica Oblique'
+    font-style: normal
+    font-weight: normal
+    src: local('Helvetica Oblique'), url('../fonts/Helvetica-Oblique.woff') format('woff')
+
+
+
+@font-face 
+    font-family: 'Helvetica Compressed'
+    font-style: normal
+    font-weight: normal
+    src: local('Helvetica Compressed'), url('../fonts/helvetica-compressed-5871d14b6903a.woff') format('woff')
+
+
+
+@font-face 
+    font-family: 'Helvetica Rounded Bold'
+    font-style: normal
+    font-weight: normal
+    src: local('Helvetica Rounded Bold'), url('../fonts/helvetica-rounded-bold-5871d05ead8de.woff') format('woff')
+
+
+
+@font-face 
+    font-family: 'Helvetica'
+    font-style: normal
+    font-weight: normal
+    src: local('Helvetica'), url('../fonts/Helvetica-Bold.woff') format('woff')
+
+
+
+// @font-face 
+//     font-family: 'Helvetica Bold Oblique'
+//     font-style: normal
+//     font-weight: normal
+//     src: local('Helvetica Bold Oblique'), url('../fonts/Helvetica-BoldOblique.woff') format('woff')
+
+
+
+// @font-face 
+//     font-family: 'Helvetica Light'
+//     font-style: normal
+//     font-weight: normal
+//     src: local('Helvetica Light'), url('../fonts/helvetica-light-587ebe5a59211.woff') format('woff')
+
+
+
+*
+    list-style: none
+    outline: none !important
+
+ol,
+ul 
+    margin: 0
+    padding: 0
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+    -webkit-appearance: none
+    appearance: none
+    margin: 0
+
+input[type="number"]
+    -moz-appearance: textfield
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active 
+    transition: background-color 5000s ease-in-out 0s
+
+::selection 
+    text-shadow: none
+    color: $white
+    background: #31333e
+
+::placeholder
+    font-size: 14px
+    opacity: .6 !important
+    @extend .text-color
+
+iframe
+    max-width: 100%
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus
+    outline: none !important
+
+button,
+button[type="submit"],
+input[type="submit"]
+    border: none
+    cursor: pointer
+    -webkit-appearance: button
+    -moz-appearance: button
+    appearance: button
+
+textarea
+    resize: none
+
+img
+    max-width: 100%
+    height: auto
+
+a,
+a:hover,
+a:active,
+a:focus,
+input,
+input:hover,
+input:focus,
+input:active,
+select,
+textarea
+    text-decoration: none
+    outline: none !important
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p 
+    margin-bottom: 0
+    padding: 0
+
+p  
+    line-height: 1.5
+    font-weight: $regular
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    @extend .text-color
+    font-family: 'Helvetica'
+
+h1
+    font-size: 48px
+h2
+    font-size: 30px
+h3
+    font-size: 24px
+h4
+    font-size: 18px
+h5
+    font-size: 16px
+h6
+    font-size: 14px
+
+body
+    overflow-x: hidden !important
+    font-size: 16px
+    background-color: $white
+    font-family: $roboto
+    line-height: 1.5
+    @extend .text-color

@@ -1,0 +1,40 @@
+
+.feature-area
+	@extend .horizontalGradient
+.feature-content
+	&.content-right
+		margin-top: 140px
+		.feature-text
+			.feature-text-inner
+				margin-left: 65px
+				margin-right: 120px
+	.feature-img
+		flex-basis: 50%
+		+tab
+			flex-basis: 100%
+		img 
+			min-height: 600px
+			width: 100%
+			+tab
+				margin-bottom: 30px
+	.feature-text
+		flex-basis: 50%
+		+tab
+			flex-basis: 100%
+		+mobileXs
+			max-width: 310px
+		.feature-text-inner
+			max-width: 540px
+			margin-right: 65px
+			margin-left: 120px
+		h2
+			font-size: 40px
+			line-height: 55px
+			font-weight: $semi-bold
+			margin-bottom: 60px
+			+mobileXs
+				font-size: 34px
+		p 
+			margin-bottom: 30px
+		.site-btn 
+			margin-top: 30px

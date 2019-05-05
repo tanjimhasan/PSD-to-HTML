@@ -1,0 +1,51 @@
+.team-area
+	background-color: #F4F4F4
+	margin-bottom: 135px
+
+.single-team
+	position: relative
+	&:after 
+		position: absolute
+		left: 0
+		bottom: 0
+		background-color: #fff 
+		height: 0%
+		width: 100%
+		content: ""
+		opacity: 0
+		visibility: hidden
+		transition: .3s
+	&:hover 
+		&:after 
+			height: 25%
+			opacity: .90
+			visibility: visible
+			+medium
+				height: 28%
+		.person-info
+			h4
+				opacity: 1
+				visibility: visible
+			p 
+				opacity: 1
+				visibility: visible 
+
+	.person-info
+		position: absolute
+		width: 100%
+		left: 35px
+		bottom: 25px
+		z-index: 99
+		h4 
+			font-size: 18px
+			font-weight: $semi-bold
+			transition: .4s
+			opacity: 0
+			visibility: hidden
+		p 
+			font-size: 14px
+			color: #7B7B7B
+			margin-top: 10px
+			transition: .5s
+			opacity: 0
+			visibility: hidden
